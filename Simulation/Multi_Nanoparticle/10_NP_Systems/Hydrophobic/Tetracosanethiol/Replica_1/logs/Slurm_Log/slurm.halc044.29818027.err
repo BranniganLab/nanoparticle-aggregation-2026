@@ -1,0 +1,183 @@
+                      :-) GROMACS - gmx grompp, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Tetracosanethiol
+Command line:
+  gmx_mpi grompp -f md_i.mdp -c em.gro -p insane.top -o md -maxwarn 10
+
+Replacing old mdp entry 'unconstrained_start' by 'continuation'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc_precision' by 'compressed-x-precision'
+
+NOTE 1 [file md_i.mdp]:
+  The group cutoff scheme is deprecated since GROMACS 5.0 and will be
+  removed in a future release when all interaction forms are supported for
+  the verlet scheme. The verlet scheme already scales better, and it is
+  compatible with GPUs and other accelerators.
+
+
+NOTE 2 [file md_i.mdp]:
+  The switch/shift interaction settings are just for compatibility; you
+  will get better performance from applying potential modifiers to your
+  interactions!
+
+
+
+NOTE 3 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rcoulomb.
+
+
+NOTE 4 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rvdw.
+
+Setting the LD random seed to 683861729
+Generated 1 of the 820 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'AU'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'NA+'
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+NOTE 5 [file insane.top, line 18]:
+  System has non-zero total charge: 300.000000
+  Total charge should normally be an integer. See
+  http://www.gromacs.org/Documentation/Floating_Point_Arithmetic
+  for discussion on how close it should be to an integer.
+  
+
+
+Setting gen_seed to 431280969
+Velocities were taken from a Maxwell distribution at 313 K
+Number of degrees of freedom in T-Coupling group AU is 16949.97
+Number of degrees of freedom in T-Coupling group POPC is 194039.66
+Number of degrees of freedom in T-Coupling group W is 1474212.38
+Number of degrees of freedom in T-Coupling group ION is 32459.94
+
+NOTE 6 [file md_i.mdp]:
+  This run will generate roughly 273281 Mb of data
+
+
+There were 6 notes
+
+GROMACS reminds you: "I Don't Want to Catch Anybody Not Drinking." (Monty Python)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Tetracosanethiol
+Command line:
+  gmx_mpi mdrun -ntomp 1 -deffnm md -v -rdd 1.6
+
+
+Running on 2 nodes with total 80 cores, 80 logical cores
+  Cores per node:           40
+  Logical cores per node:   40
+Hardware detected on host halc044.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6248 CPU @ 2.50GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Using 64 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+WARNING: This run will generate roughly 273168 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+800000000 steps, 20000000.0 ps.
+step 0
+
+step 20 Turning on dynamic load balancing, because the performance loss due to load imbalance is 3.1 %.
+
+
+Step 100:
+Atom 5081 moved more than the distance allowed by the domain decomposition (1.600000) in direction Y
+distance out of cell -3.541158
+Old coordinates:   32.759    2.887   15.888
+New coordinates:   38.507   -3.541   17.739
+Old cell boundaries in direction Y:    0.000   11.038
+New cell boundaries in direction Y:    0.000   11.031
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2016.1
+Source file: src/gromacs/domdec/domdec.cpp (line 4111)
+MPI rank:    33 (out of 64)
+
+Fatal error:
+An atom moved too far between two domain decomposition steps
+This usually means that your system is not well equilibrated
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+vol 0.92  imb F  1% slurmstepd: error: *** STEP 29818027.1 ON halc044 CANCELLED AT 2023-07-11T16:42:06 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: halc047: tasks 40-63: Killed
+srun: error: halc044: tasks 0-32,34-39: Killed
+srun: error: halc044: task 33: Exited with exit code 1

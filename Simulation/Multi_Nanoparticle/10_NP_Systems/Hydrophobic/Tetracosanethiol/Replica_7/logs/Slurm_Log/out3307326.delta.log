@@ -1,0 +1,62 @@
+Setting the LD random seed to -622404307
+
+Generated 37 of the 903 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'AU'
+
+Excluding 1 bonded neighbours molecule type 'POPC'
+
+Excluding 1 bonded neighbours molecule type 'POPC'
+
+Excluding 1 bonded neighbours molecule type 'W'
+
+Excluding 1 bonded neighbours molecule type 'NA+'
+
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+atom name 56 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 57 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 60 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 61 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 62 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 63 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 64 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 65 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 67 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 68 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 69 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 70 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 71 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 72 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 73 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 74 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 77 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 78 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 79 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 80 in insane.top and insane.gro does not match (LIG - C1)
+
+(more than 20 non-matching atom names)
+Analysing residue names:
+There are: 174116      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 591 Mb of data

@@ -1,0 +1,17 @@
+Input file:
+  Run start step                                     0     
+  Run start time                                     0 ps  
+  Step to be made during run                 200000000     
+  Runtime for the run                            5e+06 ps  
+  Run end step                               200000000     
+  Run end time                                   5e+06 ps  
+
+
+Output file:
+  Run start step                                     0     
+  Run start time                                     0 ps  
+  Step to be made during run                 200000000     
+  Runtime for the run                            5e+06 ps  
+  Run end step                               200000000     
+  Run end time                                   5e+06 ps  
+

@@ -1,0 +1,45 @@
+integrator              = md-vv
+dt                      = 0.001
+nsteps                  = 200000
+nstxtcout               = 5000
+nstvout                 = 5000
+nstfout                 = 5000
+nstcalcenergy           = 100
+nstenergy               = 1000
+nstlog                  = 1000
+;
+cutoff-scheme           = group
+nstlist                 = 10
+ns_type                 = grid
+pbc                      = xyz
+rlist                   = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 0.9
+rvdw                    = 1.2
+coulombtype             = Shift
+rcoulomb_switch         = 0.0
+rcoulomb                = 1.2
+;
+tcoupl                  = v-rescale
+tc_grps                 = SYSTEM
+tau_t                   = 1.0
+ref_t                   = 310
+pcoupl                  = berendsen
+pcoupltype              = isotropic
+
+tau-p                   = 1.0
+compressibility         = 3.0e-5
+ref-p                   = 1.0
+;
+constraint_algorithm    = LINCS
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = SYSTEM
+;
+gen-vel                 = yes
+gen-temp                = 310
+gen-seed                = -1
+;
+refcoord_scaling        = com

@@ -1,0 +1,30 @@
+Setting the LD random seed to 2130444159
+
+Generated 37 of the 903 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'AU'
+
+Excluding 1 bonded neighbours molecule type 'POPC'
+
+Excluding 1 bonded neighbours molecule type 'POPC'
+
+Excluding 1 bonded neighbours molecule type 'W'
+
+Excluding 1 bonded neighbours molecule type 'NA+'
+
+Excluding 1 bonded neighbours molecule type 'CL-'
+
+Setting gen_seed to 2013198783
+
+Velocities were taken from a Maxwell distribution at 313 K
+Analysing residue names:
+There are: 175618      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 313 K
+
+Calculated rlist for 1x1 atom pair-list as 1.287 nm, buffer size 0.287 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.189 nm, buffer size 0.189 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup

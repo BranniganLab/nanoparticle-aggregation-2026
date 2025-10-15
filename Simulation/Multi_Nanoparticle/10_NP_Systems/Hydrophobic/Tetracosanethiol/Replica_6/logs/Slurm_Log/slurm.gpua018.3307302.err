@@ -1,0 +1,48 @@
+GpuFreq=control_disabled
+             :-) GROMACS - gmx convert-tpr, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/Common_Nanoparticle_6/Tetracosanethiol
+Command line:
+  gmx_mpi convert-tpr -s md.tpr -nsteps 200000000 -o md2.tpr
+
+Reading file md.tpr, VERSION 2022.5-plumed_2.9.0 (single precision)
+Setting nsteps to 200000000
+
+GROMACS reminds you: "Do you know what cations don't like? Dog-ions. Do you know what they like? Pie." (Tom Cheatham)
+
+GpuFreq=control_disabled
+                :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/Common_Nanoparticle_6/Tetracosanethiol
+Command line:
+  gmx_mpi mdrun -s md2.tpr -cpi md.cpt -ntomp 1 -deffnm md -v -nb gpu -bonded gpu -update gpu
+
+Reading file md2.tpr, VERSION 2022.5-plumed_2.9.0 (single precision)
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+Source file: src/gromacs/mdlib/gmx_omp_nthreads.cpp (line 196)
+
+Fatal error:
+Environment variable OMP_NUM_THREADS (16) and the number of threads requested
+on the command line (1) have different values. Either omit one, or set them
+both to the same value.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 3307302.1 ON gpua018 CANCELLED AT 2024-03-28T03:00:51 ***
+srun: error: gpua018: task 0: Exited with exit code 1

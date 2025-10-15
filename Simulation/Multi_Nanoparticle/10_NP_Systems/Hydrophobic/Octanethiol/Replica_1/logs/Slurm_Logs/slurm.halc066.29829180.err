@@ -1,0 +1,653 @@
+                      :-) GROMACS - gmx grompp, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Octanethiol
+Command line:
+  gmx_mpi grompp -f md_i.mdp -c em.gro -p insane.top -o md -maxwarn 10
+
+Replacing old mdp entry 'unconstrained_start' by 'continuation'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc_precision' by 'compressed-x-precision'
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.1#
+
+NOTE 1 [file md_i.mdp]:
+  The group cutoff scheme is deprecated since GROMACS 5.0 and will be
+  removed in a future release when all interaction forms are supported for
+  the verlet scheme. The verlet scheme already scales better, and it is
+  compatible with GPUs and other accelerators.
+
+
+NOTE 2 [file md_i.mdp]:
+  The switch/shift interaction settings are just for compatibility; you
+  will get better performance from applying potential modifiers to your
+  interactions!
+
+
+
+NOTE 3 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rcoulomb.
+
+
+NOTE 4 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rvdw.
+
+Setting the LD random seed to -1005115290
+Generated 1 of the 820 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'AU'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'NA+'
+Excluding 1 bonded neighbours molecule type 'CL-'
+Setting gen_seed to 1475797821
+Velocities were taken from a Maxwell distribution at 313 K
+Number of degrees of freedom in T-Coupling group AU is 9749.96
+Number of degrees of freedom in T-Coupling group POPC is 223667.09
+Number of degrees of freedom in T-Coupling group W is 499393.00
+Number of degrees of freedom in T-Coupling group ION is 10997.96
+
+NOTE 5 [file md_i.mdp]:
+  This run will generate roughly 118465 Mb of data
+
+
+There were 5 notes
+
+GROMACS reminds you: "I love fools' experiments. I am always making them." (Charles Darwin)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Octanethiol
+Command line:
+  gmx_mpi mdrun -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 2 nodes with total 104 cores, 104 logical cores
+  Cores per node:           52
+  Logical cores per node:   52
+Hardware detected on host halc066.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Using 64 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+WARNING: This run will generate roughly 118352 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+800000000 steps, 20000000.0 ps.
+step 0
+
+step 20 Turning on dynamic load balancing, because the performance loss due to load imbalance is 5.8 %.
+
+vol 0.94  imb F  4% step 100, will finish Wed Aug 30 13:03:44 2023
+vol 0.97  imb F  1% step 200, will finish Wed Aug 16 10:05:32 2023
+vol 0.97  imb F  1% step 300, will finish Fri Aug 11 09:47:36 2023
+vol 0.97  imb F  5% step 400, will finish Tue Aug  8 22:28:10 2023
+vol 0.95  imb F 18% step 500, will finish Mon Aug  7 14:56:11 2023
+vol 0.96  imb F  2% step 600, will finish Sun Aug  6 20:18:20 2023
+vol 0.98  imb F  2% step 700, will finish Sun Aug  6 06:36:53 2023
+vol 0.97  imb F  1% step 800, will finish Sat Aug  5 21:33:27 2023
+vol 0.97  imb F  1% step 900, will finish Sat Aug  5 12:25:00 2023
+vol 0.97  imb F  1% step 1000, will finish Sat Aug  5 05:24:16 2023
+vol 0.97  imb F  1% step 1100, will finish Fri Aug  4 23:16:46 2023
+vol 0.97  imb F  1% step 1200, will finish Fri Aug  4 18:06:26 2023
+vol 0.95  imb F  1% step 1300, will finish Sat Aug  5 09:18:09 2023
+vol 0.95  imb F  1% step 1400, will finish Sat Aug  5 04:42:38 2023
+vol 0.95  imb F  1% step 1500, will finish Sat Aug  5 02:07:38 2023
+vol 0.96  imb F  1% step 1600, will finish Fri Aug  4 23:39:57 2023
+vol 0.96  imb F  1% step 1700, will finish Fri Aug  4 20:13:39 2023
+vol 0.96  imb F  1% step 1800, will finish Fri Aug  4 17:39:48 2023
+vol 0.96  imb F  1% step 1900, will finish Fri Aug  4 15:33:41 2023
+vol 0.95  imb F  2% step 2000, will finish Fri Aug  4 13:37:21 2023
+vol 0.96  imb F  1% step 2100, will finish Fri Aug  4 11:25:46 2023
+vol 0.95  imb F  1% step 2200, will finish Fri Aug  4 09:17:26 2023
+vol 0.95  imb F  1% step 2300, will finish Fri Aug  4 07:22:14 2023
+vol 0.96  imb F  1% step 2400, will finish Fri Aug  4 05:44:08 2023
+vol 0.96  imb F  1% step 2500, will finish Fri Aug  4 04:11:30 2023
+vol 0.96  imb F  1% step 2600, will finish Fri Aug  4 02:44:38 2023
+vol 0.96  imb F  1% step 2700, will finish Fri Aug  4 01:36:40 2023
+vol 0.96  imb F  1% step 2800, will finish Fri Aug  4 01:08:06 2023
+vol 0.96  imb F  1% step 2900, will finish Fri Aug  4 00:25:40 2023
+vol 0.95  imb F  1% step 3000, will finish Thu Aug  3 23:41:40 2023
+vol 0.95  imb F  1% step 3100, will finish Thu Aug  3 22:32:51 2023
+vol 0.91  imb F  3% step 3200, will finish Thu Aug  3 22:16:32 2023
+vol 0.96  imb F  1% step 3300, will finish Thu Aug  3 21:31:38 2023
+vol 0.95  imb F  1% step 3400, will finish Thu Aug  3 20:36:49 2023
+vol 0.95  imb F  3% step 3500, will finish Thu Aug  3 19:50:08 2023
+vol 0.95  imb F  1% step 3600, will finish Thu Aug  3 19:04:41 2023
+vol 0.96  imb F  1% step 3700, will finish Thu Aug  3 18:38:58 2023
+vol 0.95  imb F  1% step 3800, will finish Thu Aug  3 17:53:02 2023
+vol 0.95  imb F  1% step 3900, will finish Thu Aug  3 17:03:55 2023
+vol 0.95  imb F  1% step 4000, will finish Thu Aug  3 16:24:39 2023
+vol 0.96  imb F  1% step 4100, will finish Thu Aug  3 15:51:52 2023
+vol 0.95  imb F  1% step 4200, will finish Thu Aug  3 15:17:16 2023
+vol 0.95  imb F  1% step 4300, will finish Thu Aug  3 14:48:01 2023
+vol 0.96  imb F  1% step 4400, will finish Thu Aug  3 14:17:43 2023
+vol 0.95  imb F  1% step 4500, will finish Thu Aug  3 13:38:59 2023
+vol 0.96  imb F  1% step 4600, will finish Thu Aug  3 13:04:45 2023
+vol 0.95  imb F  1% step 4700, will finish Thu Aug  3 12:31:51 2023
+vol 0.95  imb F  1% step 4800, will finish Thu Aug  3 12:00:10 2023
+vol 0.95  imb F  1% step 4900, will finish Thu Aug  3 11:30:56 2023
+vol 0.95  imb F  1% step 5000, will finish Thu Aug  3 11:00:23 2023
+vol 0.95  imb F  1% step 5100, will finish Thu Aug  3 10:33:27 2023
+vol 0.94  imb F  1% step 5200, will finish Thu Aug  3 10:12:22 2023
+vol 0.95  imb F  1% step 5300, will finish Thu Aug  3 09:57:58 2023
+vol 0.95  imb F  1% step 5400, will finish Thu Aug  3 09:42:10 2023
+vol 0.95  imb F  1% step 5500, will finish Thu Aug  3 09:13:10 2023
+vol 0.95  imb F  1% step 5600, will finish Thu Aug  3 08:47:09 2023
+vol 0.95  imb F  1% step 5700, will finish Thu Aug  3 08:21:37 2023
+vol 0.91  imb F  3% step 5800, will finish Thu Aug  3 08:29:23 2023
+vol 0.95  imb F  1% step 5900, will finish Thu Aug  3 08:24:00 2023
+vol 0.96  imb F  1% step 6000, will finish Thu Aug  3 08:04:52 2023
+vol 0.96  imb F  1% step 6100, will finish Thu Aug  3 07:41:31 2023
+vol 0.95  imb F  1% step 6200, will finish Thu Aug  3 07:24:12 2023
+vol 0.95  imb F  1% step 6300, will finish Thu Aug  3 07:07:44 2023
+vol 0.96  imb F  1% step 6400, will finish Thu Aug  3 06:51:43 2023
+vol 0.95  imb F  1% step 6500, will finish Thu Aug  3 06:38:44 2023
+vol 0.95  imb F  1% step 6600, will finish Thu Aug  3 06:17:24 2023
+vol 0.95  imb F  1% step 6700, will finish Thu Aug  3 06:02:33 2023
+vol 0.94  imb F  1% step 6800, will finish Thu Aug  3 05:49:57 2023
+vol 0.95  imb F  1% step 6900, will finish Thu Aug  3 05:36:25 2023
+vol 0.95  imb F  1% step 7000, will finish Thu Aug  3 05:20:25 2023
+vol 0.94  imb F  1% step 7100, will finish Thu Aug  3 05:08:58 2023
+vol 0.95  imb F  1% step 7200, will finish Thu Aug  3 04:53:27 2023
+vol 0.95  imb F  1% step 7300, will finish Thu Aug  3 04:36:15 2023
+vol 0.95  imb F  1% step 7400, will finish Thu Aug  3 04:20:59 2023
+vol 0.95  imb F  1% step 7500, will finish Thu Aug  3 04:06:24 2023
+vol 0.95  imb F  2% step 7600, will finish Thu Aug  3 03:54:28 2023
+vol 0.95  imb F  1% step 7700, will finish Thu Aug  3 03:42:20 2023
+vol 0.95  imb F  1% step 7800, will finish Thu Aug  3 03:29:20 2023
+vol 0.95  imb F  1% step 7900, will finish Thu Aug  3 03:17:26 2023
+vol 0.95  imb F  1% step 8000, will finish Thu Aug  3 03:51:21 2023
+vol 0.95  imb F  1% step 8100, will finish Thu Aug  3 03:43:41 2023
+vol 0.95  imb F  1% step 8200, will finish Thu Aug  3 03:34:01 2023
+vol 0.95  imb F  1% step 8300, will finish Thu Aug  3 03:18:54 2023
+vol 0.95  imb F  3% step 8400, will finish Thu Aug  3 03:26:15 2023
+vol 0.96  imb F  1% step 8500, will finish Thu Aug  3 03:16:46 2023
+vol 0.96  imb F  1% step 8600, will finish Thu Aug  3 03:48:58 2023
+vol 0.95  imb F  1% step 8700, will finish Thu Aug  3 03:37:37 2023
+vol 0.95  imb F  1% step 8800, will finish Thu Aug  3 03:29:04 2023
+vol 0.95  imb F  1% step 8900, will finish Thu Aug  3 03:19:21 2023
+vol 0.95  imb F  1% step 9000, will finish Thu Aug  3 03:07:33 2023
+vol 0.94  imb F  2% step 9100, will finish Thu Aug  3 03:02:03 2023
+vol 0.95  imb F  1% step 9200, will finish Thu Aug  3 02:55:24 2023
+vol 0.95  imb F  1% step 9300, will finish Thu Aug  3 02:45:18 2023
+vol 0.95  imb F  0% step 9400, will finish Thu Aug  3 02:33:55 2023
+vol 0.95  imb F  1% step 9500, will finish Thu Aug  3 02:22:26 2023
+vol 0.95  imb F  1% step 9600, will finish Thu Aug  3 02:11:03 2023
+vol 0.95  imb F  1% step 9700, will finish Thu Aug  3 02:00:31 2023
+vol 0.96  imb F  1% step 9800, will finish Thu Aug  3 01:50:46 2023
+vol 0.96  imb F  1% step 9900, will finish Thu Aug  3 01:41:03 2023
+vol 0.95  imb F  1% step 10000, will finish Thu Aug  3 01:30:20 2023
+vol 0.95  imb F  1% step 10100, will finish Thu Aug  3 01:19:23 2023
+vol 0.95  imb F  1% step 10200, will finish Thu Aug  3 01:17:31 2023
+vol 0.95  imb F  1% step 10300, will finish Thu Aug  3 01:09:20 2023
+vol 0.95  imb F  1% step 10400, will finish Thu Aug  3 01:01:06 2023
+vol 0.95  imb F  1% step 10500, will finish Thu Aug  3 00:55:12 2023
+vol 0.95  imb F  1% step 10600, will finish Thu Aug  3 00:49:12 2023
+vol 0.96  imb F  1% step 10700, will finish Thu Aug  3 00:44:07 2023
+vol 0.96  imb F  1% step 10800, will finish Thu Aug  3 00:35:33 2023
+vol 0.95  imb F  1% step 10900, will finish Thu Aug  3 00:29:50 2023
+vol 0.95  imb F  1% step 11000, will finish Thu Aug  3 00:25:25 2023
+vol 0.95  imb F  1% step 11100, will finish Thu Aug  3 00:18:13 2023
+vol 0.95  imb F  1% step 11200, will finish Thu Aug  3 00:12:45 2023
+vol 0.95  imb F  1% step 11300, will finish Thu Aug  3 00:06:32 2023
+vol 0.95  imb F  1% step 11400, will finish Wed Aug  2 23:59:22 2023
+vol 0.95  imb F  1% step 11500, will finish Wed Aug  2 23:54:10 2023
+vol 0.95  imb F  1% step 11600, will finish Wed Aug  2 23:48:23 2023
+vol 0.95  imb F  1% step 11700, will finish Wed Aug  2 23:42:18 2023
+vol 0.95  imb F  1% step 11800, will finish Wed Aug  2 23:34:11 2023
+vol 0.95  imb F  1% step 11900, will finish Wed Aug  2 23:27:35 2023
+vol 0.95  imb F  1% step 12000, will finish Wed Aug  2 23:20:16 2023
+vol 0.94  imb F  1% step 12100, will finish Wed Aug  2 23:16:36 2023
+vol 0.95  imb F  1% step 12200, will finish Wed Aug  2 23:13:27 2023
+vol 0.94  imb F  1% step 12300, will finish Wed Aug  2 23:07:00 2023
+vol 0.94  imb F  1% step 12400, will finish Wed Aug  2 23:06:23 2023
+vol 0.94  imb F  1% step 12500, will finish Wed Aug  2 23:16:23 2023
+vol 0.95  imb F  1% step 12600, will finish Wed Aug  2 23:31:33 2023
+vol 0.94  imb F  1% step 12700, will finish Wed Aug  2 23:24:56 2023
+vol 0.94  imb F  1% step 12800, will finish Wed Aug  2 23:19:23 2023
+vol 0.94  imb F  1% step 12900, will finish Wed Aug  2 23:13:22 2023
+vol 0.91  imb F  3% step 13000, will finish Wed Aug  2 23:23:38 2023
+vol 0.94  imb F  1% step 13100, will finish Wed Aug  2 23:19:12 2023
+vol 0.94  imb F  1% step 13200, will finish Wed Aug  2 23:14:18 2023
+vol 0.94  imb F  1% step 13300, will finish Wed Aug  2 23:09:25 2023
+vol 0.95  imb F  1% step 13400, will finish Wed Aug  2 23:04:01 2023
+vol 0.94  imb F  1% step 13500, will finish Wed Aug  2 22:59:01 2023
+vol 0.94  imb F  1% step 13600, will finish Wed Aug  2 22:53:00 2023
+vol 0.95  imb F  1% step 13700, will finish Wed Aug  2 22:51:11 2023
+vol 0.94  imb F  1% step 13800, will finish Wed Aug  2 22:46:39 2023
+vol 0.94  imb F  1% step 13900, will finish Wed Aug  2 22:41:54 2023
+vol 0.95  imb F  1% step 14000, will finish Wed Aug  2 22:35:54 2023
+vol 0.93  imb F  1% step 14100, will finish Wed Aug  2 22:30:43 2023
+vol 0.94  imb F  1% step 14200, will finish Wed Aug  2 22:32:29 2023
+vol 0.95  imb F  1% step 14300, will finish Thu Aug  3 00:53:13 2023
+vol 0.95  imb F  1% step 14400, will finish Thu Aug  3 00:47:47 2023
+vol 0.95  imb F  1% step 14500, will finish Thu Aug  3 00:46:35 2023
+vol 0.95  imb F  3% step 14600, will finish Thu Aug  3 00:40:20 2023
+vol 0.94  imb F  2% step 14700, will finish Thu Aug  3 00:33:19 2023
+vol 0.94  imb F  1% step 14800, will finish Thu Aug  3 00:26:46 2023
+vol 0.94  imb F  1% step 14900, will finish Thu Aug  3 00:22:43 2023
+vol 0.95  imb F  1% step 15000, will finish Thu Aug  3 00:16:35 2023
+vol 0.94  imb F  1% step 15100, will finish Thu Aug  3 00:13:04 2023
+vol 0.93  imb F  1% step 15200, will finish Thu Aug  3 00:10:58 2023
+vol 0.94  imb F  1% step 15300, will finish Thu Aug  3 00:05:06 2023
+vol 0.94  imb F  1% step 15400, will finish Thu Aug  3 00:00:15 2023
+vol 0.86  imb F  3% step 15500, will finish Thu Aug  3 00:05:45 2023
+vol 0.95  imb F  1% step 15600, will finish Thu Aug  3 00:01:15 2023
+vol 0.94  imb F  1% step 15700, will finish Wed Aug  2 23:56:57 2023
+vol 0.94  imb F  1% step 15800, will finish Wed Aug  2 23:54:42 2023
+vol 0.94  imb F  1% step 15900, will finish Wed Aug  2 23:50:00 2023
+vol 0.94  imb F  1% step 16000, will finish Thu Aug  3 00:04:35 2023
+vol 0.94  imb F  1% step 16100, will finish Wed Aug  2 23:58:59 2023
+vol 0.94  imb F  2% step 16200, will finish Wed Aug  2 23:54:45 2023
+vol 0.94  imb F  1% step 16300, will finish Wed Aug  2 23:49:38 2023
+vol 0.94  imb F  1% step 16400, will finish Wed Aug  2 23:44:55 2023
+vol 0.94  imb F  1% step 16500, will finish Wed Aug  2 23:39:29 2023
+vol 0.94  imb F  1% step 16600, will finish Wed Aug  2 23:34:59 2023
+vol 0.94  imb F  1% step 16700, will finish Wed Aug  2 23:34:35 2023
+vol 0.94  imb F  2% step 16800, will finish Wed Aug  2 23:30:00 2023
+vol 0.93  imb F  1% step 16900, will finish Wed Aug  2 23:25:00 2023
+vol 0.93  imb F  1% step 17000, will finish Wed Aug  2 23:21:24 2023
+vol 0.94  imb F  1% step 17100, will finish Wed Aug  2 23:18:13 2023
+vol 0.94  imb F  1% step 17200, will finish Wed Aug  2 23:15:42 2023
+vol 0.94  imb F  1% step 17300, will finish Wed Aug  2 23:12:23 2023
+vol 0.94  imb F  1% step 17400, will finish Wed Aug  2 23:09:30 2023
+vol 0.94  imb F  1% step 17500, will finish Wed Aug  2 23:04:52 2023
+vol 0.94  imb F  1% step 17600, will finish Wed Aug  2 23:00:56 2023
+vol 0.95  imb F  1% step 17700, will finish Wed Aug  2 22:56:45 2023
+vol 0.94  imb F  1% step 17800, will finish Wed Aug  2 22:52:13 2023
+vol 0.93  imb F  1% step 17900, will finish Wed Aug  2 22:47:47 2023
+vol 0.90  imb F 15% step 18000, will finish Wed Aug  2 22:52:23 2023
+vol 0.94  imb F  1% step 18100, will finish Wed Aug  2 22:50:36 2023
+vol 0.95  imb F  1% step 18200, will finish Wed Aug  2 22:46:16 2023
+vol 0.94  imb F  1% step 18300, will finish Wed Aug  2 22:42:30 2023
+vol 0.94  imb F  1% step 18400, will finish Wed Aug  2 22:40:23 2023
+vol 0.94  imb F  1% step 18500, will finish Wed Aug  2 22:37:22 2023
+vol 0.94  imb F  1% step 18600, will finish Wed Aug  2 22:33:48 2023
+vol 0.94  imb F  1% step 18700, will finish Wed Aug  2 22:29:38 2023
+vol 0.94  imb F  1% step 18800, will finish Wed Aug  2 22:25:40 2023
+vol 0.94  imb F  1% step 18900, will finish Wed Aug  2 22:26:50 2023
+vol 0.94  imb F  1% step 19000, will finish Wed Aug  2 22:24:10 2023
+vol 0.94  imb F  1% step 19100, will finish Wed Aug  2 22:20:37 2023
+vol 0.94  imb F  1% step 19200, will finish Wed Aug  2 22:17:21 2023
+vol 0.94  imb F  1% step 19300, will finish Wed Aug  2 22:13:39 2023
+vol 0.94  imb F  1% step 19400, will finish Wed Aug  2 22:10:05 2023
+vol 0.93  imb F  1% step 19500, will finish Wed Aug  2 22:08:17 2023
+vol 0.94  imb F  1% step 19600, will finish Wed Aug  2 22:04:19 2023
+vol 0.94  imb F  1% step 19700, will finish Wed Aug  2 22:01:20 2023
+vol 0.93  imb F  1% step 19800, will finish Wed Aug  2 21:57:35 2023
+vol 0.93  imb F  1% step 19900, will finish Wed Aug  2 21:56:22 2023
+vol 0.94  imb F  1% step 20000, will finish Wed Aug  2 21:54:32 2023
+vol 0.93  imb F  2% step 20100, will finish Wed Aug  2 21:52:46 2023
+vol 0.93  imb F  1% step 20200, will finish Wed Aug  2 21:49:25 2023
+vol 0.93  imb F  1% step 20300, will finish Wed Aug  2 21:45:33 2023
+vol 0.93  imb F  1% step 20400, will finish Wed Aug  2 21:41:39 2023
+vol 0.93  imb F  1% step 20500, will finish Wed Aug  2 21:37:39 2023
+vol 0.90  imb F  3% step 20600, will finish Wed Aug  2 21:42:05 2023
+vol 0.93  imb F  1% step 20700, will finish Wed Aug  2 21:39:53 2023
+vol 0.93  imb F  1% step 20800, will finish Wed Aug  2 21:37:34 2023
+vol 0.94  imb F  1% step 20900, will finish Wed Aug  2 21:33:13 2023
+vol 0.94  imb F  1% step 21000, will finish Wed Aug  2 21:30:00 2023
+vol 0.94  imb F  1% step 21100, will finish Wed Aug  2 21:30:47 2023
+vol 0.93  imb F  1% step 21200, will finish Wed Aug  2 21:27:47 2023
+vol 0.93  imb F  1% step 21300, will finish Wed Aug  2 21:25:48 2023
+vol 0.94  imb F  1% step 21400, will finish Wed Aug  2 21:22:58 2023
+vol 0.94  imb F  1% step 21500, will finish Wed Aug  2 21:20:34 2023
+vol 0.94  imb F  1% step 21600, will finish Wed Aug  2 21:40:05 2023
+vol 0.94  imb F  1% step 21700, will finish Wed Aug  2 21:37:27 2023
+vol 0.94  imb F  1% step 21800, will finish Wed Aug  2 21:34:38 2023
+vol 0.93  imb F  1% step 21900, will finish Wed Aug  2 21:31:37 2023
+vol 0.94  imb F  1% step 22000, will finish Wed Aug  2 21:28:42 2023
+vol 0.94  imb F  1% step 22100, will finish Wed Aug  2 21:25:24 2023
+vol 0.94  imb F  1% step 22200, will finish Wed Aug  2 21:23:24 2023
+vol 0.94  imb F  1% step 22300, will finish Wed Aug  2 21:21:53 2023
+vol 0.93  imb F  1% step 22400, will finish Wed Aug  2 21:22:10 2023
+vol 0.93  imb F  1% step 22500, will finish Wed Aug  2 21:20:05 2023
+vol 0.93  imb F  1% step 22600, will finish Wed Aug  2 21:16:58 2023
+vol 0.93  imb F  1% step 22700, will finish Wed Aug  2 21:15:11 2023
+vol 0.93  imb F  1% step 22800, will finish Wed Aug  2 21:13:51 2023
+vol 0.92  imb F  1% step 22900, will finish Wed Aug  2 21:11:44 2023
+vol 0.93  imb F  1% step 23000, will finish Wed Aug  2 21:09:29 2023
+vol 0.93  imb F 25% step 23100, will finish Wed Aug  2 21:10:34 2023
+vol 0.95  imb F  1% step 23200, will finish Wed Aug  2 21:14:53 2023
+vol 0.93  imb F  1% step 23300, will finish Wed Aug  2 21:13:07 2023
+vol 0.93  imb F  1% step 23400, will finish Wed Aug  2 21:10:25 2023
+vol 0.94  imb F  1% step 23500, will finish Wed Aug  2 21:07:49 2023
+vol 0.94  imb F  1% step 23600, will finish Wed Aug  2 21:05:47 2023
+vol 0.94  imb F  1% step 23700, will finish Wed Aug  2 21:03:24 2023
+vol 0.93  imb F  1% step 23800, will finish Wed Aug  2 21:01:02 2023
+vol 0.93  imb F  2% step 23900, will finish Wed Aug  2 20:58:05 2023
+vol 0.93  imb F  1% step 24000, will finish Wed Aug  2 21:07:33 2023
+vol 0.94  imb F  1% step 24100, will finish Wed Aug  2 21:04:57 2023
+vol 0.93  imb F  1% step 24200, will finish Wed Aug  2 21:02:27 2023
+vol 0.92  imb F  1% step 24300, will finish Wed Aug  2 20:59:48 2023
+vol 0.94  imb F  1% step 24400, will finish Wed Aug  2 20:57:19 2023
+slurmstepd: error: *** STEP 29829180.1 ON halc066 CANCELLED AT 2023-07-12T09:02:25 ***
+slurmstepd: error: *** JOB 29829180 ON halc066 CANCELLED AT 2023-07-12T09:02:25 ***
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

@@ -1,0 +1,18 @@
+#include "../../martini_v2.2.itp"
+#include "cg.itp"
+#include "../../martini_v2.0_solvents.itp"
+#include "../../martini_v2.0_lipids_all_201506.itp"
+#include "../../martini_v2.0_ions.itp"
+
+[ system ]
+; name
+Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0
+
+[ molecules ]
+; name  number
+AU            10
+POPC          2769
+POPC          2812
+W           165730
+NA+           1825
+CL-           1825

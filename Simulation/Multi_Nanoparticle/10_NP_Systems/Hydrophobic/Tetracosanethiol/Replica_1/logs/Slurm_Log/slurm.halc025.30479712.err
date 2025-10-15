@@ -1,0 +1,1040 @@
+                   :-) GROMACS - gmx convert-tpr, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Tetracosanethiol
+Command line:
+  gmx_mpi convert-tpr -s md.tpr -nsteps 200000000 -o md2.tpr
+
+Reading toplogy and stuff from md.tpr
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Setting nsteps to 200000000
+Writing statusfile with starting step          0 and length  200000000 steps...
+                                 time      0.000 and length 5000000.000 ps
+
+Back Off! I just backed up md2.tpr to ./#md2.tpr.5#
+
+GROMACS reminds you: "Never measure the height of a mountain until you have reached the top. Then you will see how low it was." (Dag Hammarskjold)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Tetracosanethiol
+Command line:
+  gmx_mpi mdrun -s md2.tpr -cpi md.cpt -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 1 node with total 32 cores, 32 logical cores
+Hardware detected on host halc025.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md2.tpr, VERSION 2016.1 (single precision)
+
+Reading checkpoint file md.cpt generated: Tue Aug  1 11:08:43 2023
+
+
+Using 32 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+200000000 steps, infinite ps (continuing from step 291186640, 7279666.0 ps).
+step 291186640 performance: 66.4 ns/day    
+
+step 291186670 Turning on dynamic load balancing, because the performance loss due to load imbalance is 7.5 %.
+
+vol 0.89  imb F 29% step 291186700 performance: 252.2 ns/day    
+vol 0.90  imb F  3% step 291186800 performance: 335.2 ns/day    
+vol 0.92  imb F  3% step 291186900 performance: 380.6 ns/day    
+vol 0.91  imb F  4% step 291187000 performance: 406.9 ns/day    
+vol 0.93  imb F  2% step 291187100 performance: 423.3 ns/day    
+vol 0.92  imb F  4% step 291187200 performance: 431.5 ns/day    
+vol 0.92  imb F  2% step 291187300 performance: 436.5 ns/day    
+vol 0.90  imb F  2% step 291187400 performance: 443.1 ns/day    
+vol 0.92  imb F  2% step 291187500 performance: 448.8 ns/day    
+vol 0.91  imb F  2% step 291187600 performance: 453.1 ns/day    
+vol 0.91  imb F  2% step 291187700 performance: 456.8 ns/day    
+vol 0.91  imb F  1% step 291187800 performance: 459.3 ns/day    
+vol 0.92  imb F  5% step 291187900 performance: 461.1 ns/day    
+vol 0.92  imb F  2% step 291188000 performance: 461.5 ns/day    
+vol 0.91  imb F  4% step 291188100 performance: 463.7 ns/day    
+vol 0.92  imb F  2% step 291188200 performance: 465.6 ns/day    
+vol 0.91  imb F  3% step 291188300 performance: 467.1 ns/day    
+vol 0.91  imb F  1% step 291188400 performance: 468.4 ns/day    
+vol 0.92  imb F  2% step 291188500 performance: 469.8 ns/day    
+vol 0.91  imb F  2% step 291188600 performance: 471.0 ns/day    
+vol 0.92  imb F  2% step 291188700 performance: 472.1 ns/day    
+vol 0.91  imb F  3% step 291188800 performance: 473.0 ns/day    
+vol 0.92  imb F  2% step 291188900 performance: 473.9 ns/day    
+vol 0.92  imb F  3% step 291189000 performance: 474.1 ns/day    
+vol 0.91  imb F  4% step 291189100 performance: 474.1 ns/day    
+vol 0.92  imb F  2% step 291189200 performance: 474.2 ns/day    
+vol 0.93  imb F  4% step 291189300 performance: 474.9 ns/day    
+vol 0.91  imb F  2% step 291189400 performance: 475.6 ns/day    
+vol 0.92  imb F  3% step 291189500 performance: 476.3 ns/day    
+vol 0.93  imb F  3% step 291189600 performance: 476.9 ns/day    
+vol 0.92  imb F  3% step 291189700 performance: 477.5 ns/day    
+vol 0.92  imb F  2% step 291189800 performance: 478.1 ns/day    
+vol 0.91  imb F  2% step 291189900 performance: 478.5 ns/day    
+vol 0.91  imb F  2% step 291190000 performance: 479.1 ns/day    
+vol 0.93  imb F  2% step 291190100 performance: 479.4 ns/day    
+vol 0.92  imb F  2% step 291190200 performance: 479.9 ns/day    
+vol 0.91  imb F  4% step 291190300 performance: 480.2 ns/day    
+vol 0.93  imb F  2% step 291190400 performance: 480.5 ns/day    
+vol 0.91  imb F  2% step 291190500 performance: 480.8 ns/day    
+vol 0.91  imb F  1% step 291190600 performance: 481.3 ns/day    
+vol 0.92  imb F  3% step 291190700 performance: 481.5 ns/day    
+vol 0.90  imb F  1% step 291190800 performance: 481.5 ns/day    
+vol 0.92  imb F  3% step 291190900 performance: 481.5 ns/day    
+vol 0.91  imb F  3% step 291191000 performance: 481.5 ns/day    
+vol 0.90  imb F  1% step 291191100 performance: 481.7 ns/day    
+vol 0.92  imb F  3% step 291191200 performance: 481.7 ns/day    
+vol 0.91  imb F  3% step 291191300 performance: 481.7 ns/day    
+vol 0.91  imb F  3% step 291191400 performance: 481.8 ns/day    
+vol 0.92  imb F  2% step 291191500 performance: 482.1 ns/day    
+vol 0.91  imb F  2% step 291191600 performance: 482.4 ns/day    
+vol 0.91  imb F  2% step 291191700 performance: 482.7 ns/day    
+vol 0.92  imb F  1% step 291191800 performance: 482.8 ns/day    
+vol 0.90  imb F  2% step 291191900 performance: 483.1 ns/day    
+vol 0.92  imb F  3% step 291192000 performance: 482.8 ns/day    
+vol 0.91  imb F  2% step 291192100 performance: 483.0 ns/day    
+vol 0.90  imb F  2% step 291192200 performance: 482.8 ns/day    
+vol 0.92  imb F  1% step 291192300 performance: 483.1 ns/day    
+vol 0.91  imb F  2% step 291192400 performance: 483.1 ns/day    
+vol 0.91  imb F  1% step 291192500 performance: 483.4 ns/day    
+vol 0.90  imb F  2% step 291192600 performance: 483.6 ns/day    
+vol 0.92  imb F  1% step 291192700 performance: 483.8 ns/day    
+vol 0.91  imb F  3% step 291192800 performance: 484.0 ns/day    
+vol 0.92  imb F  2% step 291192900 performance: 484.2 ns/day    
+vol 0.91  imb F  2% step 291193000 performance: 484.4 ns/day    
+vol 0.91  imb F  2% step 291193100 performance: 484.5 ns/day    
+vol 0.92  imb F  2% step 291193200 performance: 484.7 ns/day    
+vol 0.92  imb F  3% step 291193300 performance: 484.8 ns/day    
+vol 0.90  imb F  2% step 291193400 performance: 484.4 ns/day    
+vol 0.90  imb F  4% step 291193500 performance: 484.4 ns/day    
+vol 0.91  imb F  3% step 291193600 performance: 484.4 ns/day    
+vol 0.93  imb F  3% step 291193700 performance: 484.6 ns/day    
+vol 0.93  imb F  2% step 291193800 performance: 484.7 ns/day    
+vol 0.91  imb F  3% step 291193900 performance: 484.8 ns/day    
+vol 0.90  imb F  3% step 291194000 performance: 484.8 ns/day    
+vol 0.92  imb F  3% step 291194100 performance: 484.8 ns/day    
+vol 0.92  imb F  8% step 291194200 performance: 484.8 ns/day    
+vol 0.92  imb F  3% step 291194300 performance: 485.0 ns/day    
+vol 0.90  imb F  7% step 291194400 performance: 485.1 ns/day    
+vol 0.92  imb F  1% step 291194500 performance: 485.1 ns/day    
+vol 0.92  imb F  2% step 291194600 performance: 485.2 ns/day    
+vol 0.92  imb F  2% step 291194700 performance: 485.3 ns/day    
+vol 0.90  imb F  2% step 291194800 performance: 485.4 ns/day    
+vol 0.91  imb F  1% step 291194900 performance: 485.4 ns/day    
+vol 0.91  imb F  2% step 291195000 performance: 485.5 ns/day    
+vol 0.90  imb F  1% step 291195100 performance: 485.6 ns/day    
+vol 0.88  imb F  4% step 291195200 performance: 485.7 ns/day    
+vol 0.90  imb F  3% step 291195300 performance: 485.8 ns/day    
+vol 0.91  imb F  2% step 291195400 performance: 485.9 ns/day    
+vol 0.90  imb F  2% step 291195500 performance: 486.0 ns/day    
+vol 0.91  imb F  2% step 291195600 performance: 486.1 ns/day    
+vol 0.90  imb F  3% step 291195700 performance: 486.2 ns/day    
+vol 0.91  imb F  3% step 291195800 performance: 486.3 ns/day    
+vol 0.91  imb F  3% step 291195900 performance: 486.4 ns/day    
+vol 0.91  imb F  3% step 291196000 performance: 486.5 ns/day    
+vol 0.92  imb F  2% step 291196100 performance: 486.6 ns/day    
+vol 0.90  imb F  2% step 291196200 performance: 486.8 ns/day    
+vol 0.91  imb F  1% step 291196300 performance: 486.9 ns/day    
+vol 0.90  imb F  2% step 291196400 performance: 487.0 ns/day    
+vol 0.91  imb F  2% step 291196500 performance: 487.1 ns/day    
+vol 0.90  imb F  1% step 291196600 performance: 487.2 ns/day    
+vol 0.91  imb F  2% step 291196700 performance: 487.3 ns/day    
+vol 0.90  imb F  3% step 291196800 performance: 487.4 ns/day    
+vol 0.91  imb F  2% step 291196900 performance: 487.4 ns/day    
+vol 0.90  imb F  2% step 291197000 performance: 487.4 ns/day    
+vol 0.91  imb F  2% step 291197100 performance: 487.5 ns/day    
+vol 0.90  imb F  1% step 291197200 performance: 487.6 ns/day    
+vol 0.91  imb F  1% step 291197300 performance: 487.7 ns/day    
+vol 0.92  imb F  1% step 291197400 performance: 487.8 ns/day    
+vol 0.91  imb F  2% step 291197500 performance: 487.9 ns/day    
+vol 0.91  imb F  2% step 291197600 performance: 487.9 ns/day    
+vol 0.91  imb F  2% step 291197700 performance: 488.0 ns/day    
+vol 0.90  imb F  2% step 291197800 performance: 488.1 ns/day    
+vol 0.91  imb F  2% step 291197900 performance: 488.2 ns/day    
+vol 0.92  imb F  2% step 291198000 performance: 488.1 ns/day    
+vol 0.91  imb F  3% step 291198100 performance: 488.1 ns/day    
+vol 0.91  imb F  1% step 291198200 performance: 488.1 ns/day    
+vol 0.91  imb F  2% step 291198300 performance: 488.2 ns/day    
+vol 0.91  imb F  2% step 291198400 performance: 488.3 ns/day    
+vol 0.91  imb F  2% step 291198500 performance: 488.4 ns/day    
+vol 0.90  imb F  3% step 291198600 performance: 488.4 ns/day    
+vol 0.92  imb F  1% step 291198700 performance: 488.5 ns/day    
+vol 0.92  imb F  3% step 291198800 performance: 488.4 ns/day    
+vol 0.91  imb F  2% step 291198900 performance: 488.4 ns/day    
+vol 0.91  imb F  3% step 291199000 performance: 488.2 ns/day    
+vol 0.91  imb F  2% step 291199100 performance: 488.3 ns/day    
+vol 0.91  imb F  2% step 291199200 performance: 488.2 ns/day    
+vol 0.92  imb F  2% step 291199300 performance: 488.2 ns/day    
+vol 0.91  imb F  2% step 291199400 performance: 488.3 ns/day    
+vol 0.91  imb F  2% step 291199500 performance: 488.4 ns/day    
+vol 0.92  imb F  2% step 291199600 performance: 488.4 ns/day    
+vol 0.91  imb F  2% step 291199700 performance: 488.5 ns/day    
+vol 0.91  imb F  2% step 291199800 performance: 488.5 ns/day    
+vol 0.91  imb F  3% step 291199900 performance: 488.5 ns/day    
+vol 0.92  imb F  4% step 291200000 performance: 488.3 ns/day    
+vol 0.93  imb F  2% step 291200100 performance: 488.4 ns/day    
+vol 0.90  imb F  2% step 291200200 performance: 488.5 ns/day    
+vol 0.90  imb F  1% step 291200300 performance: 487.4 ns/day    
+vol 0.91  imb F  2% step 291200400 performance: 487.5 ns/day    
+vol 0.92  imb F  2% step 291200500 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291200600 performance: 487.5 ns/day    
+vol 0.92  imb F  2% step 291200700 performance: 487.4 ns/day    
+vol 0.92  imb F  2% step 291200800 performance: 487.5 ns/day    
+vol 0.92  imb F  3% step 291200900 performance: 487.5 ns/day    
+vol 0.90  imb F  3% step 291201000 performance: 487.6 ns/day    
+vol 0.91  imb F  2% step 291201100 performance: 487.6 ns/day    
+vol 0.92  imb F  1% step 291201200 performance: 487.7 ns/day    
+vol 0.91  imb F  2% step 291201300 performance: 487.7 ns/day    
+vol 0.91  imb F  2% step 291201400 performance: 487.8 ns/day    
+vol 0.90  imb F  2% step 291201500 performance: 487.8 ns/day    
+vol 0.92  imb F  1% step 291201600 performance: 487.9 ns/day    
+vol 0.90  imb F  2% step 291201700 performance: 487.9 ns/day    
+vol 0.92  imb F  4% step 291201800 performance: 488.0 ns/day    
+vol 0.90  imb F  4% step 291201900 performance: 488.0 ns/day    
+vol 0.92  imb F  2% step 291202000 performance: 488.1 ns/day    
+vol 0.91  imb F  2% step 291202100 performance: 488.2 ns/day    
+vol 0.93  imb F  2% step 291202200 performance: 488.2 ns/day    
+vol 0.91  imb F  2% step 291202300 performance: 488.3 ns/day    
+vol 0.92  imb F  4% step 291202400 performance: 488.3 ns/day    
+vol 0.92  imb F  2% step 291202500 performance: 488.3 ns/day    
+vol 0.93  imb F  2% step 291202600 performance: 488.3 ns/day    
+vol 0.92  imb F  2% step 291202700 performance: 488.4 ns/day    
+vol 0.92  imb F  1% step 291202800 performance: 488.4 ns/day    
+vol 0.92  imb F  2% step 291202900 performance: 488.5 ns/day    
+vol 0.92  imb F  2% step 291203000 performance: 488.5 ns/day    
+vol 0.92  imb F  2% step 291203100 performance: 488.6 ns/day    
+vol 0.92  imb F  2% step 291203200 performance: 488.6 ns/day    
+vol 0.93  imb F  3% step 291203300 performance: 488.7 ns/day    
+vol 0.91  imb F  2% step 291203400 performance: 488.7 ns/day    
+vol 0.91  imb F  2% step 291203500 performance: 488.7 ns/day    
+vol 0.93  imb F  2% step 291203600 performance: 488.8 ns/day    
+vol 0.92  imb F  2% step 291203700 performance: 488.8 ns/day    
+vol 0.92  imb F  2% step 291203800 performance: 488.8 ns/day    
+vol 0.91  imb F  1% step 291203900 performance: 488.9 ns/day    
+vol 0.91  imb F  3% step 291204000 performance: 488.9 ns/day    
+vol 0.92  imb F  1% step 291204100 performance: 488.9 ns/day    
+vol 0.91  imb F  1% step 291204200 performance: 489.0 ns/day    
+vol 0.92  imb F  3% step 291204300 performance: 489.0 ns/day    
+vol 0.91  imb F  2% step 291204400 performance: 489.0 ns/day    
+vol 0.91  imb F  2% step 291204500 performance: 489.1 ns/day    
+vol 0.93  imb F  2% step 291204600 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291204700 performance: 489.1 ns/day    
+vol 0.91  imb F  1% step 291204800 performance: 489.2 ns/day    
+vol 0.92  imb F  2% step 291204900 performance: 489.2 ns/day    
+vol 0.90  imb F  2% step 291205000 performance: 489.2 ns/day    
+vol 0.92  imb F  2% step 291205100 performance: 489.2 ns/day    
+vol 0.92  imb F  1% step 291205200 performance: 489.3 ns/day    
+vol 0.92  imb F  2% step 291205300 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291205400 performance: 489.3 ns/day    
+vol 0.92  imb F  2% step 291205500 performance: 489.3 ns/day    
+vol 0.92  imb F  3% step 291205600 performance: 489.4 ns/day    
+vol 0.91  imb F  1% step 291205700 performance: 489.4 ns/day    
+vol 0.92  imb F  1% step 291205800 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291205900 performance: 489.3 ns/day    
+vol 0.92  imb F  2% step 291206000 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291206100 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291206200 performance: 489.4 ns/day    
+vol 0.91  imb F  3% step 291206300 performance: 489.4 ns/day    
+vol 0.92  imb F  6% step 291206400 performance: 489.5 ns/day    
+vol 0.92  imb F  2% step 291206500 performance: 489.4 ns/day    
+vol 0.91  imb F  1% step 291206600 performance: 489.4 ns/day    
+vol 0.91  imb F  5% step 291206700 performance: 489.5 ns/day    
+vol 0.93  imb F  2% step 291206800 performance: 489.5 ns/day    
+vol 0.92  imb F  3% step 291206900 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291207000 performance: 489.6 ns/day    
+vol 0.92  imb F  3% step 291207100 performance: 489.3 ns/day    
+vol 0.91  imb F  6% step 291207200 performance: 489.0 ns/day    
+vol 0.91  imb F  2% step 291207300 performance: 489.0 ns/day    
+vol 0.92  imb F  2% step 291207400 performance: 489.0 ns/day    
+vol 0.92  imb F  2% step 291207500 performance: 489.0 ns/day    
+vol 0.92  imb F  3% step 291207600 performance: 489.1 ns/day    
+vol 0.91  imb F  1% step 291207700 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291207800 performance: 489.1 ns/day    
+vol 0.92  imb F  2% step 291207900 performance: 489.2 ns/day    
+vol 0.91  imb F  4% step 291208000 performance: 489.1 ns/day    
+vol 0.91  imb F  3% step 291208100 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291208200 performance: 489.1 ns/day    
+vol 0.92  imb F  3% step 291208300 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291208400 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291208500 performance: 489.1 ns/day    
+vol 0.91  imb F  4% step 291208600 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291208700 performance: 489.1 ns/day    
+vol 0.91  imb F  1% step 291208800 performance: 489.2 ns/day    
+vol 0.92  imb F  2% step 291208900 performance: 489.2 ns/day    
+vol 0.91  imb F  4% step 291209000 performance: 489.2 ns/day    
+vol 0.91  imb F  2% step 291209100 performance: 489.2 ns/day    
+vol 0.91  imb F  2% step 291209200 performance: 489.3 ns/day    
+vol 0.91  imb F  3% step 291209300 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291209400 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291209500 performance: 489.3 ns/day    
+vol 0.91  imb F  1% step 291209600 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291209700 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291209800 performance: 489.4 ns/day    
+vol 0.92  imb F  1% step 291209900 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291210000 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291210100 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291210200 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291210300 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291210400 performance: 489.5 ns/day    
+vol 0.92  imb F  2% step 291210500 performance: 489.5 ns/day    
+vol 0.91  imb F  3% step 291210600 performance: 489.5 ns/day    
+vol 0.90  imb F  1% step 291210700 performance: 489.5 ns/day    
+vol 0.91  imb F  1% step 291210800 performance: 489.5 ns/day    
+vol 0.91  imb F  2% step 291210900 performance: 489.5 ns/day    
+vol 0.91  imb F  1% step 291211000 performance: 489.6 ns/day    
+vol 0.90  imb F  1% step 291211100 performance: 489.6 ns/day    
+vol 0.92  imb F  2% step 291211200 performance: 489.6 ns/day    
+vol 0.89  imb F  3% step 291211300 performance: 489.6 ns/day    
+vol 0.89  imb F  2% step 291211400 performance: 489.6 ns/day    
+vol 0.90  imb F  5% step 291211500 performance: 489.6 ns/day    
+vol 0.91  imb F  3% step 291211600 performance: 489.6 ns/day    
+vol 0.90  imb F  2% step 291211700 performance: 489.6 ns/day    
+vol 0.91  imb F  1% step 291211800 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291211900 performance: 489.6 ns/day    
+vol 0.92  imb F  2% step 291212000 performance: 489.7 ns/day    
+vol 0.91  imb F  2% step 291212100 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291212200 performance: 489.7 ns/day    
+vol 0.90  imb F  1% step 291212300 performance: 489.7 ns/day    
+vol 0.91  imb F  3% step 291212400 performance: 489.8 ns/day    
+vol 0.90  imb F  2% step 291212500 performance: 489.8 ns/day    
+vol 0.92  imb F  2% step 291212600 performance: 489.8 ns/day    
+vol 0.91  imb F  2% step 291212700 performance: 489.7 ns/day    
+vol 0.91  imb F  2% step 291212800 performance: 489.8 ns/day    
+vol 0.90  imb F  1% step 291212900 performance: 489.7 ns/day    
+vol 0.89  imb F  1% step 291213000 performance: 489.8 ns/day    
+vol 0.90  imb F  2% step 291213100 performance: 489.8 ns/day    
+vol 0.90  imb F  2% step 291213200 performance: 489.8 ns/day    
+vol 0.90  imb F  1% step 291213300 performance: 489.8 ns/day    
+vol 0.90  imb F  2% step 291213400 performance: 489.8 ns/day    
+vol 0.91  imb F  1% step 291213500 performance: 489.9 ns/day    
+vol 0.89  imb F  3% step 291213600 performance: 489.9 ns/day    
+vol 0.90  imb F  3% step 291213700 performance: 489.9 ns/day    
+vol 0.90  imb F  1% step 291213800 performance: 489.9 ns/day    
+vol 0.89  imb F  2% step 291213900 performance: 489.8 ns/day    
+vol 0.90  imb F  2% step 291214000 performance: 489.4 ns/day    
+vol 0.90  imb F  3% step 291214100 performance: 489.4 ns/day    
+vol 0.91  imb F  3% step 291214200 performance: 489.5 ns/day    
+vol 0.89  imb F  2% step 291214300 performance: 489.5 ns/day    
+vol 0.90  imb F  1% step 291214400 performance: 489.5 ns/day    
+vol 0.90  imb F  3% step 291214500 performance: 489.5 ns/day    
+vol 0.90  imb F  4% step 291214600 performance: 489.5 ns/day    
+vol 0.90  imb F  1% step 291214700 performance: 489.6 ns/day    
+vol 0.89  imb F  3% step 291214800 performance: 489.6 ns/day    
+vol 0.90  imb F  3% step 291214900 performance: 489.6 ns/day    
+vol 0.89  imb F  2% step 291215000 performance: 489.6 ns/day    
+vol 0.90  imb F  2% step 291215100 performance: 489.7 ns/day    
+vol 0.89  imb F  2% step 291215200 performance: 489.7 ns/day    
+vol 0.89  imb F  3% step 291215300 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291215400 performance: 489.7 ns/day    
+vol 0.89  imb F  1% step 291215500 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291215600 performance: 489.7 ns/day    
+vol 0.90  imb F  3% step 291215700 performance: 489.7 ns/day    
+vol 0.89  imb F  3% step 291215800 performance: 489.7 ns/day    
+vol 0.90  imb F  3% step 291215900 performance: 489.8 ns/day    
+vol 0.89  imb F  2% step 291216000 performance: 489.7 ns/day    
+vol 0.89  imb F  2% step 291216100 performance: 489.7 ns/day    
+vol 0.89  imb F  1% step 291216200 performance: 489.8 ns/day    
+vol 0.89  imb F  3% step 291216300 performance: 489.8 ns/day    
+vol 0.89  imb F  2% step 291216400 performance: 489.8 ns/day    
+vol 0.89  imb F  1% step 291216500 performance: 489.8 ns/day    
+vol 0.89  imb F  3% step 291216600 performance: 489.8 ns/day    
+vol 0.89  imb F  4% step 291216700 performance: 489.8 ns/day    
+vol 0.91  imb F  3% step 291216800 performance: 489.8 ns/day    
+vol 0.89  imb F  3% step 291216900 performance: 489.8 ns/day    
+vol 0.90  imb F  3% step 291217000 performance: 489.8 ns/day    
+vol 0.89  imb F  2% step 291217100 performance: 489.8 ns/day    
+vol 0.90  imb F  1% step 291217200 performance: 489.9 ns/day    
+vol 0.91  imb F  2% step 291217300 performance: 489.9 ns/day    
+vol 0.90  imb F  1% step 291217400 performance: 489.9 ns/day    
+vol 0.90  imb F  2% step 291217500 performance: 489.9 ns/day    
+vol 0.90  imb F  2% step 291217600 performance: 489.9 ns/day    
+vol 0.89  imb F  2% step 291217700 performance: 489.9 ns/day    
+vol 0.90  imb F  4% step 291217800 performance: 489.9 ns/day    
+vol 0.89  imb F  2% step 291217900 performance: 490.0 ns/day    
+vol 0.90  imb F  2% step 291218000 performance: 490.0 ns/day    
+vol 0.89  imb F  2% step 291218100 performance: 490.0 ns/day    
+vol 0.89  imb F  6% step 291218200 performance: 490.0 ns/day    
+vol 0.90  imb F  2% step 291218300 performance: 490.0 ns/day    
+vol 0.89  imb F  3% step 291218400 performance: 490.1 ns/day    
+vol 0.90  imb F  1% step 291218500 performance: 490.1 ns/day    
+vol 0.90  imb F  2% step 291218600 performance: 490.1 ns/day    
+vol 0.89  imb F  3% step 291218700 performance: 490.1 ns/day    
+vol 0.90  imb F  3% step 291218800 performance: 490.1 ns/day    
+vol 0.89  imb F  3% step 291218900 performance: 490.1 ns/day    
+vol 0.88  imb F  2% step 291219000 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219100 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219200 performance: 490.1 ns/day    
+vol 0.91  imb F  1% step 291219300 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219400 performance: 490.2 ns/day    
+vol 0.90  imb F  3% step 291219500 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219600 performance: 490.1 ns/day    
+vol 0.90  imb F  1% step 291219700 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219800 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291219900 performance: 490.1 ns/day    
+vol 0.89  imb F  1% step 291220000 performance: 490.2 ns/day    
+vol 0.90  imb F  1% step 291220100 performance: 490.2 ns/day    
+vol 0.90  imb F  4% step 291220200 performance: 490.2 ns/day    
+vol 0.90  imb F  4% step 291220300 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291220400 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291220500 performance: 490.2 ns/day    
+vol 0.89  imb F  1% step 291220600 performance: 490.2 ns/day    
+vol 0.88  imb F  2% step 291220700 performance: 490.2 ns/day    
+vol 0.90  imb F  1% step 291220800 performance: 490.1 ns/day    
+vol 0.88  imb F  2% step 291220900 performance: 490.1 ns/day    
+vol 0.90  imb F  3% step 291221000 performance: 490.1 ns/day    
+vol 0.88  imb F  2% step 291221100 performance: 490.1 ns/day    
+vol 0.90  imb F  2% step 291221200 performance: 490.1 ns/day    
+vol 0.88  imb F  1% step 291221300 performance: 490.1 ns/day    
+vol 0.89  imb F  2% step 291221400 performance: 490.1 ns/day    
+vol 0.88  imb F  3% step 291221500 performance: 490.1 ns/day    
+vol 0.90  imb F  2% step 291221600 performance: 490.2 ns/day    
+vol 0.90  imb F  2% step 291221700 performance: 490.2 ns/day    
+vol 0.89  imb F  1% step 291221800 performance: 490.2 ns/day    
+vol 0.90  imb F  3% step 291221900 performance: 490.2 ns/day    
+vol 0.90  imb F  1% step 291222000 performance: 490.2 ns/day    
+vol 0.88  imb F  2% step 291222100 performance: 490.2 ns/day    
+vol 0.90  imb F  1% step 291222200 performance: 490.2 ns/day    
+vol 0.90  imb F  1% step 291222300 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291222400 performance: 490.3 ns/day    
+vol 0.89  imb F  1% step 291222500 performance: 490.3 ns/day    
+vol 0.89  imb F  1% step 291222600 performance: 490.3 ns/day    
+vol 0.90  imb F  3% step 291222700 performance: 490.3 ns/day    
+vol 0.89  imb F  2% step 291222800 performance: 490.3 ns/day    
+vol 0.89  imb F  3% step 291222900 performance: 490.3 ns/day    
+vol 0.87  imb F  2% step 291223000 performance: 490.3 ns/day    
+vol 0.90  imb F  1% step 291223100 performance: 490.3 ns/day    
+vol 0.90  imb F  2% step 291223200 performance: 490.3 ns/day    
+vol 0.89  imb F  2% step 291223300 performance: 490.3 ns/day    
+vol 0.90  imb F  2% step 291223400 performance: 490.4 ns/day    
+vol 0.90  imb F  2% step 291223500 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291223600 performance: 490.4 ns/day    
+vol 0.90  imb F  2% step 291223700 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291223800 performance: 490.4 ns/day    
+vol 0.88  imb F  2% step 291223900 performance: 490.4 ns/day    
+vol 0.88  imb F  3% step 291224000 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291224100 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291224200 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291224300 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291224400 performance: 490.4 ns/day    
+vol 0.90  imb F  2% step 291224500 performance: 490.4 ns/day    
+vol 0.89  imb F  2% step 291224600 performance: 490.4 ns/day    
+vol 0.88  imb F  1% step 291224700 performance: 490.4 ns/day    
+vol 0.89  imb F  1% step 291224800 performance: 490.4 ns/day    
+vol 0.88  imb F  2% step 291224900 performance: 490.5 ns/day    
+vol 0.89  imb F  3% step 291225000 performance: 490.5 ns/day    
+vol 0.90  imb F  2% step 291225100 performance: 490.5 ns/day    
+vol 0.89  imb F  3% step 291225200 performance: 490.5 ns/day    
+vol 0.90  imb F  2% step 291225300 performance: 490.5 ns/day    
+vol 0.89  imb F  1% step 291225400 performance: 490.5 ns/day    
+vol 0.91  imb F  1% step 291225500 performance: 490.5 ns/day    
+vol 0.90  imb F  2% step 291225600 performance: 490.5 ns/day    
+vol 0.90  imb F  1% step 291225700 performance: 490.6 ns/day    
+vol 0.89  imb F  1% step 291225800 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291225900 performance: 490.6 ns/day    
+vol 0.90  imb F  2% step 291226000 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291226100 performance: 490.6 ns/day    
+vol 0.89  imb F  1% step 291226200 performance: 490.6 ns/day    
+vol 0.90  imb F  1% step 291226300 performance: 490.6 ns/day    
+vol 0.89  imb F  1% step 291226400 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291226500 performance: 490.6 ns/day    
+vol 0.88  imb F  3% step 291226600 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291226700 performance: 490.6 ns/day    
+vol 0.89  imb F  4% step 291226800 performance: 490.6 ns/day    
+vol 0.90  imb F  1% step 291226900 performance: 490.6 ns/day    
+vol 0.90  imb F  4% step 291227000 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291227100 performance: 490.6 ns/day    
+vol 0.88  imb F  3% step 291227200 performance: 490.6 ns/day    
+vol 0.88  imb F  2% step 291227300 performance: 490.6 ns/day    
+vol 0.89  imb F  2% step 291227400 performance: 490.6 ns/day    
+vol 0.89  imb F  3% step 291227500 performance: 490.6 ns/day    
+vol 0.77  imb F  2% step 291227600 performance: 490.3 ns/day    
+vol 0.87  imb F  2% step 291227700 performance: 490.1 ns/day    
+vol 0.90  imb F  2% step 291227800 performance: 490.1 ns/day    
+vol 0.90  imb F  2% step 291227900 performance: 490.2 ns/day    
+vol 0.89  imb F  1% step 291228000 performance: 490.2 ns/day    
+vol 0.90  imb F  3% step 291228100 performance: 490.2 ns/day    
+vol 0.89  imb F  1% step 291228200 performance: 490.2 ns/day    
+vol 0.90  imb F  6% step 291228300 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291228400 performance: 490.2 ns/day    
+vol 0.90  imb F  3% step 291228500 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291228600 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291228700 performance: 490.2 ns/day    
+vol 0.88  imb F  2% step 291228800 performance: 490.2 ns/day    
+vol 0.88  imb F  2% step 291228900 performance: 490.2 ns/day    
+vol 0.89  imb F  2% step 291229000 performance: 489.1 ns/day    
+vol 0.83  imb F  6% step 291229100 performance: 487.2 ns/day    
+vol 0.89  imb F  2% step 291229200 performance: 487.2 ns/day    
+vol 0.88  imb F  2% step 291229300 performance: 487.2 ns/day    
+vol 0.90  imb F  2% step 291229400 performance: 487.2 ns/day    
+vol 0.89  imb F  2% step 291229500 performance: 487.3 ns/day    
+vol 0.89  imb F  2% step 291229600 performance: 487.3 ns/day    
+vol 0.89  imb F  1% step 291229700 performance: 487.3 ns/day    
+vol 0.90  imb F  4% step 291229800 performance: 487.3 ns/day    
+vol 0.88  imb F  3% step 291229900 performance: 487.3 ns/day    
+vol 0.89  imb F  1% step 291230000 performance: 487.4 ns/day    
+vol 0.89  imb F  2% step 291230100 performance: 487.3 ns/day    
+vol 0.89  imb F  4% step 291230200 performance: 487.4 ns/day    
+vol 0.89  imb F  2% step 291230300 performance: 487.4 ns/day    
+vol 0.89  imb F  2% step 291230400 performance: 487.4 ns/day    
+vol 0.89  imb F  3% step 291230500 performance: 487.4 ns/day    
+vol 0.88  imb F  2% step 291230600 performance: 487.4 ns/day    
+vol 0.89  imb F  4% step 291230700 performance: 487.5 ns/day    
+vol 0.89  imb F  1% step 291230800 performance: 487.5 ns/day    
+vol 0.89  imb F  3% step 291230900 performance: 487.5 ns/day    
+vol 0.90  imb F  3% step 291231000 performance: 487.5 ns/day    
+vol 0.90  imb F  2% step 291231100 performance: 487.5 ns/day    
+vol 0.90  imb F  2% step 291231200 performance: 487.5 ns/day    
+vol 0.89  imb F  2% step 291231300 performance: 487.5 ns/day    
+vol 0.90  imb F  2% step 291231400 performance: 487.5 ns/day    
+vol 0.90  imb F  1% step 291231500 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291231600 performance: 487.6 ns/day    
+vol 0.89  imb F  2% step 291231700 performance: 487.6 ns/day    
+vol 0.88  imb F  1% step 291231800 performance: 487.6 ns/day    
+vol 0.88  imb F  2% step 291231900 performance: 487.6 ns/day    
+vol 0.89  imb F  4% step 291232000 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291232100 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291232200 performance: 487.6 ns/day    
+vol 0.89  imb F  2% step 291232300 performance: 487.6 ns/day    
+vol 0.88  imb F  2% step 291232400 performance: 487.6 ns/day    
+vol 0.89  imb F  1% step 291232500 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291232600 performance: 487.7 ns/day    
+vol 0.89  imb F  1% step 291232700 performance: 487.7 ns/day    
+vol 0.89  imb F  2% step 291232800 performance: 487.7 ns/day    
+vol 0.89  imb F  1% step 291232900 performance: 487.6 ns/day    
+vol 0.90  imb F  2% step 291233000 performance: 487.7 ns/day    
+vol 0.90  imb F  1% step 291233100 performance: 487.7 ns/day    
+vol 0.90  imb F  2% step 291233200 performance: 487.7 ns/day    
+vol 0.89  imb F  1% step 291233300 performance: 487.7 ns/day    
+vol 0.90  imb F  3% step 291233400 performance: 487.7 ns/day    
+vol 0.90  imb F  1% step 291233500 performance: 487.7 ns/day    
+vol 0.89  imb F  2% step 291233600 performance: 487.8 ns/day    
+vol 0.90  imb F  2% step 291233700 performance: 487.8 ns/day    
+vol 0.89  imb F  1% step 291233800 performance: 487.8 ns/day    
+vol 0.90  imb F  1% step 291233900 performance: 487.8 ns/day    
+vol 0.89  imb F  3% step 291234000 performance: 487.8 ns/day    
+vol 0.90  imb F  1% step 291234100 performance: 487.8 ns/day    
+vol 0.91  imb F  3% step 291234200 performance: 487.8 ns/day    
+vol 0.89  imb F  2% step 291234300 performance: 487.8 ns/day    
+vol 0.89  imb F  2% step 291234400 performance: 487.8 ns/day    
+vol 0.90  imb F  3% step 291234500 performance: 487.8 ns/day    
+vol 0.90  imb F  1% step 291234600 performance: 487.8 ns/day    
+vol 0.89  imb F  3% step 291234700 performance: 487.8 ns/day    
+vol 0.90  imb F  2% step 291234800 performance: 487.8 ns/day    
+vol 0.89  imb F  2% step 291234900 performance: 487.9 ns/day    
+vol 0.89  imb F  2% step 291235000 performance: 487.9 ns/day    
+vol 0.89  imb F  1% step 291235100 performance: 487.9 ns/day    
+vol 0.90  imb F  2% step 291235200 performance: 487.9 ns/day    
+vol 0.90  imb F  2% step 291235300 performance: 487.9 ns/day    
+vol 0.89  imb F  2% step 291235400 performance: 487.9 ns/day    
+vol 0.90  imb F  1% step 291235500 performance: 488.0 ns/day    
+vol 0.89  imb F  2% step 291235600 performance: 488.0 ns/day    
+vol 0.89  imb F  3% step 291235700 performance: 488.0 ns/day    
+vol 0.89  imb F  1% step 291235800 performance: 488.0 ns/day    
+vol 0.89  imb F  2% step 291235900 performance: 488.0 ns/day    
+vol 0.90  imb F  3% step 291236000 performance: 488.0 ns/day    
+vol 0.89  imb F  2% step 291236100 performance: 488.0 ns/day    
+vol 0.89  imb F  1% step 291236200 performance: 488.0 ns/day    
+vol 0.91  imb F  2% step 291236300 performance: 488.1 ns/day    
+vol 0.89  imb F  4% step 291236400 performance: 488.1 ns/day    
+vol 0.89  imb F  2% step 291236500 performance: 488.1 ns/day    
+vol 0.89  imb F  1% step 291236600 performance: 488.1 ns/day    
+vol 0.90  imb F  2% step 291236700 performance: 488.1 ns/day    
+vol 0.89  imb F  1% step 291236800 performance: 488.1 ns/day    
+vol 0.90  imb F  2% step 291236900 performance: 488.1 ns/day    
+vol 0.89  imb F  3% step 291237000 performance: 488.1 ns/day    
+vol 0.89  imb F  2% step 291237100 performance: 488.1 ns/day    
+vol 0.89  imb F  1% step 291237200 performance: 488.2 ns/day    
+vol 0.90  imb F  2% step 291237300 performance: 488.2 ns/day    
+vol 0.90  imb F  1% step 291237400 performance: 488.2 ns/day    
+vol 0.88  imb F  3% step 291237500 performance: 488.2 ns/day    
+vol 0.88  imb F  1% step 291237600 performance: 488.2 ns/day    
+vol 0.89  imb F  2% step 291237700 performance: 488.2 ns/day    
+vol 0.88  imb F  3% step 291237800 performance: 488.2 ns/day    
+vol 0.89  imb F  2% step 291237900 performance: 488.2 ns/day    
+vol 0.90  imb F  2% step 291238000 performance: 488.2 ns/day    
+vol 0.89  imb F  2% step 291238100 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291238200 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291238300 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291238400 performance: 488.3 ns/day    
+vol 0.90  imb F  2% step 291238500 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291238600 performance: 488.3 ns/day    
+vol 0.90  imb F  4% step 291238700 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291238800 performance: 488.4 ns/day    
+vol 0.90  imb F  2% step 291238900 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239000 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239100 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239200 performance: 488.4 ns/day    
+vol 0.88  imb F  2% step 291239300 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239400 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239500 performance: 488.4 ns/day    
+vol 0.88  imb F  1% step 291239600 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291239700 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239800 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291239900 performance: 488.4 ns/day    
+vol 0.89  imb F  1% step 291240000 performance: 488.4 ns/day    
+vol 0.88  imb F  3% step 291240100 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291240200 performance: 488.4 ns/day    
+vol 0.88  imb F  2% step 291240300 performance: 488.4 ns/day    
+vol 0.89  imb F  1% step 291240400 performance: 488.4 ns/day    
+vol 0.88  imb F  1% step 291240500 performance: 488.4 ns/day    
+vol 0.88  imb F  1% step 291240600 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291240700 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291240800 performance: 488.5 ns/day    
+vol 0.88  imb F  6% step 291240900 performance: 488.5 ns/day    
+vol 0.88  imb F 137% step 291241000 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291241100 performance: 488.2 ns/day    
+vol 0.90  imb F  2% step 291241200 performance: 488.2 ns/day    
+vol 0.88  imb F  1% step 291241300 performance: 488.3 ns/day    
+vol 0.88  imb F  2% step 291241400 performance: 488.3 ns/day    
+vol 0.88  imb F  4% step 291241500 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291241600 performance: 488.3 ns/day    
+vol 0.88  imb F  2% step 291241700 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291241800 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291241900 performance: 488.3 ns/day    
+vol 0.88  imb F  2% step 291242000 performance: 488.3 ns/day    
+vol 0.89  imb F  2% step 291242100 performance: 488.4 ns/day    
+vol 0.88  imb F  1% step 291242200 performance: 488.4 ns/day    
+vol 0.89  imb F  1% step 291242300 performance: 488.4 ns/day    
+vol 0.88  imb F  3% step 291242400 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291242500 performance: 488.4 ns/day    
+vol 0.88  imb F  2% step 291242600 performance: 488.4 ns/day    
+vol 0.87  imb F  3% step 291242700 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291242800 performance: 488.4 ns/day    
+vol 0.89  imb F  3% step 291242900 performance: 488.4 ns/day    
+vol 0.88  imb F  3% step 291243000 performance: 488.4 ns/day    
+vol 0.89  imb F  2% step 291243100 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291243200 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291243300 performance: 488.5 ns/day    
+vol 0.89  imb F  1% step 291243400 performance: 488.5 ns/day    
+vol 0.89  imb F  3% step 291243500 performance: 488.5 ns/day    
+vol 0.88  imb F  2% step 291243600 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291243700 performance: 488.5 ns/day    
+vol 0.89  imb F  4% step 291243800 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291243900 performance: 488.5 ns/day    
+vol 0.88  imb F  3% step 291244000 performance: 488.5 ns/day    
+vol 0.88  imb F  2% step 291244100 performance: 488.5 ns/day    
+vol 0.87  imb F  2% step 291244200 performance: 488.5 ns/day    
+vol 0.89  imb F  2% step 291244300 performance: 488.6 ns/day    
+vol 0.87  imb F  2% step 291244400 performance: 488.6 ns/day    
+vol 0.88  imb F  2% step 291244500 performance: 488.6 ns/day    
+vol 0.89  imb F  2% step 291244600 performance: 488.6 ns/day    
+vol 0.89  imb F  2% step 291244700 performance: 488.6 ns/day    
+vol 0.89  imb F  2% step 291244800 performance: 488.6 ns/day    
+vol 0.87  imb F  2% step 291244900 performance: 488.6 ns/day    
+vol 0.89  imb F  3% step 291245000 performance: 488.6 ns/day    
+vol 0.88  imb F  2% step 291245100 performance: 488.6 ns/day    
+vol 0.90  imb F  2% step 291245200 performance: 488.7 ns/day    
+vol 0.88  imb F  1% step 291245300 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291245400 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291245500 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291245600 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291245700 performance: 488.7 ns/day    
+vol 0.89  imb F  2% step 291245800 performance: 488.7 ns/day    
+vol 0.86  imb F  2% step 291245900 performance: 488.7 ns/day    
+vol 0.90  imb F  2% step 291246000 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291246100 performance: 488.7 ns/day    
+vol 0.89  imb F  2% step 291246200 performance: 488.7 ns/day    
+vol 0.90  imb F  1% step 291246300 performance: 488.7 ns/day    
+vol 0.88  imb F  2% step 291246400 performance: 488.7 ns/day    
+vol 0.89  imb F  2% step 291246500 performance: 488.7 ns/day    
+vol 0.90  imb F  2% step 291246600 performance: 488.7 ns/day    
+vol 0.90  imb F  3% step 291246700 performance: 488.7 ns/day    
+vol 0.89  imb F  3% step 291246800 performance: 488.7 ns/day    
+vol 0.90  imb F  1% step 291246900 performance: 488.7 ns/day    
+vol 0.89  imb F  3% step 291247000 performance: 488.8 ns/day    
+vol 0.90  imb F  3% step 291247100 performance: 488.8 ns/day    
+vol 0.90  imb F  3% step 291247200 performance: 488.8 ns/day    
+vol 0.88  imb F  1% step 291247300 performance: 488.8 ns/day    
+vol 0.89  imb F  2% step 291247400 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291247500 performance: 488.8 ns/day    
+vol 0.89  imb F  2% step 291247600 performance: 488.8 ns/day    
+vol 0.90  imb F  2% step 291247700 performance: 488.8 ns/day    
+vol 0.90  imb F  3% step 291247800 performance: 488.8 ns/day    
+vol 0.90  imb F 21% step 291247900 performance: 488.6 ns/day    
+vol 0.90  imb F  1% step 291248000 performance: 488.6 ns/day    
+vol 0.90  imb F  2% step 291248100 performance: 488.6 ns/day    
+vol 0.88  imb F  2% step 291248200 performance: 488.6 ns/day    
+vol 0.90  imb F  2% step 291248300 performance: 488.6 ns/day    
+vol 0.89  imb F  3% step 291248400 performance: 488.6 ns/day    
+vol 0.90  imb F  2% step 291248500 performance: 488.7 ns/day    
+vol 0.89  imb F  2% step 291248600 performance: 488.7 ns/day    
+vol 0.90  imb F  2% step 291248700 performance: 488.7 ns/day    
+vol 0.88  imb F  4% step 291248800 performance: 488.7 ns/day    
+vol 0.90  imb F  2% step 291248900 performance: 488.7 ns/day    
+vol 0.89  imb F  3% step 291249000 performance: 488.7 ns/day    
+vol 0.89  imb F  2% step 291249100 performance: 488.7 ns/day    
+vol 0.91  imb F  2% step 291249200 performance: 488.7 ns/day    
+vol 0.91  imb F  3% step 291249300 performance: 488.7 ns/day    
+vol 0.90  imb F  2% step 291249400 performance: 488.7 ns/day    
+vol 0.90  imb F  3% step 291249500 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291249600 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291249700 performance: 488.8 ns/day    
+vol 0.89  imb F  2% step 291249800 performance: 488.8 ns/day    
+vol 0.90  imb F  4% step 291249900 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291250000 performance: 488.8 ns/day    
+vol 0.88  imb F  1% step 291250100 performance: 488.8 ns/day    
+vol 0.89  imb F  2% step 291250200 performance: 488.8 ns/day    
+vol 0.88  imb F  2% step 291250300 performance: 488.8 ns/day    
+vol 0.90  imb F  2% step 291250400 performance: 488.8 ns/day    
+vol 0.90  imb F  3% step 291250500 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291250600 performance: 488.8 ns/day    
+vol 0.88  imb F  1% step 291250700 performance: 488.8 ns/day    
+vol 0.90  imb F  2% step 291250800 performance: 488.8 ns/day    
+vol 0.90  imb F  1% step 291250900 performance: 488.8 ns/day    
+vol 0.89  imb F  3% step 291251000 performance: 488.8 ns/day    
+vol 0.89  imb F  1% step 291251100 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291251200 performance: 488.9 ns/day    
+vol 0.90  imb F  1% step 291251300 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291251400 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291251500 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291251600 performance: 488.9 ns/day    
+vol 0.88  imb F  5% step 291251700 performance: 488.9 ns/day    
+vol 0.89  imb F  1% step 291251800 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291251900 performance: 488.9 ns/day    
+vol 0.89  imb F  1% step 291252000 performance: 488.9 ns/day    
+vol 0.90  imb F  1% step 291252100 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291252200 performance: 488.9 ns/day    
+vol 0.88  imb F  2% step 291252300 performance: 488.9 ns/day    
+vol 0.88  imb F  2% step 291252400 performance: 488.9 ns/day    
+vol 0.89  imb F  3% step 291252500 performance: 489.0 ns/day    
+vol 0.89  imb F  3% step 291252600 performance: 489.0 ns/day    
+vol 0.90  imb F  4% step 291252700 performance: 489.0 ns/day    
+vol 0.88  imb F  2% step 291252800 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291252900 performance: 489.0 ns/day    
+vol 0.89  imb F  3% step 291253000 performance: 489.0 ns/day    
+vol 0.90  imb F  1% step 291253100 performance: 489.0 ns/day    
+vol 0.89  imb F  2% step 291253200 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291253300 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291253400 performance: 489.0 ns/day    
+vol 0.88  imb F  2% step 291253500 performance: 489.0 ns/day    
+vol 0.89  imb F  1% step 291253600 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291253700 performance: 489.0 ns/day    
+vol 0.88  imb F  4% step 291253800 performance: 489.0 ns/day    
+vol 0.89  imb F  2% step 291253900 performance: 489.0 ns/day    
+vol 0.89  imb F  2% step 291254000 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291254100 performance: 489.1 ns/day    
+vol 0.88  imb F  2% step 291254200 performance: 489.1 ns/day    
+vol 0.88  imb F  2% step 291254300 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291254400 performance: 489.1 ns/day    
+vol 0.89  imb F  2% step 291254500 performance: 489.1 ns/day    
+vol 0.90  imb F  2% step 291254600 performance: 489.1 ns/day    
+vol 0.91  imb F  3% step 291254700 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291254800 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291254900 performance: 488.9 ns/day    
+vol 0.90  imb F  3% step 291255000 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291255100 performance: 488.9 ns/day    
+vol 0.88  imb F  2% step 291255200 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291255300 performance: 488.9 ns/day    
+vol 0.90  imb F  2% step 291255400 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291255500 performance: 488.9 ns/day    
+vol 0.89  imb F  2% step 291255600 performance: 488.9 ns/day    
+vol 0.89  imb F  3% step 291255700 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291255800 performance: 489.0 ns/day    
+vol 0.90  imb F  3% step 291255900 performance: 489.0 ns/day    
+vol 0.91  imb F  2% step 291256000 performance: 488.9 ns/day    
+vol 0.90  imb F  1% step 291256100 performance: 489.0 ns/day    
+vol 0.88  imb F  3% step 291256200 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291256300 performance: 489.0 ns/day    
+vol 0.89  imb F  3% step 291256400 performance: 489.0 ns/day    
+vol 0.89  imb F  2% step 291256500 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291256600 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291256700 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291256800 performance: 489.0 ns/day    
+vol 0.90  imb F  3% step 291256900 performance: 489.0 ns/day    
+vol 0.90  imb F  2% step 291257000 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291257100 performance: 489.1 ns/day    
+vol 0.90  imb F  2% step 291257200 performance: 489.1 ns/day    
+vol 0.89  imb F  1% step 291257300 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291257400 performance: 489.1 ns/day    
+vol 0.91  imb F  4% step 291257500 performance: 489.1 ns/day    
+vol 0.88  imb F  1% step 291257600 performance: 489.1 ns/day    
+vol 0.89  imb F  2% step 291257700 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291257800 performance: 489.1 ns/day    
+vol 0.91  imb F  2% step 291257900 performance: 489.1 ns/day    
+vol 0.90  imb F  1% step 291258000 performance: 489.1 ns/day    
+vol 0.91  imb F  1% step 291258100 performance: 489.1 ns/day    
+vol 0.89  imb F  2% step 291258200 performance: 489.2 ns/day    
+vol 0.89  imb F  3% step 291258300 performance: 489.2 ns/day    
+vol 0.90  imb F  2% step 291258400 performance: 489.2 ns/day    
+vol 0.91  imb F  3% step 291258500 performance: 489.2 ns/day    
+vol 0.89  imb F  3% step 291258600 performance: 489.2 ns/day    
+vol 0.90  imb F  2% step 291258700 performance: 489.2 ns/day    
+vol 0.89  imb F  2% step 291258800 performance: 489.2 ns/day    
+vol 0.89  imb F  2% step 291258900 performance: 489.2 ns/day    
+vol 0.90  imb F  2% step 291259000 performance: 489.2 ns/day    
+vol 0.90  imb F  2% step 291259100 performance: 489.2 ns/day    
+vol 0.89  imb F  3% step 291259200 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291259300 performance: 489.3 ns/day    
+vol 0.90  imb F  1% step 291259400 performance: 489.3 ns/day    
+vol 0.90  imb F  3% step 291259500 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291259600 performance: 489.3 ns/day    
+vol 0.90  imb F  1% step 291259700 performance: 489.3 ns/day    
+vol 0.90  imb F  3% step 291259800 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291259900 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291260000 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291260100 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291260200 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291260300 performance: 489.3 ns/day    
+vol 0.89  imb F  1% step 291260400 performance: 489.3 ns/day    
+vol 0.90  imb F  3% step 291260500 performance: 489.3 ns/day    
+vol 0.91  imb F  1% step 291260600 performance: 489.3 ns/day    
+vol 0.92  imb F  3% step 291260700 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291260800 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291260900 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291261000 performance: 489.3 ns/day    
+vol 0.90  imb F  2% step 291261100 performance: 489.4 ns/day    
+vol 0.90  imb F  2% step 291261200 performance: 489.4 ns/day    
+vol 0.91  imb F  4% step 291261300 performance: 489.4 ns/day    
+vol 0.89  imb F  2% step 291261400 performance: 489.4 ns/day    
+vol 0.91  imb F  3% step 291261500 performance: 489.4 ns/day    
+vol 0.90  imb F  1% step 291261600 performance: 489.3 ns/day    
+vol 0.91  imb F  2% step 291261700 performance: 489.3 ns/day    
+vol 0.91  imb F  1% step 291261800 performance: 489.3 ns/day    
+vol 0.91  imb F  4% step 291261900 performance: 489.4 ns/day    
+vol 0.90  imb F  2% step 291262000 performance: 489.4 ns/day    
+vol 0.90  imb F  2% step 291262100 performance: 489.4 ns/day    
+vol 0.90  imb F  4% step 291262200 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291262300 performance: 489.4 ns/day    
+vol 0.90  imb F  3% step 291262400 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291262500 performance: 489.4 ns/day    
+vol 0.92  imb F  2% step 291262600 performance: 489.4 ns/day    
+vol 0.90  imb F  2% step 291262700 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291262800 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291262900 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291263000 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291263100 performance: 489.4 ns/day    
+vol 0.90  imb F  2% step 291263200 performance: 489.4 ns/day    
+vol 0.90  imb F  1% step 291263300 performance: 489.4 ns/day    
+vol 0.91  imb F  2% step 291263400 performance: 489.5 ns/day    
+vol 0.90  imb F  3% step 291263500 performance: 489.5 ns/day    
+vol 0.89  imb F  3% step 291263600 performance: 489.5 ns/day    
+vol 0.91  imb F  2% step 291263700 performance: 489.5 ns/day    
+vol 0.91  imb F  3% step 291263800 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291263900 performance: 489.5 ns/day    
+vol 0.91  imb F  3% step 291264000 performance: 489.5 ns/day    
+vol 0.91  imb F  3% step 291264100 performance: 489.5 ns/day    
+vol 0.91  imb F  4% step 291264200 performance: 489.5 ns/day    
+vol 0.89  imb F  3% step 291264300 performance: 489.5 ns/day    
+vol 0.89  imb F  3% step 291264400 performance: 489.5 ns/day    
+vol 0.91  imb F  1% step 291264500 performance: 489.5 ns/day    
+vol 0.90  imb F  4% step 291264600 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291264700 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291264800 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291264900 performance: 489.5 ns/day    
+vol 0.90  imb F  3% step 291265000 performance: 489.5 ns/day    
+vol 0.91  imb F  2% step 291265100 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291265200 performance: 489.5 ns/day    
+vol 0.90  imb F  2% step 291265300 performance: 489.5 ns/day    
+vol 0.90  imb F  1% step 291265400 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291265500 performance: 489.6 ns/day    
+vol 0.90  imb F  1% step 291265600 performance: 489.6 ns/day    
+vol 0.90  imb F  2% step 291265700 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291265800 performance: 489.6 ns/day    
+vol 0.91  imb F  3% step 291265900 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291266000 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291266100 performance: 489.6 ns/day    
+vol 0.90  imb F  2% step 291266200 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291266300 performance: 489.6 ns/day    
+vol 0.91  imb F  2% step 291266400 performance: 489.6 ns/day    
+vol 0.90  imb F  3% step 291266500 performance: 489.6 ns/day    
+vol 0.90  imb F  1% step 291266600 performance: 489.7 ns/day    
+vol 0.90  imb F  1% step 291266700 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291266800 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291266900 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291267000 performance: 489.7 ns/day    
+vol 0.90  imb F  2% step 291267100 performance: 489.6 ns/day    
+slurmstepd: error: *** STEP 30479712.1 ON halc025 CANCELLED AT 2023-08-08T14:44:55 ***
+slurmstepd: error: *** JOB 30479712 ON halc025 CANCELLED AT 2023-08-08T14:44:55 ***
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+

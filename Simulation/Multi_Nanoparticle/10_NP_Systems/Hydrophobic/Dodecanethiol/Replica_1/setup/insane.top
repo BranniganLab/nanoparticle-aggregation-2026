@@ -1,0 +1,19 @@
+#include "/home/jje63/Documents/Force_Fields/Martini_scripts/martini_v2.2.itp"
+#include "cg2.itp"
+#include "/home/jje63/Documents/Force_Fields/Martini_scripts/martini_v2.0_solvents.itp"
+#include "/home/jje63/Documents/Force_Fields/Martini_scripts/martini_v2.0_lipids_all_201506.itp"
+#include "/home/jje63/Documents/Force_Fields/Martini_scripts/martini_v2.0_ions.itp"
+
+
+[ system ]
+; name
+Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0
+
+[ molecules ]
+; name  number
+AU            10
+POPC          3106
+POPC          3114
+W           166519
+NA+           1833
+CL-           1833

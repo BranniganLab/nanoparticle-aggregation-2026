@@ -1,0 +1,837 @@
+                   :-) GROMACS - gmx convert-tpr, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Octanethiol
+Command line:
+  gmx_mpi convert-tpr -s md.tpr -nsteps 200000000 -o md2.tpr
+
+Reading toplogy and stuff from md.tpr
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Setting nsteps to 200000000
+Writing statusfile with starting step          0 and length  200000000 steps...
+                                 time      0.000 and length 5000000.000 ps
+
+Back Off! I just backed up md2.tpr to ./#md2.tpr.7#
+
+GROMACS reminds you: "I believe in miracles cause I'm one" (The Ramones)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Common_Nanoparticle/Octanethiol
+Command line:
+  gmx_mpi mdrun -s md2.tpr -cpi md.cpt -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 1 node with total 32 cores, 32 logical cores
+Hardware detected on host halc021.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md2.tpr, VERSION 2016.1 (single precision)
+
+Reading checkpoint file md.cpt generated: Tue Aug  8 14:35:10 2023
+
+
+Using 32 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+200000000 steps, infinite ps (continuing from step 396438880, 9910972.0 ps).
+step 396438880 performance: 65.8 ns/day    
+imb F 14% step 396438900 performance: 312.6 ns/day    
+
+step 396438910 Turning on dynamic load balancing, because the performance loss due to load imbalance is 7.9 %.
+
+vol 0.93  imb F  3% step 396439000 performance: 423.2 ns/day    
+vol 0.91  imb F  4% step 396439100 performance: 432.5 ns/day    
+vol 0.93  imb F  2% step 396439200 performance: 440.7 ns/day    
+vol 0.93  imb F  2% step 396439300 performance: 449.2 ns/day    
+vol 0.93  imb F  4% step 396439400 performance: 454.8 ns/day    
+vol 0.92  imb F  7% step 396439500 performance: 457.4 ns/day    
+vol 0.94  imb F  3% step 396439600 performance: 452.4 ns/day    
+vol 0.94  imb F  4% step 396439700 performance: 455.8 ns/day    
+vol 0.94  imb F  3% step 396439800 performance: 458.2 ns/day    
+vol 0.92  imb F  3% step 396439900 performance: 460.3 ns/day    
+vol 0.92  imb F  3% step 396440000 performance: 459.7 ns/day    
+vol 0.93  imb F  3% step 396440100 performance: 461.6 ns/day    
+vol 0.93  imb F  3% step 396440200 performance: 460.5 ns/day    
+vol 0.94  imb F  2% step 396440300 performance: 460.7 ns/day    
+vol 0.93  imb F  2% step 396440400 performance: 462.0 ns/day    
+vol 0.93  imb F  2% step 396440500 performance: 463.2 ns/day    
+vol 0.93  imb F  2% step 396440600 performance: 464.1 ns/day    
+vol 0.92  imb F  2% step 396440700 performance: 463.4 ns/day    
+vol 0.93  imb F  2% step 396440800 performance: 464.4 ns/day    
+vol 0.94  imb F  2% step 396440900 performance: 465.2 ns/day    
+vol 0.93  imb F  1% step 396441000 performance: 465.9 ns/day    
+
+step 396441080 Turning off dynamic load balancing, because it is degrading performance.
+
+imb F  8% step 396441100 performance: 463.5 ns/day    
+imb F  7% step 396441200 performance: 463.6 ns/day    
+imb F  7% step 396441300 performance: 463.7 ns/day    
+imb F  5% step 396441400 performance: 463.6 ns/day    
+imb F  8% step 396441500 performance: 464.1 ns/day    
+imb F  7% step 396441600 performance: 464.5 ns/day    
+imb F  7% step 396441700 performance: 464.8 ns/day    
+imb F  7% step 396441800 performance: 464.0 ns/day    
+imb F  8% step 396441900 performance: 464.3 ns/day    
+imb F  7% step 396442000 performance: 464.6 ns/day    
+imb F  8% step 396442100 performance: 464.9 ns/day    
+imb F  7% step 396442200 performance: 465.1 ns/day    
+imb F  7% step 396442300 performance: 465.2 ns/day    
+imb F  7% step 396442400 performance: 465.4 ns/day    
+imb F  5% step 396442500 performance: 465.7 ns/day    
+imb F  7% step 396442600 performance: 465.9 ns/day    
+imb F  8% step 396442700 performance: 466.0 ns/day    
+imb F  6% step 396442800 performance: 465.9 ns/day    
+imb F  8% step 396442900 performance: 465.2 ns/day    
+imb F  8% step 396443000 performance: 465.3 ns/day    
+imb F  9% step 396443100 performance: 465.4 ns/day    
+imb F  8% step 396443200 performance: 465.5 ns/day    
+imb F  6% step 396443300 performance: 465.6 ns/day    
+imb F  7% step 396443400 performance: 465.7 ns/day    
+imb F  6% step 396443500 performance: 465.9 ns/day    
+imb F  7% step 396443600 performance: 466.0 ns/day    
+imb F  6% step 396443700 performance: 466.2 ns/day    
+imb F  5% step 396443800 performance: 466.4 ns/day    
+imb F  7% step 396443900 performance: 466.5 ns/day    
+imb F  7% step 396444000 performance: 466.1 ns/day    
+imb F  6% step 396444100 performance: 466.4 ns/day    
+imb F 40% step 396444200 performance: 466.0 ns/day    
+imb F  8% step 396444300 performance: 466.1 ns/day    
+imb F  6% step 396444400 performance: 466.2 ns/day    
+imb F  6% step 396444500 performance: 466.3 ns/day    
+imb F  8% step 396444600 performance: 466.5 ns/day    
+imb F  8% step 396444700 performance: 466.5 ns/day    
+imb F  5% step 396444800 performance: 466.7 ns/day    
+imb F  7% step 396444900 performance: 466.8 ns/day    
+imb F  6% step 396445000 performance: 466.9 ns/day    
+imb F  8% step 396445100 performance: 466.4 ns/day    
+imb F  8% step 396445200 performance: 466.5 ns/day    
+imb F  7% step 396445300 performance: 466.4 ns/day    
+imb F  7% step 396445400 performance: 466.4 ns/day    
+imb F  8% step 396445500 performance: 466.5 ns/day    
+imb F  8% step 396445600 performance: 466.6 ns/day    
+imb F  6% step 396445700 performance: 466.6 ns/day    
+imb F  8% step 396445800 performance: 466.7 ns/day    
+imb F  8% step 396445900 performance: 466.8 ns/day    
+imb F  8% step 396446000 performance: 466.8 ns/day    
+imb F  8% step 396446100 performance: 466.9 ns/day    
+imb F  5% step 396446200 performance: 466.5 ns/day    
+imb F  9% step 396446300 performance: 466.6 ns/day    
+imb F  7% step 396446400 performance: 466.6 ns/day    
+imb F  7% step 396446500 performance: 466.7 ns/day    
+imb F  6% step 396446600 performance: 466.8 ns/day    
+imb F  6% step 396446700 performance: 466.8 ns/day    
+imb F  6% step 396446800 performance: 466.9 ns/day    
+
+step 396446880 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.0 %.
+
+vol 0.97  imb F  6% step 396446900 performance: 466.9 ns/day    
+vol 0.92  imb F  3% step 396447000 performance: 467.1 ns/day    
+vol 0.92  imb F  2% step 396447100 performance: 467.3 ns/day    
+vol 0.94  imb F  3% step 396447200 performance: 467.4 ns/day    
+
+step 396447280 Turning off dynamic load balancing, because it is degrading performance.
+
+imb F  8% step 396447300 performance: 466.9 ns/day    
+imb F  6% step 396447400 performance: 467.0 ns/day    
+imb F  8% step 396447500 performance: 467.0 ns/day    
+imb F  6% step 396447600 performance: 465.7 ns/day    
+imb F  7% step 396447700 performance: 465.8 ns/day    
+imb F  6% step 396447800 performance: 465.9 ns/day    
+
+step 396447880 Will no longer try dynamic load balancing, as it degraded performance.
+
+imb F  6% step 396447900 performance: 466.0 ns/day    
+imb F  8% step 396448000 performance: 465.8 ns/day    
+imb F  8% step 396448100 performance: 465.9 ns/day    
+imb F  6% step 396448200 performance: 466.0 ns/day    
+imb F  6% step 396448300 performance: 465.8 ns/day    
+imb F  7% step 396448400 performance: 465.8 ns/day    
+imb F  8% step 396448500 performance: 465.9 ns/day    
+imb F  6% step 396448600 performance: 466.0 ns/day    
+imb F  8% step 396448700 performance: 466.0 ns/day    
+imb F  6% step 396448800 performance: 466.1 ns/day    
+imb F  7% step 396448900 performance: 466.2 ns/day    
+imb F  7% step 396449000 performance: 466.3 ns/day    
+imb F  8% step 396449100 performance: 466.3 ns/day    
+imb F  6% step 396449200 performance: 466.4 ns/day    
+imb F  6% step 396449300 performance: 466.4 ns/day    
+imb F  8% step 396449400 performance: 466.1 ns/day    
+imb F  6% step 396449500 performance: 466.2 ns/day    
+imb F  5% step 396449600 performance: 466.3 ns/day    
+imb F  8% step 396449700 performance: 466.4 ns/day    
+imb F  6% step 396449800 performance: 466.5 ns/day    
+imb F  7% step 396449900 performance: 466.5 ns/day    
+imb F  7% step 396450000 performance: 466.5 ns/day    
+imb F  6% step 396450100 performance: 466.6 ns/day    
+imb F  8% step 396450200 performance: 466.5 ns/day    
+imb F  8% step 396450300 performance: 466.5 ns/day    
+imb F  6% step 396450400 performance: 466.6 ns/day    
+imb F  6% step 396450500 performance: 466.4 ns/day    
+imb F  9% step 396450600 performance: 466.3 ns/day    
+imb F  7% step 396450700 performance: 466.2 ns/day    
+imb F  9% step 396450800 performance: 466.2 ns/day    
+imb F  8% step 396450900 performance: 466.2 ns/day    
+imb F  8% step 396451000 performance: 466.3 ns/day    
+imb F  5% step 396451100 performance: 466.4 ns/day    
+imb F  8% step 396451200 performance: 466.4 ns/day    
+imb F  8% step 396451300 performance: 466.4 ns/day    
+imb F  6% step 396451400 performance: 466.5 ns/day    
+imb F  7% step 396451500 performance: 466.6 ns/day    
+imb F  9% step 396451600 performance: 466.4 ns/day    
+imb F  5% step 396451700 performance: 466.4 ns/day    
+imb F  7% step 396451800 performance: 466.5 ns/day    
+imb F  6% step 396451900 performance: 466.6 ns/day    
+imb F  8% step 396452000 performance: 466.6 ns/day    
+imb F  6% step 396452100 performance: 466.7 ns/day    
+imb F  8% step 396452200 performance: 466.7 ns/day    
+imb F  8% step 396452300 performance: 466.8 ns/day    
+imb F  8% step 396452400 performance: 466.8 ns/day    
+imb F  8% step 396452500 performance: 466.9 ns/day    
+imb F  8% step 396452600 performance: 466.9 ns/day    
+imb F  6% step 396452700 performance: 466.7 ns/day    
+imb F  8% step 396452800 performance: 466.7 ns/day    
+imb F  8% step 396452900 performance: 466.8 ns/day    
+imb F  6% step 396453000 performance: 466.8 ns/day    
+imb F  6% step 396453100 performance: 466.9 ns/day    
+imb F  6% step 396453200 performance: 466.9 ns/day    
+imb F  6% step 396453300 performance: 466.9 ns/day    
+imb F  8% step 396453400 performance: 467.0 ns/day    
+imb F  8% step 396453500 performance: 467.0 ns/day    
+imb F  7% step 396453600 performance: 467.1 ns/day    
+imb F  8% step 396453700 performance: 464.0 ns/day    
+imb F 31% step 396453800 performance: 463.6 ns/day    
+imb F  7% step 396453900 performance: 458.9 ns/day    
+imb F  8% step 396454000 performance: 459.0 ns/day    
+imb F  6% step 396454100 performance: 459.0 ns/day    
+imb F  9% step 396454200 performance: 459.1 ns/day    
+imb F  8% step 396454300 performance: 459.2 ns/day    
+imb F  6% step 396454400 performance: 459.2 ns/day    
+imb F  6% step 396454500 performance: 459.3 ns/day    
+imb F  8% step 396454600 performance: 459.2 ns/day    
+imb F  8% step 396454700 performance: 459.3 ns/day    
+imb F  8% step 396454800 performance: 459.4 ns/day    
+imb F  6% step 396454900 performance: 459.5 ns/day    
+imb F  8% step 396455000 performance: 459.5 ns/day    
+imb F  6% step 396455100 performance: 459.6 ns/day    
+imb F  6% step 396455200 performance: 459.7 ns/day    
+imb F  7% step 396455300 performance: 459.8 ns/day    
+imb F  7% step 396455400 performance: 459.8 ns/day    
+imb F  9% step 396455500 performance: 459.8 ns/day    
+imb F  8% step 396455600 performance: 459.9 ns/day    
+imb F  8% step 396455700 performance: 459.8 ns/day    
+imb F  5% step 396455800 performance: 459.9 ns/day    
+imb F  6% step 396455900 performance: 460.0 ns/day    
+imb F  5% step 396456000 performance: 460.0 ns/day    
+imb F  6% step 396456100 performance: 460.0 ns/day    
+imb F 11% step 396456200 performance: 460.1 ns/day    
+imb F  8% step 396456300 performance: 460.1 ns/day    
+imb F  9% step 396456400 performance: 460.1 ns/day    
+imb F  5% step 396456500 performance: 460.2 ns/day    
+imb F  8% step 396456600 performance: 460.3 ns/day    
+imb F  8% step 396456700 performance: 460.4 ns/day    
+imb F  6% step 396456800 performance: 460.3 ns/day    
+imb F  8% step 396456900 performance: 460.3 ns/day    
+imb F  6% step 396457000 performance: 460.3 ns/day    
+imb F  5% step 396457100 performance: 460.3 ns/day    
+imb F  6% step 396457200 performance: 460.4 ns/day    
+imb F  6% step 396457300 performance: 460.5 ns/day    
+imb F  5% step 396457400 performance: 460.6 ns/day    
+imb F  8% step 396457500 performance: 460.6 ns/day    
+imb F  8% step 396457600 performance: 460.7 ns/day    
+imb F  6% step 396457700 performance: 460.7 ns/day    
+imb F  6% step 396457800 performance: 460.8 ns/day    
+imb F  9% step 396457900 performance: 460.7 ns/day    
+imb F  7% step 396458000 performance: 460.7 ns/day    
+imb F  8% step 396458100 performance: 460.8 ns/day    
+imb F  6% step 396458200 performance: 460.9 ns/day    
+imb F  7% step 396458300 performance: 460.9 ns/day    
+imb F  8% step 396458400 performance: 461.0 ns/day    
+imb F  7% step 396458500 performance: 461.0 ns/day    
+imb F  8% step 396458600 performance: 461.1 ns/day    
+imb F  5% step 396458700 performance: 461.1 ns/day    
+imb F  7% step 396458800 performance: 461.2 ns/day    
+imb F  7% step 396458900 performance: 461.3 ns/day    
+imb F  5% step 396459000 performance: 461.2 ns/day    
+imb F  5% step 396459100 performance: 461.3 ns/day    
+imb F  7% step 396459200 performance: 461.4 ns/day    
+imb F  6% step 396459300 performance: 461.4 ns/day    
+imb F  5% step 396459400 performance: 461.5 ns/day    
+imb F  8% step 396459500 performance: 461.5 ns/day    
+imb F  8% step 396459600 performance: 461.6 ns/day    
+imb F  8% step 396459700 performance: 461.6 ns/day    
+imb F  7% step 396459800 performance: 461.7 ns/day    
+imb F  7% step 396459900 performance: 461.7 ns/day    
+imb F  9% step 396460000 performance: 461.8 ns/day    
+imb F  8% step 396460100 performance: 461.7 ns/day    
+imb F  6% step 396460200 performance: 461.7 ns/day    
+imb F  8% step 396460300 performance: 461.8 ns/day    
+imb F  6% step 396460400 performance: 461.4 ns/day    
+imb F  6% step 396460500 performance: 461.4 ns/day    
+imb F  6% step 396460600 performance: 461.5 ns/day    
+imb F  5% step 396460700 performance: 461.6 ns/day    
+imb F  8% step 396460800 performance: 461.6 ns/day    
+imb F  6% step 396460900 performance: 461.7 ns/day    
+imb F  7% step 396461000 performance: 461.7 ns/day    
+imb F  7% step 396461100 performance: 461.6 ns/day    
+imb F  6% step 396461200 performance: 461.7 ns/day    
+imb F  6% step 396461300 performance: 461.7 ns/day    
+imb F  7% step 396461400 performance: 461.8 ns/day    
+imb F  5% step 396461500 performance: 461.9 ns/day    
+imb F  5% step 396461600 performance: 461.9 ns/day    
+imb F  6% step 396461700 performance: 462.0 ns/day    
+imb F  8% step 396461800 performance: 462.0 ns/day    
+imb F  7% step 396461900 performance: 462.1 ns/day    
+imb F  6% step 396462000 performance: 462.1 ns/day    
+imb F  7% step 396462100 performance: 462.2 ns/day    
+imb F  7% step 396462200 performance: 462.1 ns/day    
+imb F  9% step 396462300 performance: 462.1 ns/day    
+imb F  8% step 396462400 performance: 462.1 ns/day    
+imb F  6% step 396462500 performance: 462.2 ns/day    
+imb F  8% step 396462600 performance: 462.2 ns/day    
+imb F  8% step 396462700 performance: 462.2 ns/day    
+imb F  7% step 396462800 performance: 462.3 ns/day    
+imb F  7% step 396462900 performance: 462.3 ns/day    
+imb F  8% step 396463000 performance: 462.4 ns/day    
+imb F  5% step 396463100 performance: 462.4 ns/day    
+imb F  8% step 396463200 performance: 462.5 ns/day    
+imb F  6% step 396463300 performance: 462.4 ns/day    
+imb F  8% step 396463400 performance: 462.4 ns/day    
+imb F  8% step 396463500 performance: 462.4 ns/day    
+imb F  7% step 396463600 performance: 462.5 ns/day    
+imb F  8% step 396463700 performance: 462.5 ns/day    
+imb F  6% step 396463800 performance: 462.5 ns/day    
+imb F  7% step 396463900 performance: 462.6 ns/day    
+imb F  5% step 396464000 performance: 462.6 ns/day    
+imb F  7% step 396464100 performance: 462.6 ns/day    
+imb F  8% step 396464200 performance: 462.6 ns/day    
+imb F  7% step 396464300 performance: 462.6 ns/day    
+imb F  7% step 396464400 performance: 462.6 ns/day    
+imb F  7% step 396464500 performance: 462.6 ns/day    
+imb F  6% step 396464600 performance: 462.7 ns/day    
+imb F  7% step 396464700 performance: 462.7 ns/day    
+imb F  6% step 396464800 performance: 462.7 ns/day    
+imb F  8% step 396464900 performance: 462.8 ns/day    
+imb F  8% step 396465000 performance: 462.8 ns/day    
+imb F  6% step 396465100 performance: 462.9 ns/day    
+imb F  8% step 396465200 performance: 462.9 ns/day    
+imb F  8% step 396465300 performance: 462.9 ns/day    
+imb F  5% step 396465400 performance: 463.0 ns/day    
+imb F  6% step 396465500 performance: 462.9 ns/day    
+imb F  7% step 396465600 performance: 463.0 ns/day    
+imb F  8% step 396465700 performance: 463.0 ns/day    
+imb F  6% step 396465800 performance: 463.0 ns/day    
+imb F  8% step 396465900 performance: 463.1 ns/day    
+imb F  5% step 396466000 performance: 463.1 ns/day    
+imb F  5% step 396466100 performance: 463.1 ns/day    
+imb F  7% step 396466200 performance: 463.2 ns/day    
+imb F  8% step 396466300 performance: 463.2 ns/day    
+imb F  7% step 396466400 performance: 463.3 ns/day    
+imb F  7% step 396466500 performance: 463.3 ns/day    
+imb F  6% step 396466600 performance: 463.2 ns/day    
+imb F  5% step 396466700 performance: 463.3 ns/day    
+imb F  7% step 396466800 performance: 463.3 ns/day    
+imb F  7% step 396466900 performance: 463.2 ns/day    
+imb F  6% step 396467000 performance: 463.3 ns/day    
+imb F  8% step 396467100 performance: 463.3 ns/day    
+imb F  4% step 396467200 performance: 463.3 ns/day    
+imb F  6% step 396467300 performance: 463.4 ns/day    
+imb F  7% step 396467400 performance: 463.4 ns/day    
+imb F  7% step 396467500 performance: 463.4 ns/day    
+imb F  6% step 396467600 performance: 463.5 ns/day    
+imb F  6% step 396467700 performance: 463.4 ns/day    
+imb F  7% step 396467800 performance: 463.4 ns/day    
+imb F  8% step 396467900 performance: 463.4 ns/day    
+imb F  7% step 396468000 performance: 463.5 ns/day    
+imb F  7% step 396468100 performance: 463.5 ns/day    
+imb F  7% step 396468200 performance: 463.5 ns/day    
+imb F  8% step 396468300 performance: 463.6 ns/day    
+imb F  8% step 396468400 performance: 463.6 ns/day    
+imb F  8% step 396468500 performance: 463.6 ns/day    
+imb F  5% step 396468600 performance: 463.6 ns/day    
+imb F  7% step 396468700 performance: 463.7 ns/day    
+imb F  6% step 396468800 performance: 463.6 ns/day    
+imb F  5% step 396468900 performance: 463.7 ns/day    
+imb F  7% step 396469000 performance: 463.7 ns/day    
+imb F  7% step 396469100 performance: 463.7 ns/day    
+imb F  6% step 396469200 performance: 463.7 ns/day    
+imb F  8% step 396469300 performance: 463.8 ns/day    
+imb F  6% step 396469400 performance: 463.8 ns/day    
+imb F  8% step 396469500 performance: 463.8 ns/day    
+imb F  6% step 396469600 performance: 463.9 ns/day    
+imb F  7% step 396469700 performance: 463.9 ns/day    
+imb F  6% step 396469800 performance: 463.9 ns/day    
+imb F  7% step 396469900 performance: 463.9 ns/day    
+imb F  7% step 396470000 performance: 463.8 ns/day    
+imb F  7% step 396470100 performance: 463.8 ns/day    
+imb F  7% step 396470200 performance: 463.9 ns/day    
+imb F  7% step 396470300 performance: 463.9 ns/day    
+imb F  7% step 396470400 performance: 464.0 ns/day    
+imb F  7% step 396470500 performance: 464.0 ns/day    
+imb F  5% step 396470600 performance: 464.0 ns/day    
+imb F  6% step 396470700 performance: 464.0 ns/day    
+imb F  8% step 396470800 performance: 464.1 ns/day    
+imb F  8% step 396470900 performance: 464.1 ns/day    
+imb F  8% step 396471000 performance: 464.0 ns/day    
+imb F  5% step 396471100 performance: 464.1 ns/day    
+imb F  7% step 396471200 performance: 464.1 ns/day    
+imb F  6% step 396471300 performance: 464.1 ns/day    
+imb F  6% step 396471400 performance: 464.2 ns/day    
+imb F  6% step 396471500 performance: 464.2 ns/day    
+imb F  6% step 396471600 performance: 464.2 ns/day    
+imb F  7% step 396471700 performance: 464.3 ns/day    
+imb F  8% step 396471800 performance: 464.3 ns/day    
+imb F  6% step 396471900 performance: 464.3 ns/day    
+imb F  8% step 396472000 performance: 464.3 ns/day    
+imb F  6% step 396472100 performance: 464.2 ns/day    
+imb F  6% step 396472200 performance: 464.3 ns/day    
+imb F  8% step 396472300 performance: 464.3 ns/day    
+imb F  8% step 396472400 performance: 464.3 ns/day    
+imb F  8% step 396472500 performance: 464.3 ns/day    
+imb F  6% step 396472600 performance: 464.4 ns/day    
+imb F  9% step 396472700 performance: 464.4 ns/day    
+imb F  7% step 396472800 performance: 464.4 ns/day    
+imb F  8% step 396472900 performance: 464.4 ns/day    
+imb F  8% step 396473000 performance: 464.4 ns/day    
+imb F  5% step 396473100 performance: 464.5 ns/day    
+imb F  8% step 396473200 performance: 464.4 ns/day    
+imb F  7% step 396473300 performance: 464.4 ns/day    
+imb F  6% step 396473400 performance: 464.0 ns/day    
+imb F  8% step 396473500 performance: 463.9 ns/day    
+imb F  5% step 396473600 performance: 464.0 ns/day    
+imb F  7% step 396473700 performance: 464.0 ns/day    
+imb F  6% step 396473800 performance: 464.0 ns/day    
+imb F  8% step 396473900 performance: 464.0 ns/day    
+imb F  6% step 396474000 performance: 464.1 ns/day    
+imb F  6% step 396474100 performance: 464.1 ns/day    
+imb F  7% step 396474200 performance: 464.0 ns/day    
+imb F  7% step 396474300 performance: 464.1 ns/day    
+imb F  8% step 396474400 performance: 464.1 ns/day    
+imb F  7% step 396474500 performance: 464.1 ns/day    
+imb F  5% step 396474600 performance: 464.2 ns/day    
+imb F  7% step 396474700 performance: 464.2 ns/day    
+imb F  7% step 396474800 performance: 464.2 ns/day    
+imb F  7% step 396474900 performance: 464.3 ns/day    
+imb F  8% step 396475000 performance: 464.3 ns/day    
+imb F  7% step 396475100 performance: 464.3 ns/day    
+imb F  7% step 396475200 performance: 464.3 ns/day    
+imb F  9% step 396475300 performance: 464.3 ns/day    
+imb F  7% step 396475400 performance: 464.3 ns/day    
+imb F  6% step 396475500 performance: 464.3 ns/day    
+imb F  7% step 396475600 performance: 464.3 ns/day    
+imb F  7% step 396475700 performance: 464.4 ns/day    
+imb F  8% step 396475800 performance: 464.4 ns/day    
+imb F  7% step 396475900 performance: 464.4 ns/day    
+imb F  6% step 396476000 performance: 464.4 ns/day    
+imb F  8% step 396476100 performance: 464.5 ns/day    
+imb F  8% step 396476200 performance: 464.5 ns/day    
+imb F  8% step 396476300 performance: 464.5 ns/day    
+imb F  6% step 396476400 performance: 464.5 ns/day    
+imb F  8% step 396476500 performance: 464.4 ns/day    
+imb F  7% step 396476600 performance: 464.4 ns/day    
+imb F  8% step 396476700 performance: 464.5 ns/day    
+imb F  8% step 396476800 performance: 464.5 ns/day    
+imb F  6% step 396476900 performance: 464.5 ns/day    
+imb F  7% step 396477000 performance: 464.5 ns/day    
+imb F  7% step 396477100 performance: 464.6 ns/day    
+imb F  8% step 396477200 performance: 464.6 ns/day    
+imb F  6% step 396477300 performance: 464.6 ns/day    
+imb F  7% step 396477400 performance: 464.6 ns/day    
+imb F  7% step 396477500 performance: 464.6 ns/day    
+imb F  6% step 396477600 performance: 464.6 ns/day    
+imb F  7% step 396477700 performance: 464.6 ns/day    
+imb F  9% step 396477800 performance: 464.6 ns/day    
+imb F  6% step 396477900 performance: 464.6 ns/day    
+imb F  8% step 396478000 performance: 464.7 ns/day    
+imb F  6% step 396478100 performance: 464.7 ns/day    
+imb F  8% step 396478200 performance: 464.7 ns/day    
+imb F  8% step 396478300 performance: 464.7 ns/day    
+imb F  7% step 396478400 performance: 464.8 ns/day    
+imb F  8% step 396478500 performance: 464.8 ns/day    
+imb F  6% step 396478600 performance: 464.7 ns/day    
+imb F  6% step 396478700 performance: 464.7 ns/day    
+imb F  6% step 396478800 performance: 464.8 ns/day    
+imb F  7% step 396478900 performance: 464.8 ns/day    
+imb F  8% step 396479000 performance: 464.8 ns/day    
+imb F  6% step 396479100 performance: 464.8 ns/day    
+imb F  9% step 396479200 performance: 464.8 ns/day    
+imb F  8% step 396479300 performance: 464.8 ns/day    
+imb F  7% step 396479400 performance: 464.9 ns/day    
+imb F  8% step 396479500 performance: 464.9 ns/day    
+imb F  7% step 396479600 performance: 464.9 ns/day    
+imb F  7% step 396479700 performance: 464.8 ns/day    
+imb F  7% step 396479800 performance: 464.9 ns/day    
+imb F  7% step 396479900 performance: 464.8 ns/day    
+imb F  6% step 396480000 performance: 464.8 ns/day    
+imb F  5% step 396480100 performance: 464.8 ns/day    
+imb F  6% step 396480200 performance: 464.8 ns/day    
+imb F  8% step 396480300 performance: 464.9 ns/day    
+imb F  7% step 396480400 performance: 464.9 ns/day    
+imb F  8% step 396480500 performance: 464.9 ns/day    
+imb F  8% step 396480600 performance: 464.9 ns/day    
+imb F  7% step 396480700 performance: 464.9 ns/day    
+imb F  8% step 396480800 performance: 464.9 ns/day    
+imb F  8% step 396480900 performance: 464.9 ns/day    
+imb F  7% step 396481000 performance: 464.9 ns/day    
+imb F  8% step 396481100 performance: 464.9 ns/day    
+imb F  8% step 396481200 performance: 465.0 ns/day    
+imb F  8% step 396481300 performance: 465.0 ns/day    
+imb F  8% step 396481400 performance: 465.0 ns/day    
+imb F  8% step 396481500 performance: 465.0 ns/day    
+imb F  8% step 396481600 performance: 465.0 ns/day    
+imb F  6% step 396481700 performance: 465.0 ns/day    
+imb F  6% step 396481800 performance: 465.1 ns/day    
+imb F  7% step 396481900 performance: 465.0 ns/day    
+imb F  8% step 396482000 performance: 465.0 ns/day    
+imb F  7% step 396482100 performance: 465.0 ns/day    
+imb F  6% step 396482200 performance: 465.1 ns/day    
+imb F  6% step 396482300 performance: 465.1 ns/day    
+imb F  8% step 396482400 performance: 465.1 ns/day    
+imb F  8% step 396482500 performance: 465.1 ns/day    
+imb F  7% step 396482600 performance: 465.1 ns/day    
+imb F  8% step 396482700 performance: 465.1 ns/day    
+imb F  8% step 396482800 performance: 465.2 ns/day    
+imb F  7% step 396482900 performance: 465.2 ns/day    
+imb F  5% step 396483000 performance: 465.1 ns/day    
+imb F  6% step 396483100 performance: 465.1 ns/day    
+imb F  6% step 396483200 performance: 465.1 ns/day    
+imb F  6% step 396483300 performance: 465.1 ns/day    
+imb F  8% step 396483400 performance: 465.2 ns/day    
+imb F  6% step 396483500 performance: 465.2 ns/day    
+imb F  7% step 396483600 performance: 465.2 ns/day    
+imb F  9% step 396483700 performance: 465.2 ns/day    
+imb F  7% step 396483800 performance: 465.2 ns/day    
+imb F  8% step 396483900 performance: 465.2 ns/day    
+imb F  9% step 396484000 performance: 465.2 ns/day    
+imb F  6% step 396484100 performance: 465.2 ns/day    
+imb F  6% step 396484200 performance: 465.2 ns/day    
+imb F  7% step 396484300 performance: 465.2 ns/day    
+imb F  8% step 396484400 performance: 465.2 ns/day    
+imb F  8% step 396484500 performance: 465.2 ns/day    
+imb F  6% step 396484600 performance: 465.2 ns/day    
+imb F  8% step 396484700 performance: 465.3 ns/day    
+imb F  8% step 396484800 performance: 465.3 ns/day    
+imb F  8% step 396484900 performance: 465.3 ns/day    
+imb F  8% step 396485000 performance: 465.3 ns/day    
+imb F  8% step 396485100 performance: 465.3 ns/day    
+imb F  9% step 396485200 performance: 465.3 ns/day    
+imb F  9% step 396485300 performance: 465.3 ns/day    
+imb F  8% step 396485400 performance: 465.3 ns/day    
+imb F  8% step 396485500 performance: 465.3 ns/day    
+imb F  8% step 396485600 performance: 465.3 ns/day    
+imb F  8% step 396485700 performance: 465.3 ns/day    
+imb F  8% step 396485800 performance: 465.3 ns/day    
+imb F  7% step 396485900 performance: 465.3 ns/day    
+imb F  6% step 396486000 performance: 465.3 ns/day    
+imb F  8% step 396486100 performance: 465.4 ns/day    
+imb F  6% step 396486200 performance: 465.4 ns/day    
+imb F  7% step 396486300 performance: 465.3 ns/day    
+imb F  9% step 396486400 performance: 465.1 ns/day    
+imb F  9% step 396486500 performance: 465.1 ns/day    
+imb F  7% step 396486600 performance: 465.1 ns/day    
+imb F  6% step 396486700 performance: 465.2 ns/day    
+imb F  6% step 396486800 performance: 465.2 ns/day    
+imb F  5% step 396486900 performance: 465.2 ns/day    
+imb F  8% step 396487000 performance: 465.2 ns/day    
+imb F  8% step 396487100 performance: 465.2 ns/day    
+imb F  9% step 396487200 performance: 465.2 ns/day    
+imb F  6% step 396487300 performance: 465.2 ns/day    
+imb F  8% step 396487400 performance: 465.2 ns/day    
+imb F  8% step 396487500 performance: 465.2 ns/day    
+imb F  7% step 396487600 performance: 465.2 ns/day    
+imb F  8% step 396487700 performance: 465.2 ns/day    
+imb F  9% step 396487800 performance: 465.2 ns/day    
+imb F  6% step 396487900 performance: 465.3 ns/day    
+imb F  8% step 396488000 performance: 465.2 ns/day    
+imb F  7% step 396488100 performance: 465.2 ns/day    
+imb F  9% step 396488200 performance: 465.2 ns/day    
+imb F  8% step 396488300 performance: 465.3 ns/day    
+imb F  9% step 396488400 performance: 465.2 ns/day    
+imb F  6% step 396488500 performance: 465.2 ns/day    
+imb F  8% step 396488600 performance: 465.2 ns/day    
+imb F  6% step 396488700 performance: 465.3 ns/day    
+imb F  6% step 396488800 performance: 465.3 ns/day    
+imb F  7% step 396488900 performance: 465.3 ns/day    
+imb F  8% step 396489000 performance: 465.3 ns/day    
+imb F  8% step 396489100 performance: 465.3 ns/day    
+imb F  7% step 396489200 performance: 465.3 ns/day    
+imb F  6% step 396489300 performance: 465.3 ns/day    
+imb F  7% step 396489400 performance: 465.4 ns/day    
+imb F  8% step 396489500 performance: 465.2 ns/day    
+imb F  6% step 396489600 performance: 465.3 ns/day    
+imb F  8% step 396489700 performance: 465.3 ns/day    
+imb F  8% step 396489800 performance: 465.3 ns/day    
+imb F  9% step 396489900 performance: 465.3 ns/day    
+imb F  6% step 396490000 performance: 465.3 ns/day    
+imb F  6% step 396490100 performance: 465.3 ns/day    
+imb F  9% step 396490200 performance: 465.3 ns/day    
+imb F  7% step 396490300 performance: 465.3 ns/day    
+imb F  7% step 396490400 performance: 465.4 ns/day    
+imb F  6% step 396490500 performance: 465.4 ns/day    
+imb F  6% step 396490600 performance: 465.3 ns/day    
+imb F  8% step 396490700 performance: 465.4 ns/day    
+imb F  6% step 396490800 performance: 465.4 ns/day    
+imb F  7% step 396490900 performance: 465.4 ns/day    
+imb F  7% step 396491000 performance: 465.4 ns/day    
+imb F  6% step 396491100 performance: 465.4 ns/day    
+imb F  8% step 396491200 performance: 465.4 ns/day    
+imb F  6% step 396491300 performance: 465.4 ns/day    
+imb F  6% step 396491400 performance: 465.5 ns/day    
+imb F  6% step 396491500 performance: 465.5 ns/day    
+imb F  8% step 396491600 performance: 465.5 ns/day    
+imb F  8% step 396491700 performance: 465.5 ns/day    
+imb F  6% step 396491800 performance: 465.5 ns/day    
+imb F  7% step 396491900 performance: 465.5 ns/day    
+imb F  8% step 396492000 performance: 465.5 ns/day    
+imb F  7% step 396492100 performance: 465.5 ns/day    
+imb F  7% step 396492200 performance: 465.5 ns/day    
+imb F  6% step 396492300 performance: 465.5 ns/day    
+imb F  7% step 396492400 performance: 465.5 ns/day    
+imb F  9% step 396492500 performance: 465.5 ns/day    
+imb F  5% step 396492600 performance: 465.6 ns/day    
+imb F  7% step 396492700 performance: 465.6 ns/day    
+imb F  9% step 396492800 performance: 465.5 ns/day    
+imb F  7% step 396492900 performance: 465.4 ns/day    
+imb F  9% step 396493000 performance: 465.4 ns/day    
+imb F  7% step 396493100 performance: 465.4 ns/day    
+imb F  8% step 396493200 performance: 465.4 ns/day    
+imb F  8% step 396493300 performance: 465.4 ns/day    
+imb F  9% step 396493400 performance: 465.4 ns/day    
+imb F  6% step 396493500 performance: 465.5 ns/day    
+imb F  6% step 396493600 performance: 465.5 ns/day    
+imb F  8% step 396493700 performance: 465.5 ns/day    
+imb F  6% step 396493800 performance: 465.5 ns/day    
+imb F  6% step 396493900 performance: 465.5 ns/day    
+imb F  6% step 396494000 performance: 465.5 ns/day    
+imb F  8% step 396494100 performance: 465.5 ns/day    
+imb F  7% step 396494200 performance: 465.5 ns/day    
+imb F  7% step 396494300 performance: 465.5 ns/day    
+imb F  7% step 396494400 performance: 465.6 ns/day    
+imb F  7% step 396494500 performance: 465.6 ns/day    
+imb F  6% step 396494600 performance: 465.6 ns/day    
+imb F  8% step 396494700 performance: 465.6 ns/day    
+imb F  7% step 396494800 performance: 465.6 ns/day    
+imb F  7% step 396494900 performance: 465.6 ns/day    
+imb F  5% step 396495000 performance: 465.6 ns/day    
+imb F  5% step 396495100 performance: 465.6 ns/day    
+imb F  9% step 396495200 performance: 465.6 ns/day    
+imb F  7% step 396495300 performance: 465.7 ns/day    
+imb F  8% step 396495400 performance: 465.7 ns/day    
+imb F  7% step 396495500 performance: 465.7 ns/day    
+imb F  6% step 396495600 performance: 465.7 ns/day    
+imb F  6% step 396495700 performance: 465.7 ns/day    
+imb F  6% step 396495800 performance: 465.8 ns/day    
+imb F  8% step 396495900 performance: 465.8 ns/day    
+imb F  6% step 396496000 performance: 465.7 ns/day    
+imb F  8% step 396496100 performance: 465.7 ns/day    
+imb F  6% step 396496200 performance: 465.7 ns/day    
+imb F  7% step 396496300 performance: 465.7 ns/day    
+imb F  7% step 396496400 performance: 465.7 ns/day    
+imb F  6% step 396496500 performance: 465.7 ns/day    
+imb F  7% step 396496600 performance: 465.7 ns/day    
+imb F  6% step 396496700 performance: 465.8 ns/day    
+imb F  6% step 396496800 performance: 465.8 ns/day    
+imb F  8% step 396496900 performance: 465.8 ns/day    
+imb F  7% step 396497000 performance: 465.8 ns/day    
+imb F  7% step 396497100 performance: 465.8 ns/day    
+imb F  7% step 396497200 performance: 465.8 ns/day    
+imb F  9% step 396497300 performance: 465.8 ns/day    
+imb F  8% step 396497400 performance: 465.8 ns/day    
+imb F  8% step 396497500 performance: 465.8 ns/day    
+imb F  7% step 396497600 performance: 465.8 ns/day    
+imb F  6% step 396497700 performance: 465.8 ns/day    
+imb F  8% step 396497800 performance: 465.9 ns/day    
+slurmstepd: error: *** STEP 30479709.1 ON halc021 CANCELLED AT 2023-08-08T14:40:32 ***
+
+
+slurmstepd: error: *** JOB 30479709 ON halc021 CANCELLED AT 2023-08-08T14:40:32 ***
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
