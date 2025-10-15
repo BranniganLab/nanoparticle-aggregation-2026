@@ -1,0 +1,326 @@
+                      :-) GROMACS - gmx grompp, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi grompp -f ../../em.mdp -c insane.gro -p insane.top -o em -maxwarn 10
+
+
+NOTE 1 [file ../../em.mdp, line 12]:
+  ../../em.mdp did not specify a value for the .mdp option "cutoff-scheme".
+  Probably it was first intended for use with GROMACS before 4.6. In 4.6,
+  the Verlet scheme was introduced, but the group scheme was still the
+  default. The default is now the Verlet scheme, so you will observe
+  different behaviour.
+
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+
+NOTE 2 [file ../../em.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using verlet-buffer-tolerance.
+
+Setting the LD random seed to 583094926
+Generated 37 of the 903 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'AU'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'NA+'
+Excluding 1 bonded neighbours molecule type 'CL-'
+Warning: atom name 56 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 57 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 60 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 61 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 63 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 64 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 65 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 66 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 69 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 70 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 72 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 73 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 74 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 75 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 78 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 79 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 81 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 82 in insane.top and insane.gro does not match (LIG - C1)
+Warning: atom name 83 in insane.top and insane.gro does not match (AUSL - AUS)
+Warning: atom name 84 in insane.top and insane.gro does not match (AUSL - AUS)
+(more than 20 non-matching atom names)
+
+WARNING 1 [file insane.top, line 19]:
+  1800 non-matching atom names
+  atom names from insane.top will be used
+  atom names from insane.gro will be ignored
+
+
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group rest is 747138.00
+
+NOTE 3 [file ../../em.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 3 notes
+
+There was 1 warning
+
+GROMACS reminds you: "They don't have half hours in the north" (Carl Caleman)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi mdrun -ntomp 1 -deffnm em -v
+
+
+Running on 1 node with total 52 cores, 52 logical cores
+Hardware detected on host gpuc004.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Only logical processor count
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file em.tpr, VERSION 2016.1 (single precision)
+Using 1 MPI process
+Using 1 OpenMP thread 
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =        50000
+Step=    0, Dmax= 1.0e-02 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036
+Step=    1, Dmax= 1.0e-02 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    2, Dmax= 5.0e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    3, Dmax= 2.5e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    4, Dmax= 1.2e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    5, Dmax= 6.2e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    6, Dmax= 3.1e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    7, Dmax= 1.6e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    8, Dmax= 7.8e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    9, Dmax= 3.9e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   10, Dmax= 2.0e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   11, Dmax= 9.8e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   12, Dmax= 4.9e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   13, Dmax= 2.4e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   14, Dmax= 1.2e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036
+Energy minimization has stopped, but the forces have not converged to the
+requested precision Fmax < 10 (which may not be possible for your system). It
+stopped because the algorithm tried to make a new step whose size was too
+small, or there was no change in the energy since last step. Either way, we
+regard the minimization as converged to within the available machine
+precision, given your starting configuration and EM parameters.
+
+Double precision normally gives you higher accuracy, but this is often not
+needed for preparing to run molecular dynamics.
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to machine precision in 15 steps,
+but did not reach the requested Fmax < 10.
+Potential Energy  =  5.4184165e+16
+Maximum force     =            inf on atom 1036
+Norm of force     =            inf
+
+NOTE: 29 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+
+GROMACS reminds you: "The only greatness for man is immortality." (James Dean)
+
+                      :-) GROMACS - gmx grompp, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi grompp -f md_i.mdp -c em.gro -p insane.top -o md -maxwarn 10
+
+Replacing old mdp entry 'unconstrained_start' by 'continuation'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc_precision' by 'compressed-x-precision'
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.1#
+
+NOTE 1 [file md_i.mdp]:
+  The group cutoff scheme is deprecated since GROMACS 5.0 and will be
+  removed in a future release when all interaction forms are supported for
+  the verlet scheme. The verlet scheme already scales better, and it is
+  compatible with GPUs and other accelerators.
+
+
+NOTE 2 [file md_i.mdp]:
+  The switch/shift interaction settings are just for compatibility; you
+  will get better performance from applying potential modifiers to your
+  interactions!
+
+
+
+NOTE 3 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rcoulomb.
+
+
+NOTE 4 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rvdw.
+
+Setting the LD random seed to -1875259124
+Generated 37 of the 903 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'AU'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'NA+'
+Excluding 1 bonded neighbours molecule type 'CL-'
+Setting gen_seed to -1828655365
+Velocities were taken from a Maxwell distribution at 313 K
+Number of degrees of freedom in T-Coupling group AU is 9749.96
+Number of degrees of freedom in T-Coupling group POPC is 228743.08
+Number of degrees of freedom in T-Coupling group W is 497689.00
+Number of degrees of freedom in T-Coupling group ION is 10955.96
+
+NOTE 5 [file md_i.mdp]:
+  This run will generate roughly 29764 Mb of data
+
+
+There were 5 notes
+
+GROMACS reminds you: "Act like Prometheus would" (Gogol Bordello)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi mdrun -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 1 node with total 52 cores, 52 logical cores
+Hardware detected on host gpuc004.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6230R CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Only logical processor count
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Using 1 MPI process
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+WARNING: This run will generate roughly 29736 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+200000000 steps, 5000000.0 ps.
+step 0[gpuc004.amarel.rutgers.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+srun: error: gpuc004: task 0: Segmentation fault

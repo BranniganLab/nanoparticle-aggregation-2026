@@ -1,0 +1,319 @@
+                   :-) GROMACS - gmx convert-tpr, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP/Dodecanthiol
+Command line:
+  gmx_mpi convert-tpr -s md.tpr -nsteps 2000000000 -o md2.tpr
+
+Reading toplogy and stuff from md.tpr
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Setting nsteps to 2000000000
+Writing statusfile with starting step          0 and length 2000000000 steps...
+                                 time      0.000 and length 50000000.000 ps
+
+Back Off! I just backed up md2.tpr to ./#md2.tpr.2#
+
+GROMACS reminds you: "The future always gets twisted and turned" (Lisa o Piu)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/PolarNP/Dodecanthiol
+Command line:
+  gmx_mpi mdrun -s md2.tpr -cpi md.cpt -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 1 node with total 32 cores, 32 logical cores
+Hardware detected on host halc009.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md2.tpr, VERSION 2016.1 (single precision)
+
+Reading checkpoint file md.cpt generated: Tue Aug  1 11:07:56 2023
+
+
+Using 32 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+WARNING: This run will generate roughly 284420 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+2000000000 steps, 50000000.0 ps (continuing from step 82974630, 2074365.8 ps).
+step 82974630, will finish Sun Aug  3 11:46:15 2025
+
+step 82974660 Turning on dynamic load balancing, because the performance loss due to load imbalance is 8.2 %.
+
+vol 0.91  imb F  3% step 82974700, will finish Mon Dec  4 15:09:38 2023
+vol 0.89  imb F  2% step 82974800, will finish Thu Nov 23 23:53:51 2023
+vol 0.91  imb F  2% step 82974900, will finish Fri Nov 24 04:47:51 2023
+vol 0.91  imb F  2% step 82975000, will finish Tue Nov 21 14:03:37 2023
+vol 0.90  imb F  3% step 82975100, will finish Mon Nov 20 07:46:48 2023
+vol 0.90  imb F  2% step 82975200, will finish Sun Nov 19 06:07:24 2023
+vol 0.89  imb F  2% step 82975300, will finish Sun Nov 19 12:49:53 2023
+vol 0.90  imb F  2% step 82975400, will finish Sun Nov 19 01:10:02 2023
+vol 0.90  imb F  5% step 82975500, will finish Sat Nov 18 11:11:38 2023
+vol 0.90  imb F  1% step 82975600, will finish Sat Nov 18 03:48:34 2023
+vol 0.90  imb F  2% step 82975700, will finish Fri Nov 17 21:36:42 2023
+vol 0.91  imb F  2% step 82975800, will finish Fri Nov 17 15:29:48 2023
+vol 0.90  imb F  2% step 82975900, will finish Fri Nov 17 10:07:51 2023
+vol 0.91  imb F  3% step 82976000, will finish Sat Nov 18 03:49:56 2023
+
+step 82976030 Turning off dynamic load balancing, because it is degrading performance.
+
+imb F 10% step 82976100, will finish Sat Nov 18 11:37:50 2023
+imb F 12% step 82976200, will finish Sat Nov 18 11:09:46 2023
+imb F  9% step 82976300, will finish Sat Nov 18 10:28:00 2023
+imb F  8% step 82976400, will finish Sat Nov 18 08:08:05 2023
+imb F  9% step 82976500, will finish Sat Nov 18 09:11:51 2023
+imb F 10% step 82976600, will finish Sat Nov 18 07:52:28 2023
+imb F 11% step 82976700, will finish Sat Nov 18 08:00:58 2023
+imb F 12% step 82976800, will finish Sat Nov 18 08:53:59 2023
+imb F 10% step 82976900, will finish Sat Nov 18 08:24:32 2023
+imb F 10% step 82977000, will finish Sat Nov 18 11:26:33 2023
+imb F 11% step 82977100, will finish Sat Nov 18 13:57:45 2023
+imb F 10% step 82977200, will finish Sat Nov 18 15:35:31 2023
+imb F 11% step 82977300, will finish Sat Nov 18 15:52:55 2023
+imb F  9% step 82977400, will finish Sat Nov 18 15:16:32 2023
+imb F  9% step 82977500, will finish Sat Nov 18 14:17:06 2023
+imb F 12% step 82977600, will finish Sat Nov 18 13:54:54 2023
+imb F 12% step 82977700, will finish Sat Nov 18 13:08:50 2023
+imb F  9% step 82977800, will finish Sat Nov 18 12:29:06 2023
+imb F 11% step 82977900, will finish Sat Nov 18 12:24:23 2023
+imb F  9% step 82978000, will finish Sat Nov 18 12:12:23 2023
+imb F 10% step 82978100, will finish Sat Nov 18 12:16:59 2023
+imb F 10% step 82978200, will finish Sat Nov 18 12:31:22 2023
+imb F 10% step 82978300, will finish Sat Nov 18 12:07:14 2023
+imb F 11% step 82978400, will finish Sat Nov 18 11:50:29 2023
+imb F 15% step 82978500, will finish Sat Nov 18 14:10:19 2023
+imb F 10% step 82978600, will finish Sat Nov 18 15:45:37 2023
+
+step 82978630 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.1 %.
+
+vol 0.89  imb F  2% step 82978700, will finish Sat Nov 18 16:37:52 2023
+vol 0.88  imb F  3% step 82978800, will finish Sat Nov 18 13:57:47 2023
+vol 0.89  imb F  3% step 82978900, will finish Sat Nov 18 12:58:25 2023
+vol 0.90  imb F  8% step 82979000, will finish Sat Nov 18 11:57:41 2023
+vol 0.89  imb F  2% step 82979100, will finish Sat Nov 18 10:20:06 2023
+vol 0.90  imb F  2% step 82979200, will finish Sat Nov 18 09:32:44 2023
+vol 0.90  imb F  3% step 82979300, will finish Sat Nov 18 08:05:33 2023
+vol 0.89  imb F  2% step 82979400, will finish Sat Nov 18 06:42:19 2023
+vol 0.89  imb F  3% step 82979500, will finish Sat Nov 18 04:37:12 2023
+vol 0.90  imb F  5% step 82979600, will finish Sat Nov 18 02:56:06 2023
+vol 0.90  imb F  2% step 82979700, will finish Sat Nov 18 02:00:51 2023
+vol 0.90  imb F  2% step 82979800, will finish Sat Nov 18 00:19:49 2023
+vol 0.89  imb F  2% step 82979900, will finish Fri Nov 17 22:58:56 2023
+vol 0.90  imb F  2% step 82980000, will finish Sat Nov 18 00:18:12 2023
+vol 0.91  imb F  2% step 82980100, will finish Fri Nov 17 23:15:56 2023
+vol 0.89  imb F  3% step 82980200, will finish Sat Nov 18 01:15:13 2023
+vol 0.90  imb F  5% step 82980300, will finish Sat Nov 18 00:11:59 2023
+vol 0.89  imb F  1% step 82980400, will finish Fri Nov 17 22:37:21 2023
+vol 0.90  imb F  2% step 82980500, will finish Fri Nov 17 21:17:56 2023
+vol 0.88  imb F  2% step 82980600, will finish Fri Nov 17 20:00:14 2023
+vol 0.90  imb F  2% step 82980700, will finish Fri Nov 17 19:03:30 2023
+vol 0.89  imb F  2% step 82980800, will finish Fri Nov 17 18:29:18 2023
+vol 0.90  imb F  2% step 82980900, will finish Fri Nov 17 17:18:23 2023
+vol 0.90  imb F  8% step 82981000, will finish Fri Nov 17 16:24:33 2023
+vol 0.90  imb F  2% step 82981100, will finish Fri Nov 17 15:52:17 2023
+vol 0.88  imb F  3% step 82981200, will finish Fri Nov 17 15:21:39 2023
+vol 0.89  imb F  1% step 82981300, will finish Fri Nov 17 14:35:45 2023
+vol 0.90  imb F  4% step 82981400, will finish Fri Nov 17 13:19:11 2023
+vol 0.91  imb F  3% step 82981500, will finish Fri Nov 17 12:19:15 2023
+vol 0.90  imb F  4% step 82981600, will finish Fri Nov 17 11:52:54 2023
+vol 0.90  imb F  2% step 82981700, will finish Fri Nov 17 11:00:31 2023
+vol 0.90  imb F  2% step 82981800, will finish Fri Nov 17 10:55:53 2023
+vol 0.90  imb F  2% step 82981900, will finish Fri Nov 17 10:36:59 2023
+vol 0.90  imb F  3% step 82982000, will finish Fri Nov 17 09:42:51 2023
+vol 0.90  imb F  2% step 82982100, will finish Fri Nov 17 09:07:35 2023
+vol 0.89  imb F  2% step 82982200, will finish Fri Nov 17 08:05:13 2023
+vol 0.90  imb F  2% step 82982300, will finish Fri Nov 17 08:02:13 2023
+vol 0.89  imb F  3% step 82982400, will finish Fri Nov 17 07:34:59 2023
+vol 0.89  imb F  2% step 82982500, will finish Fri Nov 17 06:54:26 2023
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 30453628.1 ON halc009 CANCELLED AT 2023-08-06T20:52:21 ***
+slurmstepd: error: *** JOB 30453628 ON halc009 CANCELLED AT 2023-08-06T20:52:21 ***
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+
+
+
+Received the TERM signal, stopping within 10 steps
+

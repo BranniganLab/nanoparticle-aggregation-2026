@@ -1,0 +1,196 @@
+GpuFreq=control_disabled
+               :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi grompp -f ../../em.mdp -c insane.gro -p insane.top -o em -maxwarn 10
+
+Ignoring obsolete mdp entry 'ns_type'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc-precision' by 'compressed-x-precision'
+
+NOTE 1 [file ../../em.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using verlet-buffer-tolerance.
+
+atom name 56 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 57 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 60 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 61 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 63 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 64 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 65 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 66 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 69 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 70 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 72 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 73 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 74 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 75 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 78 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 79 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 81 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 82 in insane.top and insane.gro does not match (LIG - C1)
+
+atom name 83 in insane.top and insane.gro does not match (AUSL - AUS)
+
+atom name 84 in insane.top and insane.gro does not match (AUSL - AUS)
+
+(more than 20 non-matching atom names)
+
+WARNING 1 [file insane.top, line 19]:
+  1800 non-matching atom names
+  atom names from insane.top will be used
+  atom names from insane.gro will be ignored
+
+
+Number of degrees of freedom in T-Coupling group rest is 747138.00
+
+NOTE 2 [file ../../em.mdp]:
+  You are using a plain Coulomb cut-off, which might produce artifacts.
+  You might want to consider using PME electrostatics.
+
+
+
+There were 2 notes
+
+There was 1 warning
+
+GROMACS reminds you: "Can't You Make This Thing Go Faster ?" (Black Crowes)
+
+GpuFreq=control_disabled
+                :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi mdrun -deffnm em -v
+
+Reading file em.tpr, VERSION 2022.5-plumed_2.9.0 (single precision)
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI process
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 16 OpenMP threads 
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =        50000
+Step=    0, Dmax= 1.0e-02 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036
+Step=    1, Dmax= 1.0e-02 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    2, Dmax= 5.0e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    3, Dmax= 2.5e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    4, Dmax= 1.2e-03 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    5, Dmax= 6.2e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    6, Dmax= 3.1e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    7, Dmax= 1.6e-04 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    8, Dmax= 7.8e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=    9, Dmax= 3.9e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   10, Dmax= 2.0e-05 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   11, Dmax= 9.8e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   12, Dmax= 4.9e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   13, Dmax= 2.4e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036Step=   14, Dmax= 1.2e-06 nm, Epot=  5.41842e+16 Fmax=         inf, atom= 1036
+Energy minimization has stopped because the force on at least one atom is not
+finite. This usually means atoms are overlapping. Modify the input
+coordinates to remove atom overlap or use soft-core potentials with the free
+energy code to avoid infinite forces.
+You could also be lucky that switching to double precision is sufficient to
+obtain finite forces.
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to machine precision in 15 steps,
+but did not reach the requested Fmax < 10.
+Potential Energy  =  5.4184221e+16
+Maximum force     =            inf on atom 1036
+Norm of force     =            inf
+
+GROMACS reminds you: "She Says She Can't Go Home Without a Chaperone" (E. Costello)
+
+GpuFreq=control_disabled
+               :-) GROMACS - gmx grompp, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi grompp -f md_i.mdp -c em.gro -r em.gro -p insane.top -o md -maxwarn 10
+
+Ignoring obsolete mdp entry 'ns_type'
+Replacing old mdp entry 'unconstrained_start' by 'continuation'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc_precision' by 'compressed-x-precision'
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2022.5-plumed_2.9.0
+Source file: src/gromacs/gmxpreprocess/readir.cpp (line 291)
+
+Fatal error:
+The group cutoff scheme has been removed since GROMACS 2020. Please use the
+Verlet cutoff scheme.
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 3307330.2 ON gpua018 CANCELLED AT 2024-03-28T03:18:38 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: gpua018: task 0: Exited with exit code 1
+GpuFreq=control_disabled
+                :-) GROMACS - gmx mdrun, 2022.5-plumed_2.9.0 (-:
+
+Executable:   /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6/bin/gmx_mpi
+Data prefix:  /sw/spack/deltas11-2023-03/apps/linux-rhel8-zen3/gcc-11.4.0/gromacs-2022.5-4hjehu6
+Working dir:  /scratch/bbyz/jennis/PolarNP_7/Octanethiol
+Command line:
+  gmx_mpi mdrun -deffnm md -v -nb gpu -bonded gpu -update gpu
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.5-plumed_2.9.0
+Source file: src/gromacs/options/options.cpp (line 177)
+Function:    void gmx::internal::OptionSectionImpl::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+slurmstepd: error: *** STEP 3307330.3 ON gpua018 CANCELLED AT 2024-03-28T03:18:39 ***
+srun: error: gpua018: task 0: Exited with exit code 1
