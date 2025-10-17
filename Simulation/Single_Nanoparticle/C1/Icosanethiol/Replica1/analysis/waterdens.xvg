@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:10:32 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Icosanethiol/Replica1/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o waterdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "W"
+    -6.56814          981.106
+    -6.30006           980.67
+    -6.03197          977.874
+    -5.76388          982.963
+    -5.49579          979.094
+    -5.22771          978.281
+    -4.95962          980.084
+    -4.69153          980.627
+    -4.42344          978.319
+    -4.15536          978.277
+    -3.88727          976.867
+    -3.61918          964.098
+    -3.35109          939.772
+    -3.08301          907.236
+    -2.81492          848.419
+    -2.54683          753.099
+    -2.27874          609.571
+    -2.01066          421.768
+    -1.74257          263.572
+    -1.47448          149.772
+    -1.20639           63.403
+   -0.938306          16.4563
+   -0.670219          2.40939
+   -0.402131         0.185987
+   -0.134044        0.0565779
+    0.134044        0.0606226
+    0.402131        0.0485047
+    0.670219         0.529489
+    0.938306          6.23236
+     1.20639            33.39
+     1.47448          105.589
+     1.74257          215.323
+     2.01066          354.017
+     2.27874          544.668
+     2.54683          731.373
+     2.81492          851.224
+     3.08301          914.898
+     3.35109          951.389
+     3.61918          969.349
+     3.88727          976.942
+     4.15536          978.636
+     4.42344          979.874
+     4.69153          977.522
+     4.95962           981.21
+     5.22771          978.413
+     5.49579          982.161
+     5.76388          978.739
+     6.03197          979.888
+     6.30006           981.76
+     6.56814          976.652

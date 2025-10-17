@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:08:45 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Hexadecanethiol/Replica1/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o popcdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# GROtesk MACabre and Sinister
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPC"
+     -6.2953                0
+    -6.03835                0
+     -5.7814                0
+    -5.52445                0
+    -5.26749                0
+    -5.01054                0
+    -4.75359                0
+    -4.49664       0.00939521
+    -4.23969         0.131701
+    -3.98274          1.09114
+    -3.72579          5.79951
+    -3.46884          19.5908
+    -3.21189          44.9483
+    -2.95494          86.7683
+    -2.69798          157.763
+    -2.44103           275.78
+    -2.18408          457.458
+    -1.92713          668.764
+    -1.67018          836.576
+    -1.41323          945.333
+    -1.15628           998.07
+   -0.899328          1000.86
+   -0.642377          968.355
+   -0.385426          914.161
+   -0.128475          850.503
+    0.128475          830.226
+    0.385426          874.042
+    0.642377          937.775
+    0.899328          992.935
+     1.15628          1018.14
+     1.41323          999.686
+     1.67018          922.627
+     1.92713          791.296
+     2.18408          603.838
+     2.44103          376.607
+     2.69798          200.811
+     2.95494          98.3495
+     3.21189          46.3634
+     3.46884          18.9368
+     3.72579           5.0001
+     3.98274         0.823164
+     4.23969        0.0988051
+     4.49664       0.00469849
+     4.75359                0
+     5.01054                0
+     5.26749                0
+     5.52445                0
+      5.7814                0
+     6.03835                0
+      6.2953                0

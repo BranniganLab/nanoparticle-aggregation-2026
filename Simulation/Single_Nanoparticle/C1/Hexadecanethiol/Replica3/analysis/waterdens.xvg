@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:10:05 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Hexadecanethiol/Replica3/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o waterdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "W"
+    -6.29472           981.85
+    -6.03779          980.516
+    -5.78086          978.965
+    -5.52393            981.7
+    -5.26701          979.831
+    -5.01008          980.187
+    -4.75315          977.863
+    -4.49623          979.291
+     -4.2393          978.939
+    -3.98237          978.293
+    -3.72544          971.246
+    -3.46852          954.854
+    -3.21159          928.408
+    -2.95466          888.992
+    -2.69774          814.004
+    -2.44081          699.238
+    -2.18388          530.873
+    -1.92695          348.737
+    -1.67003          214.916
+     -1.4131          117.827
+    -1.15617          43.6101
+   -0.899245          9.68105
+   -0.642318          1.28399
+   -0.385391         0.183473
+   -0.128464        0.0752345
+    0.128464        0.0705567
+    0.385391        0.0799367
+    0.642318         0.569216
+    0.899245          5.08536
+     1.15617           30.064
+      1.4131          96.2991
+     1.67003          201.473
+     1.92695          328.201
+     2.18388          506.934
+     2.44081          702.248
+     2.69774          834.132
+     2.95466          907.109
+     3.21159          943.812
+     3.46852          966.755
+     3.72544          978.983
+     3.98237          976.001
+      4.2393          981.176
+     4.49623          980.174
+     4.75315          978.357
+     5.01008          981.268
+     5.26701          980.662
+     5.52393          980.045
+     5.78086          981.512
+     6.03779          980.078
+     6.29472          978.737

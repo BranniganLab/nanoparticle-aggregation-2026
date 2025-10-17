@@ -1,0 +1,2617 @@
+[ moleculetype ]
+; Name            nrexcl
+AU                  1
+
+[ atoms ]
+;   nr       type  resnr residue  atom    cgnr     charge       mass
+     1        Qa     1    AU   AUC        1         0          784
+     2        Qa     1    AU   AUC        2         0          784
+     3        Qa     1    AU   AUC        3         0          784
+     4        Qa     1    AU   AUC        4         0          784
+     5        Qa     1    AU   AUC        5         0          784
+     6        Qa     1    AU   AUC        6         0          784
+     7        Qa     1    AU   AUC        7         0          784
+     8        Qa     1    AU   AUC        8         0          784
+     9        Qa     1    AU   AUC        9         0          784
+    10        Qa     1    AU   AUC       10         0          784
+    11        Qa     1    AU   AUC       11         0          784
+    12        Qa     1    AU   AUC       12         0          784
+    13        Qa     1    AU   AUC       13         0          784
+    14        Qa     1    AU   AUC       14         0          784
+    15        Qa     1    AU   AUC       15         0          784
+    16        Qa     1    AU   AUC       16         0          784
+    17        Qa     1    AU   AUC       17         0          784
+    18        Qa     1    AU   AUC       18         0          784
+    19        Qa     1    AU   AUC       19         0          784
+    20        Qa     1    AU   AUC       20         0          784
+    21        Qa     1    AU   AUC       21         0          784
+    22        Qa     1    AU   AUC       22         0          784
+    23        Qa     1    AU   AUC       23         0          784
+    24        Qa     1    AU   AUC       24         0          784
+    25        Qa     1    AU   AUC       25         0          784
+    26        Qa     1    AU   AUC       26         0          784
+    27        Qa     1    AU   AUC       27         0          784
+    28        Qa     1    AU   AUC       28         0          784
+    29        Qa     1    AU   AUC       29         0          784
+    30        Qa     1    AU   AUC       30         0          784
+    31        Qa     1    AU   AUC       31         0          784
+    32        Qa     1    AU   AUC       32         0          784
+    33        Qa     1    AU   AUC       33         0          784
+    34        Qa     1    AU   AUC       34         0          784
+    35        Qa     1    AU   AUC       35         0          784
+    36        Qa     1    AU   AUC       36         0          784
+    37        Qa     1    AU   AUC       37         0          784
+    38        Qa     1    AU   AUC       38         0          784
+    39        Qa     1    AU   AUC       39         0          784
+    40        Qa     1    AU   AUC       40         0          784
+    41        Qa     1    AU   AUC       41         0          784
+    42        Qa     1    AU   AUC       42         0          784
+    43        Qa     1    AU   AUC       43         0          784
+    44        Qa     1    AU   AUC       44         0          784
+    45        Qa     1    AU   AUC       45         0          784
+    46        Qa     1    AU   AUC       46         0          784
+    47        Qa     1    AU   AUC       47         0          784
+    48        Qa     1    AU   AUC       48         0          784
+    49        Qa     1    AU   AUC       49         0          784
+    50        Qa     1    AU   AUC       50         0          784
+    51        Qa     1    AU   AUC       51         0          784
+    52        Qa     1    AU   AUC       52         0          784
+    53        Qa     1    AU   AUC       53         0          784
+    54        Qa     1    AU   AUC       54         0          784
+    55        Qa     1    AU   AUC       55         0          784
+    56        Qa     1    AU   AUSL      56         0          784
+    57        Qa     1    AU   AUSL      57         0          784
+    58        Qa     1    AU   AUL       58         0          784
+    59        N0     1    AU   S         59         0           46
+    60        C1     1    AU   LIG       60         0           56
+    61        C1     1    AU   LIG       61         0           56
+    62        C1     1    AU   LIG       62         0           56
+    63        C1     1    AU   LIG       63         0           56
+    64        C1     1    AU   LIG       64         0           56
+    65        C1     1    AU   LIG       65         0           56
+    66        N0     1    AU   S         66         0           46
+    67        C1     1    AU   LIG       67         0           56
+    68        C1     1    AU   LIG       68         0           56
+    69        C1     1    AU   LIG       69         0           56
+    70        C1     1    AU   LIG       70         0           56
+    71        C1     1    AU   LIG       71         0           56
+    72        C1     1    AU   LIG       72         0           56
+    73        Qa     1    AU   AUSL      73         0          784
+    74        Qa     1    AU   AUSL      74         0          784
+    75        Qa     1    AU   AUL       75         0          784
+    76        N0     1    AU   S         76         0           46
+    77        C1     1    AU   LIG       77         0           56
+    78        C1     1    AU   LIG       78         0           56
+    79        C1     1    AU   LIG       79         0           56
+    80        C1     1    AU   LIG       80         0           56
+    81        C1     1    AU   LIG       81         0           56
+    82        C1     1    AU   LIG       82         0           56
+    83        N0     1    AU   S         83         0           46
+    84        C1     1    AU   LIG       84         0           56
+    85        C1     1    AU   LIG       85         0           56
+    86        C1     1    AU   LIG       86         0           56
+    87        C1     1    AU   LIG       87         0           56
+    88        C1     1    AU   LIG       88         0           56
+    89        C1     1    AU   LIG       89         0           56
+    90        Qa     1    AU   AUSL      90         0          784
+    91        Qa     1    AU   AUSL      91         0          784
+    92        Qa     1    AU   AUL       92         0          784
+    93        N0     1    AU   S         93         0           46
+    94        C1     1    AU   LIG       94         0           56
+    95        C1     1    AU   LIG       95         0           56
+    96        C1     1    AU   LIG       96         0           56
+    97        C1     1    AU   LIG       97         0           56
+    98        C1     1    AU   LIG       98         0           56
+    99        C1     1    AU   LIG       99         0           56
+   100        N0     1    AU   S        100         0           46
+   101        C1     1    AU   LIG      101         0           56
+   102        C1     1    AU   LIG      102         0           56
+   103        C1     1    AU   LIG      103         0           56
+   104        C1     1    AU   LIG      104         0           56
+   105        C1     1    AU   LIG      105         0           56
+   106        C1     1    AU   LIG      106         0           56
+   107        Qa     1    AU   AUSL     107         0          784
+   108        Qa     1    AU   AUSL     108         0          784
+   109        Qa     1    AU   AUL      109         0          784
+   110        N0     1    AU   S        110         0           46
+   111        C1     1    AU   LIG      111         0           56
+   112        C1     1    AU   LIG      112         0           56
+   113        C1     1    AU   LIG      113         0           56
+   114        C1     1    AU   LIG      114         0           56
+   115        C1     1    AU   LIG      115         0           56
+   116        C1     1    AU   LIG      116         0           56
+   117        N0     1    AU   S        117         0           46
+   118        C1     1    AU   LIG      118         0           56
+   119        C1     1    AU   LIG      119         0           56
+   120        C1     1    AU   LIG      120         0           56
+   121        C1     1    AU   LIG      121         0           56
+   122        C1     1    AU   LIG      122         0           56
+   123        C1     1    AU   LIG      123         0           56
+   124        Qa     1    AU   AUSL     124         0          784
+   125        Qa     1    AU   AUSL     125         0          784
+   126        Qa     1    AU   AUL      126         0          784
+   127        N0     1    AU   S        127         0           46
+   128        C1     1    AU   LIG      128         0           56
+   129        C1     1    AU   LIG      129         0           56
+   130        C1     1    AU   LIG      130         0           56
+   131        C1     1    AU   LIG      131         0           56
+   132        C1     1    AU   LIG      132         0           56
+   133        C1     1    AU   LIG      133         0           56
+   134        N0     1    AU   S        134         0           46
+   135        C1     1    AU   LIG      135         0           56
+   136        C1     1    AU   LIG      136         0           56
+   137        C1     1    AU   LIG      137         0           56
+   138        C1     1    AU   LIG      138         0           56
+   139        C1     1    AU   LIG      139         0           56
+   140        C1     1    AU   LIG      140         0           56
+   141        Qa     1    AU   AUSL     141         0          784
+   142        Qa     1    AU   AUSL     142         0          784
+   143        Qa     1    AU   AUL      143         0          784
+   144        N0     1    AU   S        144         0           46
+   145        C1     1    AU   LIG      145         0           56
+   146        C1     1    AU   LIG      146         0           56
+   147        C1     1    AU   LIG      147         0           56
+   148        C1     1    AU   LIG      148         0           56
+   149        C1     1    AU   LIG      149         0           56
+   150        C1     1    AU   LIG      150         0           56
+   151        N0     1    AU   S        151         0           46
+   152        C1     1    AU   LIG      152         0           56
+   153        C1     1    AU   LIG      153         0           56
+   154        C1     1    AU   LIG      154         0           56
+   155        C1     1    AU   LIG      155         0           56
+   156        C1     1    AU   LIG      156         0           56
+   157        C1     1    AU   LIG      157         0           56
+   158        Qa     1    AU   AUSL     158         0          784
+   159        Qa     1    AU   AUSL     159         0          784
+   160        Qa     1    AU   AUL      160         0          784
+   161        N0     1    AU   S        161         0           46
+   162        C1     1    AU   LIG      162         0           56
+   163        C1     1    AU   LIG      163         0           56
+   164        C1     1    AU   LIG      164         0           56
+   165        C1     1    AU   LIG      165         0           56
+   166        C1     1    AU   LIG      166         0           56
+   167        C1     1    AU   LIG      167         0           56
+   168        N0     1    AU   S        168         0           46
+   169        C1     1    AU   LIG      169         0           56
+   170        C1     1    AU   LIG      170         0           56
+   171        C1     1    AU   LIG      171         0           56
+   172        C1     1    AU   LIG      172         0           56
+   173        C1     1    AU   LIG      173         0           56
+   174        C1     1    AU   LIG      174         0           56
+   175        Qa     1    AU   AUSL     175         0          784
+   176        Qa     1    AU   AUSL     176         0          784
+   177        Qa     1    AU   AUL      177         0          784
+   178        N0     1    AU   S        178         0           46
+   179        C1     1    AU   LIG      179         0           56
+   180        C1     1    AU   LIG      180         0           56
+   181        C1     1    AU   LIG      181         0           56
+   182        C1     1    AU   LIG      182         0           56
+   183        C1     1    AU   LIG      183         0           56
+   184        C1     1    AU   LIG      184         0           56
+   185        N0     1    AU   S        185         0           46
+   186        C1     1    AU   LIG      186         0           56
+   187        C1     1    AU   LIG      187         0           56
+   188        C1     1    AU   LIG      188         0           56
+   189        C1     1    AU   LIG      189         0           56
+   190        C1     1    AU   LIG      190         0           56
+   191        C1     1    AU   LIG      191         0           56
+   192        Qa     1    AU   AUSL     192         0          784
+   193        Qa     1    AU   AUSL     193         0          784
+   194        Qa     1    AU   AUL      194         0          784
+   195        N0     1    AU   S        195         0           46
+   196        C1     1    AU   LIG      196         0           56
+   197        C1     1    AU   LIG      197         0           56
+   198        C1     1    AU   LIG      198         0           56
+   199        C1     1    AU   LIG      199         0           56
+   200        C1     1    AU   LIG      200         0           56
+   201        C1     1    AU   LIG      201         0           56
+   202        N0     1    AU   S        202         0           46
+   203        C1     1    AU   LIG      203         0           56
+   204        C1     1    AU   LIG      204         0           56
+   205        C1     1    AU   LIG      205         0           56
+   206        C1     1    AU   LIG      206         0           56
+   207        C1     1    AU   LIG      207         0           56
+   208        C1     1    AU   LIG      208         0           56
+   209        Qa     1    AU   AUSL     209         0          784
+   210        Qa     1    AU   AUSL     210         0          784
+   211        Qa     1    AU   AUL      211         0          784
+   212        N0     1    AU   S        212         0           46
+   213        C1     1    AU   LIG      213         0           56
+   214        C1     1    AU   LIG      214         0           56
+   215        C1     1    AU   LIG      215         0           56
+   216        C1     1    AU   LIG      216         0           56
+   217        C1     1    AU   LIG      217         0           56
+   218        C1     1    AU   LIG      218         0           56
+   219        N0     1    AU   S        219         0           46
+   220        C1     1    AU   LIG      220         0           56
+   221        C1     1    AU   LIG      221         0           56
+   222        C1     1    AU   LIG      222         0           56
+   223        C1     1    AU   LIG      223         0           56
+   224        C1     1    AU   LIG      224         0           56
+   225        C1     1    AU   LIG      225         0           56
+   226        Qa     1    AU   AUSL     226         0          784
+   227        Qa     1    AU   AUSL     227         0          784
+   228        Qa     1    AU   AUL      228         0          784
+   229        N0     1    AU   S        229         0           46
+   230        C1     1    AU   LIG      230         0           56
+   231        C1     1    AU   LIG      231         0           56
+   232        C1     1    AU   LIG      232         0           56
+   233        C1     1    AU   LIG      233         0           56
+   234        C1     1    AU   LIG      234         0           56
+   235        C1     1    AU   LIG      235         0           56
+   236        N0     1    AU   S        236         0           46
+   237        C1     1    AU   LIG      237         0           56
+   238        C1     1    AU   LIG      238         0           56
+   239        C1     1    AU   LIG      239         0           56
+   240        C1     1    AU   LIG      240         0           56
+   241        C1     1    AU   LIG      241         0           56
+   242        C1     1    AU   LIG      242         0           56
+   243        Qa     1    AU   AUSL     243         0          784
+   244        Qa     1    AU   AUSL     244         0          784
+   245        Qa     1    AU   AUL      245         0          784
+   246        N0     1    AU   S        246         0           46
+   247        C1     1    AU   LIG      247         0           56
+   248        C1     1    AU   LIG      248         0           56
+   249        C1     1    AU   LIG      249         0           56
+   250        C1     1    AU   LIG      250         0           56
+   251        C1     1    AU   LIG      251         0           56
+   252        C1     1    AU   LIG      252         0           56
+   253        N0     1    AU   S        253         0           46
+   254        C1     1    AU   LIG      254         0           56
+   255        C1     1    AU   LIG      255         0           56
+   256        C1     1    AU   LIG      256         0           56
+   257        C1     1    AU   LIG      257         0           56
+   258        C1     1    AU   LIG      258         0           56
+   259        C1     1    AU   LIG      259         0           56
+   260        Qa     1    AU   AUSL     260         0          784
+   261        Qa     1    AU   AUSL     261         0          784
+   262        Qa     1    AU   AUL      262         0          784
+   263        N0     1    AU   S        263         0           46
+   264        C1     1    AU   LIG      264         0           56
+   265        C1     1    AU   LIG      265         0           56
+   266        C1     1    AU   LIG      266         0           56
+   267        C1     1    AU   LIG      267         0           56
+   268        C1     1    AU   LIG      268         0           56
+   269        C1     1    AU   LIG      269         0           56
+   270        N0     1    AU   S        270         0           46
+   271        C1     1    AU   LIG      271         0           56
+   272        C1     1    AU   LIG      272         0           56
+   273        C1     1    AU   LIG      273         0           56
+   274        C1     1    AU   LIG      274         0           56
+   275        C1     1    AU   LIG      275         0           56
+   276        C1     1    AU   LIG      276         0           56
+   277        Qa     1    AU   AUSL     277         0          784
+   278        Qa     1    AU   AUSL     278         0          784
+   279        Qa     1    AU   AUL      279         0          784
+   280        N0     1    AU   S        280         0           46
+   281        C1     1    AU   LIG      281         0           56
+   282        C1     1    AU   LIG      282         0           56
+   283        C1     1    AU   LIG      283         0           56
+   284        C1     1    AU   LIG      284         0           56
+   285        C1     1    AU   LIG      285         0           56
+   286        C1     1    AU   LIG      286         0           56
+   287        N0     1    AU   S        287         0           46
+   288        C1     1    AU   LIG      288         0           56
+   289        C1     1    AU   LIG      289         0           56
+   290        C1     1    AU   LIG      290         0           56
+   291        C1     1    AU   LIG      291         0           56
+   292        C1     1    AU   LIG      292         0           56
+   293        C1     1    AU   LIG      293         0           56
+   294        Qa     1    AU   AUSL     294         0          784
+   295        Qa     1    AU   AUSL     295         0          784
+   296        Qa     1    AU   AUL      296         0          784
+   297        N0     1    AU   S        297         0           46
+   298        C1     1    AU   LIG      298         0           56
+   299        C1     1    AU   LIG      299         0           56
+   300        C1     1    AU   LIG      300         0           56
+   301        C1     1    AU   LIG      301         0           56
+   302        C1     1    AU   LIG      302         0           56
+   303        C1     1    AU   LIG      303         0           56
+   304        N0     1    AU   S        304         0           46
+   305        C1     1    AU   LIG      305         0           56
+   306        C1     1    AU   LIG      306         0           56
+   307        C1     1    AU   LIG      307         0           56
+   308        C1     1    AU   LIG      308         0           56
+   309        C1     1    AU   LIG      309         0           56
+   310        C1     1    AU   LIG      310         0           56
+   311        Qa     1    AU   AUSL     311         0          784
+   312        Qa     1    AU   AUSL     312         0          784
+   313        Qa     1    AU   AUL      313         0          784
+   314        N0     1    AU   S        314         0           46
+   315        C1     1    AU   LIG      315         0           56
+   316        C1     1    AU   LIG      316         0           56
+   317        C1     1    AU   LIG      317         0           56
+   318        C1     1    AU   LIG      318         0           56
+   319        C1     1    AU   LIG      319         0           56
+   320        C1     1    AU   LIG      320         0           56
+   321        N0     1    AU   S        321         0           46
+   322        C1     1    AU   LIG      322         0           56
+   323        C1     1    AU   LIG      323         0           56
+   324        C1     1    AU   LIG      324         0           56
+   325        C1     1    AU   LIG      325         0           56
+   326        C1     1    AU   LIG      326         0           56
+   327        C1     1    AU   LIG      327         0           56
+   328        Qa     1    AU   AUSL     328         0          784
+   329        Qa     1    AU   AUSL     329         0          784
+   330        Qa     1    AU   AUL      330         0          784
+   331        N0     1    AU   S        331         0           46
+   332        C1     1    AU   LIG      332         0           56
+   333        C1     1    AU   LIG      333         0           56
+   334        C1     1    AU   LIG      334         0           56
+   335        C1     1    AU   LIG      335         0           56
+   336        C1     1    AU   LIG      336         0           56
+   337        C1     1    AU   LIG      337         0           56
+   338        N0     1    AU   S        338         0           46
+   339        C1     1    AU   LIG      339         0           56
+   340        C1     1    AU   LIG      340         0           56
+   341        C1     1    AU   LIG      341         0           56
+   342        C1     1    AU   LIG      342         0           56
+   343        C1     1    AU   LIG      343         0           56
+   344        C1     1    AU   LIG      344         0           56
+   345        Qa     1    AU   AUSL     345         0          784
+   346        Qa     1    AU   AUSL     346         0          784
+   347        Qa     1    AU   AUL      347         0          784
+   348        N0     1    AU   S        348         0           46
+   349        C1     1    AU   LIG      349         0           56
+   350        C1     1    AU   LIG      350         0           56
+   351        C1     1    AU   LIG      351         0           56
+   352        C1     1    AU   LIG      352         0           56
+   353        C1     1    AU   LIG      353         0           56
+   354        C1     1    AU   LIG      354         0           56
+   355        N0     1    AU   S        355         0           46
+   356        C1     1    AU   LIG      356         0           56
+   357        C1     1    AU   LIG      357         0           56
+   358        C1     1    AU   LIG      358         0           56
+   359        C1     1    AU   LIG      359         0           56
+   360        C1     1    AU   LIG      360         0           56
+   361        C1     1    AU   LIG      361         0           56
+   362        Qa     1    AU   AUSL     362         0          784
+   363        Qa     1    AU   AUSL     363         0          784
+   364        Qa     1    AU   AUL      364         0          784
+   365        N0     1    AU   S        365         0           46
+   366        C1     1    AU   LIG      366         0           56
+   367        C1     1    AU   LIG      367         0           56
+   368        C1     1    AU   LIG      368         0           56
+   369        C1     1    AU   LIG      369         0           56
+   370        C1     1    AU   LIG      370         0           56
+   371        C1     1    AU   LIG      371         0           56
+   372        N0     1    AU   S        372         0           46
+   373        C1     1    AU   LIG      373         0           56
+   374        C1     1    AU   LIG      374         0           56
+   375        C1     1    AU   LIG      375         0           56
+   376        C1     1    AU   LIG      376         0           56
+   377        C1     1    AU   LIG      377         0           56
+   378        C1     1    AU   LIG      378         0           56
+   379        Qa     1    AU   AUSL     379         0          784
+   380        Qa     1    AU   AUSL     380         0          784
+   381        Qa     1    AU   AUL      381         0          784
+   382        N0     1    AU   S        382         0           46
+   383        C1     1    AU   LIG      383         0           56
+   384        C1     1    AU   LIG      384         0           56
+   385        C1     1    AU   LIG      385         0           56
+   386        C1     1    AU   LIG      386         0           56
+   387        C1     1    AU   LIG      387         0           56
+   388        C1     1    AU   LIG      388         0           56
+   389        N0     1    AU   S        389         0           46
+   390        C1     1    AU   LIG      390         0           56
+   391        C1     1    AU   LIG      391         0           56
+   392        C1     1    AU   LIG      392         0           56
+   393        C1     1    AU   LIG      393         0           56
+   394        C1     1    AU   LIG      394         0           56
+   395        C1     1    AU   LIG      395         0           56
+   396        Qa     1    AU   AUSL     396         0          784
+   397        Qa     1    AU   AUSL     397         0          784
+   398        Qa     1    AU   AUL      398         0          784
+   399        N0     1    AU   S        399         0           46
+   400        C1     1    AU   LIG      400         0           56
+   401        C1     1    AU   LIG      401         0           56
+   402        C1     1    AU   LIG      402         0           56
+   403        C1     1    AU   LIG      403         0           56
+   404        C1     1    AU   LIG      404         0           56
+   405        C1     1    AU   LIG      405         0           56
+   406        N0     1    AU   S        406         0           46
+   407        C1     1    AU   LIG      407         0           56
+   408        C1     1    AU   LIG      408         0           56
+   409        C1     1    AU   LIG      409         0           56
+   410        C1     1    AU   LIG      410         0           56
+   411        C1     1    AU   LIG      411         0           56
+   412        C1     1    AU   LIG      412         0           56
+   413        Qa     1    AU   AUSL     413         0          784
+   414        Qa     1    AU   AUSL     414         0          784
+   415        Qa     1    AU   AUL      415         0          784
+   416        N0     1    AU   S        416         0           46
+   417        C1     1    AU   LIG      417         0           56
+   418        C1     1    AU   LIG      418         0           56
+   419        C1     1    AU   LIG      419         0           56
+   420        C1     1    AU   LIG      420         0           56
+   421        C1     1    AU   LIG      421         0           56
+   422        C1     1    AU   LIG      422         0           56
+   423        N0     1    AU   S        423         0           46
+   424        C1     1    AU   LIG      424         0           56
+   425        C1     1    AU   LIG      425         0           56
+   426        C1     1    AU   LIG      426         0           56
+   427        C1     1    AU   LIG      427         0           56
+   428        C1     1    AU   LIG      428         0           56
+   429        C1     1    AU   LIG      429         0           56
+   430        Qa     1    AU   AUSL     430         0          784
+   431        Qa     1    AU   AUSL     431         0          784
+   432        Qa     1    AU   AUL      432         0          784
+   433        N0     1    AU   S        433         0           46
+   434        C1     1    AU   LIG      434         0           56
+   435        C1     1    AU   LIG      435         0           56
+   436        C1     1    AU   LIG      436         0           56
+   437        C1     1    AU   LIG      437         0           56
+   438        C1     1    AU   LIG      438         0           56
+   439        C1     1    AU   LIG      439         0           56
+   440        N0     1    AU   S        440         0           46
+   441        C1     1    AU   LIG      441         0           56
+   442        C1     1    AU   LIG      442         0           56
+   443        C1     1    AU   LIG      443         0           56
+   444        C1     1    AU   LIG      444         0           56
+   445        C1     1    AU   LIG      445         0           56
+   446        C1     1    AU   LIG      446         0           56
+   447        Qa     1    AU   AUSL     447         0          784
+   448        Qa     1    AU   AUSL     448         0          784
+   449        Qa     1    AU   AUL      449         0          784
+   450        N0     1    AU   S        450         0           46
+   451        C1     1    AU   LIG      451         0           56
+   452        C1     1    AU   LIG      452         0           56
+   453        C1     1    AU   LIG      453         0           56
+   454        C1     1    AU   LIG      454         0           56
+   455        C1     1    AU   LIG      455         0           56
+   456        C1     1    AU   LIG      456         0           56
+   457        N0     1    AU   S        457         0           46
+   458        C1     1    AU   LIG      458         0           56
+   459        C1     1    AU   LIG      459         0           56
+   460        C1     1    AU   LIG      460         0           56
+   461        C1     1    AU   LIG      461         0           56
+   462        C1     1    AU   LIG      462         0           56
+   463        C1     1    AU   LIG      463         0           56
+   464        Qa     1    AU   AUSL     464         0          784
+   465        Qa     1    AU   AUSL     465         0          784
+   466        Qa     1    AU   AUL      466         0          784
+   467        N0     1    AU   S        467         0           46
+   468        C1     1    AU   LIG      468         0           56
+   469        C1     1    AU   LIG      469         0           56
+   470        C1     1    AU   LIG      470         0           56
+   471        C1     1    AU   LIG      471         0           56
+   472        C1     1    AU   LIG      472         0           56
+   473        C1     1    AU   LIG      473         0           56
+   474        N0     1    AU   S        474         0           46
+   475        C1     1    AU   LIG      475         0           56
+   476        C1     1    AU   LIG      476         0           56
+   477        C1     1    AU   LIG      477         0           56
+   478        C1     1    AU   LIG      478         0           56
+   479        C1     1    AU   LIG      479         0           56
+   480        C1     1    AU   LIG      480         0           56
+   481        Qa     1    AU   AUSL     481         0          784
+   482        Qa     1    AU   AUSL     482         0          784
+   483        Qa     1    AU   AUL      483         0          784
+   484        N0     1    AU   S        484         0           46
+   485        C1     1    AU   LIG      485         0           56
+   486        C1     1    AU   LIG      486         0           56
+   487        C1     1    AU   LIG      487         0           56
+   488        C1     1    AU   LIG      488         0           56
+   489        C1     1    AU   LIG      489         0           56
+   490        C1     1    AU   LIG      490         0           56
+   491        N0     1    AU   S        491         0           46
+   492        C1     1    AU   LIG      492         0           56
+   493        C1     1    AU   LIG      493         0           56
+   494        C1     1    AU   LIG      494         0           56
+   495        C1     1    AU   LIG      495         0           56
+   496        C1     1    AU   LIG      496         0           56
+   497        C1     1    AU   LIG      497         0           56
+   498        Qa     1    AU   AUSL     498         0          784
+   499        Qa     1    AU   AUSL     499         0          784
+   500        Qa     1    AU   AUL      500         0          784
+   501        N0     1    AU   S        501         0           46
+   502        C1     1    AU   LIG      502         0           56
+   503        C1     1    AU   LIG      503         0           56
+   504        C1     1    AU   LIG      504         0           56
+   505        C1     1    AU   LIG      505         0           56
+   506        C1     1    AU   LIG      506         0           56
+   507        C1     1    AU   LIG      507         0           56
+   508        N0     1    AU   S        508         0           46
+   509        C1     1    AU   LIG      509         0           56
+   510        C1     1    AU   LIG      510         0           56
+   511        C1     1    AU   LIG      511         0           56
+   512        C1     1    AU   LIG      512         0           56
+   513        C1     1    AU   LIG      513         0           56
+   514        C1     1    AU   LIG      514         0           56
+   515        Qa     1    AU   AUSL     515         0          784
+   516        Qa     1    AU   AUSL     516         0          784
+   517        Qa     1    AU   AUL      517         0          784
+   518        N0     1    AU   S        518         0           46
+   519        C1     1    AU   LIG      519         0           56
+   520        C1     1    AU   LIG      520         0           56
+   521        C1     1    AU   LIG      521         0           56
+   522        C1     1    AU   LIG      522         0           56
+   523        C1     1    AU   LIG      523         0           56
+   524        C1     1    AU   LIG      524         0           56
+   525        N0     1    AU   S        525         0           46
+   526        C1     1    AU   LIG      526         0           56
+   527        C1     1    AU   LIG      527         0           56
+   528        C1     1    AU   LIG      528         0           56
+   529        C1     1    AU   LIG      529         0           56
+   530        C1     1    AU   LIG      530         0           56
+   531        C1     1    AU   LIG      531         0           56
+   532        Qa     1    AU   AUSL     532         0          784
+   533        Qa     1    AU   AUSL     533         0          784
+   534        Qa     1    AU   AUL      534         0          784
+   535        N0     1    AU   S        535         0           46
+   536        C1     1    AU   LIG      536         0           56
+   537        C1     1    AU   LIG      537         0           56
+   538        C1     1    AU   LIG      538         0           56
+   539        C1     1    AU   LIG      539         0           56
+   540        C1     1    AU   LIG      540         0           56
+   541        C1     1    AU   LIG      541         0           56
+   542        N0     1    AU   S        542         0           46
+   543        C1     1    AU   LIG      543         0           56
+   544        C1     1    AU   LIG      544         0           56
+   545        C1     1    AU   LIG      545         0           56
+   546        C1     1    AU   LIG      546         0           56
+   547        C1     1    AU   LIG      547         0           56
+   548        C1     1    AU   LIG      548         0           56
+   549        Qa     1    AU   AUSL     549         0          784
+   550        Qa     1    AU   AUSL     550         0          784
+   551        Qa     1    AU   AUL      551         0          784
+   552        N0     1    AU   S        552         0           46
+   553        C1     1    AU   LIG      553         0           56
+   554        C1     1    AU   LIG      554         0           56
+   555        C1     1    AU   LIG      555         0           56
+   556        C1     1    AU   LIG      556         0           56
+   557        C1     1    AU   LIG      557         0           56
+   558        C1     1    AU   LIG      558         0           56
+   559        N0     1    AU   S        559         0           46
+   560        C1     1    AU   LIG      560         0           56
+   561        C1     1    AU   LIG      561         0           56
+   562        C1     1    AU   LIG      562         0           56
+   563        C1     1    AU   LIG      563         0           56
+   564        C1     1    AU   LIG      564         0           56
+   565        C1     1    AU   LIG      565         0           56
+
+ [ bonds ]
+;         i           j    funct      length   force_k
+         1          2      1           0.288 3500
+         1          3      1           0.288 3500
+         1          4      1           0.288 3500
+         1          5      1           0.288 3500
+         1          6      1           0.289 3500
+         1          7      1           0.289 3500
+         1          8      1           0.288 3500
+         1          9      1           0.288 3500
+         1         10      1           0.288 3500
+         1         11      1           0.288 3500
+         1         12      1           0.289 3500
+         1         13      1           0.289 3500
+         1         14      1           0.577 3500
+         1         15      1           0.491 3500
+         1         16      1           0.577 3500
+         1         17      1           0.577 3500
+         1         18      1           0.491 3500
+         1         19      1           0.577 3500
+         1         20      1           0.577 3500
+         1         21      1           0.491 3500
+         1         22      1           0.577 3500
+         1         23      1           0.576 3500
+         1         24      1           0.490 3500
+         1         25      1           0.576 3500
+         1         26      1           0.576 3500
+         1         27      1           0.490 3500
+         1         28      1           0.577 3500
+         1         29      1           0.577 3500
+         1         30      1           0.491 3500
+         1         31      1           0.577 3500
+         1         32      1           0.490 3500
+         1         33      1           0.491 3500
+         1         34      1           0.490 3500
+         1         35      1           0.491 3500
+         1         36      1           0.490 3500
+         1         37      1           0.491 3500
+         1         38      1           0.490 3500
+         1         39      1           0.491 3500
+         1         40      1           0.491 3500
+         1         41      1           0.491 3500
+         1         42      1           0.491 3500
+         1         43      1           0.491 3500
+         1         44      1           0.491 3500
+         1         45      1           0.490 3500
+         1         46      1           0.491 3500
+         1         47      1           0.490 3500
+         1         48      1           0.491 3500
+         1         49      1           0.491 3500
+         1         50      1           0.491 3500
+         1         51      1           0.491 3500
+         1         52      1           0.492 3500
+         1         53      1           0.492 3500
+         1         54      1           0.491 3500
+         1         55      1           0.491 3500
+         2          3      1           0.303 3500
+         2          4      1           0.490 3500
+         2          5      1           0.576 3500
+         2          6      1           0.491 3500
+         2          7      1           0.304 3500
+         2          8      1           0.491 3500
+         2          9      1           0.303 3500
+         2         10      1           0.490 3500
+         2         11      1           0.491 3500
+         2         12      1           0.303 3500
+         2         13      1           0.303 3500
+         2         14      1           0.289 3500
+         2         15      1           0.289 3500
+         2         16      1           0.517 3500
+         2         21      1           0.569 3500
+         2         22      1           0.517 3500
+         2         24      1           0.569 3500
+         2         25      1           0.516 3500
+         2         29      1           0.516 3500
+         2         30      1           0.418 3500
+         2         31      1           0.517 3500
+         2         32      1           0.569 3500
+         2         33      1           0.570 3500
+         2         34      1           0.288 3500
+         2         35      1           0.288 3500
+         2         38      1           0.568 3500
+         2         39      1           0.569 3500
+         2         40      1           0.289 3500
+         2         41      1           0.419 3500
+         2         44      1           0.288 3500
+         2         45      1           0.418 3500
+         2         49      1           0.570 3500
+         2         51      1           0.569 3500
+         2         52      1           0.570 3500
+         2         53      1           0.419 3500
+         2         54      1           0.569 3500
+         2         55      1           0.418 3500
+         2        107      1           0.458 5000
+         2        125      1           0.458 5000
+         2        227      1           0.459 5000
+         2        243      1           0.459 5000
+         2        345      1           0.459 5000
+         3          4      1           0.576 3500
+         3          5      1           0.490 3500
+         3          6      1           0.491 3500
+         3          7      1           0.303 3500
+         3          8      1           0.490 3500
+         3          9      1           0.302 3500
+         3         10      1           0.303 3500
+         3         11      1           0.303 3500
+         3         12      1           0.490 3500
+         3         13      1           0.491 3500
+         3         14      1           0.517 3500
+         3         15      1           0.289 3500
+         3         16      1           0.289 3500
+         3         21      1           0.569 3500
+         3         22      1           0.517 3500
+         3         24      1           0.568 3500
+         3         25      1           0.516 3500
+         3         26      1           0.516 3500
+         3         27      1           0.418 3500
+         3         28      1           0.517 3500
+         3         32      1           0.289 3500
+         3         33      1           0.289 3500
+         3         34      1           0.568 3500
+         3         35      1           0.569 3500
+         3         36      1           0.569 3500
+         3         37      1           0.569 3500
+         3         40      1           0.419 3500
+         3         41      1           0.289 3500
+         3         44      1           0.418 3500
+         3         45      1           0.288 3500
+         3         48      1           0.570 3500
+         3         49      1           0.419 3500
+         3         50      1           0.569 3500
+         3         51      1           0.418 3500
+         3         53      1           0.570 3500
+         3         55      1           0.569 3500
+         3         56      1           0.459 5000
+         3         91      1           0.459 5000
+         3        244      1           0.459 5000
+         3        260      1           0.459 5000
+         3        329      1           0.458 5000
+         4          5      1           0.303 3500
+         4          6      1           0.304 3500
+         4          7      1           0.491 3500
+         4          8      1           0.303 3500
+         4          9      1           0.491 3500
+         4         10      1           0.490 3500
+         4         11      1           0.491 3500
+         4         12      1           0.303 3500
+         4         13      1           0.303 3500
+         4         17      1           0.289 3500
+         4         18      1           0.289 3500
+         4         19      1           0.517 3500
+         4         20      1           0.517 3500
+         4         21      1           0.569 3500
+         4         23      1           0.516 3500
+         4         24      1           0.569 3500
+         4         29      1           0.516 3500
+         4         30      1           0.418 3500
+         4         31      1           0.517 3500
+         4         34      1           0.568 3500
+         4         35      1           0.569 3500
+         4         36      1           0.569 3500
+         4         37      1           0.570 3500
+         4         38      1           0.288 3500
+         4         39      1           0.288 3500
+         4         42      1           0.289 3500
+         4         43      1           0.419 3500
+         4         46      1           0.288 3500
+         4         47      1           0.418 3500
+         4         48      1           0.570 3500
+         4         50      1           0.569 3500
+         4         52      1           0.419 3500
+         4         53      1           0.570 3500
+         4         54      1           0.418 3500
+         4         55      1           0.569 3500
+         4        192      1           0.458 5000
+         4        210      1           0.459 5000
+         4        294      1           0.459 5000
+         4        312      1           0.459 5000
+         4        363      1           0.458 5000
+         5          6      1           0.303 3500
+         5          7      1           0.491 3500
+         5          8      1           0.302 3500
+         5          9      1           0.490 3500
+         5         10      1           0.303 3500
+         5         11      1           0.303 3500
+         5         12      1           0.490 3500
+         5         13      1           0.491 3500
+         5         17      1           0.517 3500
+         5         18      1           0.289 3500
+         5         19      1           0.289 3500
+         5         20      1           0.517 3500
+         5         21      1           0.569 3500
+         5         23      1           0.516 3500
+         5         24      1           0.568 3500
+         5         26      1           0.516 3500
+         5         27      1           0.418 3500
+         5         28      1           0.517 3500
+         5         32      1           0.569 3500
+         5         33      1           0.569 3500
+         5         36      1           0.289 3500
+         5         37      1           0.289 3500
+         5         38      1           0.568 3500
+         5         39      1           0.569 3500
+         5         42      1           0.419 3500
+         5         43      1           0.289 3500
+         5         46      1           0.418 3500
+         5         47      1           0.288 3500
+         5         48      1           0.419 3500
+         5         49      1           0.570 3500
+         5         50      1           0.418 3500
+         5         51      1           0.569 3500
+         5         52      1           0.570 3500
+         5         54      1           0.569 3500
+         5        158      1           0.459 5000
+         5        176      1           0.458 5000
+         5        278      1           0.459 5000
+         5        311      1           0.459 5000
+         5        379      1           0.459 5000
+         6          7      1           0.304 3500
+         6          8      1           0.491 3500
+         6          9      1           0.577 3500
+         6         10      1           0.491 3500
+         6         11      1           0.303 3500
+         6         12      1           0.491 3500
+         6         13      1           0.304 3500
+         6         17      1           0.518 3500
+         6         18      1           0.419 3500
+         6         19      1           0.517 3500
+         6         20      1           0.288 3500
+         6         21      1           0.288 3500
+         6         22      1           0.517 3500
+         6         27      1           0.569 3500
+         6         28      1           0.516 3500
+         6         30      1           0.570 3500
+         6         31      1           0.517 3500
+         6         33      1           0.569 3500
+         6         35      1           0.569 3500
+         6         36      1           0.569 3500
+         6         37      1           0.418 3500
+         6         38      1           0.569 3500
+         6         39      1           0.418 3500
+         6         40      1           0.570 3500
+         6         41      1           0.569 3500
+         6         42      1           0.288 3500
+         6         43      1           0.288 3500
+         6         46      1           0.569 3500
+         6         47      1           0.569 3500
+         6         48      1           0.288 3500
+         6         49      1           0.419 3500
+         6         52      1           0.289 3500
+         6         53      1           0.420 3500
+         6        277      1           0.458 5000
+         6        295      1           0.458 5000
+         6        397      1           0.458 5000
+         6        413      1           0.458 5000
+         6        515      1           0.458 5000
+         7          8      1           0.577 3500
+         7          9      1           0.491 3500
+         7         10      1           0.491 3500
+         7         11      1           0.303 3500
+         7         12      1           0.491 3500
+         7         13      1           0.304 3500
+         7         14      1           0.518 3500
+         7         15      1           0.419 3500
+         7         16      1           0.517 3500
+         7         20      1           0.517 3500
+         7         21      1           0.288 3500
+         7         22      1           0.288 3500
+         7         27      1           0.569 3500
+         7         28      1           0.516 3500
+         7         30      1           0.570 3500
+         7         31      1           0.517 3500
+         7         32      1           0.569 3500
+         7         33      1           0.418 3500
+         7         34      1           0.569 3500
+         7         35      1           0.418 3500
+         7         37      1           0.569 3500
+         7         39      1           0.569 3500
+         7         40      1           0.288 3500
+         7         41      1           0.288 3500
+         7         42      1           0.570 3500
+         7         43      1           0.569 3500
+         7         44      1           0.569 3500
+         7         45      1           0.569 3500
+         7         48      1           0.419 3500
+         7         49      1           0.288 3500
+         7         52      1           0.420 3500
+         7         53      1           0.289 3500
+         7        226      1           0.458 5000
+         7        261      1           0.458 5000
+         7        414      1           0.458 5000
+         7        430      1           0.458 5000
+         7        499      1           0.458 5000
+         8          9      1           0.304 3500
+         8         10      1           0.303 3500
+         8         11      1           0.491 3500
+         8         12      1           0.304 3500
+         8         13      1           0.491 3500
+         8         17      1           0.517 3500
+         8         18      1           0.418 3500
+         8         19      1           0.516 3500
+         8         23      1           0.288 3500
+         8         24      1           0.288 3500
+         8         25      1           0.517 3500
+         8         26      1           0.516 3500
+         8         27      1           0.569 3500
+         8         29      1           0.517 3500
+         8         30      1           0.569 3500
+         8         32      1           0.569 3500
+         8         34      1           0.569 3500
+         8         36      1           0.418 3500
+         8         37      1           0.569 3500
+         8         38      1           0.418 3500
+         8         39      1           0.569 3500
+         8         42      1           0.569 3500
+         8         43      1           0.569 3500
+         8         44      1           0.570 3500
+         8         45      1           0.569 3500
+         8         46      1           0.288 3500
+         8         47      1           0.288 3500
+         8         50      1           0.288 3500
+         8         51      1           0.419 3500
+         8         54      1           0.289 3500
+         8         55      1           0.420 3500
+         8        362      1           0.458 5000
+         8        380      1           0.458 5000
+         8        464      1           0.458 5000
+         8        482      1           0.458 5000
+         8        533      1           0.458 5000
+         9         10      1           0.303 3500
+         9         11      1           0.491 3500
+         9         12      1           0.304 3500
+         9         13      1           0.491 3500
+         9         14      1           0.517 3500
+         9         15      1           0.418 3500
+         9         16      1           0.516 3500
+         9         23      1           0.517 3500
+         9         24      1           0.288 3500
+         9         25      1           0.288 3500
+         9         26      1           0.516 3500
+         9         27      1           0.569 3500
+         9         29      1           0.517 3500
+         9         30      1           0.569 3500
+         9         32      1           0.418 3500
+         9         33      1           0.569 3500
+         9         34      1           0.418 3500
+         9         35      1           0.569 3500
+         9         36      1           0.569 3500
+         9         38      1           0.569 3500
+         9         40      1           0.569 3500
+         9         41      1           0.569 3500
+         9         44      1           0.288 3500
+         9         45      1           0.288 3500
+         9         46      1           0.570 3500
+         9         47      1           0.569 3500
+         9         50      1           0.419 3500
+         9         51      1           0.288 3500
+         9         54      1           0.420 3500
+         9         55      1           0.289 3500
+         9        328      1           0.458 5000
+         9        346      1           0.458 5000
+         9        448      1           0.458 5000
+         9        481      1           0.458 5000
+         9        549      1           0.458 5000
+        10         11      1           0.303 3500
+        10         12      1           0.491 3500
+        10         13      1           0.577 3500
+        10         15      1           0.569 3500
+        10         16      1           0.517 3500
+        10         18      1           0.569 3500
+        10         19      1           0.517 3500
+        10         23      1           0.516 3500
+        10         24      1           0.418 3500
+        10         25      1           0.516 3500
+        10         26      1           0.288 3500
+        10         27      1           0.288 3500
+        10         28      1           0.517 3500
+        10         32      1           0.288 3500
+        10         33      1           0.418 3500
+        10         36      1           0.288 3500
+        10         37      1           0.418 3500
+        10         41      1           0.569 3500
+        10         43      1           0.569 3500
+        10         44      1           0.569 3500
+        10         45      1           0.419 3500
+        10         46      1           0.569 3500
+        10         47      1           0.419 3500
+        10         48      1           0.570 3500
+        10         49      1           0.570 3500
+        10         50      1           0.289 3500
+        10         51      1           0.289 3500
+        10         54      1           0.570 3500
+        10         55      1           0.570 3500
+        10         57      1           0.459 5000
+        10         73      1           0.458 5000
+        10        175      1           0.458 5000
+        10        447      1           0.459 5000
+        10        465      1           0.459 5000
+        11         12      1           0.577 3500
+        11         13      1           0.491 3500
+        11         15      1           0.569 3500
+        11         16      1           0.517 3500
+        11         18      1           0.569 3500
+        11         19      1           0.517 3500
+        11         20      1           0.516 3500
+        11         21      1           0.418 3500
+        11         22      1           0.516 3500
+        11         26      1           0.517 3500
+        11         27      1           0.288 3500
+        11         28      1           0.288 3500
+        11         32      1           0.418 3500
+        11         33      1           0.288 3500
+        11         36      1           0.418 3500
+        11         37      1           0.288 3500
+        11         40      1           0.569 3500
+        11         41      1           0.419 3500
+        11         42      1           0.569 3500
+        11         43      1           0.419 3500
+        11         45      1           0.569 3500
+        11         47      1           0.569 3500
+        11         48      1           0.289 3500
+        11         49      1           0.289 3500
+        11         50      1           0.570 3500
+        11         51      1           0.570 3500
+        11         52      1           0.570 3500
+        11         53      1           0.570 3500
+        11         74      1           0.458 5000
+        11         90      1           0.458 5000
+        11        159      1           0.459 5000
+        11        396      1           0.458 5000
+        11        431      1           0.459 5000
+        12         13      1           0.303 3500
+        12         14      1           0.517 3500
+        12         15      1           0.570 3500
+        12         17      1           0.517 3500
+        12         18      1           0.570 3500
+        12         23      1           0.517 3500
+        12         24      1           0.419 3500
+        12         25      1           0.517 3500
+        12         29      1           0.288 3500
+        12         30      1           0.288 3500
+        12         31      1           0.517 3500
+        12         34      1           0.288 3500
+        12         35      1           0.418 3500
+        12         38      1           0.288 3500
+        12         39      1           0.418 3500
+        12         40      1           0.569 3500
+        12         42      1           0.569 3500
+        12         44      1           0.419 3500
+        12         45      1           0.569 3500
+        12         46      1           0.419 3500
+        12         47      1           0.569 3500
+        12         50      1           0.570 3500
+        12         51      1           0.570 3500
+        12         52      1           0.570 3500
+        12         53      1           0.570 3500
+        12         54      1           0.289 3500
+        12         55      1           0.289 3500
+        12        124      1           0.458 5000
+        12        142      1           0.458 5000
+        12        193      1           0.459 5000
+        12        532      1           0.459 5000
+        12        550      1           0.459 5000
+        13         14      1           0.517 3500
+        13         15      1           0.570 3500
+        13         17      1           0.517 3500
+        13         18      1           0.570 3500
+        13         20      1           0.517 3500
+        13         21      1           0.419 3500
+        13         22      1           0.517 3500
+        13         29      1           0.517 3500
+        13         30      1           0.288 3500
+        13         31      1           0.288 3500
+        13         34      1           0.418 3500
+        13         35      1           0.288 3500
+        13         38      1           0.418 3500
+        13         39      1           0.288 3500
+        13         40      1           0.419 3500
+        13         41      1           0.569 3500
+        13         42      1           0.419 3500
+        13         43      1           0.569 3500
+        13         44      1           0.569 3500
+        13         46      1           0.569 3500
+        13         48      1           0.570 3500
+        13         49      1           0.570 3500
+        13         52      1           0.289 3500
+        13         53      1           0.289 3500
+        13         54      1           0.570 3500
+        13         55      1           0.570 3500
+        13        108      1           0.459 5000
+        13        141      1           0.458 5000
+        13        209      1           0.458 5000
+        13        498      1           0.458 5000
+        13        516      1           0.459 5000
+        14         15      1           0.304 3500
+        14         30      1           0.525 3500
+        14         34      1           0.303 3500
+        14         35      1           0.304 3500
+        14         40      1           0.304 3500
+        14         41      1           0.526 3500
+        14         44      1           0.303 3500
+        14         45      1           0.525 3500
+        14         53      1           0.526 3500
+        14         55      1           0.525 3500
+        14        107      1           0.288 5000
+        14        125      1           0.288 5000
+        14        227      1           0.289 5000
+        14        243      1           0.289 5000
+        14        345      1           0.288 5000
+        15         16      1           0.303 3500
+        15         22      1           0.526 3500
+        15         25      1           0.525 3500
+        15         32      1           0.491 3500
+        15         33      1           0.491 3500
+        15         34      1           0.491 3500
+        15         35      1           0.491 3500
+        15         40      1           0.304 3500
+        15         41      1           0.304 3500
+        15         44      1           0.303 3500
+        15         45      1           0.303 3500
+        15         49      1           0.577 3500
+        15         51      1           0.577 3500
+        15         53      1           0.578 3500
+        15         55      1           0.577 3500
+        15         91      1           0.494 5000
+        15        125      1           0.494 5000
+        15        226      1           0.419 5000
+        15        227      1           0.494 5000
+        15        243      1           0.289 5000
+        15        244      1           0.288 5000
+        15        260      1           0.288 5000
+        15        328      1           0.419 5000
+        15        329      1           0.493 5000
+        15        345      1           0.288 5000
+        16         27      1           0.525 3500
+        16         32      1           0.304 3500
+        16         33      1           0.304 3500
+        16         40      1           0.526 3500
+        16         41      1           0.304 3500
+        16         44      1           0.525 3500
+        16         45      1           0.303 3500
+        16         49      1           0.526 3500
+        16         51      1           0.525 3500
+        16         56      1           0.289 5000
+        16         91      1           0.289 5000
+        16        244      1           0.288 5000
+        16        260      1           0.289 5000
+        16        329      1           0.288 5000
+        17         18      1           0.304 3500
+        17         30      1           0.525 3500
+        17         38      1           0.303 3500
+        17         39      1           0.304 3500
+        17         42      1           0.304 3500
+        17         43      1           0.526 3500
+        17         46      1           0.303 3500
+        17         47      1           0.525 3500
+        17         52      1           0.526 3500
+        17         54      1           0.525 3500
+        17        192      1           0.288 5000
+        17        210      1           0.289 5000
+        17        294      1           0.289 5000
+        17        312      1           0.288 5000
+        17        363      1           0.288 5000
+        18         19      1           0.303 3500
+        18         20      1           0.526 3500
+        18         23      1           0.525 3500
+        18         36      1           0.491 3500
+        18         37      1           0.491 3500
+        18         38      1           0.491 3500
+        18         39      1           0.491 3500
+        18         42      1           0.304 3500
+        18         43      1           0.304 3500
+        18         46      1           0.303 3500
+        18         47      1           0.303 3500
+        18         48      1           0.577 3500
+        18         50      1           0.577 3500
+        18         52      1           0.578 3500
+        18         54      1           0.577 3500
+        18        176      1           0.493 5000
+        18        210      1           0.494 5000
+        18        277      1           0.419 5000
+        18        278      1           0.494 5000
+        18        294      1           0.289 5000
+        18        311      1           0.288 5000
+        18        312      1           0.288 5000
+        18        362      1           0.419 5000
+        18        363      1           0.494 5000
+        18        379      1           0.288 5000
+        19         27      1           0.525 3500
+        19         36      1           0.304 3500
+        19         37      1           0.304 3500
+        19         42      1           0.526 3500
+        19         43      1           0.304 3500
+        19         46      1           0.525 3500
+        19         47      1           0.303 3500
+        19         48      1           0.526 3500
+        19         50      1           0.525 3500
+        19        158      1           0.289 5000
+        19        176      1           0.288 5000
+        19        278      1           0.289 5000
+        19        311      1           0.289 5000
+        19        379      1           0.288 5000
+        20         21      1           0.303 3500
+        20         37      1           0.525 3500
+        20         39      1           0.525 3500
+        20         42      1           0.303 3500
+        20         43      1           0.303 3500
+        20         48      1           0.302 3500
+        20         49      1           0.525 3500
+        20         52      1           0.303 3500
+        20         53      1           0.526 3500
+        20        277      1           0.289 5000
+        20        295      1           0.289 5000
+        20        397      1           0.288 5000
+        20        413      1           0.288 5000
+        20        515      1           0.288 5000
+        21         22      1           0.303 3500
+        21         28      1           0.524 3500
+        21         31      1           0.525 3500
+        21         33      1           0.577 3500
+        21         35      1           0.577 3500
+        21         37      1           0.577 3500
+        21         39      1           0.577 3500
+        21         40      1           0.491 3500
+        21         41      1           0.490 3500
+        21         42      1           0.491 3500
+        21         43      1           0.490 3500
+        21         48      1           0.303 3500
+        21         49      1           0.303 3500
+        21         52      1           0.304 3500
+        21         53      1           0.304 3500
+        21        261      1           0.493 5000
+        21        295      1           0.494 5000
+        21        396      1           0.419 5000
+        21        397      1           0.493 5000
+        21        413      1           0.288 5000
+        21        414      1           0.289 5000
+        21        430      1           0.288 5000
+        21        498      1           0.419 5000
+        21        499      1           0.494 5000
+        21        515      1           0.289 5000
+        22         33      1           0.525 3500
+        22         35      1           0.525 3500
+        22         40      1           0.303 3500
+        22         41      1           0.303 3500
+        22         48      1           0.525 3500
+        22         49      1           0.302 3500
+        22         52      1           0.526 3500
+        22         53      1           0.303 3500
+        22        226      1           0.289 5000
+        22        261      1           0.288 5000
+        22        414      1           0.288 5000
+        22        430      1           0.288 5000
+        22        499      1           0.289 5000
+        23         24      1           0.303 3500
+        23         36      1           0.525 3500
+        23         38      1           0.525 3500
+        23         46      1           0.303 3500
+        23         47      1           0.303 3500
+        23         50      1           0.302 3500
+        23         51      1           0.525 3500
+        23         54      1           0.303 3500
+        23         55      1           0.526 3500
+        23        362      1           0.289 5000
+        23        380      1           0.288 5000
+        23        464      1           0.288 5000
+        23        482      1           0.288 5000
+        23        533      1           0.289 5000
+        24         25      1           0.303 3500
+        24         26      1           0.524 3500
+        24         29      1           0.525 3500
+        24         32      1           0.577 3500
+        24         34      1           0.577 3500
+        24         36      1           0.577 3500
+        24         38      1           0.577 3500
+        24         44      1           0.491 3500
+        24         45      1           0.490 3500
+        24         46      1           0.491 3500
+        24         47      1           0.490 3500
+        24         50      1           0.303 3500
+        24         51      1           0.303 3500
+        24         54      1           0.304 3500
+        24         55      1           0.304 3500
+        24        346      1           0.494 5000
+        24        380      1           0.493 5000
+        24        447      1           0.419 5000
+        24        448      1           0.493 5000
+        24        464      1           0.288 5000
+        24        481      1           0.288 5000
+        24        482      1           0.289 5000
+        24        532      1           0.419 5000
+        24        533      1           0.494 5000
+        24        549      1           0.289 5000
+        25         32      1           0.525 3500
+        25         34      1           0.525 3500
+        25         44      1           0.303 3500
+        25         45      1           0.303 3500
+        25         50      1           0.525 3500
+        25         51      1           0.302 3500
+        25         54      1           0.526 3500
+        25         55      1           0.303 3500
+        25        328      1           0.289 5000
+        25        346      1           0.289 5000
+        25        448      1           0.288 5000
+        25        481      1           0.288 5000
+        25        549      1           0.288 5000
+        26         27      1           0.303 3500
+        26         32      1           0.303 3500
+        26         33      1           0.525 3500
+        26         36      1           0.303 3500
+        26         37      1           0.525 3500
+        26         45      1           0.525 3500
+        26         47      1           0.525 3500
+        26         50      1           0.303 3500
+        26         51      1           0.303 3500
+        26         57      1           0.289 5000
+        26         73      1           0.289 5000
+        26        175      1           0.289 5000
+        26        447      1           0.289 5000
+        26        465      1           0.289 5000
+        27         28      1           0.304 3500
+        27         32      1           0.302 3500
+        27         33      1           0.303 3500
+        27         36      1           0.302 3500
+        27         37      1           0.303 3500
+        27         41      1           0.577 3500
+        27         43      1           0.577 3500
+        27         45      1           0.577 3500
+        27         47      1           0.577 3500
+        27         48      1           0.491 3500
+        27         49      1           0.491 3500
+        27         50      1           0.491 3500
+        27         51      1           0.491 3500
+        27         56      1           0.419 5000
+        27         57      1           0.494 5000
+        27         73      1           0.288 5000
+        27         74      1           0.289 5000
+        27         90      1           0.289 5000
+        27        158      1           0.419 5000
+        27        159      1           0.494 5000
+        27        175      1           0.288 5000
+        27        431      1           0.494 5000
+        27        465      1           0.494 5000
+        28         32      1           0.525 3500
+        28         33      1           0.303 3500
+        28         36      1           0.525 3500
+        28         37      1           0.303 3500
+        28         41      1           0.525 3500
+        28         43      1           0.525 3500
+        28         48      1           0.303 3500
+        28         49      1           0.303 3500
+        28         74      1           0.289 5000
+        28         90      1           0.289 5000
+        28        159      1           0.289 5000
+        28        396      1           0.288 5000
+        28        431      1           0.289 5000
+        29         30      1           0.303 3500
+        29         34      1           0.303 3500
+        29         35      1           0.525 3500
+        29         38      1           0.303 3500
+        29         39      1           0.525 3500
+        29         44      1           0.525 3500
+        29         46      1           0.525 3500
+        29         54      1           0.303 3500
+        29         55      1           0.303 3500
+        29        124      1           0.289 5000
+        29        142      1           0.289 5000
+        29        193      1           0.289 5000
+        29        532      1           0.289 5000
+        29        550      1           0.289 5000
+        30         31      1           0.304 3500
+        30         34      1           0.303 3500
+        30         35      1           0.303 3500
+        30         38      1           0.303 3500
+        30         39      1           0.303 3500
+        30         40      1           0.577 3500
+        30         42      1           0.577 3500
+        30         44      1           0.577 3500
+        30         46      1           0.577 3500
+        30         52      1           0.491 3500
+        30         53      1           0.491 3500
+        30         54      1           0.491 3500
+        30         55      1           0.491 3500
+        30        107      1           0.419 5000
+        30        108      1           0.494 5000
+        30        124      1           0.288 5000
+        30        141      1           0.289 5000
+        30        142      1           0.288 5000
+        30        192      1           0.419 5000
+        30        193      1           0.494 5000
+        30        209      1           0.289 5000
+        30        516      1           0.494 5000
+        30        550      1           0.494 5000
+        31         34      1           0.525 3500
+        31         35      1           0.303 3500
+        31         38      1           0.525 3500
+        31         39      1           0.303 3500
+        31         40      1           0.525 3500
+        31         42      1           0.525 3500
+        31         52      1           0.303 3500
+        31         53      1           0.303 3500
+        31        108      1           0.289 5000
+        31        141      1           0.289 5000
+        31        209      1           0.289 5000
+        31        498      1           0.288 5000
+        31        516      1           0.289 5000
+        32         33      1           0.303 3500
+        32         36      1           0.490 3500
+        32         37      1           0.576 3500
+        32         41      1           0.491 3500
+        32         44      1           0.577 3500
+        32         45      1           0.304 3500
+        32         49      1           0.577 3500
+        32         50      1           0.491 3500
+        32         51      1           0.304 3500
+        32         56      1           0.288 5000
+        32         57      1           0.289 5000
+        32         73      1           0.288 5000
+        32         90      1           0.418 5000
+        32         91      1           0.494 5000
+        32        175      1           0.493 5000
+        32        244      1           0.495 5000
+        32        329      1           0.289 5000
+        32        447      1           0.494 5000
+        32        448      1           0.419 5000
+        33         36      1           0.576 3500
+        33         37      1           0.490 3500
+        33         40      1           0.577 3500
+        33         41      1           0.304 3500
+        33         45      1           0.491 3500
+        33         48      1           0.491 3500
+        33         49      1           0.304 3500
+        33         51      1           0.577 3500
+        33         56      1           0.289 5000
+        33         73      1           0.418 5000
+        33         74      1           0.493 5000
+        33         90      1           0.288 5000
+        33         91      1           0.289 5000
+        33        260      1           0.495 5000
+        33        261      1           0.419 5000
+        33        329      1           0.494 5000
+        33        396      1           0.493 5000
+        33        431      1           0.289 5000
+        34         35      1           0.303 3500
+        34         38      1           0.490 3500
+        34         39      1           0.576 3500
+        34         40      1           0.491 3500
+        34         44      1           0.303 3500
+        34         45      1           0.576 3500
+        34         53      1           0.577 3500
+        34         54      1           0.491 3500
+        34         55      1           0.303 3500
+        34        107      1           0.288 5000
+        34        124      1           0.289 5000
+        34        125      1           0.289 5000
+        34        141      1           0.418 5000
+        34        142      1           0.494 5000
+        34        227      1           0.494 5000
+        34        345      1           0.494 5000
+        34        346      1           0.419 5000
+        34        532      1           0.494 5000
+        34        550      1           0.289 5000
+        35         38      1           0.576 3500
+        35         39      1           0.490 3500
+        35         40      1           0.303 3500
+        35         41      1           0.576 3500
+        35         44      1           0.491 3500
+        35         52      1           0.491 3500
+        35         53      1           0.303 3500
+        35         55      1           0.577 3500
+        35        107      1           0.289 5000
+        35        108      1           0.289 5000
+        35        124      1           0.418 5000
+        35        125      1           0.494 5000
+        35        141      1           0.289 5000
+        35        209      1           0.494 5000
+        35        227      1           0.289 5000
+        35        243      1           0.494 5000
+        35        498      1           0.493 5000
+        35        499      1           0.419 5000
+        36         37      1           0.303 3500
+        36         43      1           0.491 3500
+        36         46      1           0.577 3500
+        36         47      1           0.304 3500
+        36         48      1           0.577 3500
+        36         50      1           0.304 3500
+        36         51      1           0.491 3500
+        36         73      1           0.493 5000
+        36         74      1           0.418 5000
+        36        158      1           0.288 5000
+        36        175      1           0.288 5000
+        36        176      1           0.289 5000
+        36        278      1           0.494 5000
+        36        379      1           0.495 5000
+        36        380      1           0.419 5000
+        36        447      1           0.494 5000
+        36        465      1           0.289 5000
+        37         42      1           0.577 3500
+        37         43      1           0.304 3500
+        37         47      1           0.491 3500
+        37         48      1           0.304 3500
+        37         49      1           0.491 3500
+        37         50      1           0.577 3500
+        37         74      1           0.288 5000
+        37         90      1           0.493 5000
+        37        158      1           0.289 5000
+        37        159      1           0.289 5000
+        37        175      1           0.418 5000
+        37        176      1           0.494 5000
+        37        278      1           0.289 5000
+        37        311      1           0.495 5000
+        37        396      1           0.493 5000
+        37        397      1           0.419 5000
+        38         39      1           0.303 3500
+        38         42      1           0.491 3500
+        38         46      1           0.303 3500
+        38         47      1           0.576 3500
+        38         52      1           0.577 3500
+        38         54      1           0.303 3500
+        38         55      1           0.491 3500
+        38        124      1           0.494 5000
+        38        142      1           0.289 5000
+        38        192      1           0.288 5000
+        38        193      1           0.289 5000
+        38        209      1           0.418 5000
+        38        210      1           0.494 5000
+        38        312      1           0.494 5000
+        38        363      1           0.289 5000
+        38        532      1           0.494 5000
+        38        533      1           0.419 5000
+        39         42      1           0.303 3500
+        39         43      1           0.576 3500
+        39         46      1           0.491 3500
+        39         52      1           0.303 3500
+        39         53      1           0.491 3500
+        39         54      1           0.577 3500
+        39        141      1           0.494 5000
+        39        142      1           0.418 5000
+        39        192      1           0.289 5000
+        39        209      1           0.289 5000
+        39        210      1           0.289 5000
+        39        294      1           0.494 5000
+        39        295      1           0.419 5000
+        39        363      1           0.494 5000
+        39        498      1           0.493 5000
+        39        516      1           0.289 5000
+        40         41      1           0.303 3500
+        40         44      1           0.491 3500
+        40         45      1           0.577 3500
+        40         49      1           0.491 3500
+        40         52      1           0.577 3500
+        40         53      1           0.303 3500
+        40        107      1           0.494 5000
+        40        108      1           0.419 5000
+        40        226      1           0.288 5000
+        40        227      1           0.289 5000
+        40        243      1           0.289 5000
+        40        260      1           0.419 5000
+        40        261      1           0.494 5000
+        40        345      1           0.494 5000
+        40        414      1           0.493 5000
+        40        499      1           0.289 5000
+        41         44      1           0.577 3500
+        41         45      1           0.491 3500
+        41         48      1           0.577 3500
+        41         49      1           0.303 3500
+        41         53      1           0.491 3500
+        41         56      1           0.495 5000
+        41         91      1           0.289 5000
+        41        226      1           0.288 5000
+        41        243      1           0.419 5000
+        41        244      1           0.494 5000
+        41        260      1           0.289 5000
+        41        261      1           0.289 5000
+        41        430      1           0.493 5000
+        41        431      1           0.419 5000
+        41        499      1           0.494 5000
+        42         43      1           0.303 3500
+        42         46      1           0.491 3500
+        42         47      1           0.577 3500
+        42         48      1           0.491 3500
+        42         52      1           0.303 3500
+        42         53      1           0.577 3500
+        42        192      1           0.494 5000
+        42        210      1           0.289 5000
+        42        277      1           0.288 5000
+        42        294      1           0.289 5000
+        42        295      1           0.289 5000
+        42        311      1           0.419 5000
+        42        312      1           0.494 5000
+        42        397      1           0.494 5000
+        42        515      1           0.493 5000
+        42        516      1           0.419 5000
+        43         46      1           0.577 3500
+        43         47      1           0.491 3500
+        43         48      1           0.303 3500
+        43         49      1           0.577 3500
+        43         52      1           0.491 3500
+        43        158      1           0.495 5000
+        43        159      1           0.419 5000
+        43        277      1           0.288 5000
+        43        278      1           0.289 5000
+        43        294      1           0.419 5000
+        43        295      1           0.494 5000
+        43        311      1           0.289 5000
+        43        379      1           0.494 5000
+        43        397      1           0.289 5000
+        43        413      1           0.493 5000
+        44         45      1           0.303 3500
+        44         51      1           0.491 3500
+        44         54      1           0.577 3500
+        44         55      1           0.303 3500
+        44        107      1           0.493 5000
+        44        125      1           0.289 5000
+        44        243      1           0.494 5000
+        44        244      1           0.419 5000
+        44        328      1           0.289 5000
+        44        345      1           0.289 5000
+        44        346      1           0.289 5000
+        44        448      1           0.494 5000
+        44        549      1           0.493 5000
+        44        550      1           0.419 5000
+        45         50      1           0.577 3500
+        45         51      1           0.303 3500
+        45         55      1           0.491 3500
+        45         56      1           0.494 5000
+        45         57      1           0.419 5000
+        45        244      1           0.289 5000
+        45        260      1           0.494 5000
+        45        328      1           0.288 5000
+        45        329      1           0.289 5000
+        45        345      1           0.419 5000
+        45        346      1           0.494 5000
+        45        448      1           0.289 5000
+        45        481      1           0.493 5000
+        46         47      1           0.303 3500
+        46         50      1           0.491 3500
+        46         54      1           0.303 3500
+        46         55      1           0.577 3500
+        46        192      1           0.493 5000
+        46        193      1           0.419 5000
+        46        294      1           0.494 5000
+        46        312      1           0.289 5000
+        46        362      1           0.289 5000
+        46        363      1           0.289 5000
+        46        379      1           0.419 5000
+        46        380      1           0.494 5000
+        46        482      1           0.493 5000
+        46        533      1           0.289 5000
+        47         50      1           0.303 3500
+        47         51      1           0.577 3500
+        47         54      1           0.491 3500
+        47        158      1           0.494 5000
+        47        176      1           0.289 5000
+        47        311      1           0.494 5000
+        47        312      1           0.419 5000
+        47        362      1           0.288 5000
+        47        379      1           0.289 5000
+        47        380      1           0.289 5000
+        47        464      1           0.493 5000
+        47        465      1           0.419 5000
+        47        533      1           0.494 5000
+        48         49      1           0.304 3500
+        48         52      1           0.491 3500
+        48         53      1           0.577 3500
+        48         74      1           0.494 5000
+        48        159      1           0.289 5000
+        48        277      1           0.493 5000
+        48        278      1           0.418 5000
+        48        396      1           0.288 5000
+        48        397      1           0.288 5000
+        48        413      1           0.288 5000
+        48        430      1           0.419 5000
+        48        431      1           0.494 5000
+        48        515      1           0.493 5000
+        49         52      1           0.577 3500
+        49         53      1           0.491 3500
+        49         90      1           0.494 5000
+        49         91      1           0.418 5000
+        49        159      1           0.494 5000
+        49        226      1           0.493 5000
+        49        261      1           0.288 5000
+        49        396      1           0.288 5000
+        49        413      1           0.419 5000
+        49        414      1           0.493 5000
+        49        430      1           0.288 5000
+        49        431      1           0.289 5000
+        50         51      1           0.304 3500
+        50         54      1           0.491 3500
+        50         55      1           0.577 3500
+        50         57      1           0.494 5000
+        50        175      1           0.494 5000
+        50        176      1           0.418 5000
+        50        362      1           0.493 5000
+        50        380      1           0.288 5000
+        50        447      1           0.289 5000
+        50        464      1           0.288 5000
+        50        465      1           0.289 5000
+        50        481      1           0.419 5000
+        50        482      1           0.493 5000
+        51         54      1           0.577 3500
+        51         55      1           0.491 3500
+        51         57      1           0.289 5000
+        51         73      1           0.494 5000
+        51        328      1           0.493 5000
+        51        329      1           0.418 5000
+        51        447      1           0.289 5000
+        51        448      1           0.288 5000
+        51        464      1           0.419 5000
+        51        465      1           0.494 5000
+        51        481      1           0.288 5000
+        51        549      1           0.493 5000
+        52         53      1           0.304 3500
+        52        108      1           0.494 5000
+        52        209      1           0.494 5000
+        52        210      1           0.418 5000
+        52        277      1           0.494 5000
+        52        295      1           0.288 5000
+        52        413      1           0.493 5000
+        52        414      1           0.419 5000
+        52        498      1           0.288 5000
+        52        515      1           0.288 5000
+        52        516      1           0.289 5000
+        53        108      1           0.289 5000
+        53        141      1           0.494 5000
+        53        226      1           0.494 5000
+        53        227      1           0.418 5000
+        53        414      1           0.288 5000
+        53        430      1           0.493 5000
+        53        498      1           0.288 5000
+        53        499      1           0.288 5000
+        53        515      1           0.419 5000
+        53        516      1           0.494 5000
+        54         55      1           0.304 3500
+        54        142      1           0.494 5000
+        54        193      1           0.289 5000
+        54        362      1           0.494 5000
+        54        363      1           0.418 5000
+        54        464      1           0.493 5000
+        54        482      1           0.288 5000
+        54        532      1           0.288 5000
+        54        533      1           0.288 5000
+        54        549      1           0.419 5000
+        54        550      1           0.494 5000
+        55        124      1           0.494 5000
+        55        125      1           0.418 5000
+        55        193      1           0.494 5000
+        55        328      1           0.494 5000
+        55        346      1           0.288 5000
+        55        481      1           0.493 5000
+        55        482      1           0.419 5000
+        55        532      1           0.288 5000
+        55        549      1           0.288 5000
+        55        550      1           0.289 5000
+        56         58      1           0.380 5000
+        56         66      1           0.264 1250
+        56         92      1           0.381 5000
+        57         58      1           0.380 5000
+        57         59      1           0.258 1250
+        57        338      1           0.377 1250
+        57        449      1           0.380 5000
+        59        338      1           0.314 1250
+        59        457      1           0.305 1250
+        59         60      1           0.470 1250
+        60         61      1           0.470 1250
+        61         62      1           0.470 1250
+        62         63      1           0.470 1250
+        63         64      1           0.470 1250
+        64         65      1           0.470 1250
+        66         76      1           0.317 1250
+        66         93      1           0.373 1250
+        66         67      1           0.470 1250
+        67         68      1           0.470 1250
+        68         69      1           0.470 1250
+        69         70      1           0.470 1250
+        70         71      1           0.470 1250
+        71         72      1           0.470 1250
+        73         75      1           0.380 5000
+        73         76      1           0.255 1250
+        74         75      1           0.381 5000
+        74         83      1           0.270 1250
+        74        160      1           0.380 5000
+        76         93      1           0.414 1250
+        76         77      1           0.470 1250
+        77         78      1           0.470 1250
+        78         79      1           0.470 1250
+        79         80      1           0.470 1250
+        80         81      1           0.470 1250
+        81         82      1           0.470 1250
+        83        161      1           0.325 1250
+        83        185      1           0.312 1250
+        83         84      1           0.470 1250
+        84         85      1           0.470 1250
+        85         86      1           0.470 1250
+        86         87      1           0.470 1250
+        87         88      1           0.470 1250
+        88         89      1           0.470 1250
+        90         92      1           0.380 5000
+        90         93      1           0.255 1250
+        91         92      1           0.380 5000
+        91        100      1           0.255 1250
+        91        262      1           0.380 5000
+        91        263      1           0.371 1250
+        91        433      1           0.378 1250
+        93         94      1           0.470 1250
+        94         95      1           0.470 1250
+        95         96      1           0.470 1250
+        96         97      1           0.470 1250
+        97         98      1           0.470 1250
+        98         99      1           0.470 1250
+       100        263      1           0.315 1250
+       100        433      1           0.312 1250
+       100        101      1           0.470 1250
+       101        102      1           0.470 1250
+       102        103      1           0.470 1250
+       103        104      1           0.470 1250
+       104        105      1           0.470 1250
+       105        106      1           0.470 1250
+       107        109      1           0.381 5000
+       107        110      1           0.262 1250
+       107        126      1           0.380 5000
+       108        109      1           0.380 5000
+       108        117      1           0.266 1250
+       108        500      1           0.380 5000
+       110        134      1           0.318 1250
+       110        151      1           0.310 1250
+       110        111      1           0.470 1250
+       111        112      1           0.470 1250
+       112        113      1           0.470 1250
+       113        114      1           0.470 1250
+       114        115      1           0.470 1250
+       115        116      1           0.470 1250
+       117        229      1           0.313 1250
+       117        508      1           0.321 1250
+       117        118      1           0.470 1250
+       118        119      1           0.470 1250
+       119        120      1           0.470 1250
+       120        121      1           0.470 1250
+       121        122      1           0.470 1250
+       122        123      1           0.470 1250
+       124        126      1           0.380 5000
+       124        134      1           0.254 1250
+       124        143      1           0.380 5000
+       124        151      1           0.370 1250
+       125        126      1           0.380 5000
+       125        127      1           0.271 1250
+       125        347      1           0.380 5000
+       127        355      1           0.311 1250
+       127        559      1           0.314 1250
+       127        128      1           0.470 1250
+       128        129      1           0.470 1250
+       129        130      1           0.470 1250
+       130        131      1           0.470 1250
+       131        132      1           0.470 1250
+       132        133      1           0.470 1250
+       134        151      1           0.314 1250
+       134        135      1           0.470 1250
+       135        136      1           0.470 1250
+       136        137      1           0.470 1250
+       137        138      1           0.470 1250
+       138        139      1           0.470 1250
+       139        140      1           0.470 1250
+       141        143      1           0.381 5000
+       141        151      1           0.270 1250
+       142        143      1           0.380 5000
+       142        144      1           0.256 1250
+       142        194      1           0.380 5000
+       142        219      1           0.370 1250
+       144        195      1           0.303 1250
+       144        219      1           0.316 1250
+       144        145      1           0.470 1250
+       145        146      1           0.470 1250
+       146        147      1           0.470 1250
+       147        148      1           0.470 1250
+       148        149      1           0.470 1250
+       149        150      1           0.470 1250
+       151        152      1           0.470 1250
+       152        153      1           0.470 1250
+       153        154      1           0.470 1250
+       154        155      1           0.470 1250
+       155        156      1           0.470 1250
+       156        157      1           0.470 1250
+       158        160      1           0.381 5000
+       158        161      1           0.262 1250
+       158        177      1           0.380 5000
+       159        160      1           0.380 5000
+       159        168      1           0.255 1250
+       159        398      1           0.380 5000
+       159        399      1           0.371 1250
+       161        185      1           0.302 1250
+       161        162      1           0.470 1250
+       162        163      1           0.470 1250
+       163        164      1           0.470 1250
+       164        165      1           0.470 1250
+       165        166      1           0.470 1250
+       166        167      1           0.470 1250
+       168        280      1           0.318 1250
+       168        399      1           0.318 1250
+       168        169      1           0.470 1250
+       169        170      1           0.470 1250
+       170        171      1           0.470 1250
+       171        172      1           0.470 1250
+       172        173      1           0.470 1250
+       173        174      1           0.470 1250
+       175        177      1           0.380 5000
+       175        185      1           0.257 1250
+       176        177      1           0.380 5000
+       176        178      1           0.263 1250
+       176        381      1           0.380 5000
+       178        382      1           0.280 1250
+       178        474      1           0.307 1250
+       178        179      1           0.470 1250
+       179        180      1           0.470 1250
+       180        181      1           0.470 1250
+       181        182      1           0.470 1250
+       182        183      1           0.470 1250
+       183        184      1           0.470 1250
+       185        186      1           0.470 1250
+       186        187      1           0.470 1250
+       187        188      1           0.470 1250
+       188        189      1           0.470 1250
+       189        190      1           0.470 1250
+       190        191      1           0.470 1250
+       192        194      1           0.380 5000
+       192        195      1           0.264 1250
+       192        211      1           0.381 5000
+       193        194      1           0.380 5000
+       193        202      1           0.269 1250
+       193        534      1           0.380 5000
+       195        219      1           0.325 1250
+       195        196      1           0.470 1250
+       196        197      1           0.470 1250
+       197        198      1           0.470 1250
+       198        199      1           0.470 1250
+       199        200      1           0.470 1250
+       200        201      1           0.470 1250
+       202        365      1           0.306 1250
+       202        535      1           0.311 1250
+       202        203      1           0.470 1250
+       203        204      1           0.470 1250
+       204        205      1           0.470 1250
+       205        206      1           0.470 1250
+       206        207      1           0.470 1250
+       207        208      1           0.470 1250
+       209        211      1           0.380 5000
+       209        219      1           0.268 1250
+       210        211      1           0.380 5000
+       210        212      1           0.262 1250
+       210        296      1           0.380 5000
+       212        304      1           0.344 1250
+       212        525      1           0.318 1250
+       212        213      1           0.470 1250
+       213        214      1           0.470 1250
+       214        215      1           0.470 1250
+       215        216      1           0.470 1250
+       216        217      1           0.470 1250
+       217        218      1           0.470 1250
+       219        220      1           0.470 1250
+       220        221      1           0.470 1250
+       221        222      1           0.470 1250
+       222        223      1           0.470 1250
+       223        224      1           0.470 1250
+       224        225      1           0.470 1250
+       226        228      1           0.381 5000
+       226        236      1           0.271 1250
+       226        262      1           0.380 5000
+       227        228      1           0.380 5000
+       227        229      1           0.254 1250
+       227        508      1           0.374 1250
+       229        508      1           0.317 1250
+       229        230      1           0.470 1250
+       230        231      1           0.470 1250
+       231        232      1           0.470 1250
+       232        233      1           0.470 1250
+       233        234      1           0.470 1250
+       234        235      1           0.470 1250
+       236        246      1           0.315 1250
+       236        270      1           0.314 1250
+       236        237      1           0.470 1250
+       237        238      1           0.470 1250
+       238        239      1           0.470 1250
+       239        240      1           0.470 1250
+       240        241      1           0.470 1250
+       241        242      1           0.470 1250
+       243        245      1           0.381 5000
+       243        246      1           0.259 1250
+       244        245      1           0.380 5000
+       244        253      1           0.267 1250
+       244        330      1           0.380 5000
+       246        270      1           0.315 1250
+       246        247      1           0.470 1250
+       247        248      1           0.470 1250
+       248        249      1           0.470 1250
+       249        250      1           0.470 1250
+       250        251      1           0.470 1250
+       251        252      1           0.470 1250
+       253        331      1           0.312 1250
+       253        348      1           0.310 1250
+       253        254      1           0.470 1250
+       254        255      1           0.470 1250
+       255        256      1           0.470 1250
+       256        257      1           0.470 1250
+       257        258      1           0.470 1250
+       258        259      1           0.470 1250
+       260        262      1           0.380 5000
+       260        270      1           0.257 1250
+       261        262      1           0.381 5000
+       261        263      1           0.268 1250
+       261        432      1           0.380 5000
+       263        433      1           0.320 1250
+       263        264      1           0.470 1250
+       264        265      1           0.470 1250
+       265        266      1           0.470 1250
+       266        267      1           0.470 1250
+       267        268      1           0.470 1250
+       268        269      1           0.470 1250
+       270        271      1           0.470 1250
+       271        272      1           0.470 1250
+       272        273      1           0.470 1250
+       273        274      1           0.470 1250
+       274        275      1           0.470 1250
+       275        276      1           0.470 1250
+       277        279      1           0.380 5000
+       277        287      1           0.254 1250
+       277        296      1           0.381 5000
+       278        279      1           0.380 5000
+       278        280      1           0.261 1250
+       280        399      1           0.342 1250
+       280        281      1           0.470 1250
+       281        282      1           0.470 1250
+       282        283      1           0.470 1250
+       283        284      1           0.470 1250
+       284        285      1           0.470 1250
+       285        286      1           0.470 1250
+       287        297      1           0.357 1250
+       287        321      1           0.361 1250
+       287        288      1           0.470 1250
+       288        289      1           0.470 1250
+       289        290      1           0.470 1250
+       290        291      1           0.470 1250
+       291        292      1           0.470 1250
+       292        293      1           0.470 1250
+       294        296      1           0.380 5000
+       294        297      1           0.259 1250
+       294        313      1           0.381 5000
+       295        296      1           0.381 5000
+       295        304      1           0.266 1250
+       295        517      1           0.380 5000
+       297        321      1           0.404 1250
+       297        298      1           0.470 1250
+       298        299      1           0.470 1250
+       299        300      1           0.470 1250
+       300        301      1           0.470 1250
+       301        302      1           0.470 1250
+       302        303      1           0.470 1250
+       304        525      1           0.323 1250
+       304        305      1           0.470 1250
+       305        306      1           0.470 1250
+       306        307      1           0.470 1250
+       307        308      1           0.470 1250
+       308        309      1           0.470 1250
+       309        310      1           0.470 1250
+       311        313      1           0.380 5000
+       311        321      1           0.257 1250
+       312        313      1           0.380 5000
+       312        314      1           0.268 1250
+       312        364      1           0.380 5000
+       312        372      1           0.378 1250
+       312        389      1           0.374 1250
+       314        372      1           0.265 1250
+       314        389      1           0.222 1250
+       314        315      1           0.470 1250
+       315        316      1           0.470 1250
+       316        317      1           0.470 1250
+       317        318      1           0.470 1250
+       318        319      1           0.470 1250
+       319        320      1           0.470 1250
+       321        322      1           0.470 1250
+       322        323      1           0.470 1250
+       323        324      1           0.470 1250
+       324        325      1           0.470 1250
+       325        326      1           0.470 1250
+       326        327      1           0.470 1250
+       328        330      1           0.380 5000
+       328        331      1           0.254 1250
+       328        347      1           0.380 5000
+       328        348      1           0.371 1250
+       329        330      1           0.380 5000
+       329        338      1           0.271 1250
+       331        348      1           0.312 1250
+       331        332      1           0.470 1250
+       332        333      1           0.470 1250
+       333        334      1           0.470 1250
+       334        335      1           0.470 1250
+       335        336      1           0.470 1250
+       336        337      1           0.470 1250
+       338        457      1           0.308 1250
+       338        339      1           0.470 1250
+       339        340      1           0.470 1250
+       340        341      1           0.470 1250
+       341        342      1           0.470 1250
+       342        343      1           0.470 1250
+       343        344      1           0.470 1250
+       345        347      1           0.380 5000
+       345        348      1           0.268 1250
+       346        347      1           0.381 5000
+       346        355      1           0.257 1250
+       346        551      1           0.380 5000
+       348        349      1           0.470 1250
+       349        350      1           0.470 1250
+       350        351      1           0.470 1250
+       351        352      1           0.470 1250
+       352        353      1           0.470 1250
+       353        354      1           0.470 1250
+       355        559      1           0.305 1250
+       355        356      1           0.470 1250
+       356        357      1           0.470 1250
+       357        358      1           0.470 1250
+       358        359      1           0.470 1250
+       359        360      1           0.470 1250
+       360        361      1           0.470 1250
+       362        364      1           0.380 5000
+       362        372      1           0.271 1250
+       362        381      1           0.380 5000
+       363        364      1           0.380 5000
+       363        365      1           0.265 1250
+       365        535      1           0.284 1250
+       365        366      1           0.470 1250
+       366        367      1           0.470 1250
+       367        368      1           0.470 1250
+       368        369      1           0.470 1250
+       369        370      1           0.470 1250
+       370        371      1           0.470 1250
+       372        389      1           0.272 1250
+       372        373      1           0.470 1250
+       373        374      1           0.470 1250
+       374        375      1           0.470 1250
+       375        376      1           0.470 1250
+       376        377      1           0.470 1250
+       377        378      1           0.470 1250
+       379        381      1           0.380 5000
+       379        389      1           0.266 1250
+       380        381      1           0.381 5000
+       380        382      1           0.259 1250
+       380        466      1           0.380 5000
+       380        474      1           0.370 1250
+       382        474      1           0.306 1250
+       382        383      1           0.470 1250
+       383        384      1           0.470 1250
+       384        385      1           0.470 1250
+       385        386      1           0.470 1250
+       386        387      1           0.470 1250
+       387        388      1           0.470 1250
+       389        390      1           0.470 1250
+       390        391      1           0.470 1250
+       391        392      1           0.470 1250
+       392        393      1           0.470 1250
+       393        394      1           0.470 1250
+       394        395      1           0.470 1250
+       396        398      1           0.380 5000
+       396        406      1           0.257 1250
+       396        432      1           0.380 5000
+       397        398      1           0.380 5000
+       397        399      1           0.268 1250
+       399        400      1           0.470 1250
+       400        401      1           0.470 1250
+       401        402      1           0.470 1250
+       402        403      1           0.470 1250
+       403        404      1           0.470 1250
+       404        405      1           0.470 1250
+       406        416      1           0.321 1250
+       406        440      1           0.325 1250
+       406        407      1           0.470 1250
+       407        408      1           0.470 1250
+       408        409      1           0.470 1250
+       409        410      1           0.470 1250
+       410        411      1           0.470 1250
+       411        412      1           0.470 1250
+       413        415      1           0.380 5000
+       413        416      1           0.271 1250
+       414        415      1           0.381 5000
+       414        423      1           0.256 1250
+       414        500      1           0.380 5000
+       414        518      1           0.371 1250
+       416        440      1           0.314 1250
+       416        417      1           0.470 1250
+       417        418      1           0.470 1250
+       418        419      1           0.470 1250
+       419        420      1           0.470 1250
+       420        421      1           0.470 1250
+       421        422      1           0.470 1250
+       423        501      1           0.326 1250
+       423        518      1           0.313 1250
+       423        424      1           0.470 1250
+       424        425      1           0.470 1250
+       425        426      1           0.470 1250
+       426        427      1           0.470 1250
+       427        428      1           0.470 1250
+       428        429      1           0.470 1250
+       430        432      1           0.380 5000
+       430        440      1           0.258 1250
+       431        432      1           0.380 5000
+       431        433      1           0.264 1250
+       433        434      1           0.470 1250
+       434        435      1           0.470 1250
+       435        436      1           0.470 1250
+       436        437      1           0.470 1250
+       437        438      1           0.470 1250
+       438        439      1           0.470 1250
+       440        441      1           0.470 1250
+       441        442      1           0.470 1250
+       442        443      1           0.470 1250
+       443        444      1           0.470 1250
+       444        445      1           0.470 1250
+       445        446      1           0.470 1250
+       447        449      1           0.380 5000
+       447        450      1           0.266 1250
+       447        466      1           0.380 5000
+       448        449      1           0.380 5000
+       448        457      1           0.259 1250
+       450        467      1           0.302 1250
+       450        491      1           0.300 1250
+       450        451      1           0.470 1250
+       451        452      1           0.470 1250
+       452        453      1           0.470 1250
+       453        454      1           0.470 1250
+       454        455      1           0.470 1250
+       455        456      1           0.470 1250
+       457        458      1           0.470 1250
+       458        459      1           0.470 1250
+       459        460      1           0.470 1250
+       460        461      1           0.470 1250
+       461        462      1           0.470 1250
+       462        463      1           0.470 1250
+       464        466      1           0.380 5000
+       464        467      1           0.255 1250
+       464        483      1           0.380 5000
+       464        491      1           0.370 1250
+       465        466      1           0.380 5000
+       465        474      1           0.270 1250
+       467        491      1           0.313 1250
+       467        468      1           0.470 1250
+       468        469      1           0.470 1250
+       469        470      1           0.470 1250
+       470        471      1           0.470 1250
+       471        472      1           0.470 1250
+       472        473      1           0.470 1250
+       474        475      1           0.470 1250
+       475        476      1           0.470 1250
+       476        477      1           0.470 1250
+       477        478      1           0.470 1250
+       478        479      1           0.470 1250
+       479        480      1           0.470 1250
+       481        483      1           0.380 5000
+       481        491      1           0.269 1250
+       482        483      1           0.381 5000
+       482        484      1           0.254 1250
+       482        534      1           0.380 5000
+       482        542      1           0.371 1250
+       482        552      1           0.371 1250
+       484        542      1           0.305 1250
+       484        552      1           0.314 1250
+       484        485      1           0.470 1250
+       485        486      1           0.470 1250
+       486        487      1           0.470 1250
+       487        488      1           0.470 1250
+       488        489      1           0.470 1250
+       489        490      1           0.470 1250
+       491        492      1           0.470 1250
+       492        493      1           0.470 1250
+       493        494      1           0.470 1250
+       494        495      1           0.470 1250
+       495        496      1           0.470 1250
+       496        497      1           0.470 1250
+       498        500      1           0.380 5000
+       498        501      1           0.260 1250
+       498        517      1           0.380 5000
+       499        500      1           0.380 5000
+       499        508      1           0.266 1250
+       501        518      1           0.324 1250
+       501        502      1           0.470 1250
+       502        503      1           0.470 1250
+       503        504      1           0.470 1250
+       504        505      1           0.470 1250
+       505        506      1           0.470 1250
+       506        507      1           0.470 1250
+       508        509      1           0.470 1250
+       509        510      1           0.470 1250
+       510        511      1           0.470 1250
+       511        512      1           0.470 1250
+       512        513      1           0.470 1250
+       513        514      1           0.470 1250
+       515        517      1           0.380 5000
+       515        518      1           0.270 1250
+       516        517      1           0.380 5000
+       516        525      1           0.254 1250
+       518        519      1           0.470 1250
+       519        520      1           0.470 1250
+       520        521      1           0.470 1250
+       521        522      1           0.470 1250
+       522        523      1           0.470 1250
+       523        524      1           0.470 1250
+       525        526      1           0.470 1250
+       526        527      1           0.470 1250
+       527        528      1           0.470 1250
+       528        529      1           0.470 1250
+       529        530      1           0.470 1250
+       530        531      1           0.470 1250
+       532        534      1           0.380 5000
+       532        542      1           0.268 1250
+       532        551      1           0.380 5000
+       533        534      1           0.380 5000
+       533        535      1           0.257 1250
+       535        536      1           0.470 1250
+       536        537      1           0.470 1250
+       537        538      1           0.470 1250
+       538        539      1           0.470 1250
+       539        540      1           0.470 1250
+       540        541      1           0.470 1250
+       542        552      1           0.300 1250
+       542        543      1           0.470 1250
+       543        544      1           0.470 1250
+       544        545      1           0.470 1250
+       545        546      1           0.470 1250
+       546        547      1           0.470 1250
+       547        548      1           0.470 1250
+       549        551      1           0.380 5000
+       549        552      1           0.268 1250
+       550        551      1           0.380 5000
+       550        559      1           0.260 1250
+       552        553      1           0.470 1250
+       553        554      1           0.470 1250
+       554        555      1           0.470 1250
+       555        556      1           0.470 1250
+       556        557      1           0.470 1250
+       557        558      1           0.470 1250
+       559        560      1           0.470 1250
+       560        561      1           0.470 1250
+       561        562      1           0.470 1250
+       562        563      1           0.470 1250
+       563        564      1           0.470 1250
+       564        565      1           0.470 1250
+
+ [ angles ]
+;  i j k     funct  angle  force.c.
+    59   60   61   2    180.0  25.0
+    60   61   62   2    180.0  25.0
+    61   62   63   2    180.0  25.0
+    62   63   64   2    180.0  25.0
+    63   64   65   2    180.0  25.0
+    66   67   68   2    180.0  25.0
+    67   68   69   2    180.0  25.0
+    68   69   70   2    180.0  25.0
+    69   70   71   2    180.0  25.0
+    70   71   72   2    180.0  25.0
+    76   77   78   2    180.0  25.0
+    77   78   79   2    180.0  25.0
+    78   79   80   2    180.0  25.0
+    79   80   81   2    180.0  25.0
+    80   81   82   2    180.0  25.0
+    83   84   85   2    180.0  25.0
+    84   85   86   2    180.0  25.0
+    85   86   87   2    180.0  25.0
+    86   87   88   2    180.0  25.0
+    87   88   89   2    180.0  25.0
+    93   94   95   2    180.0  25.0
+    94   95   96   2    180.0  25.0
+    95   96   97   2    180.0  25.0
+    96   97   98   2    180.0  25.0
+    97   98   99   2    180.0  25.0
+   100  101  102   2    180.0  25.0
+   101  102  103   2    180.0  25.0
+   102  103  104   2    180.0  25.0
+   103  104  105   2    180.0  25.0
+   104  105  106   2    180.0  25.0
+   110  111  112   2    180.0  25.0
+   111  112  113   2    180.0  25.0
+   112  113  114   2    180.0  25.0
+   113  114  115   2    180.0  25.0
+   114  115  116   2    180.0  25.0
+   117  118  119   2    180.0  25.0
+   118  119  120   2    180.0  25.0
+   119  120  121   2    180.0  25.0
+   120  121  122   2    180.0  25.0
+   121  122  123   2    180.0  25.0
+   127  128  129   2    180.0  25.0
+   128  129  130   2    180.0  25.0
+   129  130  131   2    180.0  25.0
+   130  131  132   2    180.0  25.0
+   131  132  133   2    180.0  25.0
+   134  135  136   2    180.0  25.0
+   135  136  137   2    180.0  25.0
+   136  137  138   2    180.0  25.0
+   137  138  139   2    180.0  25.0
+   138  139  140   2    180.0  25.0
+   144  145  146   2    180.0  25.0
+   145  146  147   2    180.0  25.0
+   146  147  148   2    180.0  25.0
+   147  148  149   2    180.0  25.0
+   148  149  150   2    180.0  25.0
+   151  152  153   2    180.0  25.0
+   152  153  154   2    180.0  25.0
+   153  154  155   2    180.0  25.0
+   154  155  156   2    180.0  25.0
+   155  156  157   2    180.0  25.0
+   161  162  163   2    180.0  25.0
+   162  163  164   2    180.0  25.0
+   163  164  165   2    180.0  25.0
+   164  165  166   2    180.0  25.0
+   165  166  167   2    180.0  25.0
+   168  169  170   2    180.0  25.0
+   169  170  171   2    180.0  25.0
+   170  171  172   2    180.0  25.0
+   171  172  173   2    180.0  25.0
+   172  173  174   2    180.0  25.0
+   178  179  180   2    180.0  25.0
+   179  180  181   2    180.0  25.0
+   180  181  182   2    180.0  25.0
+   181  182  183   2    180.0  25.0
+   182  183  184   2    180.0  25.0
+   185  186  187   2    180.0  25.0
+   186  187  188   2    180.0  25.0
+   187  188  189   2    180.0  25.0
+   188  189  190   2    180.0  25.0
+   189  190  191   2    180.0  25.0
+   195  196  197   2    180.0  25.0
+   196  197  198   2    180.0  25.0
+   197  198  199   2    180.0  25.0
+   198  199  200   2    180.0  25.0
+   199  200  201   2    180.0  25.0
+   202  203  204   2    180.0  25.0
+   203  204  205   2    180.0  25.0
+   204  205  206   2    180.0  25.0
+   205  206  207   2    180.0  25.0
+   206  207  208   2    180.0  25.0
+   212  213  214   2    180.0  25.0
+   213  214  215   2    180.0  25.0
+   214  215  216   2    180.0  25.0
+   215  216  217   2    180.0  25.0
+   216  217  218   2    180.0  25.0
+   219  220  221   2    180.0  25.0
+   220  221  222   2    180.0  25.0
+   221  222  223   2    180.0  25.0
+   222  223  224   2    180.0  25.0
+   223  224  225   2    180.0  25.0
+   229  230  231   2    180.0  25.0
+   230  231  232   2    180.0  25.0
+   231  232  233   2    180.0  25.0
+   232  233  234   2    180.0  25.0
+   233  234  235   2    180.0  25.0
+   236  237  238   2    180.0  25.0
+   237  238  239   2    180.0  25.0
+   238  239  240   2    180.0  25.0
+   239  240  241   2    180.0  25.0
+   240  241  242   2    180.0  25.0
+   246  247  248   2    180.0  25.0
+   247  248  249   2    180.0  25.0
+   248  249  250   2    180.0  25.0
+   249  250  251   2    180.0  25.0
+   250  251  252   2    180.0  25.0
+   253  254  255   2    180.0  25.0
+   254  255  256   2    180.0  25.0
+   255  256  257   2    180.0  25.0
+   256  257  258   2    180.0  25.0
+   257  258  259   2    180.0  25.0
+   263  264  265   2    180.0  25.0
+   264  265  266   2    180.0  25.0
+   265  266  267   2    180.0  25.0
+   266  267  268   2    180.0  25.0
+   267  268  269   2    180.0  25.0
+   270  271  272   2    180.0  25.0
+   271  272  273   2    180.0  25.0
+   272  273  274   2    180.0  25.0
+   273  274  275   2    180.0  25.0
+   274  275  276   2    180.0  25.0
+   280  281  282   2    180.0  25.0
+   281  282  283   2    180.0  25.0
+   282  283  284   2    180.0  25.0
+   283  284  285   2    180.0  25.0
+   284  285  286   2    180.0  25.0
+   287  288  289   2    180.0  25.0
+   288  289  290   2    180.0  25.0
+   289  290  291   2    180.0  25.0
+   290  291  292   2    180.0  25.0
+   291  292  293   2    180.0  25.0
+   297  298  299   2    180.0  25.0
+   298  299  300   2    180.0  25.0
+   299  300  301   2    180.0  25.0
+   300  301  302   2    180.0  25.0
+   301  302  303   2    180.0  25.0
+   304  305  306   2    180.0  25.0
+   305  306  307   2    180.0  25.0
+   306  307  308   2    180.0  25.0
+   307  308  309   2    180.0  25.0
+   308  309  310   2    180.0  25.0
+   314  315  316   2    180.0  25.0
+   315  316  317   2    180.0  25.0
+   316  317  318   2    180.0  25.0
+   317  318  319   2    180.0  25.0
+   318  319  320   2    180.0  25.0
+   321  322  323   2    180.0  25.0
+   322  323  324   2    180.0  25.0
+   323  324  325   2    180.0  25.0
+   324  325  326   2    180.0  25.0
+   325  326  327   2    180.0  25.0
+   331  332  333   2    180.0  25.0
+   332  333  334   2    180.0  25.0
+   333  334  335   2    180.0  25.0
+   334  335  336   2    180.0  25.0
+   335  336  337   2    180.0  25.0
+   338  339  340   2    180.0  25.0
+   339  340  341   2    180.0  25.0
+   340  341  342   2    180.0  25.0
+   341  342  343   2    180.0  25.0
+   342  343  344   2    180.0  25.0
+   348  349  350   2    180.0  25.0
+   349  350  351   2    180.0  25.0
+   350  351  352   2    180.0  25.0
+   351  352  353   2    180.0  25.0
+   352  353  354   2    180.0  25.0
+   355  356  357   2    180.0  25.0
+   356  357  358   2    180.0  25.0
+   357  358  359   2    180.0  25.0
+   358  359  360   2    180.0  25.0
+   359  360  361   2    180.0  25.0
+   365  366  367   2    180.0  25.0
+   366  367  368   2    180.0  25.0
+   367  368  369   2    180.0  25.0
+   368  369  370   2    180.0  25.0
+   369  370  371   2    180.0  25.0
+   372  373  374   2    180.0  25.0
+   373  374  375   2    180.0  25.0
+   374  375  376   2    180.0  25.0
+   375  376  377   2    180.0  25.0
+   376  377  378   2    180.0  25.0
+   382  383  384   2    180.0  25.0
+   383  384  385   2    180.0  25.0
+   384  385  386   2    180.0  25.0
+   385  386  387   2    180.0  25.0
+   386  387  388   2    180.0  25.0
+   389  390  391   2    180.0  25.0
+   390  391  392   2    180.0  25.0
+   391  392  393   2    180.0  25.0
+   392  393  394   2    180.0  25.0
+   393  394  395   2    180.0  25.0
+   399  400  401   2    180.0  25.0
+   400  401  402   2    180.0  25.0
+   401  402  403   2    180.0  25.0
+   402  403  404   2    180.0  25.0
+   403  404  405   2    180.0  25.0
+   406  407  408   2    180.0  25.0
+   407  408  409   2    180.0  25.0
+   408  409  410   2    180.0  25.0
+   409  410  411   2    180.0  25.0
+   410  411  412   2    180.0  25.0
+   416  417  418   2    180.0  25.0
+   417  418  419   2    180.0  25.0
+   418  419  420   2    180.0  25.0
+   419  420  421   2    180.0  25.0
+   420  421  422   2    180.0  25.0
+   423  424  425   2    180.0  25.0
+   424  425  426   2    180.0  25.0
+   425  426  427   2    180.0  25.0
+   426  427  428   2    180.0  25.0
+   427  428  429   2    180.0  25.0
+   433  434  435   2    180.0  25.0
+   434  435  436   2    180.0  25.0
+   435  436  437   2    180.0  25.0
+   436  437  438   2    180.0  25.0
+   437  438  439   2    180.0  25.0
+   440  441  442   2    180.0  25.0
+   441  442  443   2    180.0  25.0
+   442  443  444   2    180.0  25.0
+   443  444  445   2    180.0  25.0
+   444  445  446   2    180.0  25.0
+   450  451  452   2    180.0  25.0
+   451  452  453   2    180.0  25.0
+   452  453  454   2    180.0  25.0
+   453  454  455   2    180.0  25.0
+   454  455  456   2    180.0  25.0
+   457  458  459   2    180.0  25.0
+   458  459  460   2    180.0  25.0
+   459  460  461   2    180.0  25.0
+   460  461  462   2    180.0  25.0
+   461  462  463   2    180.0  25.0
+   467  468  469   2    180.0  25.0
+   468  469  470   2    180.0  25.0
+   469  470  471   2    180.0  25.0
+   470  471  472   2    180.0  25.0
+   471  472  473   2    180.0  25.0
+   474  475  476   2    180.0  25.0
+   475  476  477   2    180.0  25.0
+   476  477  478   2    180.0  25.0
+   477  478  479   2    180.0  25.0
+   478  479  480   2    180.0  25.0
+   484  485  486   2    180.0  25.0
+   485  486  487   2    180.0  25.0
+   486  487  488   2    180.0  25.0
+   487  488  489   2    180.0  25.0
+   488  489  490   2    180.0  25.0
+   491  492  493   2    180.0  25.0
+   492  493  494   2    180.0  25.0
+   493  494  495   2    180.0  25.0
+   494  495  496   2    180.0  25.0
+   495  496  497   2    180.0  25.0
+   501  502  503   2    180.0  25.0
+   502  503  504   2    180.0  25.0
+   503  504  505   2    180.0  25.0
+   504  505  506   2    180.0  25.0
+   505  506  507   2    180.0  25.0
+   508  509  510   2    180.0  25.0
+   509  510  511   2    180.0  25.0
+   510  511  512   2    180.0  25.0
+   511  512  513   2    180.0  25.0
+   512  513  514   2    180.0  25.0
+   518  519  520   2    180.0  25.0
+   519  520  521   2    180.0  25.0
+   520  521  522   2    180.0  25.0
+   521  522  523   2    180.0  25.0
+   522  523  524   2    180.0  25.0
+   525  526  527   2    180.0  25.0
+   526  527  528   2    180.0  25.0
+   527  528  529   2    180.0  25.0
+   528  529  530   2    180.0  25.0
+   529  530  531   2    180.0  25.0
+   535  536  537   2    180.0  25.0
+   536  537  538   2    180.0  25.0
+   537  538  539   2    180.0  25.0
+   538  539  540   2    180.0  25.0
+   539  540  541   2    180.0  25.0
+   542  543  544   2    180.0  25.0
+   543  544  545   2    180.0  25.0
+   544  545  546   2    180.0  25.0
+   545  546  547   2    180.0  25.0
+   546  547  548   2    180.0  25.0
+   552  553  554   2    180.0  25.0
+   553  554  555   2    180.0  25.0
+   554  555  556   2    180.0  25.0
+   555  556  557   2    180.0  25.0
+   556  557  558   2    180.0  25.0
+   559  560  561   2    180.0  25.0
+   560  561  562   2    180.0  25.0
+   561  562  563   2    180.0  25.0
+   562  563  564   2    180.0  25.0
+   563  564  565   2    180.0  25.0

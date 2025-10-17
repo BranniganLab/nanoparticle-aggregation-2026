@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:10:25 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Icosanethiol/Replica1/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o popcdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPC"
+    -6.56814                0
+    -6.30006                0
+    -6.03197                0
+    -5.76388                0
+    -5.49579                0
+    -5.22771                0
+    -4.95962                0
+    -4.69153       0.00404474
+    -4.42344         0.064686
+    -4.15536         0.820604
+    -3.88727          4.95145
+    -3.61918          17.0168
+    -3.35109           41.678
+    -3.08301          80.9986
+    -2.81492          147.024
+    -2.54683          256.189
+    -2.27874          426.192
+    -2.01066          639.797
+    -1.74257          820.465
+    -1.47448          934.701
+    -1.20639          994.031
+   -0.938306          993.756
+   -0.670219          954.655
+   -0.402131          891.959
+   -0.134044          826.891
+    0.134044           816.09
+    0.402131           871.48
+    0.670219          943.333
+    0.938306          1000.11
+     1.20639          1016.69
+     1.47448          986.417
+     1.74257          880.031
+     2.01066          722.059
+     2.27874          500.278
+     2.54683          286.819
+     2.81492          144.667
+     3.08301          70.4786
+     3.35109          31.0514
+     3.61918          9.96375
+     3.88727          2.02101
+     4.15536         0.194053
+     4.42344        0.0121342
+     4.69153                0
+     4.95962                0
+     5.22771                0
+     5.49579                0
+     5.76388                0
+     6.03197                0
+     6.30006                0
+     6.56814                0

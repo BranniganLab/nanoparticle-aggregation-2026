@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:07:51 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Dodecanethiol/Replica1/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o popcdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPC"
+     -6.1233                0
+    -5.87337                0
+    -5.62344                0
+    -5.37351                0
+    -5.12358                0
+    -4.87365                0
+    -4.62372                0
+    -4.37379                0
+    -4.12386        0.0353739
+    -3.87393         0.626905
+      -3.624          3.79669
+    -3.37407          13.9229
+    -3.12414          36.1942
+     -2.8742          75.3803
+    -2.62427          151.581
+    -2.37434          290.441
+    -2.12441          492.352
+    -1.87448           705.52
+    -1.62455          855.542
+    -1.37462          963.017
+    -1.12469          1009.25
+   -0.874758          1011.54
+   -0.624827          986.782
+   -0.374896          934.624
+   -0.124965          880.969
+    0.124965          865.053
+    0.374896          900.674
+    0.624827          964.809
+    0.874758          1005.58
+     1.12469          1026.82
+     1.37462          1012.24
+     1.62455          929.961
+     1.87448          804.612
+     2.12441           620.88
+     2.37434          392.809
+     2.62427          207.549
+      2.8742          98.1879
+     3.12414           44.425
+     3.37407          16.9316
+       3.624          4.64126
+     3.87393         0.738223
+     4.12386        0.0707928
+     4.37379       0.00506224
+     4.62372                0
+     4.87365                0
+     5.12358                0
+     5.37351                0
+     5.62344                0
+     5.87337                0
+      6.1233                0

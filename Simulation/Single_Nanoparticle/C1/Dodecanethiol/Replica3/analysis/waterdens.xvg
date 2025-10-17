@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:08:32 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Dodecanethiol/Replica3/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o waterdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "W"
+    -6.12026          978.157
+    -5.87045          981.536
+    -5.62065          979.095
+    -5.37084          981.667
+    -5.12103          978.591
+    -4.87123          980.731
+    -4.62142          981.713
+    -4.37161          981.327
+    -4.12181          977.595
+      -3.872          977.888
+     -3.6222          973.414
+    -3.37239          963.255
+    -3.12258          939.082
+    -2.87278          898.743
+    -2.62297          816.742
+    -2.37316          675.571
+    -2.12336          481.766
+    -1.87355          311.767
+    -1.62374          191.212
+    -1.37394          92.0034
+    -1.12413          28.6318
+   -0.874323          5.36307
+   -0.624516          0.67723
+    -0.37471         0.121278
+   -0.124903        0.0606654
+    0.124903         0.065706
+     0.37471        0.0808778
+    0.624516         0.657156
+    0.874323          6.31395
+     1.12413          31.5937
+     1.37394          100.047
+     1.62374          203.232
+     1.87355          328.664
+     2.12336          502.879
+     2.37316            696.8
+     2.62297          834.946
+     2.87278          906.366
+     3.12258          947.225
+     3.37239          965.514
+      3.6222          977.665
+       3.872          977.893
+     4.12181          980.171
+     4.37161          979.503
+     4.62142           980.33
+     4.87123          978.739
+     5.12103          979.657
+     5.37084          978.533
+     5.62065          980.369
+     5.87045          980.476
+     6.12026          981.469

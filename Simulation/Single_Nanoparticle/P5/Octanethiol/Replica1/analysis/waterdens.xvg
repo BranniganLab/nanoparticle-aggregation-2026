@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:20:07 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/P5/Octanethiol/Replica1/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o waterdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "W"
+    -5.39701          980.719
+    -5.17672          979.269
+    -4.95644          981.018
+    -4.73615          979.322
+    -4.51587          981.098
+    -4.29558          979.613
+    -4.07529          978.821
+    -3.85501          979.351
+    -3.63472          979.636
+    -3.41444          979.497
+    -3.19415           974.79
+    -2.97386          963.579
+    -2.75358          932.296
+    -2.53329          847.787
+      -2.313          712.061
+    -2.09272          544.833
+    -1.87243          401.217
+    -1.65215          262.451
+    -1.43186          151.116
+    -1.21157          61.7118
+   -0.991288          19.1917
+   -0.771002          5.01257
+   -0.550715          1.12702
+   -0.330429         0.926994
+   -0.110143          1.25426
+    0.110143          1.69066
+    0.330429          1.42244
+    0.550715          2.10418
+    0.771002          8.16588
+    0.991288          32.0434
+     1.21157          87.9602
+     1.43186          186.868
+     1.65215          309.041
+     1.87243          448.761
+     2.09272          604.545
+       2.313          769.532
+     2.53329           888.67
+     2.75358          946.919
+     2.97386          969.143
+     3.19415          973.917
+     3.41444          981.756
+     3.63472          978.177
+     3.85501          980.685
+     4.07529          980.896
+     4.29558          978.209
+     4.51587          982.861
+     4.73615          980.036
+     4.95644          980.284
+     5.17672          981.016
+     5.39701          979.977

@@ -1,0 +1,74 @@
+# This file was created Mon Jun  9 13:07:24 2025
+# Created by:
+#                     :-) GROMACS - gmx density, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/Single_NP/C1/Octanethiol/Replica3/analysis
+# Command line:
+#   gmx density -f ../production/center.xtc -s ../production/md1.tpr -center yes -o popcdens.xvg
+# gmx density is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "Partial density"
+@    xaxis  label "Average relative position from center (nm)"
+@    yaxis  label "Density (kg m\S-3\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "POPC"
+    -5.67486                0
+    -5.44324                0
+    -5.21161                0
+    -4.97998                0
+    -4.74835                0
+    -4.51673                0
+     -4.2851                0
+    -4.05347       0.00909054
+    -3.82185        0.0681636
+    -3.59022         0.659102
+    -3.35859          3.64556
+    -3.12697          14.2501
+    -2.89534          45.0861
+    -2.66371          113.902
+    -2.43208           251.41
+    -2.20046          452.061
+    -1.96883          660.541
+     -1.7372          820.921
+    -1.50558           943.63
+    -1.27395          1019.05
+    -1.04232          1038.53
+   -0.810695          1033.69
+   -0.579068          1009.54
+   -0.347441          963.848
+   -0.115814          931.939
+    0.115814          932.232
+    0.347441          968.864
+    0.579068          1006.44
+    0.810695          1031.59
+     1.04232          1031.45
+     1.27395          1003.11
+     1.50558           925.64
+      1.7372          808.541
+     1.96883          641.022
+     2.20046          440.121
+     2.43208          248.639
+     2.66371          125.609
+     2.89534          58.8265
+     3.12697          26.5514
+     3.35859           9.8866
+     3.59022          2.83195
+     3.82185         0.490942
+     4.05347        0.0727208
+      4.2851       0.00454135
+     4.51673                0
+     4.74835                0
+     4.97998                0
+     5.21161                0
+     5.44324                0
+     5.67486                0

@@ -1,0 +1,15 @@
+;Gold
+;;;;;; Gold Bead
+;
+; same particle type would represent HYDRATED POTASSIUM
+
+[moleculetype]
+; molname       nrexcl
+   AU             1
+
+[atoms]
+;id     type    resnr   residu  atom    cgnr    charge
+ 1       G2       1       AU     AU      1       0.0
+#ifdef POSRES
+#include "/scratch/jje63/heat_lig_multinano/GoldSurface/together/posre.itp"
+#endif
