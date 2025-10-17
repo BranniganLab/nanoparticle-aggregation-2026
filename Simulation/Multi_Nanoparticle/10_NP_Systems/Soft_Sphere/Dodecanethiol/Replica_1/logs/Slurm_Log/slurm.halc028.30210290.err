@@ -1,0 +1,151 @@
+                   :-) GROMACS - gmx convert-tpr, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Soft_Sphere/Dodecanthiol
+Command line:
+  gmx_mpi convert-tpr -s md.tpr -nsteps 2000000000 -o md2.tpr
+
+Reading toplogy and stuff from md.tpr
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Setting nsteps to 2000000000
+Writing statusfile with starting step          0 and length 2000000000 steps...
+                                 time      0.000 and length 50000000.000 ps
+
+GROMACS reminds you: "Gabba Gabba Hey!" (The Ramones)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Soft_Sphere/Dodecanthiol
+Command line:
+  gmx_mpi mdrun -s md2.tpr -cpi md.cpt -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Running on 1 node with total 32 cores, 32 logical cores
+Hardware detected on host halc028.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md2.tpr, VERSION 2016.1 (single precision)
+
+Reading checkpoint file md.cpt generated: Sun Jul 16 15:17:36 2023
+
+
+Using 32 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+WARNING: This run will generate roughly 288255 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+2000000000 steps, 50000000.0 ps (continuing from step 57125251, 1428131.3 ps).
+step 57125251, will finish Thu Aug  7 05:42:45 2025
+
+step 57125280 Turning on dynamic load balancing, because the performance loss due to load imbalance is 7.1 %.
+
+vol 0.95  imb F  6% step 57125300, will finish Tue Dec  5 03:12:26 2023
+vol 0.95  imb F  2% step 57125400, will finish Thu Nov 16 23:15:44 2023
+vol 0.95  imb F  2% step 57125500, will finish Thu Nov 16 23:51:24 2023
+vol 0.96  imb F  1% step 57125600, will finish Tue Nov 14 00:27:12 2023
+vol 0.95  imb F  2% step 57125700, will finish Sun Nov 12 04:36:48 2023
+vol 0.95  imb F  4% step 57125800, will finish Sat Nov 11 03:45:27 2023
+vol 0.94  imb F  4% step 57125900, will finish Sat Nov 11 12:06:05 2023
+vol 0.94  imb F  4% step 57126000, will finish Sat Nov 11 01:44:40 2023
+vol 0.95  imb F  5% step 57126100, will finish Fri Nov 10 14:29:02 2023
+vol 0.95  imb F  2% step 57126200, will finish Fri Nov 10 03:13:40 2023
+vol 0.95  imb F  1% step 57126300, will finish Thu Nov  9 18:08:32 2023
+vol 0.94  imb F  4% step 57126400, will finish Thu Nov  9 12:39:21 2023
+vol 0.96  imb F  3% step 57126500, will finish Thu Nov  9 06:50:40 2023
+vol 0.96  imb F  4% step 57126600, will finish Thu Nov  9 17:34:06 2023
+
+step 57126650 Turning off dynamic load balancing, because it is degrading performance.
+
+imb F  4% step 57126700, will finish Sat Nov 11 17:07:42 2023
+imb F  4% step 57126800, will finish Sat Nov 11 08:12:41 2023
+imb F  5% step 57126900, will finish Sat Nov 11 00:38:05 2023
+imb F  5% step 57127000, will finish Fri Nov 10 18:38:38 2023
+imb F  4% step 57127100, will finish Fri Nov 10 13:12:22 2023
+imb F  5% step 57127200, will finish Fri Nov 10 08:00:43 2023
+imb F  5% step 57127300, will finish Fri Nov 10 03:21:23 2023
+imb F  5% step 57127400, will finish Thu Nov  9 22:41:56 2023
+imb F  5% step 57127500, will finish Thu Nov  9 16:57:09 2023
+imb F  8% step 57127600, will finish Thu Nov  9 16:13:50 2023
+imb F  6% step 57127700, will finish Thu Nov  9 17:26:46 2023
+imb F  6% step 57127800, will finish Thu Nov  9 16:16:03 2023
+imb F  7% step 57127900, will finish Thu Nov  9 12:40:23 2023
+imb F  5% 
+-------------------------------------------------------
+Program:     gmx mdrun, version 2016.1
+Source file: src/gromacs/mdlib/mdoutf.cpp (line 406)
+MPI rank:    0 (out of 32)
+
+Fatal error:
+XTC error - maybe you are out of disk space?
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+slurmstepd: error: *** STEP 30210290.1 ON halc028 CANCELLED AT 2023-07-27T23:58:45 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: halc028: task 0: Exited with exit code 1
+srun: error: halc028: tasks 1-31: Killed
