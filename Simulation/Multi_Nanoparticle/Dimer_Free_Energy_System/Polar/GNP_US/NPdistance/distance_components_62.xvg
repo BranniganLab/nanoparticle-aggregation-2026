@@ -1,0 +1,21 @@
+# This file was created Wed Jun 18 18:11:48 2025
+# Created by:
+#                     :-) GROMACS - gmx distance, 2024.5 (-:
+# 
+# Executable:   /home/jje63/APPS/Gromacs2024_5/bin/gmx
+# Data prefix:  /home/jje63/APPS/Gromacs2024_5
+# Working dir:  /media/jje63/easystore/GoldNanoparticleFE/GNP_US_All/Polar/GNP_US/NPdistance
+# Command line:
+#   gmx distance -f ../umbrella479.xtc -s ../umbrella479.tpr -select 'com of group AUCORE1 plus com of group AUCORE2' -oxyz distance_components_62.xvg -n ../index.ndx
+# gmx distance is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+      0.000   -3.265   -7.980   -0.623
+   1000.000   -3.182   -8.039   -0.918
+   2000.000   -3.249   -8.035   -0.677
+   3000.000   -3.460   -7.966   -1.105
