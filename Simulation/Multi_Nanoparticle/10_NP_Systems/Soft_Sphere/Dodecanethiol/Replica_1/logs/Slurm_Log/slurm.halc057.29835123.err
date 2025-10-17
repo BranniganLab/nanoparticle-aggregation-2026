@@ -1,0 +1,1157 @@
+                      :-) GROMACS - gmx grompp, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Soft_Sphere/Dodecanthiol
+Command line:
+  gmx_mpi grompp -f md_i.mdp -c em.gro -p insane.top -o md -maxwarn 10
+
+Replacing old mdp entry 'unconstrained_start' by 'continuation'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+Replacing old mdp entry 'xtc_precision' by 'compressed-x-precision'
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.1#
+
+NOTE 1 [file md_i.mdp]:
+  The group cutoff scheme is deprecated since GROMACS 5.0 and will be
+  removed in a future release when all interaction forms are supported for
+  the verlet scheme. The verlet scheme already scales better, and it is
+  compatible with GPUs and other accelerators.
+
+
+NOTE 2 [file md_i.mdp]:
+  The switch/shift interaction settings are just for compatibility; you
+  will get better performance from applying potential modifiers to your
+  interactions!
+
+
+
+NOTE 3 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rcoulomb.
+
+
+NOTE 4 [file md_i.mdp]:
+  For energy conservation with switch/shift potentials, rlist should be 0.1
+  to 0.3 nm larger than rvdw.
+
+Setting the LD random seed to 1549886451
+Generated 1 of the 820 non-bonded parameter combinations
+Excluding 1 bonded neighbours molecule type 'AU'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'POPC'
+Excluding 1 bonded neighbours molecule type 'W'
+Excluding 1 bonded neighbours molecule type 'NA+'
+Excluding 1 bonded neighbours molecule type 'CL-'
+Setting gen_seed to 366336845
+Velocities were taken from a Maxwell distribution at 313 K
+
+Atom 58 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 61 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 64 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 67 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 70 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 73 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 76 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 79 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 82 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 85 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 88 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 91 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 94 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 97 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 100 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 103 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 106 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 109 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 112 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 115 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 118 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 121 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 124 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 127 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 130 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 133 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 136 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 139 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 142 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+Atom 145 'AUL' in moleculetype 'AU' is not bound by a potential or constraint to any other atom in the same moleculetype.
+
+NOTE 5 [file insane.top, line 19]:
+  In moleculetype 'AU' 30 atoms are not bound by a potential or constraint
+  to any other atom in the same moleculetype. Although technically this
+  might not cause issues in a simulation, this often means that the user
+  forgot to add a bond/potential/constraint or put multiple molecules in
+  the same moleculetype definition by mistake.
+
+Number of degrees of freedom in T-Coupling group AU is 11549.95
+Number of degrees of freedom in T-Coupling group POPC is 223919.09
+Number of degrees of freedom in T-Coupling group W is 499555.00
+Number of degrees of freedom in T-Coupling group ION is 10997.96
+
+NOTE 6 [file md_i.mdp]:
+  This run will generate roughly 118817 Mb of data
+
+
+There were 6 notes
+
+Back Off! I just backed up md.tpr to ./#md.tpr.1#
+
+GROMACS reminds you: "Molecular biology is essentially the practice of biochemistry without a license." (Edwin Chargaff)
+
+                      :-) GROMACS - gmx mdrun, 2016.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.1
+Executable:   /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1/bin/gmx_mpi
+Data prefix:  /opt/sw/packages/intel-17.0.1/mvapich2-2.2/gromacs/2016.1
+Working dir:  /scratch/jje63/heat_lig_multinano/Soft_Sphere/Dodecanthiol
+Command line:
+  gmx_mpi mdrun -ntomp 1 -deffnm md -v -rdd 1.4
+
+
+Back Off! I just backed up md.log to ./#md.log.1#
+
+Running on 1 node with total 40 cores, 40 logical cores
+Hardware detected on host halc057.amarel.rutgers.edu (the node of MPI rank 0):
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6248 CPU @ 2.50GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Basic
+
+Compiled SIMD instructions: AVX_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file md.tpr, VERSION 2016.1 (single precision)
+Using 32 MPI processes
+
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+
+Back Off! I just backed up md.xtc to ./#md.xtc.1#
+
+Back Off! I just backed up md.edr to ./#md.edr.1#
+
+WARNING: This run will generate roughly 118704 Mb of data
+
+starting mdrun 'Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0'
+800000000 steps, 20000000.0 ps.
+step 0
+
+step 20 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.8 %.
+
+vol 0.93  imb F  1% step 100, will finish Wed Nov 15 16:52:30 2023
+vol 0.92  imb F  2% 
+step 200 Turning off dynamic load balancing, because it is degrading performance.
+
+step 200, will finish Mon Oct  2 01:28:53 2023
+imb F  8% step 300, will finish Sat Sep 16 12:14:14 2023
+imb F  9% step 400, will finish Fri Sep  8 18:22:26 2023
+imb F  9% step 500, will finish Mon Sep  4 05:46:09 2023
+imb F  9% step 600, will finish Fri Sep  1 07:07:46 2023
+imb F  8% step 700, will finish Wed Aug 30 01:25:46 2023
+imb F  8% step 800, will finish Mon Aug 28 09:06:38 2023
+imb F  8% step 900, will finish Sun Aug 27 01:32:47 2023
+imb F  8% step 1000, will finish Sat Aug 26 02:23:44 2023
+imb F  8% step 1100, will finish Fri Aug 25 05:30:33 2023
+imb F  8% step 1200, will finish Thu Aug 24 12:42:29 2023
+imb F  8% step 1300, will finish Wed Aug 23 22:45:16 2023
+imb F  8% step 1400, will finish Wed Aug 23 10:38:13 2023
+imb F  6% step 1500, will finish Tue Aug 22 23:42:14 2023
+imb F  7% step 1600, will finish Tue Aug 22 15:09:53 2023
+imb F  7% step 1700, will finish Tue Aug 22 06:51:38 2023
+imb F  6% step 1800, will finish Mon Aug 21 23:15:35 2023
+imb F  8% step 1900, will finish Mon Aug 21 16:29:02 2023
+imb F  7% 
+step 2000 Turning on dynamic load balancing, because the performance loss due to load imbalance is 2.0 %.
+
+step 2000, will finish Mon Aug 21 10:46:46 2023
+vol 0.93  imb F  1% step 2100, will finish Mon Aug 21 04:55:02 2023
+vol 0.93  imb F  1% 
+step 2200 Turning off dynamic load balancing, because it is degrading performance.
+
+step 2200, will finish Mon Aug 21 01:41:54 2023
+imb F  9% step 2300, will finish Sun Aug 20 21:31:20 2023
+imb F  8% step 2400, will finish Sun Aug 20 17:40:57 2023
+imb F  8% step 2500, will finish Sun Aug 20 14:08:34 2023
+imb F  7% step 2600, will finish Tue Aug 22 04:32:52 2023
+imb F  7% step 2700, will finish Tue Aug 22 08:52:27 2023
+imb F  8% step 2800, will finish Tue Aug 22 03:58:32 2023
+imb F  6% step 2900, will finish Mon Aug 21 23:26:52 2023
+imb F  8% 
+step 3000 Will no longer try dynamic load balancing, as it degraded performance.
+
+step 3000, will finish Mon Aug 21 19:11:51 2023
+imb F  8% step 3100, will finish Mon Aug 21 15:12:21 2023
+imb F  8% step 3200, will finish Mon Aug 21 11:41:34 2023
+imb F  7% step 3300, will finish Mon Aug 21 08:14:51 2023
+imb F  7% step 3400, will finish Mon Aug 21 04:57:30 2023
+imb F  8% step 3500, will finish Mon Aug 21 01:54:28 2023
+imb F  9% step 3600, will finish Sun Aug 20 23:05:00 2023
+imb F  8% step 3700, will finish Sun Aug 20 20:24:24 2023
+imb F  8% step 3800, will finish Sun Aug 20 17:45:35 2023
+imb F  8% step 3900, will finish Sun Aug 20 15:23:56 2023
+imb F  8% step 4000, will finish Sun Aug 20 13:19:45 2023
+imb F  8% step 4100, will finish Sun Aug 20 11:05:04 2023
+imb F  8% step 4200, will finish Sun Aug 20 09:06:09 2023
+imb F  7% step 4300, will finish Sun Aug 20 07:04:01 2023
+imb F  9% step 4400, will finish Sun Aug 20 05:09:10 2023
+imb F  8% step 4500, will finish Sun Aug 20 03:29:38 2023
+imb F  7% step 4600, will finish Sun Aug 20 01:44:34 2023
+imb F  8% step 4700, will finish Sun Aug 20 00:10:21 2023
+imb F  8% step 4800, will finish Sat Aug 19 22:36:05 2023
+imb F  7% step 4900, will finish Sat Aug 19 21:05:28 2023
+imb F  7% step 5000, will finish Sat Aug 19 20:01:22 2023
+imb F  7% step 5100, will finish Sat Aug 19 18:38:12 2023
+imb F  7% step 5200, will finish Sat Aug 19 17:11:49 2023
+imb F  7% step 5300, will finish Sat Aug 19 16:00:40 2023
+imb F  8% step 5400, will finish Sat Aug 19 14:45:23 2023
+imb F  7% step 5500, will finish Sat Aug 19 13:28:32 2023
+imb F  7% step 5600, will finish Sat Aug 19 12:13:28 2023
+imb F  7% step 5700, will finish Sat Aug 19 10:57:45 2023
+imb F  6% step 5800, will finish Sat Aug 19 09:44:41 2023
+imb F  7% step 5900, will finish Sat Aug 19 08:34:30 2023
+imb F  8% step 6000, will finish Sat Aug 19 07:28:33 2023
+imb F  7% step 6100, will finish Sat Aug 19 06:22:23 2023
+imb F  6% step 6200, will finish Sat Aug 19 05:20:01 2023
+imb F  7% step 6300, will finish Sat Aug 19 04:23:37 2023
+imb F  7% step 6400, will finish Sat Aug 19 03:27:25 2023
+imb F  7% step 6500, will finish Sat Aug 19 02:32:54 2023
+imb F  6% step 6600, will finish Sat Aug 19 01:40:37 2023
+imb F  7% step 6700, will finish Sat Aug 19 00:59:57 2023
+imb F  6% step 6800, will finish Sat Aug 19 00:05:19 2023
+imb F  6% step 6900, will finish Fri Aug 18 23:13:47 2023
+imb F  7% step 7000, will finish Fri Aug 18 22:21:35 2023
+imb F  6% step 7100, will finish Fri Aug 18 21:32:34 2023
+imb F  7% step 7200, will finish Fri Aug 18 20:50:13 2023
+imb F  7% step 7300, will finish Fri Aug 18 20:04:13 2023
+imb F  8% step 7400, will finish Fri Aug 18 19:19:49 2023
+imb F  8% step 7500, will finish Fri Aug 18 18:40:13 2023
+imb F  7% step 7600, will finish Fri Aug 18 17:59:51 2023
+imb F  7% step 7700, will finish Fri Aug 18 17:19:00 2023
+imb F  6% step 7800, will finish Fri Aug 18 16:39:43 2023
+imb F  6% step 7900, will finish Fri Aug 18 15:59:24 2023
+imb F  7% step 8000, will finish Fri Aug 18 16:01:52 2023
+imb F  6% step 8100, will finish Fri Aug 18 15:24:38 2023
+imb F  7% step 8200, will finish Fri Aug 18 14:54:45 2023
+imb F  6% step 8300, will finish Fri Aug 18 14:18:14 2023
+imb F  6% step 8400, will finish Fri Aug 18 13:42:08 2023
+imb F  6% step 8500, will finish Fri Aug 18 13:06:00 2023
+imb F  6% step 8600, will finish Fri Aug 18 12:32:34 2023
+imb F  6% step 8700, will finish Fri Aug 18 11:58:33 2023
+imb F  7% step 8800, will finish Fri Aug 18 11:26:46 2023
+imb F  7% step 8900, will finish Fri Aug 18 10:54:54 2023
+imb F  7% step 9000, will finish Fri Aug 18 10:24:19 2023
+imb F  7% step 9100, will finish Fri Aug 18 09:53:25 2023
+imb F  6% step 9200, will finish Fri Aug 18 09:23:24 2023
+imb F  6% step 9300, will finish Fri Aug 18 09:03:38 2023
+imb F  6% step 9400, will finish Fri Aug 18 08:34:04 2023
+imb F  7% step 9500, will finish Fri Aug 18 08:06:02 2023
+imb F  7% step 9600, will finish Fri Aug 18 07:41:09 2023
+imb F  6% step 9700, will finish Fri Aug 18 07:14:36 2023
+imb F  7% step 9800, will finish Fri Aug 18 06:51:14 2023
+imb F  7% step 9900, will finish Fri Aug 18 06:26:58 2023
+imb F  7% step 10000, will finish Fri Aug 18 06:01:45 2023
+imb F  6% step 10100, will finish Fri Aug 18 05:38:51 2023
+imb F  6% step 10200, will finish Fri Aug 18 05:17:44 2023
+imb F  7% step 10300, will finish Fri Aug 18 04:54:33 2023
+imb F  7% step 10400, will finish Fri Aug 18 04:34:11 2023
+imb F  6% step 10500, will finish Fri Aug 18 04:13:03 2023
+imb F  7% step 10600, will finish Fri Aug 18 04:32:09 2023
+imb F  6% step 10700, will finish Fri Aug 18 04:11:19 2023
+imb F  7% step 10800, will finish Fri Aug 18 03:52:02 2023
+imb F  6% step 10900, will finish Fri Aug 18 03:30:46 2023
+imb F  7% step 11000, will finish Fri Aug 18 03:12:49 2023
+imb F  7% step 11100, will finish Fri Aug 18 02:54:16 2023
+imb F  6% step 11200, will finish Fri Aug 18 02:37:06 2023
+imb F  7% step 11300, will finish Fri Aug 18 02:19:08 2023
+imb F  7% step 11400, will finish Fri Aug 18 02:01:50 2023
+imb F  7% step 11500, will finish Fri Aug 18 01:44:05 2023
+imb F  7% step 11600, will finish Fri Aug 18 01:25:43 2023
+imb F  8% step 11700, will finish Fri Aug 18 01:10:12 2023
+imb F  6% step 11800, will finish Fri Aug 18 00:53:39 2023
+imb F  7% step 11900, will finish Fri Aug 18 00:43:45 2023
+imb F  6% step 12000, will finish Fri Aug 18 00:28:20 2023
+imb F  7% step 12100, will finish Fri Aug 18 00:14:25 2023
+imb F  7% step 12200, will finish Thu Aug 17 23:57:55 2023
+imb F  6% step 12300, will finish Thu Aug 17 23:43:13 2023
+imb F  7% step 12400, will finish Thu Aug 17 23:26:54 2023
+imb F  7% step 12500, will finish Thu Aug 17 23:12:17 2023
+imb F  7% step 12600, will finish Thu Aug 17 22:57:36 2023
+imb F  6% step 12700, will finish Thu Aug 17 22:43:23 2023
+imb F  6% step 12800, will finish Thu Aug 17 22:29:06 2023
+imb F  6% step 12900, will finish Thu Aug 17 22:25:13 2023
+imb F  6% step 13000, will finish Thu Aug 17 22:10:45 2023
+imb F  7% step 13100, will finish Thu Aug 17 21:57:46 2023
+imb F  6% step 13200, will finish Thu Aug 17 21:44:26 2023
+imb F  6% step 13300, will finish Thu Aug 17 21:35:42 2023
+imb F  6% step 13400, will finish Thu Aug 17 21:22:12 2023
+imb F  6% step 13500, will finish Thu Aug 17 21:10:17 2023
+imb F  7% step 13600, will finish Thu Aug 17 20:57:42 2023
+imb F  6% step 13700, will finish Thu Aug 17 20:47:54 2023
+imb F  6% step 13800, will finish Thu Aug 17 20:37:53 2023
+imb F  7% step 13900, will finish Thu Aug 17 20:25:59 2023
+imb F  7% step 14000, will finish Thu Aug 17 20:13:40 2023
+imb F  7% step 14100, will finish Thu Aug 17 20:00:30 2023
+imb F  6% step 14200, will finish Thu Aug 17 19:47:45 2023
+imb F  6% step 14300, will finish Thu Aug 17 19:37:35 2023
+imb F  7% step 14400, will finish Thu Aug 17 19:25:09 2023
+imb F  8% step 14500, will finish Thu Aug 17 19:13:20 2023
+imb F  6% step 14600, will finish Thu Aug 17 19:07:10 2023
+imb F  6% step 14700, will finish Thu Aug 17 18:55:27 2023
+imb F  6% step 14800, will finish Thu Aug 17 18:44:10 2023
+imb F  6% step 14900, will finish Thu Aug 17 18:32:42 2023
+imb F  7% step 15000, will finish Thu Aug 17 18:21:55 2023
+imb F  6% step 15100, will finish Thu Aug 17 18:10:58 2023
+imb F  6% step 15200, will finish Thu Aug 17 17:59:54 2023
+imb F  7% step 15300, will finish Thu Aug 17 17:49:16 2023
+imb F  7% step 15400, will finish Thu Aug 17 17:40:10 2023
+imb F  8% step 15500, will finish Thu Aug 17 17:28:58 2023
+imb F  7% step 15600, will finish Thu Aug 17 17:18:11 2023
+imb F  7% step 15700, will finish Thu Aug 17 17:08:00 2023
+imb F  8% step 15800, will finish Thu Aug 17 16:58:14 2023
+imb F  7% step 15900, will finish Thu Aug 17 16:53:18 2023
+imb F  8% step 16000, will finish Thu Aug 17 16:59:13 2023
+imb F  7% step 16100, will finish Thu Aug 17 16:50:27 2023
+imb F  6% step 16200, will finish Thu Aug 17 16:41:09 2023
+imb F  7% step 16300, will finish Thu Aug 17 16:31:22 2023
+imb F  7% step 16400, will finish Thu Aug 17 16:23:06 2023
+imb F  7% step 16500, will finish Thu Aug 17 16:14:27 2023
+imb F  7% step 16600, will finish Thu Aug 17 16:06:07 2023
+imb F  6% step 16700, will finish Thu Aug 17 15:57:26 2023
+imb F  7% step 16800, will finish Thu Aug 17 15:49:36 2023
+imb F  8% step 16900, will finish Thu Aug 17 15:42:03 2023
+imb F  6% step 17000, will finish Thu Aug 17 15:34:12 2023
+imb F  6% step 17100, will finish Thu Aug 17 15:25:29 2023
+imb F  8% step 17200, will finish Thu Aug 17 15:21:30 2023
+imb F  6% step 17300, will finish Thu Aug 17 15:13:06 2023
+imb F  8% step 17400, will finish Thu Aug 17 15:05:26 2023
+imb F  8% step 17500, will finish Thu Aug 17 14:58:04 2023
+imb F  8% step 17600, will finish Thu Aug 17 14:50:21 2023
+imb F  7% step 17700, will finish Thu Aug 17 14:43:23 2023
+imb F  8% step 17800, will finish Thu Aug 17 14:36:31 2023
+imb F  7% step 17900, will finish Thu Aug 17 14:28:30 2023
+imb F  7% step 18000, will finish Thu Aug 17 14:21:32 2023
+imb F  7% step 18100, will finish Thu Aug 17 14:13:32 2023
+imb F  8% step 18200, will finish Thu Aug 17 14:06:14 2023
+imb F  7% step 18300, will finish Thu Aug 17 14:01:04 2023
+imb F  7% step 18400, will finish Thu Aug 17 13:55:17 2023
+imb F  6% step 18500, will finish Thu Aug 17 14:20:55 2023
+imb F  6% step 18600, will finish Thu Aug 17 14:19:32 2023
+imb F  7% step 18700, will finish Thu Aug 17 14:11:47 2023
+imb F  6% step 18800, will finish Thu Aug 17 14:03:25 2023
+imb F  7% step 18900, will finish Thu Aug 17 13:55:38 2023
+imb F  6% step 19000, will finish Thu Aug 17 13:48:24 2023
+imb F  7% step 19100, will finish Thu Aug 17 13:42:00 2023
+imb F  6% step 19200, will finish Thu Aug 17 13:35:37 2023
+imb F  8% step 19300, will finish Thu Aug 17 13:28:38 2023
+imb F  7% step 19400, will finish Thu Aug 17 13:21:36 2023
+imb F  7% step 19500, will finish Thu Aug 17 13:14:51 2023
+imb F  7% step 19600, will finish Thu Aug 17 13:08:10 2023
+imb F  7% step 19700, will finish Thu Aug 17 13:02:27 2023
+imb F  6% step 19800, will finish Thu Aug 17 13:00:49 2023
+imb F  6% step 19900, will finish Thu Aug 17 12:53:41 2023
+imb F  7% step 20000, will finish Thu Aug 17 12:49:57 2023
+imb F  7% step 20100, will finish Thu Aug 17 12:45:09 2023
+imb F  7% step 20200, will finish Thu Aug 17 12:39:39 2023
+imb F  7% step 20300, will finish Thu Aug 17 12:33:05 2023
+imb F  6% step 20400, will finish Thu Aug 17 12:27:45 2023
+imb F  6% step 20500, will finish Thu Aug 17 12:21:36 2023
+imb F  6% step 20600, will finish Thu Aug 17 12:15:48 2023
+imb F  7% step 20700, will finish Thu Aug 17 12:10:29 2023
+imb F  7% step 20800, will finish Thu Aug 17 12:12:20 2023
+imb F  7% step 20900, will finish Thu Aug 17 12:07:28 2023
+imb F  8% step 21000, will finish Thu Aug 17 12:03:17 2023
+imb F  8% step 21100, will finish Thu Aug 17 11:59:23 2023
+imb F  8% step 21200, will finish Thu Aug 17 11:58:26 2023
+imb F  8% step 21300, will finish Thu Aug 17 11:52:49 2023
+imb F  8% step 21400, will finish Thu Aug 17 11:48:27 2023
+imb F  8% step 21500, will finish Thu Aug 17 11:44:37 2023
+imb F  8% step 21600, will finish Thu Aug 17 11:41:05 2023
+imb F  7% step 21700, will finish Thu Aug 17 11:37:15 2023
+imb F  7% step 21800, will finish Thu Aug 17 11:32:40 2023
+imb F  6% step 21900, will finish Thu Aug 17 11:29:00 2023
+imb F  7% step 22000, will finish Thu Aug 17 11:23:46 2023
+imb F  7% step 22100, will finish Thu Aug 17 11:19:07 2023
+imb F  7% step 22200, will finish Thu Aug 17 11:15:44 2023
+imb F  7% step 22300, will finish Thu Aug 17 11:11:00 2023
+imb F  6% step 22400, will finish Thu Aug 17 11:07:11 2023
+imb F  7% step 22500, will finish Thu Aug 17 11:07:26 2023
+imb F  6% step 22600, will finish Thu Aug 17 11:05:59 2023
+imb F  6% step 22700, will finish Thu Aug 17 11:02:10 2023
+imb F  7% step 22800, will finish Thu Aug 17 10:57:53 2023
+imb F  7% step 22900, will finish Thu Aug 17 10:53:26 2023
+imb F  7% step 23000, will finish Thu Aug 17 10:49:09 2023
+imb F  7% step 23100, will finish Thu Aug 17 10:44:51 2023
+imb F  8% step 23200, will finish Thu Aug 17 10:41:21 2023
+imb F  7% step 23300, will finish Thu Aug 17 10:38:08 2023
+imb F  7% step 23400, will finish Thu Aug 17 10:33:41 2023
+imb F  7% step 23500, will finish Thu Aug 17 10:29:36 2023
+imb F  8% step 23600, will finish Thu Aug 17 10:26:43 2023
+imb F  8% step 23700, will finish Thu Aug 17 10:23:52 2023
+imb F  7% step 23800, will finish Thu Aug 17 10:23:45 2023
+imb F  8% step 23900, will finish Thu Aug 17 10:20:26 2023
+imb F  7% step 24000, will finish Thu Aug 17 10:27:57 2023
+imb F  8% step 24100, will finish Thu Aug 17 10:24:19 2023
+imb F  8% step 24200, will finish Thu Aug 17 10:20:37 2023
+imb F  7% step 24300, will finish Thu Aug 17 10:16:43 2023
+imb F  7% step 24400, will finish Thu Aug 17 10:12:15 2023
+imb F  6% step 24500, will finish Thu Aug 17 10:08:23 2023
+imb F  7% step 24600, will finish Thu Aug 17 10:04:29 2023
+imb F  7% step 24700, will finish Thu Aug 17 10:00:21 2023
+imb F  6% step 24800, will finish Thu Aug 17 09:56:53 2023
+imb F  7% step 24900, will finish Thu Aug 17 09:53:06 2023
+imb F  7% step 25000, will finish Thu Aug 17 09:50:09 2023
+imb F  7% step 25100, will finish Thu Aug 17 09:50:00 2023
+imb F  8% step 25200, will finish Thu Aug 17 09:46:19 2023
+imb F  8% step 25300, will finish Thu Aug 17 09:43:34 2023
+imb F  8% step 25400, will finish Thu Aug 17 09:40:13 2023
+imb F  7% step 25500, will finish Thu Aug 17 09:36:26 2023
+imb F  8% step 25600, will finish Thu Aug 17 09:34:22 2023
+imb F  7% step 25700, will finish Thu Aug 17 09:31:10 2023
+imb F  7% step 25800, will finish Thu Aug 17 09:28:09 2023
+imb F  7% step 25900, will finish Thu Aug 17 09:25:01 2023
+imb F  7% step 26000, will finish Thu Aug 17 09:21:29 2023
+imb F  7% step 26100, will finish Thu Aug 17 09:18:54 2023
+imb F  7% step 26200, will finish Thu Aug 17 09:16:22 2023
+imb F  5% step 26300, will finish Thu Aug 17 09:21:50 2023
+imb F  8% step 26400, will finish Thu Aug 17 09:23:14 2023
+imb F  6% step 26500, will finish Thu Aug 17 09:19:49 2023
+imb F  7% step 26600, will finish Thu Aug 17 09:17:05 2023
+imb F  7% step 26700, will finish Thu Aug 17 09:14:51 2023
+imb F  7% step 26800, will finish Thu Aug 17 09:12:01 2023
+imb F  8% step 26900, will finish Thu Aug 17 09:09:58 2023
+imb F  7% step 27000, will finish Thu Aug 17 09:07:30 2023
+imb F  8% step 27100, will finish Thu Aug 17 09:05:37 2023
+imb F  8% step 27200, will finish Thu Aug 17 09:03:33 2023
+imb F  8% step 27300, will finish Thu Aug 17 09:01:11 2023
+imb F  7% step 27400, will finish Thu Aug 17 08:58:01 2023
+imb F  8% step 27500, will finish Thu Aug 17 08:55:41 2023
+imb F  7% step 27600, will finish Thu Aug 17 08:52:59 2023
+imb F  8% step 27700, will finish Thu Aug 17 08:53:17 2023
+imb F  9% step 27800, will finish Thu Aug 17 08:51:43 2023
+imb F  8% step 27900, will finish Thu Aug 17 08:49:34 2023
+imb F  7% step 28000, will finish Thu Aug 17 08:46:55 2023
+imb F  7% step 28100, will finish Thu Aug 17 08:44:35 2023
+imb F  7% step 28200, will finish Thu Aug 17 08:42:39 2023
+imb F  6% step 28300, will finish Thu Aug 17 08:39:40 2023
+imb F  7% step 28400, will finish Thu Aug 17 08:37:28 2023
+imb F  7% step 28500, will finish Thu Aug 17 08:35:39 2023
+imb F  7% step 28600, will finish Thu Aug 17 08:38:16 2023
+imb F  7% step 28700, will finish Thu Aug 17 08:36:04 2023
+imb F  7% step 28800, will finish Thu Aug 17 08:34:02 2023
+imb F  7% step 28900, will finish Thu Aug 17 08:32:12 2023
+imb F  6% step 29000, will finish Thu Aug 17 08:31:31 2023
+imb F  8% step 29100, will finish Thu Aug 17 08:28:32 2023
+imb F  7% step 29200, will finish Thu Aug 17 08:25:50 2023
+imb F  7% step 29300, will finish Thu Aug 17 08:23:15 2023
+imb F  7% step 29400, will finish Thu Aug 17 08:20:45 2023
+imb F  7% step 29500, will finish Thu Aug 17 08:18:22 2023
+imb F  7% step 29600, will finish Thu Aug 17 08:16:02 2023
+imb F  7% step 29700, will finish Thu Aug 17 08:12:54 2023
+imb F  6% step 29800, will finish Thu Aug 17 08:10:12 2023
+imb F  7% step 29900, will finish Thu Aug 17 08:08:37 2023
+imb F  8% step 30000, will finish Thu Aug 17 08:05:46 2023
+imb F  7% step 30100, will finish Thu Aug 17 08:04:27 2023
+imb F  7% step 30200, will finish Thu Aug 17 08:01:55 2023
+imb F  7% step 30300, will finish Thu Aug 17 08:00:49 2023
+imb F  6% step 30400, will finish Thu Aug 17 07:57:34 2023
+imb F  7% step 30500, will finish Thu Aug 17 07:54:41 2023
+imb F  7% step 30600, will finish Thu Aug 17 07:52:10 2023
+imb F  8% step 30700, will finish Thu Aug 17 07:48:58 2023
+imb F  7% step 30800, will finish Thu Aug 17 07:46:56 2023
+imb F  6% step 30900, will finish Thu Aug 17 07:44:03 2023
+imb F  6% step 31000, will finish Thu Aug 17 07:40:48 2023
+imb F  6% step 31100, will finish Thu Aug 17 07:38:16 2023
+imb F  7% step 31200, will finish Thu Aug 17 07:35:34 2023
+imb F  6% step 31300, will finish Thu Aug 17 07:33:16 2023
+imb F  7% step 31400, will finish Thu Aug 17 07:31:00 2023
+imb F  7% step 31500, will finish Thu Aug 17 07:28:06 2023
+imb F  6% step 31600, will finish Thu Aug 17 07:25:33 2023
+imb F  6% step 31700, will finish Thu Aug 17 07:24:55 2023
+imb F  7% step 31800, will finish Thu Aug 17 07:22:16 2023
+imb F  7% step 31900, will finish Thu Aug 17 07:19:12 2023
+imb F  6% step 32000, will finish Thu Aug 17 07:24:35 2023
+imb F  6% step 32100, will finish Thu Aug 17 07:22:56 2023
+imb F  7% step 32200, will finish Thu Aug 17 07:21:14 2023
+imb F  6% step 32300, will finish Thu Aug 17 07:18:23 2023
+imb F  6% step 32400, will finish Thu Aug 17 07:15:54 2023
+imb F  7% step 32500, will finish Thu Aug 17 07:13:26 2023
+imb F  7% step 32600, will finish Thu Aug 17 07:11:12 2023
+imb F  7% step 32700, will finish Thu Aug 17 07:09:42 2023
+imb F  7% step 32800, will finish Thu Aug 17 07:07:58 2023
+imb F  7% step 32900, will finish Thu Aug 17 07:05:42 2023
+imb F  7% step 33000, will finish Thu Aug 17 07:05:39 2023
+imb F  6% step 33100, will finish Thu Aug 17 09:11:09 2023
+imb F  6% step 33200, will finish Thu Aug 17 09:09:21 2023
+imb F  7% step 33300, will finish Thu Aug 17 09:09:34 2023
+imb F  7% step 33400, will finish Thu Aug 17 09:07:45 2023
+imb F  7% step 33500, will finish Thu Aug 17 09:05:35 2023
+imb F  6% step 33600, will finish Thu Aug 17 09:03:19 2023
+imb F  6% step 33700, will finish Thu Aug 17 09:00:50 2023
+imb F  7% step 33800, will finish Thu Aug 17 08:58:22 2023
+imb F  7% step 33900, will finish Thu Aug 17 08:56:33 2023
+imb F  6% step 34000, will finish Thu Aug 17 08:54:27 2023
+imb F 10% step 34100, will finish Thu Aug 17 08:56:38 2023
+imb F  6% step 34200, will finish Thu Aug 17 08:56:00 2023
+imb F  6% step 34300, will finish Thu Aug 17 08:53:00 2023
+imb F  6% step 34400, will finish Thu Aug 17 08:50:13 2023
+imb F  6% step 34500, will finish Thu Aug 17 08:48:48 2023
+imb F  7% step 34600, will finish Thu Aug 17 08:46:45 2023
+imb F  6% step 34700, will finish Thu Aug 17 08:44:29 2023
+imb F  7% step 34800, will finish Thu Aug 17 08:42:26 2023
+imb F  6% step 34900, will finish Thu Aug 17 08:40:05 2023
+imb F  7% step 35000, will finish Thu Aug 17 08:37:18 2023
+imb F  7% step 35100, will finish Thu Aug 17 08:35:17 2023
+imb F  6% step 35200, will finish Thu Aug 17 08:33:04 2023
+imb F  6% step 35300, will finish Thu Aug 17 08:30:41 2023
+imb F  6% step 35400, will finish Thu Aug 17 08:28:25 2023
+imb F  7% step 35500, will finish Thu Aug 17 08:28:17 2023
+imb F  7% step 35600, will finish Thu Aug 17 08:25:38 2023
+imb F  7% step 35700, will finish Thu Aug 17 08:22:47 2023
+imb F  6% step 35800, will finish Thu Aug 17 08:20:19 2023
+imb F  6% step 35900, will finish Thu Aug 17 08:17:47 2023
+imb F  6% step 36000, will finish Thu Aug 17 08:15:37 2023
+imb F  7% step 36100, will finish Thu Aug 17 08:13:24 2023
+imb F  6% step 36200, will finish Thu Aug 17 08:10:58 2023
+imb F  7% step 36300, will finish Thu Aug 17 08:08:57 2023
+imb F  6% step 36400, will finish Thu Aug 17 08:10:46 2023
+imb F  6% step 36500, will finish Thu Aug 17 08:08:46 2023
+imb F  7% step 36600, will finish Thu Aug 17 08:07:37 2023
+imb F  7% step 36700, will finish Thu Aug 17 08:06:02 2023
+imb F  6% step 36800, will finish Thu Aug 17 08:06:29 2023
+imb F  6% step 36900, will finish Thu Aug 17 08:04:46 2023
+imb F  7% step 37000, will finish Thu Aug 17 08:02:21 2023
+imb F  6% step 37100, will finish Thu Aug 17 08:00:07 2023
+imb F  6% step 37200, will finish Thu Aug 17 07:57:33 2023
+imb F  6% step 37300, will finish Thu Aug 17 07:55:17 2023
+imb F  7% step 37400, will finish Thu Aug 17 07:52:43 2023
+imb F  7% step 37500, will finish Thu Aug 17 07:50:52 2023
+imb F  7% step 37600, will finish Thu Aug 17 07:48:32 2023
+imb F  6% step 37700, will finish Thu Aug 17 07:45:58 2023
+imb F  6% step 37800, will finish Thu Aug 17 07:43:20 2023
+imb F  6% step 37900, will finish Thu Aug 17 07:41:17 2023
+imb F  6% step 38000, will finish Thu Aug 17 07:39:29 2023
+imb F  6% step 38100, will finish Thu Aug 17 07:39:04 2023
+imb F  6% step 38200, will finish Thu Aug 17 07:37:15 2023
+imb F  6% step 38300, will finish Thu Aug 17 07:35:26 2023
+imb F  7% step 38400, will finish Thu Aug 17 07:33:40 2023
+imb F  7% step 38500, will finish Thu Aug 17 07:32:12 2023
+imb F  6% step 38600, will finish Thu Aug 17 07:30:33 2023
+imb F  6% step 38700, will finish Thu Aug 17 07:28:20 2023
+imb F  6% step 38800, will finish Thu Aug 17 07:26:09 2023
+imb F  6% step 38900, will finish Thu Aug 17 07:23:43 2023
+imb F  6% step 39000, will finish Thu Aug 17 07:21:21 2023
+imb F  5% step 39100, will finish Thu Aug 17 07:18:56 2023
+imb F  6% step 39200, will finish Thu Aug 17 07:17:09 2023
+imb F  6% step 39300, will finish Thu Aug 17 07:15:09 2023
+imb F  6% step 39400, will finish Thu Aug 17 07:14:52 2023
+imb F  6% step 39500, will finish Thu Aug 17 07:13:00 2023
+imb F  7% step 39600, will finish Thu Aug 17 07:11:13 2023
+imb F  7% step 39700, will finish Thu Aug 17 07:09:42 2023
+imb F  7% step 39800, will finish Thu Aug 17 07:08:02 2023
+imb F  6% step 39900, will finish Thu Aug 17 07:06:16 2023
+imb F  7% step 40000, will finish Thu Aug 17 07:12:53 2023
+imb F  7% step 40100, will finish Thu Aug 17 07:11:56 2023
+imb F  6% step 40200, will finish Thu Aug 17 07:09:50 2023
+imb F  7% step 40300, will finish Thu Aug 17 07:08:16 2023
+imb F  7% step 40400, will finish Thu Aug 17 07:06:51 2023
+imb F  7% step 40500, will finish Thu Aug 17 07:05:53 2023
+imb F  7% step 40600, will finish Thu Aug 17 07:04:38 2023
+imb F  7% step 40700, will finish Thu Aug 17 07:03:16 2023
+imb F  6% step 40800, will finish Thu Aug 17 07:03:46 2023
+imb F  6% step 40900, will finish Thu Aug 17 07:01:40 2023
+imb F  7% step 41000, will finish Thu Aug 17 06:59:54 2023
+imb F  7% step 41100, will finish Thu Aug 17 06:58:22 2023
+imb F  7% step 41200, will finish Thu Aug 17 06:56:53 2023
+imb F  6% step 41300, will finish Thu Aug 17 06:55:32 2023
+imb F  6% step 41400, will finish Thu Aug 17 06:54:13 2023
+imb F  6% step 41500, will finish Thu Aug 17 06:52:38 2023
+imb F  6% step 41600, will finish Thu Aug 17 06:50:48 2023
+imb F  6% step 41700, will finish Thu Aug 17 06:48:40 2023
+imb F  6% step 41800, will finish Thu Aug 17 06:47:36 2023
+imb F  7% step 41900, will finish Thu Aug 17 06:45:54 2023
+imb F  5% step 42000, will finish Thu Aug 17 06:51:51 2023
+imb F  5% step 42100, will finish Thu Aug 17 06:55:59 2023
+imb F  6% step 42200, will finish Thu Aug 17 06:54:39 2023
+imb F  6% step 42300, will finish Thu Aug 17 06:53:07 2023
+imb F  6% step 42400, will finish Thu Aug 17 06:51:18 2023
+imb F  6% step 42500, will finish Thu Aug 17 06:49:35 2023
+imb F  6% step 42600, will finish Thu Aug 17 06:48:15 2023
+imb F  7% step 42700, will finish Thu Aug 17 06:47:04 2023
+imb F  6% step 42800, will finish Thu Aug 17 06:45:52 2023
+imb F  6% step 42900, will finish Thu Aug 17 06:44:15 2023
+imb F  6% step 43000, will finish Thu Aug 17 06:42:58 2023
+imb F  7% step 43100, will finish Thu Aug 17 06:41:42 2023
+imb F  7% step 43200, will finish Thu Aug 17 06:40:32 2023
+imb F  6% step 43300, will finish Thu Aug 17 06:39:18 2023
+imb F  6% step 43400, will finish Thu Aug 17 06:39:36 2023
+imb F  6% step 43500, will finish Thu Aug 17 09:31:55 2023
+imb F  7% step 43600, will finish Thu Aug 17 15:45:07 2023
+imb F  7% step 43700, will finish Thu Aug 17 15:41:44 2023
+imb F  7% step 43800, will finish Thu Aug 17 15:41:50 2023
+imb F  6% step 43900, will finish Thu Aug 17 15:38:24 2023
+imb F  7% step 44000, will finish Thu Aug 17 15:35:58 2023
+imb F  7% step 44100, will finish Thu Aug 17 15:33:11 2023
+imb F  6% step 44200, will finish Thu Aug 17 15:32:23 2023
+imb F  6% step 44300, will finish Thu Aug 17 15:29:23 2023
+imb F  7% step 44400, will finish Thu Aug 17 15:26:42 2023
+imb F  6% step 44500, will finish Thu Aug 17 15:23:26 2023
+imb F  5% step 44600, will finish Thu Aug 17 15:20:47 2023
+imb F  6% step 44700, will finish Thu Aug 17 15:18:05 2023
+imb F  7% step 44800, will finish Thu Aug 17 15:15:25 2023
+imb F  6% step 44900, will finish Thu Aug 17 15:12:57 2023
+imb F  6% step 45000, will finish Thu Aug 17 15:10:44 2023
+imb F  6% step 45100, will finish Thu Aug 17 15:08:57 2023
+imb F  7% step 45200, will finish Thu Aug 17 15:06:06 2023
+imb F  6% step 45300, will finish Thu Aug 17 15:03:48 2023
+imb F  7% step 45400, will finish Thu Aug 17 15:01:18 2023
+imb F  6% step 45500, will finish Thu Aug 17 14:59:52 2023
+imb F  7% step 45600, will finish Thu Aug 17 14:57:14 2023
+imb F  6% step 45700, will finish Thu Aug 17 14:54:26 2023
+imb F  7% step 45800, will finish Thu Aug 17 14:51:43 2023
+imb F  7% step 45900, will finish Thu Aug 17 14:49:03 2023
+imb F  7% step 46000, will finish Thu Aug 17 14:46:27 2023
+imb F  6% step 46100, will finish Thu Aug 17 14:43:49 2023
+imb F  7% step 46200, will finish Thu Aug 17 14:41:18 2023
+imb F  7% step 46300, will finish Thu Aug 17 14:39:02 2023
+imb F  7% step 46400, will finish Thu Aug 17 14:36:56 2023
+imb F  6% step 46500, will finish Thu Aug 17 14:34:54 2023
+imb F  7% step 46600, will finish Thu Aug 17 14:32:50 2023
+imb F  6% step 46700, will finish Thu Aug 17 14:30:54 2023
+imb F  6% step 46800, will finish Thu Aug 17 14:29:57 2023
+imb F  7% step 46900, will finish Thu Aug 17 14:27:27 2023
+imb F  7% step 47000, will finish Thu Aug 17 14:24:49 2023
+imb F  7% step 47100, will finish Thu Aug 17 14:22:00 2023
+imb F  6% step 47200, will finish Thu Aug 17 14:19:25 2023
+imb F  7% step 47300, will finish Thu Aug 17 14:17:18 2023
+imb F  7% step 47400, will finish Thu Aug 17 14:15:21 2023
+imb F  7% step 47500, will finish Thu Aug 17 14:12:54 2023
+imb F  7% step 47600, will finish Thu Aug 17 14:11:04 2023
+imb F  7% step 47700, will finish Thu Aug 17 14:09:06 2023
+imb F  7% step 47800, will finish Thu Aug 17 14:06:38 2023
+imb F  6% step 47900, will finish Thu Aug 17 14:04:35 2023
+imb F  7% step 48000, will finish Thu Aug 17 14:08:00 2023
+imb F  7% step 48100, will finish Thu Aug 17 14:07:27 2023
+imb F  7% step 48200, will finish Thu Aug 17 14:05:27 2023
+imb F  7% step 48300, will finish Thu Aug 17 14:03:19 2023
+imb F  7% step 48400, will finish Thu Aug 17 14:01:16 2023
+imb F  6% step 48500, will finish Thu Aug 17 13:58:38 2023
+imb F  6% step 48600, will finish Thu Aug 17 13:56:35 2023
+imb F  7% step 48700, will finish Thu Aug 17 13:54:40 2023
+imb F  7% step 48800, will finish Thu Aug 17 13:52:42 2023
+imb F  7% step 48900, will finish Thu Aug 17 13:50:44 2023
+imb F  6% step 49000, will finish Thu Aug 17 13:48:53 2023
+imb F  6% step 49100, will finish Thu Aug 17 13:46:42 2023
+imb F  6% step 49200, will finish Thu Aug 17 13:45:00 2023
+imb F  7% step 49300, will finish Thu Aug 17 13:42:49 2023
+imb F  7% step 49400, will finish Thu Aug 17 13:47:03 2023
+imb F  8% step 49500, will finish Thu Aug 17 13:46:46 2023
+imb F  7% step 49600, will finish Thu Aug 17 13:45:26 2023
+imb F  7% step 49700, will finish Thu Aug 17 13:43:47 2023
+imb F  7% step 49800, will finish Thu Aug 17 13:41:44 2023
+imb F  6% step 49900, will finish Thu Aug 17 13:39:28 2023
+imb F  7% step 50000, will finish Thu Aug 17 13:37:28 2023
+imb F  7% step 50100, will finish Thu Aug 17 13:35:47 2023
+imb F  7% step 50200, will finish Thu Aug 17 13:33:55 2023
+imb F  7% step 50300, will finish Thu Aug 17 13:31:45 2023
+imb F  7% step 50400, will finish Thu Aug 17 13:29:02 2023
+imb F  7% step 50500, will finish Thu Aug 17 13:27:18 2023
+imb F  7% step 50600, will finish Thu Aug 17 13:25:04 2023
+imb F  7% step 50700, will finish Thu Aug 17 13:22:56 2023
+imb F  7% step 50800, will finish Thu Aug 17 13:22:04 2023
+imb F  7% step 50900, will finish Thu Aug 17 13:20:12 2023
+imb F  6% step 51000, will finish Thu Aug 17 13:18:09 2023
+imb F  6% step 51100, will finish Thu Aug 17 13:15:48 2023
+imb F  6% step 51200, will finish Thu Aug 17 13:13:46 2023
+imb F  7% step 51300, will finish Thu Aug 17 13:11:52 2023
+imb F  7% step 51400, will finish Thu Aug 17 13:09:21 2023
+imb F  6% step 51500, will finish Thu Aug 17 13:07:21 2023
+imb F  5% step 51600, will finish Thu Aug 17 13:08:18 2023
+imb F  7% step 51700, will finish Thu Aug 17 13:06:34 2023
+imb F  6% step 51800, will finish Thu Aug 17 13:05:05 2023
+imb F  7% step 51900, will finish Thu Aug 17 13:03:42 2023
+imb F  6% step 52000, will finish Thu Aug 17 13:01:52 2023
+imb F  7% step 52100, will finish Thu Aug 17 13:01:35 2023
+imb F  6% step 52200, will finish Thu Aug 17 12:59:14 2023
+imb F  6% step 52300, will finish Thu Aug 17 12:57:36 2023
+imb F  6% step 52400, will finish Thu Aug 17 12:55:40 2023
+imb F  7% step 52500, will finish Thu Aug 17 12:53:51 2023
+imb F  7% step 52600, will finish Thu Aug 17 12:52:07 2023
+imb F  7% step 52700, will finish Thu Aug 17 12:50:11 2023
+imb F  6% step 52800, will finish Thu Aug 17 12:48:15 2023
+imb F  7% step 52900, will finish Thu Aug 17 12:46:40 2023
+imb F  7% step 53000, will finish Thu Aug 17 12:44:51 2023
+imb F  8% step 53100, will finish Thu Aug 17 12:43:45 2023
+imb F  7% step 53200, will finish Thu Aug 17 12:42:03 2023
+imb F  6% step 53300, will finish Thu Aug 17 12:40:35 2023
+imb F  6% step 53400, will finish Thu Aug 17 12:40:23 2023
+imb F  6% step 53500, will finish Thu Aug 17 12:38:43 2023
+imb F  6% step 53600, will finish Thu Aug 17 12:36:40 2023
+imb F  7% step 53700, will finish Thu Aug 17 12:34:38 2023
+imb F  7% step 53800, will finish Thu Aug 17 12:32:53 2023
+imb F  6% step 53900, will finish Thu Aug 17 12:31:23 2023
+imb F  7% step 54000, will finish Thu Aug 17 12:30:10 2023
+imb F  6% step 54100, will finish Thu Aug 17 12:28:47 2023
+imb F  6% step 54200, will finish Thu Aug 17 12:27:03 2023
+imb F  6% step 54300, will finish Thu Aug 17 12:25:04 2023
+imb F  6% step 54400, will finish Thu Aug 17 12:23:13 2023
+imb F  7% step 54500, will finish Thu Aug 17 12:21:34 2023
+imb F  7% step 54600, will finish Thu Aug 17 12:19:42 2023
+imb F  6% step 54700, will finish Thu Aug 17 12:19:54 2023
+imb F  6% step 54800, will finish Thu Aug 17 12:19:03 2023
+imb F  6% step 54900, will finish Thu Aug 17 12:17:43 2023
+imb F  6% step 55000, will finish Thu Aug 17 12:16:03 2023
+imb F  6% step 55100, will finish Thu Aug 17 12:14:07 2023
+imb F  5% step 55200, will finish Thu Aug 17 12:13:07 2023
+imb F  5% step 55300, will finish Thu Aug 17 12:12:02 2023
+imb F  7% step 55400, will finish Thu Aug 17 12:10:41 2023
+imb F  7% step 55500, will finish Thu Aug 17 12:09:17 2023
+imb F  7% step 55600, will finish Thu Aug 17 12:07:25 2023
+imb F  7% step 55700, will finish Thu Aug 17 12:05:51 2023
+imb F  7% step 55800, will finish Thu Aug 17 12:04:31 2023
+imb F  7% step 55900, will finish Thu Aug 17 12:03:07 2023
+imb F  7% step 56000, will finish Thu Aug 17 12:07:49 2023
+imb F  7% step 56100, will finish Thu Aug 17 12:06:56 2023
+imb F  7% step 56200, will finish Thu Aug 17 12:05:25 2023
+imb F  7% step 56300, will finish Thu Aug 17 12:03:54 2023
+imb F  6% step 56400, will finish Thu Aug 17 12:02:26 2023
+imb F  6% step 56500, will finish Thu Aug 17 12:01:00 2023
+imb F  6% step 56600, will finish Thu Aug 17 11:59:33 2023
+imb F  7% step 56700, will finish Thu Aug 17 11:57:56 2023
+imb F  8% step 56800, will finish Thu Aug 17 11:56:48 2023
+imb F  7% step 56900, will finish Thu Aug 17 11:55:46 2023
+imb F  7% step 57000, will finish Thu Aug 17 11:54:39 2023
+imb F  8% step 57100, will finish Thu Aug 17 11:53:55 2023
+imb F  6% step 57200, will finish Thu Aug 17 11:59:14 2023
+imb F  6% step 57300, will finish Thu Aug 17 12:00:18 2023
+imb F  7% step 57400, will finish Thu Aug 17 11:58:52 2023
+imb F  7% step 57500, will finish Thu Aug 17 11:57:06 2023
+imb F  7% step 57600, will finish Thu Aug 17 11:55:49 2023
+imb F  6% step 57700, will finish Thu Aug 17 11:54:16 2023
+imb F  7% step 57800, will finish Thu Aug 17 11:52:52 2023
+imb F  7% step 57900, will finish Thu Aug 17 11:51:04 2023
+imb F  7% step 58000, will finish Thu Aug 17 11:50:11 2023
+imb F  7% step 58100, will finish Thu Aug 17 11:48:41 2023
+imb F  6% step 58200, will finish Thu Aug 17 11:47:29 2023
+imb F  6% step 58300, will finish Thu Aug 17 11:45:45 2023
+imb F  7% step 58400, will finish Thu Aug 17 11:44:29 2023
+imb F  7% step 58500, will finish Thu Aug 17 11:43:20 2023
+imb F  7% step 58600, will finish Thu Aug 17 11:43:21 2023
+imb F  7% step 58700, will finish Thu Aug 17 11:42:04 2023
+imb F  7% step 58800, will finish Thu Aug 17 11:40:58 2023
+imb F  7% step 58900, will finish Thu Aug 17 11:40:03 2023
+imb F  7% step 59000, will finish Thu Aug 17 11:38:55 2023
+imb F  7% step 59100, will finish Thu Aug 17 11:37:59 2023
+imb F  6% step 59200, will finish Thu Aug 17 11:36:45 2023
+imb F  6% step 59300, will finish Thu Aug 17 11:35:40 2023
+imb F  7% step 59400, will finish Thu Aug 17 11:34:36 2023
+imb F  7% step 59500, will finish Thu Aug 17 11:35:40 2023
+imb F  7% step 59600, will finish Thu Aug 17 11:34:34 2023
+imb F  7% step 59700, will finish Thu Aug 17 11:33:02 2023
+imb F  7% step 59800, will finish Thu Aug 17 11:31:42 2023
+imb F  7% step 59900, will finish Thu Aug 17 11:31:49 2023
+imb F  7% step 60000, will finish Thu Aug 17 11:30:28 2023
+imb F  6% step 60100, will finish Thu Aug 17 11:29:02 2023
+imb F  6% step 60200, will finish Thu Aug 17 11:27:27 2023
+imb F  7% step 60300, will finish Thu Aug 17 11:26:02 2023
+imb F  7% step 60400, will finish Thu Aug 17 11:24:50 2023
+imb F  7% step 60500, will finish Thu Aug 17 11:23:34 2023
+imb F  6% step 60600, will finish Thu Aug 17 11:22:17 2023
+imb F  6% step 60700, will finish Thu Aug 17 11:21:27 2023
+imb F  8% step 60800, will finish Thu Aug 17 11:22:17 2023
+imb F  7% step 60900, will finish Thu Aug 17 11:21:09 2023
+imb F  6% step 61000, will finish Thu Aug 17 11:20:24 2023
+imb F  8% step 61100, will finish Thu Aug 17 11:20:22 2023
+imb F  6% step 61200, will finish Thu Aug 17 11:20:33 2023
+imb F  7% step 61300, will finish Thu Aug 17 11:19:44 2023
+imb F  6% step 61400, will finish Thu Aug 17 11:18:22 2023
+imb F  6% step 61500, will finish Thu Aug 17 11:17:00 2023
+imb F  7% step 61600, will finish Thu Aug 17 11:15:26 2023
+imb F  7% step 61700, will finish Thu Aug 17 11:14:48 2023
+imb F  6% step 61800, will finish Thu Aug 17 11:13:51 2023
+imb F  7% step 61900, will finish Thu Aug 17 13:14:40 2023
+imb F  6% step 62000, will finish Thu Aug 17 23:04:16 2023
+imb F 51% step 62100, will finish Fri Aug 18 08:14:19 2023
+imb F  7% step 62200, will finish Fri Aug 18 08:10:33 2023
+imb F  7% step 62300, will finish Fri Aug 18 08:07:27 2023
+imb F  8% step 62400, will finish Fri Aug 18 08:03:50 2023
+imb F  8% step 62500, will finish Fri Aug 18 08:00:30 2023
+imb F  7% step 62600, will finish Fri Aug 18 07:57:14 2023
+imb F  7% step 62700, will finish Fri Aug 18 07:54:02 2023
+imb F  7% step 62800, will finish Fri Aug 18 07:50:44 2023
+imb F  7% step 62900, will finish Fri Aug 18 07:47:08 2023
+imb F  7% step 63000, will finish Fri Aug 18 07:43:47 2023
+imb F  7% step 63100, will finish Fri Aug 18 07:40:28 2023
+imb F  7% step 63200, will finish Fri Aug 18 07:37:01 2023
+imb F  7% step 63300, will finish Fri Aug 18 07:33:53 2023
+imb F  7% step 63400, will finish Fri Aug 18 07:31:02 2023
+imb F  5% step 63500, will finish Fri Aug 18 07:30:20 2023
+imb F  8% step 63600, will finish Fri Aug 18 07:29:09 2023
+imb F  7% step 63700, will finish Fri Aug 18 07:28:09 2023
+imb F  7% step 63800, will finish Fri Aug 18 07:24:56 2023
+imb F  7% step 63900, will finish Fri Aug 18 07:21:28 2023
+imb F  7% step 64000, will finish Fri Aug 18 07:22:12 2023
+imb F  7% step 64100, will finish Fri Aug 18 07:19:01 2023
+imb F  7% step 64200, will finish Fri Aug 18 07:15:40 2023
+imb F  7% step 64300, will finish Fri Aug 18 08:06:19 2023
+imb F  7% step 64400, will finish Fri Aug 18 11:54:04 2023
+imb F  7% step 64500, will finish Fri Aug 18 11:50:00 2023
+imb F  7% step 64600, will finish Fri Aug 18 16:56:42 2023
+imb F  7% step 64700, will finish Fri Aug 18 16:52:11 2023
+imb F  8% step 64800, will finish Fri Aug 18 16:47:55 2023
+imb F  7% step 64900, will finish Fri Aug 18 16:43:36 2023
+imb F  8% step 65000, will finish Fri Aug 18 16:41:38 2023
+imb F  8% step 65100, will finish Fri Aug 18 16:37:46 2023
+imb F  7% step 65200, will finish Fri Aug 18 16:34:11 2023
+imb F  7% step 65300, will finish Fri Aug 18 16:30:53 2023
+imb F  7% step 65400, will finish Fri Aug 18 16:27:00 2023
+imb F  7% step 65500, will finish Fri Aug 18 16:24:11 2023
+imb F  7% step 65600, will finish Fri Aug 18 16:20:01 2023
+imb F  7% step 65700, will finish Fri Aug 18 16:16:21 2023
+imb F  7% step 65800, will finish Fri Aug 18 16:13:06 2023
+imb F  7% step 65900, will finish Fri Aug 18 16:09:15 2023
+imb F  7% step 66000, will finish Fri Aug 18 16:05:28 2023
+imb F  8% step 66100, will finish Fri Aug 18 16:01:36 2023
+imb F  7% step 66200, will finish Fri Aug 18 15:57:48 2023
+imb F  7% step 66300, will finish Fri Aug 18 15:53:57 2023
+imb F  7% step 66400, will finish Fri Aug 18 15:50:09 2023
+imb F  7% step 66500, will finish Fri Aug 18 15:46:57 2023
+imb F  7% step 66600, will finish Fri Aug 18 15:43:13 2023
+imb F  7% step 66700, will finish Fri Aug 18 15:39:46 2023
+imb F  7% step 66800, will finish Fri Aug 18 15:37:21 2023
+imb F  7% step 66900, will finish Fri Aug 18 15:33:56 2023
+imb F  8% step 67000, will finish Fri Aug 18 15:30:19 2023
+imb F  7% step 67100, will finish Fri Aug 18 15:26:29 2023
+imb F  6% step 67200, will finish Fri Aug 18 15:22:27 2023
+imb F  7% step 67300, will finish Fri Aug 18 15:18:54 2023
+imb F  7% step 67400, will finish Fri Aug 18 15:15:25 2023
+imb F  7% step 67500, will finish Fri Aug 18 15:11:37 2023
+imb F  6% step 67600, will finish Fri Aug 18 15:07:55 2023
+imb F  8% step 67700, will finish Fri Aug 18 15:04:41 2023
+imb F  7% step 67800, will finish Fri Aug 18 15:00:54 2023
+imb F  6% step 67900, will finish Fri Aug 18 14:57:21 2023
+imb F  7% step 68000, will finish Fri Aug 18 14:53:51 2023
+imb F  7% step 68100, will finish Fri Aug 18 14:51:24 2023
+imb F  7% step 68200, will finish Fri Aug 18 14:47:40 2023
+imb F  7% step 68300, will finish Fri Aug 18 14:43:58 2023
+imb F  7% step 68400, will finish Fri Aug 18 14:40:20 2023
+imb F  7% step 68500, will finish Fri Aug 18 14:36:51 2023
+imb F  7% step 68600, will finish Fri Aug 18 14:33:09 2023
+imb F  7% step 68700, will finish Fri Aug 18 14:29:25 2023
+imb F  7% step 68800, will finish Fri Aug 18 14:25:57 2023
+imb F  6% step 68900, will finish Fri Aug 18 14:22:36 2023
+imb F  6% step 69000, will finish Fri Aug 18 14:18:56 2023
+imb F  7% step 69100, will finish Fri Aug 18 14:15:24 2023
+imb F  7% step 69200, will finish Fri Aug 18 14:11:47 2023
+imb F  6% step 69300, will finish Fri Aug 18 14:08:27 2023
+imb F  7% step 69400, will finish Fri Aug 18 14:06:14 2023
+imb F  7% step 69500, will finish Fri Aug 18 14:02:45 2023
+imb F  7% step 69600, will finish Fri Aug 18 13:59:18 2023
+imb F  7% step 69700, will finish Fri Aug 18 13:55:41 2023
+imb F  7% step 69800, will finish Fri Aug 18 13:52:05 2023
+imb F  7% step 69900, will finish Fri Aug 18 13:48:39 2023
+imb F  7% step 70000, will finish Fri Aug 18 13:45:21 2023
+imb F  7% step 70100, will finish Fri Aug 18 13:42:32 2023
+imb F  6% step 70200, will finish Fri Aug 18 13:39:12 2023
+imb F  7% step 70300, will finish Fri Aug 18 13:35:40 2023
+imb F  7% step 70400, will finish Fri Aug 18 13:32:10 2023
+imb F  7% step 70500, will finish Fri Aug 18 13:29:02 2023
+imb F  4% step 70600, will finish Fri Aug 18 13:27:12 2023
+imb F  6% step 70700, will finish Fri Aug 18 13:25:51 2023
+imb F  7% step 70800, will finish Fri Aug 18 13:22:37 2023
+imb F  7% step 70900, will finish Fri Aug 18 13:19:23 2023
+imb F  8% step 71000, will finish Fri Aug 18 13:16:19 2023
+imb F  7% step 71100, will finish Fri Aug 18 13:13:25 2023
+imb F  7% step 71200, will finish Fri Aug 18 13:10:41 2023
+imb F  6% step 71300, will finish Fri Aug 18 13:07:45 2023
+imb F  6% step 71400, will finish Fri Aug 18 13:04:39 2023
+imb F  7% step 71500, will finish Fri Aug 18 13:01:09 2023
+imb F  8% step 71600, will finish Fri Aug 18 12:57:56 2023
+imb F  7% step 71700, will finish Fri Aug 18 12:54:54 2023
+imb F  6% step 71800, will finish Fri Aug 18 12:51:41 2023
+imb F  7% step 71900, will finish Fri Aug 18 12:48:48 2023
+imb F  7% step 72000, will finish Fri Aug 18 12:50:07 2023
+imb F  8% step 72100, will finish Fri Aug 18 12:47:09 2023
+imb F  7% step 72200, will finish Fri Aug 18 12:43:51 2023
+imb F  7% step 72300, will finish Fri Aug 18 12:40:41 2023
+imb F  7% step 72400, will finish Fri Aug 18 12:37:39 2023
+imb F  6% step 72500, will finish Fri Aug 18 12:34:45 2023
+imb F  6% step 72600, will finish Fri Aug 18 12:31:46 2023
+imb F  7% step 72700, will finish Fri Aug 18 12:28:51 2023
+imb F  7% step 72800, will finish Fri Aug 18 12:25:36 2023
+imb F  8% step 72900, will finish Fri Aug 18 12:24:37 2023
+imb F  7% step 73000, will finish Fri Aug 18 12:21:55 2023
+imb F  7% step 73100, will finish Fri Aug 18 12:18:45 2023
+imb F  7% step 73200, will finish Fri Aug 18 12:15:40 2023
+imb F  7% step 73300, will finish Fri Aug 18 12:13:36 2023
+imb F  7% step 73400, will finish Fri Aug 18 12:10:40 2023
+imb F  8% step 73500, will finish Fri Aug 18 12:07:51 2023
+imb F 19% step 73600, will finish Fri Aug 18 16:53:32 2023
+imb F  8% step 73700, will finish Fri Aug 18 16:50:29 2023
+imb F  8% step 73800, will finish Fri Aug 18 16:47:14 2023
+imb F  8% step 73900, will finish Fri Aug 18 16:43:59 2023
+imb F  8% step 74000, will finish Fri Aug 18 16:40:47 2023
+imb F  7% step 74100, will finish Fri Aug 18 16:37:10 2023
+imb F  7% step 74200, will finish Fri Aug 18 16:34:40 2023
+imb F  8% step 74300, will finish Fri Aug 18 16:31:24 2023
+imb F  8% step 74400, will finish Fri Aug 18 16:28:17 2023
+imb F  7% step 74500, will finish Fri Aug 18 16:25:05 2023
+imb F  7% step 74600, will finish Fri Aug 18 16:22:00 2023
+imb F  6% step 74700, will finish Fri Aug 18 16:18:50 2023
+imb F  7% step 74800, will finish Fri Aug 18 16:15:30 2023
+imb F  7% step 74900, will finish Fri Aug 18 16:12:22 2023
+imb F  6% step 75000, will finish Fri Aug 18 16:08:52 2023
+imb F  7% step 75100, will finish Fri Aug 18 16:05:33 2023
+imb F  6% step 75200, will finish Fri Aug 18 16:02:20 2023
+imb F  7% step 75300, will finish Fri Aug 18 15:59:11 2023
+imb F  8% step 75400, will finish Fri Aug 18 15:55:46 2023
+imb F  7% step 75500, will finish Fri Aug 18 15:53:32 2023
+imb F  6% step 75600, will finish Fri Aug 18 15:50:13 2023
+imb F  7% step 75700, will finish Fri Aug 18 15:46:54 2023
+imb F  7% step 75800, will finish Fri Aug 18 15:43:52 2023
+imb F  7% step 75900, will finish Fri Aug 18 15:40:48 2023
+imb F  7% step 76000, will finish Fri Aug 18 15:38:03 2023
+imb F  6% step 76100, will finish Fri Aug 18 15:34:41 2023
+imb F  7% step 76200, will finish Fri Aug 18 15:31:35 2023
+imb F  7% step 76300, will finish Fri Aug 18 15:28:32 2023
+imb F  7% step 76400, will finish Fri Aug 18 15:25:16 2023
+imb F  7% step 76500, will finish Fri Aug 18 15:22:12 2023
+imb F  7% step 76600, will finish Fri Aug 18 15:19:04 2023
+imb F  8% step 76700, will finish Fri Aug 18 15:15:57 2023
+imb F  7% step 76800, will finish Fri Aug 18 15:13:39 2023
+imb F  7% step 76900, will finish Fri Aug 18 15:10:27 2023
+imb F  7% step 77000, will finish Fri Aug 18 15:07:16 2023
+imb F  7% step 77100, will finish Fri Aug 18 15:04:13 2023
+imb F  7% step 77200, will finish Fri Aug 18 15:01:12 2023
+imb F  7% step 77300, will finish Fri Aug 18 14:58:21 2023
+imb F  7% step 77400, will finish Fri Aug 18 14:55:28 2023
+imb F  7% step 77500, will finish Fri Aug 18 14:52:22 2023
+imb F  8% step 77600, will finish Fri Aug 18 14:49:20 2023
+imb F  7% step 77700, will finish Fri Aug 18 14:46:18 2023
+imb F  6% step 77800, will finish Fri Aug 18 14:43:16 2023
+imb F  7% step 77900, will finish Fri Aug 18 14:40:44 2023
+imb F  6% step 78000, will finish Fri Aug 18 14:39:05 2023
+imb F  7% step 78100, will finish Fri Aug 18 14:38:47 2023
+imb F  7% step 78200, will finish Fri Aug 18 14:35:33 2023
+imb F  7% step 78300, will finish Fri Aug 18 14:32:30 2023
+imb F  7% step 78400, will finish Fri Aug 18 14:29:32 2023
+imb F  6% step 78500, will finish Fri Aug 18 14:26:32 2023
+imb F  7% step 78600, will finish Fri Aug 18 14:23:24 2023
+imb F  7% step 78700, will finish Fri Aug 18 14:20:25 2023
+imb F  7% step 78800, will finish Fri Aug 18 14:17:25 2023
+imb F  7% step 78900, will finish Fri Aug 18 14:14:20 2023
+imb F  9% step 79000, will finish Fri Aug 18 14:11:24 2023
+imb F  7% step 79100, will finish Fri Aug 18 14:08:16 2023
+imb F  6% step 79200, will finish Fri Aug 18 14:05:05 2023
+imb F  6% step 79300, will finish Fri Aug 18 14:02:12 2023
+imb F  6% step 79400, will finish Fri Aug 18 13:59:50 2023
+imb F  8% step 79500, will finish Fri Aug 18 13:57:15 2023
+imb F  7% step 79600, will finish Fri Aug 18 13:54:12 2023
+imb F  7% step 79700, will finish Fri Aug 18 13:51:17 2023
+imb F  7% step 79800, will finish Fri Aug 18 13:48:20 2023
+imb F  7% step 79900, will finish Fri Aug 18 13:45:24 2023
+imb F  6% step 80000, will finish Fri Aug 18 13:46:08 2023
+imb F  7% step 80100, will finish Fri Aug 18 13:43:03 2023
+imb F  6% step 80200, will finish Fri Aug 18 13:40:08 2023
+imb F  7% step 80300, will finish Fri Aug 18 13:38:58 2023
+imb F  7% step 80400, will finish Fri Aug 18 13:36:08 2023
+imb F  6% step 80500, will finish Fri Aug 18 13:33:29 2023
+imb F  6% step 80600, will finish Fri Aug 18 13:31:09 2023
+imb F  6% step 80700, will finish Fri Aug 18 13:29:19 2023
+imb F  7% step 80800, will finish Fri Aug 18 13:26:34 2023
+imb F  7% step 80900, will finish Fri Aug 18 13:23:40 2023
+imb F  6% step 81000, will finish Fri Aug 18 13:20:57 2023
+imb F  7% step 81100, will finish Fri Aug 18 13:18:07 2023
+imb F  7% step 81200, will finish Fri Aug 18 13:15:23 2023
+imb F  7% step 81300, will finish Fri Aug 18 13:12:52 2023
+imb F  6% step 81400, will finish Fri Aug 18 13:10:19 2023
+imb F  7% step 81500, will finish Fri Aug 18 13:07:27 2023
+imb F  7% step 81600, will finish Fri Aug 18 13:04:44 2023
+imb F  6% step 81700, will finish Fri Aug 18 13:01:57 2023
+imb F  6% step 81800, will finish Fri Aug 18 12:59:22 2023
+imb F  6% step 81900, will finish Fri Aug 18 12:56:35 2023
+imb F  6% step 82000, will finish Fri Aug 18 12:54:36 2023
+imb F  7% step 82100, will finish Fri Aug 18 12:52:14 2023
+imb F  7% step 82200, will finish Fri Aug 18 12:49:46 2023
+imb F  7% step 82300, will finish Fri Aug 18 12:47:12 2023
+imb F  6% step 82400, will finish Fri Aug 18 12:44:22 2023
+imb F  7% step 82500, will finish Fri Aug 18 12:41:22 2023
+imb F  7% step 82600, will finish Fri Aug 18 12:38:30 2023
+imb F  7% step 82700, will finish Fri Aug 18 12:35:37 2023
+imb F  6% step 82800, will finish Fri Aug 18 12:32:49 2023
+imb F  6% step 82900, will finish Fri Aug 18 12:29:58 2023
+imb F  7% step 83000, will finish Fri Aug 18 12:27:14 2023
+imb F  6% step 83100, will finish Fri Aug 18 12:24:35 2023
+imb F  7% step 83200, will finish Fri Aug 18 12:21:42 2023
+imb F  7% step 83300, will finish Fri Aug 18 12:19:01 2023
+imb F  7% step 83400, will finish Fri Aug 18 12:17:18 2023
+imb F  7% step 83500, will finish Fri Aug 18 12:14:40 2023
+imb F  8% step 83600, will finish Fri Aug 18 12:12:21 2023
+imb F  7% step 83700, will finish Fri Aug 18 12:09:42 2023
+imb F  8% step 83800, will finish Fri Aug 18 12:07:11 2023
+imb F  8% step 83900, will finish Fri Aug 18 12:04:42 2023
+imb F  7% step 84000, will finish Fri Aug 18 12:02:07 2023
+imb F  7% step 84100, will finish Fri Aug 18 11:59:33 2023
+imb F  6% step 84200, will finish Fri Aug 18 11:57:09 2023
+imb F  7% step 84300, will finish Fri Aug 18 11:54:29 2023
+imb F  7% step 84400, will finish Fri Aug 18 11:52:00 2023
+imb F  6% step 84500, will finish Fri Aug 18 11:49:30 2023
+imb F  7% step 84600, will finish Fri Aug 18 11:47:04 2023
+imb F  7% step 84700, will finish Fri Aug 18 11:45:14 2023
+imb F  7% step 84800, will finish Fri Aug 18 11:42:36 2023
+imb F  7% step 84900, will finish Fri Aug 18 11:40:09 2023
+imb F  7% step 85000, will finish Fri Aug 18 11:37:44 2023
+imb F  7% step 85100, will finish Fri Aug 18 11:35:06 2023
+imb F  7% step 85200, will finish Fri Aug 18 11:32:18 2023
+imb F  7% step 85300, will finish Fri Aug 18 11:29:43 2023
+imb F  7% step 85400, will finish Fri Aug 18 11:27:29 2023
+imb F  7% step 85500, will finish Fri Aug 18 11:25:00 2023
+imb F  7% step 85600, will finish Fri Aug 18 11:22:40 2023
+imb F  6% step 85700, will finish Fri Aug 18 11:20:17 2023
+imb F  7% step 85800, will finish Fri Aug 18 11:17:36 2023
+imb F  7% step 85900, will finish Fri Aug 18 11:19:46 2023
+imb F  6% step 86000, will finish Fri Aug 18 11:26:12 2023
+imb F  6% step 86100, will finish Fri Aug 18 11:24:54 2023
+imb F  6% step 86200, will finish Fri Aug 18 11:23:09 2023
+imb F  7% step 86300, will finish Fri Aug 18 11:20:50 2023
+imb F  7% step 86400, will finish Fri Aug 18 11:18:38 2023
+imb F  6% step 86500, will finish Fri Aug 18 11:16:17 2023
+imb F  6% step 86600, will finish Fri Aug 18 11:14:08 2023
+imb F  6% step 86700, will finish Fri Aug 18 11:11:25 2023
+imb F  6% step 86800, will finish Fri Aug 18 11:09:08 2023
+imb F  6% step 86900, will finish Fri Aug 18 11:07:19 2023
+imb F  6% step 87000, will finish Fri Aug 18 11:05:27 2023
+imb F  6% step 87100, will finish Fri Aug 18 11:03:37 2023
+imb F  6% step 87200, will finish Fri Aug 18 11:01:53 2023
+imb F  7% step 87300, will finish Fri Aug 18 11:00:56 2023
+imb F  7% step 87400, will finish Fri Aug 18 10:59:11 2023
+imb F  6% step 87500, will finish Fri Aug 18 10:57:08 2023
+imb F  7% step 87600, will finish Fri Aug 18 10:54:54 2023
+imb F  7% step 87700, will finish Fri Aug 18 10:52:29 2023
+imb F  7% step 87800, will finish Fri Aug 18 10:50:29 2023
+imb F  6% step 87900, will finish Fri Aug 18 10:48:33 2023
+imb F  7% step 88000, will finish Fri Aug 18 10:49:16 2023
+imb F  6% step 88100, will finish Fri Aug 18 10:48:43 2023
+imb F  6% step 88200, will finish Fri Aug 18 10:46:21 2023
+imb F  7% step 88300, will finish Fri Aug 18 10:44:09 2023
+imb F  7% step 88400, will finish Fri Aug 18 10:41:50 2023
+imb F  7% step 88500, will finish Fri Aug 18 10:40:47 2023
+imb F  7% step 88600, will finish Fri Aug 18 10:38:22 2023
+imb F  7% step 88700, will finish Fri Aug 18 10:35:44 2023
+imb F  7% step 88800, will finish Fri Aug 18 10:33:07 2023
+imb F  7% step 88900, will finish Fri Aug 18 10:30:59 2023
+imb F  7% step 89000, will finish Fri Aug 18 10:28:35 2023
+imb F  6% step 89100, will finish Fri Aug 18 10:26:03 2023
+imb F  7% step 89200, will finish Fri Aug 18 10:24:05 2023
+imb F  8% step 89300, will finish Fri Aug 18 10:22:02 2023
+imb F  7% step 89400, will finish Fri Aug 18 10:20:04 2023
+imb F  7% step 89500, will finish Fri Aug 18 10:18:12 2023
+imb F  7% step 89600, will finish Fri Aug 18 10:16:11 2023
+imb F  7% step 89700, will finish Fri Aug 18 10:14:05 2023
+imb F  7% step 89800, will finish Fri Aug 18 10:12:33 2023
+imb F  6% step 89900, will finish Fri Aug 18 10:10:29 2023
+imb F  7% step 90000, will finish Fri Aug 18 10:08:13 2023
+imb F  7% step 90100, will finish Fri Aug 18 10:06:15 2023
+imb F  7% step 90200, will finish Fri Aug 18 10:04:06 2023
+imb F  6% step 90300, will finish Fri Aug 18 10:01:55 2023
+imb F  7% step 90400, will finish Fri Aug 18 09:59:42 2023
+imb F  7% step 90500, will finish Fri Aug 18 09:57:42 2023
+imb F  7% step 90600, will finish Fri Aug 18 09:55:26 2023
+imb F  7% step 90700, will finish Fri Aug 18 09:53:16 2023
+imb F  7% step 90800, will finish Fri Aug 18 09:51:17 2023
+imb F  7% step 90900, will finish Fri Aug 18 09:49:17 2023
+imb F  6% step 91000, will finish Fri Aug 18 09:47:00 2023
+imb F  6% step 91100, will finish Fri Aug 18 09:44:53 2023
+imb F  7% step 91200, will finish Fri Aug 18 09:43:10 2023
+imb F  7% step 91300, will finish Fri Aug 18 09:40:57 2023
+imb F  7% step 91400, will finish Fri Aug 18 09:39:03 2023
+imb F  7% step 91500, will finish Fri Aug 18 09:37:36 2023
+imb F  7% step 91600, will finish Fri Aug 18 09:36:07 2023
+imb F  7% step 91700, will finish Fri Aug 18 09:34:38 2023
+imb F  7% step 91800, will finish Fri Aug 18 09:33:00 2023
+imb F  6% step 91900, will finish Fri Aug 18 09:31:16 2023
+slurmstepd: error: *** STEP 29835123.1 ON halc057 CANCELLED AT 2023-07-12T14:17:34 ***
+slurmstepd: error: *** JOB 29835123 ON halc057 CANCELLED AT 2023-07-12T14:17:34 ***
