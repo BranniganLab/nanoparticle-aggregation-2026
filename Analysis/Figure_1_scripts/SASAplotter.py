@@ -13,18 +13,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-DIRECTORY_PATH = Path("/media/jje63/easystore/Single_NP/")
 CORETYPES = ["C1","C5","N0","P1","P5"]
 CORETYPES2 = ["C1","C5","N0","P1","P5","SS"]
 THIOL = ["Octanethiol","Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
 #REPLICA = ["Replica1","Replica2","Replica3"]
 LENGTHS = [2,3,4,5,6]
-DATA_FILE="watersasa"+".dat"
-font = {'family': 'serif',
-        'color':  'black',
-        'weight': 'normal',
-        'size': 25,
-        }
 
 class generalSASA:
     def __init__(self, file_name, directory_path, data_name):
@@ -48,11 +41,12 @@ class generalSASA:
 
 def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname):
     paths = coretype+"/"+thiol+"/"+replica+"/analysis"
-    allfilepaths = list(directory_path.glob(paths))
+    
+    allfilepaths = list(directory_path.resolve().glob(paths))
     LigandData = {}
     for path in allfilepaths:
-        name = path.parts[6]
-        rep = path.parts[7]
+        name = path.parts[-3]
+        rep = path.parts[-2]
         data = generalSASA(dataname, path, name)
         data.update_SASA_data()
         data.update_SASA_average()
@@ -90,7 +84,18 @@ def create_sasa_full_replica_data(SASA_rep, Thiols=THIOL, Replica_num=3):
     
 
 if __name__ == '__main__':
-
+    DIRECTORY_PATH = Path("/media/jje63/easystore/Single_NP/")
+    CORETYPES = ["C1","C5","N0","P1","P5"]
+    CORETYPES2 = ["C1","C5","N0","P1","P5","SS"]
+    THIOL = ["Octanethiol","Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
+    #REPLICA = ["Replica1","Replica2","Replica3"]
+    LENGTHS = [2,3,4,5,6]
+    DATA_FILE="watersasa"+".dat"
+    font = {'family': 'serif',
+            'color':  'black',
+            'weight': 'normal',
+            'size': 25,
+            }
     C1data = make_thiol_dataset(DIRECTORY_PATH, "C1", "*thiol", "Replica*",DATA_FILE)
     C1_replica_combined = create_sasa_core_replica_data(C1data)
     C1_full_replica = create_sasa_full_replica_data(C1data)
