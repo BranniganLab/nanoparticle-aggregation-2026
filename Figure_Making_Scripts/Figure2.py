@@ -29,27 +29,39 @@ ax = fig.subplot_mosaic(mosaic,
                         height_ratios=[1.5, 2.5,1.75],
                         #gridspec_kw={"wspace": 0.5}
                         )
-Annotation = ['a)','b)','c)']
+Annotation = ['A)','B)','C)','D)','E)']
 Annotation_P2 = ['2.5 nm','3 nm', '5.5 nm', '8 nm']
 Annotation_P3 = ['C5','P5']
 
 ### side panel ###
 fig.text(
-    0.04,
+    0.00,
     0.99,
     Annotation[0],
     )
 
 fig.text(
-    0.04,
-    0.66,
+    0.34,
+    0.99,
     Annotation[1],
     )
 
 fig.text(
-    0.04,
-    0.26,
+    0.68,
+    0.99,
     Annotation[2],
+    )
+
+fig.text(
+    0.00,
+    0.66,
+    Annotation[3],
+    )
+
+fig.text(
+    0.00,
+    0.26,
+    Annotation[4],
     )
 
 fig.text(
@@ -79,24 +91,24 @@ fig.text(
 ### Over Graph text ###
 fig.text(
     0.18,
-    0.66,
+    0.67,
     Annotation_P2[0],
     )
 fig.text(
     0.42,
-    0.66,
+    0.67,
     Annotation_P2[1],
     )
 
 fig.text(
     0.63,
-    0.66,
+    0.67,
     Annotation_P2[2],
     )
 
 fig.text(
     0.86,
-    0.66,
+    0.67,
     Annotation_P2[3],
     )
 
@@ -118,10 +130,14 @@ dimerimg = np.asarray(Image.open(Figure4))
 membimg = np.asarray(Image.open(Figure5))
 
 ############# Plot on Grid #############
-my_font = {'family': 'serif',
+label_font = {#'family': 'serif',
            'color':  'black',
            'weight': 'normal',
            'size': 8}
+tick_font = {#'family': 'serif',
+           'color':  'black',
+           'weight': 'normal',
+           'size': 6}
 LWidth = 1
 LStyle = 'solid'
 MSize = 5
@@ -204,10 +220,10 @@ ax['PMF'].fill_between(xvg1.fe_data_frame["CV"][:-10],
 ax['PMF'].axhline(y = 0, color="black", linestyle = ':')
 ax['PMF'].set_yticks(np.arange(-115, 15, step=50))
 ax['PMF'].set_xticks(np.arange(2, 12, step=2))
-ax['PMF'].set_yticklabels(np.arange(-115, 15, step=50),fontdict=my_font)
-ax['PMF'].set_xticklabels(np.arange(2, 12, step=2),fontdict=my_font)
-ax['PMF'].set_ylabel("PMF (kJ $mol^{-1}$)", fontdict=my_font)
-ax['PMF'].set_xlabel("r (nm)", fontdict=my_font)
+ax['PMF'].set_yticklabels(np.arange(-115, 15, step=50),fontdict=tick_font)
+ax['PMF'].set_xticklabels(np.arange(2, 12, step=2),fontdict=tick_font)
+ax['PMF'].set_ylabel("PMF (kJ $mol^{-1}$)", fontdict=label_font)
+ax['PMF'].set_xlabel("r (nm)", fontdict=label_font)
 ax['PMF'].legend(loc="lower right",fontsize='xx-small')
 
     ############## diff PMF plot #######################
@@ -220,21 +236,21 @@ ax['difPMF'].plot(xvg4.fe_data_frame["CV"][:-10],
 
 ax['difPMF'].set_yticks(np.arange(-30, 30, step=10))
 ax['difPMF'].set_xticks(np.arange(2, 12, step=2))
-ax['difPMF'].set_yticklabels(np.arange(-30, 30, step=10),fontdict=my_font)
-ax['difPMF'].set_xticklabels(np.arange(2, 12, step=2),fontdict=my_font)
+ax['difPMF'].set_yticklabels(np.arange(-30, 30, step=10),fontdict=tick_font)
+ax['difPMF'].set_xticklabels(np.arange(2, 12, step=2),fontdict=tick_font)
 ax['difPMF'].axhline(y = 0, color="black", linestyle = ':')
-ax['difPMF'].set_ylabel(r'$\Delta PMF$ ' "(kJ $mol^{-1}$)",fontdict=my_font)
-ax['difPMF'].set_xlabel("r (nm)",fontdict=my_font)
+ax['difPMF'].set_ylabel(r'$\Delta PMF$ ' "(kJ $mol^{-1}$)",fontdict=label_font)
+ax['difPMF'].set_xlabel("r (nm)",fontdict=label_font)
 
 
     ############## Z-distance plot #######################
-hydropath1 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Hydrophobic/GNP_US_hyd/NPdistance")
-hydropath2 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Hydrophobic/GNP_US_hyd_2/GNP_US_hyd/NPdistance")
-hydropath3 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Hydrophobic/GNP_US_hyd_3/GNP_US_hyd/NPdistance")
+hydropath1 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd/NPdistance")
+hydropath2 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd_2/GNP_US_hyd/NPdistance")
+hydropath3 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd_3/GNP_US_hyd/NPdistance")
 
-polarpath1 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Polar/GNP_US/NPdistance")
-polarpath2 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Polar/GNP_US_2/GNP_US/NPdistance")
-polarpath3 = Path("/media/jje63/easystore1/GoldNanoparticleFE/GNP_US_All/Polar/GNP_US_3/GNP_US/NPdistance")
+polarpath1 = Mainpath.joinpath("Polar/GNP_US/NPdistance")
+polarpath2 = Mainpath.joinpath("Polar/GNP_US_2/GNP_US/NPdistance")
+polarpath3 = Mainpath.joinpath("Polar/GNP_US_3/GNP_US/NPdistance")
 
 hydrop1 = make_data(hydropath1)
 hydrop2 = make_data(hydropath2)
@@ -277,13 +293,13 @@ ax['Z-height'].fill_between(polravg_xy[:indexpol[0][0]],
                         polravg_z[:indexpol[0][0]]-polrstd_z[:indexpol[0][0]],
                         polravg_z[:indexpol[0][0]]+polrstd_z[:indexpol[0][0]],
                         alpha=0.5)
-ax['Z-height'].set_ylabel(r"$\langle |z| \rangle$",fontdict=my_font)
-ax['Z-height'].set_xlabel(r"$\langle\sqrt{x^2+y^2}\rangle$ (nm)",fontdict=my_font)
+ax['Z-height'].set_ylabel(r"$\langle |z| \rangle$ (nm)",fontdict=label_font)
+ax['Z-height'].set_xlabel(r"$\langle\sqrt{x^2+y^2}\rangle$ (nm)",fontdict=label_font)
 ax['Z-height'].legend(loc="upper left")
 ax['Z-height'].set_yticks(np.arange(0, 1.6, step=0.5))
 ax['Z-height'].set_xticks(np.arange(2.5, 5.1, step=0.5))
-ax['Z-height'].set_yticklabels(np.arange(0, 1.6, step=0.5),fontdict=my_font)
-ax['Z-height'].set_xticklabels(np.arange(2.5, 5.1, step=0.5),fontdict=my_font)
+ax['Z-height'].set_yticklabels(np.arange(0, 1.6, step=0.5),fontdict=tick_font)
+ax['Z-height'].set_xticklabels(np.arange(2.5, 5.1, step=0.5),fontdict=tick_font)
 ax['Z-height'].legend(loc="upper left",fontsize='xx-small')
 fig.savefig(Path("../Graphs/Figure2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 plt.show()

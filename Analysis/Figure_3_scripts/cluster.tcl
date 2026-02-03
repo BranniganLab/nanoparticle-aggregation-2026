@@ -116,8 +116,8 @@ proc ListChecker {List1 List2} {
 #       StartFrame      (Int)First frame to be analyzed
 #       EndFrame        (Int)Last frame to be analyzed (if set to -1 then last frame 
 #                            will be end of loaded frames)   
-proc ClusterControl { MoleculeName CutOff MinPoint StartFrame EndFrame } {
-        set Clusterfile [open "Cluster$MoleculeName$CutOff.dat" w]
+proc ClusterControl { MoleculeName CutOff MinPoint StartFrame EndFrame {name "Cluster"} } {
+        set Clusterfile [open "$name$MoleculeName$CutOff.dat" w]
         set Data [lsort -unique -integer [[atomselect top "resname $MoleculeName" frame 0] get resid]]
         if {$EndFrame == -1} {
                 set EndFrame [molinfo top get numframes]

@@ -27,8 +27,6 @@ def find_max_list(lists):
     listlen = 0
     longest_list = lists[index]
     for i in range(len(lists)):
-        #print(i)
-        #print(lists)
         if len(lists[i]) > listlen:
             listlen = len(lists[i])
             longest_list = lists[i]
@@ -65,6 +63,10 @@ class generalCluster:
         frame_info_dict = {}
         for clusterdata in ClusterFilePath:
             clframe = int(clusterdata.split()[0])
+            if clusterdata.split()[1].isdigit():
+                sclus = clusterdata.split()
+                sclus[1] = "{"+clusterdata.split()[1]+"}"
+                clusterdata = ' '.join(sclus)
             clusters = re.findall("\\{.*\\}", clusterdata)[0].split("} {")
             full_clusters=[convert_string_to_num(cluster.replace("{","").replace("}","")) for cluster in clusters]
             aggregates = remove_zeros_from_list_of_lists(full_clusters[1:])

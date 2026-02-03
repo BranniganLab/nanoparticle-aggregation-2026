@@ -13,20 +13,76 @@ from pathlib import Path
 sys.path.insert(0, "../Analysis/Figure_1_scripts/")
 from SASAplotter import generalSASA, make_thiol_dataset, create_sasa_core_replica_data, create_sasa_full_replica_data
 from order_density_contact_potter import generalFileParse, create_contact_core_replica_data, create_contact_full_replica_data,make_thiol_dataset_O_C
-Pagelength = 3
-Pagewidth = 6.5
+Pagelength = 4
+Pagewidth = 9
 
 ############### Draw Grid ##############
 
-mosaic = [['ImgA','SASACoreW','SASALLW','AVGconthead'],
-          ['ImgB','SASACoreH','SASALLH','AVGconttail'],
+#mosaic = [['ImgA','SASACoreW','SASALLW','AVGconthead'],
+#          ['ImgB','SASACoreH','SASALLH','AVGconttail'],
+#          ]
+mosaic = [['ImgA','SASACoreW','SASACoreH','AVGconthead'],
+          ['ImgB','SASALLW','SASALLH','AVGconttail'],
           ]
 fig = plt.figure(figsize=(Pagewidth,Pagelength),
-                 layout="constrained")
+                 layout="tight")
 ax = fig.subplot_mosaic(mosaic,
-                        width_ratios=[1.75, 1,1,1],
+                        width_ratios=[1.5, 1,1,1],
                         )
+Annotation = ['A)','B)','C)','D)','E)','F)','G)','H)']
 
+### side panel ###
+fig.text(
+    0.00,
+    0.92,
+    Annotation[0],
+   #fontfamily='san-serif'
+    )
+fig.text(
+    0.00,
+    0.45,
+    Annotation[1],
+    #fontfamily='san-serif'
+    )
+
+fig.text(
+    0.28,
+    0.92,
+    Annotation[2],
+    #fontfamily='san-serif'
+    )
+fig.text(
+    0.28,
+    0.45,
+    Annotation[3],
+    #fontfamily='san-serif'
+    )
+
+fig.text(
+    0.52,
+    0.92,
+    Annotation[4],
+    #fontfamily='san-serif'
+    )
+fig.text(
+    0.52,
+    0.45,
+    Annotation[5],
+    #fontfamily='san-serif'
+    )
+
+fig.text(
+    0.76,
+    0.92,
+    Annotation[6],
+    #fontfamily='san-serif'
+    )
+fig.text(
+    0.76,
+    0.45,
+    Annotation[7],
+    #fontfamily='san-serif'
+    )
 ############# Import Images #############
 Figure1 = Path("../Media/Figure1/GNP_hyd.png")
 Figure2 = Path("../Media/Figure1/GNP_pol.png")
@@ -34,7 +90,11 @@ Hydro = np.asarray(Image.open(Figure1))
 Polar = np.asarray(Image.open(Figure2))
 
 ############# Plot on Grid #############
-my_font = {'family': 'serif',
+label_font = {#'family': 'San-serif',
+           'color':  'black',
+           'weight': 'normal',
+           'size': 8}
+tick_font = {#'family': 'San-serif',
            'color':  'black',
            'weight': 'normal',
            'size': 6}
@@ -136,13 +196,13 @@ for i,core in enumerate(Cores):
                     ,markersize=MSize
                     )
 ax['SASACoreW'].set_xticks(LENGTHS)
-ax['SASACoreW'].set_xticklabels(LENGTHS,fontdict=my_font)
-ax['SASACoreW'].set_yticks(np.arange(0, 150, step=40))
-ax['SASACoreW'].set_yticklabels(np.arange(0, 150, step=40),fontdict=my_font)
-ax['SASACoreW'].set_xlabel("Ligand Length", fontdict=my_font)
-ax['SASACoreW'].set_ylabel(r"Water SASA (nm$^{2}$)", fontdict=my_font)
+ax['SASACoreW'].set_xticklabels(LENGTHS,fontdict=tick_font)
+ax['SASACoreW'].set_yticks(np.arange(0, 180, step=40))
+ax['SASACoreW'].set_yticklabels(np.arange(0, 180, step=40),fontdict=tick_font)
+ax['SASACoreW'].set_xlabel("Ligand Length", fontdict=label_font)
+ax['SASACoreW'].set_ylabel(r"Water SASA (nm$^{2}$)", fontdict=label_font)
 #ax['SASACoreW'].tick_params(axis='both', labelsize=20)
-ax['SASACoreW'].legend(prop={'size': 3},markerscale=0.5, ncol=2)
+ax['SASACoreW'].legend(prop={'size': 4},markerscale=0.5, ncol=2)
     
 for i,thiol in enumerate(THIOL):
         coreplot = [Cores[0][thiol].iloc[0],
@@ -172,12 +232,12 @@ for i,thiol in enumerate(THIOL):
                         ,markersize=MSize
             )
 ax['SASALLW'].set_xticks([0,1,2,3,4,5])
-ax['SASALLW'].set_xticklabels(CORETYPES2,fontdict=my_font)
+ax['SASALLW'].set_xticklabels(CORETYPES2,fontdict=tick_font)
 ax['SASALLW'].set_yticks(np.arange(0, 180, step=40))
-ax['SASALLW'].set_yticklabels(np.arange(0, 180, step=40),fontdict=my_font)       
-ax['SASALLW'].set_xlabel("Core Parameter", fontdict=my_font)
-ax['SASALLW'].set_ylabel(r"Water SASA (nm$^{2}$)", fontdict=my_font)
-ax['SASALLW'].legend(prop={'size': 3},markerscale=0.5, ncol=2)
+ax['SASALLW'].set_yticklabels(np.arange(0, 180, step=40),fontdict=tick_font)       
+ax['SASALLW'].set_xlabel("Core Parameter", fontdict=label_font)
+ax['SASALLW'].set_ylabel(r"Water SASA (nm$^{2}$)", fontdict=label_font)
+ax['SASALLW'].legend(prop={'size': 4},markerscale=0.5, ncol=2)
  
     ######## Lipid SASA #################
     
@@ -251,12 +311,12 @@ for i,core in enumerate(Cores):
                     ,markersize=MSize
                     )
 ax['SASACoreH'].set_xticks(LENGTHS)
-ax['SASACoreH'].set_xticklabels(LENGTHS,fontdict=my_font)
-ax['SASACoreH'].set_yticks(np.arange(0, 150, step=40))
-ax['SASACoreH'].set_yticklabels(np.arange(0, 150, step=40),fontdict=my_font)
-ax['SASACoreH'].set_xlabel("Ligand Length", fontdict=my_font)
-ax['SASACoreH'].set_ylabel(r"Lipid SASA (nm$^{2}$)", fontdict=my_font)
-ax['SASACoreH'].legend(prop={'size': 3},markerscale=0.5, ncol=2)
+ax['SASACoreH'].set_xticklabels(LENGTHS,fontdict=tick_font)
+ax['SASACoreH'].set_yticks(np.arange(0, 180, step=40))
+ax['SASACoreH'].set_yticklabels(np.arange(0, 180, step=40),fontdict=tick_font)
+ax['SASACoreH'].set_xlabel("Ligand Length", fontdict=label_font)
+ax['SASACoreH'].set_ylabel(r"Lipid SASA (nm$^{2}$)", fontdict=label_font)
+ax['SASACoreH'].legend(prop={'size': 4},markerscale=0.5, ncol=2)
     
 for i,thiol in enumerate(THIOL):
         coreplot = [Cores[0][thiol].iloc[0],
@@ -287,12 +347,12 @@ for i,thiol in enumerate(THIOL):
                         ,markersize=MSize
             )
 ax['SASALLH'].set_xticks([0,1,2,3,4,5])
-ax['SASALLH'].set_xticklabels(CORETYPES2,fontdict=my_font)
+ax['SASALLH'].set_xticklabels(CORETYPES2,fontdict=tick_font)
 ax['SASALLH'].set_yticks(np.arange(0, 180, step=40))
-ax['SASALLH'].set_yticklabels(np.arange(0, 180, step=40),fontdict=my_font)       
-ax['SASALLH'].set_xlabel("Core Parameter", fontdict=my_font)
-ax['SASALLH'].set_ylabel(r"Lipid SASA (nm$^{2}$)", fontdict=my_font)
-ax['SASALLH'].legend(prop={'size': 3},markerscale=0.5, ncol=2)
+ax['SASALLH'].set_yticklabels(np.arange(0, 180, step=40),fontdict=tick_font)       
+ax['SASALLH'].set_xlabel("Core Parameter", fontdict=label_font)
+ax['SASALLH'].set_ylabel(r"Lipid SASA (nm$^{2}$)", fontdict=label_font)
+ax['SASALLH'].legend(prop={'size': 4},markerscale=0.5, ncol=2)
 
     ######## Lipid Head Contact #################
     
@@ -361,12 +421,12 @@ ax['AVGconthead'].errorbar( "SS"
               ,color="Orange"
               ,markersize=MSize
               )
-ax['AVGconthead'].set_xlabel("Core Parameter", fontdict=my_font)
-ax['AVGconthead'].set_ylabel(r"Average Contacts", fontdict=my_font)
+ax['AVGconthead'].set_xlabel("Core Parameter", fontdict=label_font)
+ax['AVGconthead'].set_ylabel(r"Average Contacts", fontdict=label_font)
 ax['AVGconthead'].set_xticks([0,1,2,3,4,5])
-ax['AVGconthead'].set_xticklabels(CORETYPES2,fontdict=my_font)
+ax['AVGconthead'].set_xticklabels(CORETYPES2,fontdict=tick_font)
 ax['AVGconthead'].set_yticks(np.arange(0, 12, step=2))
-ax['AVGconthead'].set_yticklabels(np.arange(0, 12, step=2),fontdict=my_font)
+ax['AVGconthead'].set_yticklabels(np.arange(0, 12, step=2),fontdict=tick_font)
 
     ######## Lipid Tail Contact #################
     
@@ -435,11 +495,11 @@ ax['AVGconttail'].errorbar( "SS"
               ,color="Orange"
               ,markersize=MSize
               )
-ax['AVGconttail'].set_xlabel("Core Parameter", fontdict=my_font)
-ax['AVGconttail'].set_ylabel(r"Average Contacts", fontdict=my_font)
+ax['AVGconttail'].set_xlabel("Core Parameter", fontdict=label_font)
+ax['AVGconttail'].set_ylabel(r"Average Contacts", fontdict=label_font)
 ax['AVGconttail'].set_xticks([0,1,2,3,4,5])
-ax['AVGconttail'].set_xticklabels(CORETYPES2,fontdict=my_font)
+ax['AVGconttail'].set_xticklabels(CORETYPES2,fontdict=tick_font)
 ax['AVGconttail'].set_yticks(np.arange(0, 35, step=5))
-ax['AVGconttail'].set_yticklabels(np.arange(0, 35, step=5),fontdict=my_font)
+ax['AVGconttail'].set_yticklabels(np.arange(0, 35, step=5),fontdict=tick_font)
 fig.savefig(Path("../Graphs/Figure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 plt.show()

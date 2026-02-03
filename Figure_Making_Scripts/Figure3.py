@@ -24,7 +24,7 @@ top_bottom_margin=0.125
 left_right_margin=0.25
 middle_margin=1.375
 bumper = 0.40
-Annotation = ['a)','b)','c)']
+Annotation = ['A)','B)','C)']
 
 leftside = left_right_margin/figwidth
 rightside = 1-(left_right_margin/figwidth)
@@ -89,10 +89,14 @@ for i in range(len(sub_dir_base)):
             bins[thiol_name[j]] = data
 
 ############# Plot on Grid #############
-my_font = {'family': 'serif',
+label_font = {#'family': 'serif',
            'color':  'black',
            'weight': 'normal',
            'size': 10}
+tick_font = {#'family': 'serif',
+           'color':  'black',
+           'weight': 'normal',
+           'size': 8}
 LWidth = 1
 LStyle = 'solid'
 MSize = 5
@@ -185,10 +189,10 @@ ax4.errorbar(Ligand_Lengths,
 
 ax4.set_yticks(np.arange(0, 1.2, step=0.2))
 ax4.set_xticks(Ligand_Lengths)
-ax4.set_yticklabels(["$0.0$","$0.2$","$0.4$","$0.6$","$0.8$","$1.0$"],fontdict=my_font)
-ax4.set_xticklabels(Ligand_Lengths,fontdict=my_font)
-ax4.set_ylabel(r'$\langle F_{a} \rangle$',fontdict=my_font)
-ax4.set_xlabel('Ligand Length',fontdict=my_font)
+ax4.set_yticklabels(["$0.0$","$0.2$","$0.4$","$0.6$","$0.8$","$1.0$"],fontdict=tick_font)
+ax4.set_xticklabels(Ligand_Lengths,fontdict=tick_font)
+ax4.set_ylabel(r'$\langle F_{a} \rangle$',fontdict=label_font)
+ax4.set_xlabel('Ligand Length',fontdict=label_font)
 ax4.legend(loc="upper right",fontsize='x-small')
 
     ################## Monomer Fraction ##################
@@ -263,10 +267,10 @@ ax5.errorbar(Ligand_Lengths,
 
 ax5.set_yticks(np.arange(0, 1.2, step=0.2))
 ax5.set_xticks(Ligand_Lengths)
-ax5.set_yticklabels(["$0.0$","$0.2$","$0.4$","$0.6$","$0.8$","$1.0$"],fontdict=my_font)
-ax5.set_xticklabels(Ligand_Lengths,fontdict=my_font)
-ax5.set_ylabel(r'$\langle F_{m} \rangle$',fontdict=my_font)
-ax5.set_xlabel('Ligand Length',fontdict=my_font)
+ax5.set_yticklabels(["$0.0$","$0.2$","$0.4$","$0.6$","$0.8$","$1.0$"],fontdict=tick_font)
+ax5.set_xticklabels(Ligand_Lengths,fontdict=tick_font)
+ax5.set_ylabel(r'$\langle F_{m} \rangle$',fontdict=label_font)
+ax5.set_xlabel('Ligand Length',fontdict=label_font)
 ax5.legend(loc="upper right",fontsize='x-small')
 
 fig.savefig(Path("../Graphs/Figure3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
