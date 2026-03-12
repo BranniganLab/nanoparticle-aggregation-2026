@@ -39,7 +39,7 @@ class generalSASA:
         self.data_average = self.sasa_data_frame["Values"].mean()
         
 
-def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname):
+def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname, cutoff=200):
     paths = coretype+"/"+thiol+"/"+replica+"/analysis"
     
     allfilepaths = list(directory_path.resolve().glob(paths))
@@ -48,7 +48,7 @@ def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname):
         name = path.parts[-3]
         rep = path.parts[-2]
         data = generalSASA(dataname, path, name)
-        data.update_SASA_data()
+        data.update_SASA_data(cutoff)
         data.update_SASA_average()
         LigandData[name+"_"+rep] = data
     return LigandData
