@@ -11,6 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 import pandas as pd
+import argparse
 from matplotlib.lines import Line2D
 sys.path.insert(0, "../Analysis/Figure_1_scripts/")
 from SASAplotter import generalSASA, make_thiol_dataset, create_sasa_core_replica_data, create_sasa_full_replica_data
@@ -173,4 +174,9 @@ fig1.savefig(Path("../Graphs/SupplementaryFigure3_2.pdf"),format='pdf',dpi=500, 
 fig2.savefig(Path("../Graphs/SupplementaryFigure3_3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 fig3.savefig(Path("../Graphs/SupplementaryFigure3_4.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
-plt.show()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  

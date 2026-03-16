@@ -10,6 +10,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import argparse
 sys.path.insert(0, "../Analysis/Figure_1_scripts/")
 from SASAplotter import generalSASA, make_thiol_dataset, create_sasa_core_replica_data, create_sasa_full_replica_data
 from order_density_contact_potter import generalFileParse, create_contact_core_replica_data, create_contact_full_replica_data,make_thiol_dataset_O_C
@@ -502,4 +503,10 @@ ax['AVGconttail'].set_xticklabels(CORETYPES2,fontdict=tick_font)
 ax['AVGconttail'].set_yticks(np.arange(0, 35, step=5))
 ax['AVGconttail'].set_yticklabels(np.arange(0, 35, step=5),fontdict=tick_font)
 fig.savefig(Path("../Graphs/Figure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  

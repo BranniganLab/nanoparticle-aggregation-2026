@@ -8,6 +8,7 @@ Created on Mon Oct 27 15:45:53 2025
 
 import matplotlib.pyplot as plt
 from pathlib import Path
+import argparse
 from MDAnalysis.auxiliary.XVG import XVGReader
 
 
@@ -106,4 +107,10 @@ fig.supylabel('Counts', fontsize=14)
 fig.supxlabel('Distance (nm)', fontsize=14)
 
 fig.savefig(Path("../Graphs/SupplementaryFigure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  

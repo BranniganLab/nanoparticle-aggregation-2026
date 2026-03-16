@@ -10,6 +10,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import argparse
 sys.path.insert(0, "../Analysis/Figure_3_scripts/")
 from ClusterPlotter import generalCluster, multiClusterData 
 
@@ -274,4 +275,10 @@ ax5.set_xlabel('Ligand Length',fontdict=label_font)
 ax5.legend(loc="upper right",fontsize='x-small')
 
 fig.savefig(Path("../Graphs/Figure3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  

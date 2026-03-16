@@ -11,6 +11,7 @@ from pathlib import Path
 from MDAnalysis.auxiliary.XVG import XVGReader
 import numpy as np
 import pandas as pd
+import argparse
 from matplotlib.lines import Line2D
 sys.path.insert(0, "../Analysis/Figure_3_scripts/")
 from ClusterPlotter import generalCluster, multiClusterData 
@@ -123,4 +124,10 @@ fig1.legend(legend_list, thiol_name, ncol=len(thiol_name), loc="upper center",bb
 
 fig.savefig(Path("../Graphs/SupplementaryFigure2_1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 fig1.savefig(Path("../Graphs/SupplementaryFigure2_2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  

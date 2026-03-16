@@ -11,6 +11,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
+import argparse
 sys.path.insert(0, "../Analysis/Figure_2_scripts/")
 from generalxvgplotter import generalFE 
 from npdistance import generalFileParse, make_data, find_nearest
@@ -302,4 +303,10 @@ ax['Z-height'].set_yticklabels(np.arange(0, 1.6, step=0.5),fontdict=tick_font)
 ax['Z-height'].set_xticklabels(np.arange(2.5, 5.1, step=0.5),fontdict=tick_font)
 ax['Z-height'].legend(loc="upper left",fontsize='xx-small')
 fig.savefig(Path("../Graphs/Figure2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-plt.show()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
+    args = parser.parse_args()
+    if args.showplot:
+        plt.show()  
