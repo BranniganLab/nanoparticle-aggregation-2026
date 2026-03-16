@@ -12,4 +12,4 @@ To make the figures from *Assessing the Aggregation Behavior of Coarse-Grained M
 4. Make the figures:
     - To remake all figures run the command: `bash make_all_figures.sh`
     - To remake a specific figure run the command: `python [name of figure] [optional showplot -sp]` Example: `python Figure1.py -sp`
-
+5. Figures will show up in the **Graphs** folder
