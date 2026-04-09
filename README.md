@@ -7,7 +7,7 @@ To make the figures from *Assessing the Aggregation Behavior of Coarse-Grained M
 1. Clone this repository. You do not need the accompanying zenodo to remake the figures. All calculated values from trajectories have been written to files.
 2. cd into repository and Create a virtual environment:
     - Conda: `conda env create -f environment.yml` -> `conda activate gnppaper`
-    - python: `python -m venv gnppaper` -> `source gnppaper/bin/activate`
+    - python: `python -m venv gnppaper` -> `source gnppaper/bin/activate`\
 If using a Python virtual environment, `pip install -r requirements.txt` after starting the virtual environment.
 3. cd into the **Figure_Making_Scripts** folder
 4. Make the figures:
