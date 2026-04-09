@@ -8,6 +8,7 @@ To make the figures from *Assessing the Aggregation Behavior of Coarse-Grained M
 2. cd into repository and Create a virtual environment:
     - Conda: `conda env create -f environment.yml` -> `conda activate gnppaper`
     - python: `python -m venv gnppaper` -> `source gnppaper/bin/activate`
+If using a Python virtual environment, `pip install -r requirements.txt` after starting the virtual environment.
 3. cd into the **Figure_Making_Scripts** folder
 4. Make the figures:
     - To remake all figures run the command: `bash make_all_figures.sh`
