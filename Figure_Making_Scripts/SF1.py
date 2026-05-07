@@ -7,6 +7,7 @@ Created on Mon Oct 27 15:45:53 2025
 """
 
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 from pathlib import Path
 import argparse
 from MDAnalysis.auxiliary.XVG import XVGReader
@@ -14,7 +15,9 @@ from MDAnalysis.auxiliary.XVG import XVGReader
 
 ############### Draw Grid ##############
 
-fig,ax = plt.subplots(2,3, figsize=(15,10), layout='constrained', sharex=True, sharey=True)
+fig,ax = plt.subplots(2,3, figsize=(15,12), layout='constrained', sharex=True, sharey=True)
+mpl.rcParams['xtick.labelsize'] = 25
+mpl.rcParams['ytick.labelsize'] = 25
 
 ############# Making plottable Cluster Data #############
 basepath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
@@ -31,7 +34,7 @@ histo6 = basepath.joinpath("Hydrophobic/GNP_US_hyd_3/GNP_US_hyd/histo.xvg")
 my_font = {'family': 'serif',
            'color':  'black',
            'weight': 'normal',
-           'size': 10}
+           'size': 20}
 LWidth = 1
 LStyle = 'solid'
 MSize = 5
@@ -88,23 +91,25 @@ for i in range(len(Hydrophobic3)):
     hydrophobicdata3.append(Hydrophobic3[i].data)
 
 ################ Plot #############
+fs = 20
+fs2 = 15
 
 ax[0,0].plot(polart1,polardata1)
-ax[0,0].set_title("Polar Replica 1", fontsize='small', loc='left')
+ax[0,0].set_title("Polar Replica 1", fontsize=fs, loc='left')
 ax[0,1].plot(polart2,polardata2)
-ax[0,1].set_title("Polar Replica 2", fontsize='small', loc='left')
+ax[0,1].set_title("Polar Replica 2", fontsize=fs, loc='left')
 ax[0,2].plot(polart3,polardata3)
-ax[0,2].set_title("Polar Replica 3", fontsize='small', loc='left')
+ax[0,2].set_title("Polar Replica 3", fontsize=fs, loc='left')
 
 ax[1,0].plot(hydrophobict1,hydrophobicdata1)
-ax[1,0].set_title("Hydrophobic Replica 1", fontsize='small', loc='left')
+ax[1,0].set_title("Hydrophobic Replica 1", fontsize=fs, loc='left')
 ax[1,1].plot(hydrophobict2,hydrophobicdata2)
-ax[1,1].set_title("Hydrophobic Replica 2", fontsize='small', loc='left')
+ax[1,1].set_title("Hydrophobic Replica 2", fontsize=fs, loc='left')
 ax[1,2].plot(hydrophobict3,hydrophobicdata3)
-ax[1,2].set_title("Hydrophobic Replica 3", fontsize='small', loc='left')
+ax[1,2].set_title("Hydrophobic Replica 3", fontsize=fs, loc='left')
 
-fig.supylabel('Counts', fontsize=14)
-fig.supxlabel('Distance (nm)', fontsize=14)
+fig.supylabel('Counts', fontsize=30)
+fig.supxlabel('Distance (nm)', fontsize=30)
 
 fig.savefig(Path("../Graphs/SupplementaryFigure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 

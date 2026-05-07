@@ -229,6 +229,7 @@ ax['PMF'].legend(loc="lower right",fontsize='xx-small')
 
     ############## diff PMF plot #######################
 diff = dfmeanhyd - dfmean 
+diffstd = np.sqrt(np.std(dfstackhyd, axis=0)**2 + np.std(dfstack, axis=0)**2)/np.sqrt(3)
 
 ax['difPMF'].plot(xvg4.fe_data_frame["CV"][:-10],
             diff,
@@ -243,6 +244,19 @@ ax['difPMF'].axhline(y = 0, color="black", linestyle = ':')
 ax['difPMF'].set_ylabel(r'$\Delta PMF$ ' "(kJ $mol^{-1}$)",fontdict=label_font)
 ax['difPMF'].set_xlabel("r (nm)",fontdict=label_font)
 
+ax['difPMF'].fill_between(xvg4.fe_data_frame["CV"][:-10],
+                          diff-diffstd,
+                          diff+diffstd,
+                          color='grey',
+                          alpha=0.5)
+
+indhyd, indpol, inddiff = [np.argmin(dfmeanhyd), np.argmin(dfmean), np.argmin(diff)]
+minhyd, minpol, middiff = [dfmeanhyd[indhyd],dfmean[indpol], diff[indhyd]]
+minstdhyd, minstdpol, minstddif =[dfstdhyd[indhyd], dfstd[indpol],diffstd[indhyd]]
+
+print(indhyd, indpol, inddiff)
+print(minhyd, minpol, middiff)
+print(minstdhyd, minstdpol, minstddif)
 
     ############## Z-distance plot #######################
 hydropath1 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd/NPdistance")

@@ -19,13 +19,31 @@ from ClusterPlotter import generalCluster, multiClusterData
 
 ############### Draw Grid ##############
 
-fig,ax = plt.subplots(3,5, figsize=(15,10), layout='constrained', sharex=True, sharey=True)
-fig1,ax1 = plt.subplots(3,5, figsize=(15,10), layout='constrained', sharex=True, sharey=True)
+D1 = 10
+D2 = 5
+fig_la_oct,ax_la_oct = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_la_dod,ax_la_dod = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_la_hex,ax_la_hex = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_la_ico,ax_la_ico = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_la_tet,ax_la_tet = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+
+la_plots = [fig_la_oct, fig_la_dod, fig_la_hex, fig_la_ico, fig_la_tet]
+la_axes = [ax_la_oct, ax_la_dod, ax_la_hex, ax_la_ico, ax_la_tet]
+
+fig_mf_oct,ax_mf_oct = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_mf_dod,ax_mf_dod = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_mf_hex,ax_mf_hex = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_mf_ico,ax_mf_ico = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+fig_mf_tet,ax_mf_tet = plt.subplots(1,3, figsize=(D1,D2), layout='constrained', sharex=True, sharey=True)
+
+mf_plots = [fig_mf_oct, fig_mf_dod, fig_mf_hex, fig_mf_ico, fig_mf_tet]
+mf_axes = [ax_mf_oct, ax_mf_dod, ax_mf_hex, ax_mf_ico, ax_mf_tet]
 
 ############# Making plottable Cluster Data #############
 basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 sub_dir_base = ["Hydrophobic","Polar","Soft_Sphere" ]
 thiol_name = ["Octanethiol", "Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
+replica_name = ["Replica 1", "Replica 2", "Replica 3", "Replica 4", "Replica 5"]
 file_name = "analysis/fullclusterAU10.dat"
 data_bins_la = [pd.DataFrame(),pd.DataFrame(),pd.DataFrame()]
 data_bins_mf = [pd.DataFrame(),pd.DataFrame(),pd.DataFrame()]
@@ -59,75 +77,60 @@ LWidth = 2
 LStyle = 'solid'
 MSize = 5
 CSize = 4 
-
+fs = 20
 
 ################ Plot #############
 
 ## LAF ##
 for i in range(len(sub_dir_base)):
-    for k in range(5):
-        if i == 0:
-            TT = "Replica "+str(k+1)
-        else:
-            TT =""
-        if k == 0:
-            plt.setp(ax[i,k], ylabel=sub_dir_base[i].replace("_"," "))
-        else:
-            y_axis = ""
-        cols_to_plot = data_bins_la[i].columns[data_bins_la[i].columns.str.contains(str(k))]
-        Rep1_subset = data_bins_la[i][cols_to_plot]
-        Rep1_subset.plot(ax=ax[i,k],
+    for j,thiol in enumerate(thiol_name):
+        cols_to_plot = data_bins_la[i].columns[data_bins_la[i].columns.str.contains(thiol)]
+        Thiol_subset = data_bins_la[i][cols_to_plot]
+        Thiol_subset.plot(ax=la_axes[j][i],
                          kind="line",
-                         title=TT,
+                         title=sub_dir_base[i],
                          legend=False,
-                         linewidth = LWidth
-                         #ylabel=y_axis
+                         linewidth = LWidth,
+                         fontsize = 15
                          )
-fig.supylabel('Largest aggregate fraction', fontsize=14)
-fig.supxlabel(r'Time ($\mu s$)', fontsize=14)
+        la_axes[j][i].set_title(sub_dir_base[i], fontsize=15)
+        la_plots[j].supylabel('Largest aggregate fraction', fontsize=fs)
+        la_plots[j].supxlabel(r'Time ($\mu s$)', fontsize=fs)
 
-color_list = [line.get_color() for line in ax[0,0].lines]
-legend_list = []
-for color in color_list:
-    legend_list.append(Line2D([0], [0], color=color, lw=4))
-fig.legend(legend_list, thiol_name, ncol=len(thiol_name), loc="upper center",bbox_to_anchor=(0.5, 1.05))
-
+        color_list = [line.get_color() for line in la_axes[j][i].lines]
+        legend_list = []
+        for color in color_list:
+            legend_list.append(Line2D([0], [0], color=color, lw=4))
+        la_plots[j].legend(legend_list, replica_name, ncol=len(replica_name), loc="upper center",bbox_to_anchor=(0.5, 1.12), fontsize=15)
+        
+        la_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_la_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 ## MF ##
 for i in range(len(sub_dir_base)):
-    for k in range(5):
-        if i == 0:
-            TT = "Replica "+str(k+1)
-        else:
-            TT =""
-        if k == 0:
-            plt.setp(ax1[i,k], ylabel=sub_dir_base[i].replace("_"," "))
-        else:
-            y_axis = ""
-        cols_to_plot = data_bins_mf[i].columns[data_bins_mf[i].columns.str.contains(str(k))]
-        Rep1_subset = data_bins_mf[i][cols_to_plot]
-        Rep1_subset.plot(ax=ax1[i,k],
+    for j,thiol in enumerate(thiol_name):
+        cols_to_plot = data_bins_mf[i].columns[data_bins_la[i].columns.str.contains(thiol)]
+        Thiol_subset = data_bins_mf[i][cols_to_plot]
+        Thiol_subset.plot(ax=mf_axes[j][i],
                          kind="line",
-                         title=TT,
+                         #title=sub_dir_base[i],
                          legend=False,
-                         linewidth = LWidth
-                         #ylabel=y_axis
+                         linewidth = LWidth,
+                         fontsize = 15
                          )
-fig1.supylabel('Monomer fraction', fontsize=14)
-fig1.supxlabel(r'Time ($\mu s$)', fontsize=14)
+        mf_axes[j][i].set_title(sub_dir_base[i], fontsize=15)
+        mf_plots[j].supylabel('Largest aggregate fraction', fontsize=fs)
+        mf_plots[j].supxlabel(r'Time ($\mu s$)', fontsize=fs)
 
-color_list = [line.get_color() for line in ax[0,0].lines]
-legend_list = []
-for color in color_list:
-    legend_list.append(Line2D([0], [0], color=color, lw=4))
-fig1.legend(legend_list, thiol_name, ncol=len(thiol_name), loc="upper center",bbox_to_anchor=(0.5, 1.05))
-
-fig.savefig(Path("../Graphs/SupplementaryFigure2_1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
-fig1.savefig(Path("../Graphs/SupplementaryFigure2_2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+        color_list = [line.get_color() for line in mf_axes[j][i].lines]
+        legend_list = []
+        for color in color_list:
+            legend_list.append(Line2D([0], [0], color=color, lw=4))
+        mf_plots[j].legend(legend_list, replica_name, ncol=len(replica_name), loc="upper center",bbox_to_anchor=(0.5, 1.12), fontsize=15)
+        mf_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_mf_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
     args = parser.parse_args()
     if args.showplot:
-        plt.show()  
+        plt.show()
