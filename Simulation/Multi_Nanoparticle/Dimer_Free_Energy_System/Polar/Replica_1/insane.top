@@ -1,0 +1,28 @@
+#include "/home/jahmalennis/Documents/LocalRun/martini_v2.2.itp"
+#include "cg4.itp"
+
+#ifdef POSRES
+#include "posresrid1.itp"
+#endif
+
+#include "cg3.itp"
+
+#include "/home/jahmalennis/Documents/LocalRun/martini_v2.0_solvents.itp"
+#include "/home/jahmalennis/Documents/LocalRun/martini_v2.0_lipids_all_201506.itp"
+#include "/home/jahmalennis/Documents/LocalRun/martini_v2.0_ions.itp"
+
+[ system ]
+; name
+Protein in INSANE! Membrane UpperLeaflet>POPC=1.0 LowerLeaflet>POPC=1.0
+
+
+[ molecules ]
+; name  number
+AU1              1
+AU2              1
+POPC           971
+POPC           973
+W            53717
+NA+            591
+CL-            591
+
