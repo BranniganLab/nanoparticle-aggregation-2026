@@ -162,32 +162,32 @@ ax['memimg'].axis('off')
     ############## PMF plot #######################
 
 Mainpath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
-xvg1 = generalFE("profile.xvg", Mainpath.joinpath("Polar/GNP_US") , "xvg1")
+xvg1 = generalFE("profile.xvg", Mainpath.joinpath("Polar/Replica_1") , "xvg1")
 xvg1.update_FE_data()
 xvg1.apply_correction("3D")
 xvg1.shift_zero_to_fe_plateau()
 
-xvg2 = generalFE("profile.xvg", Mainpath.joinpath("Polar/GNP_US_2/GNP_US") , "xvg1")
+xvg2 = generalFE("profile.xvg", Mainpath.joinpath("Polar/Replica_2") , "xvg1")
 xvg2.update_FE_data()
 xvg2.apply_correction("3D")
 xvg2.shift_zero_to_fe_plateau()
 
-xvg3 = generalFE("profile.xvg", Mainpath.joinpath("Polar/GNP_US_3/GNP_US") , "xvg1")
+xvg3 = generalFE("profile.xvg", Mainpath.joinpath("Polar/Replica_3") , "xvg1")
 xvg3.update_FE_data()
 xvg3.apply_correction("3D")
 xvg3.shift_zero_to_fe_plateau()
 
-xvg4 = generalFE("profile.xvg", Mainpath.joinpath("Hydrophobic/GNP_US_hyd") , "xvg1")
+xvg4 = generalFE("profile.xvg", Mainpath.joinpath("Hydrophobic/Replica_1") , "xvg1")
 xvg4.update_FE_data()
 xvg4.apply_correction("3D")
 xvg4.shift_zero_to_fe_plateau()
 
-xvg5 = generalFE("profile.xvg", Mainpath.joinpath("Hydrophobic/GNP_US_hyd_2/GNP_US_hyd") , "xvg1")
+xvg5 = generalFE("profile.xvg", Mainpath.joinpath("Hydrophobic/Replica_2") , "xvg1")
 xvg5.update_FE_data()
 xvg5.apply_correction("3D")
 xvg5.shift_zero_to_fe_plateau()
 
-xvg6 = generalFE("profile.xvg",  Mainpath.joinpath("Hydrophobic/GNP_US_hyd_3/GNP_US_hyd") , "xvg1")
+xvg6 = generalFE("profile.xvg",  Mainpath.joinpath("Hydrophobic/Replica_3") , "xvg1")
 xvg6.update_FE_data()
 xvg6.apply_correction("3D")
 xvg6.shift_zero_to_fe_plateau()
@@ -259,13 +259,13 @@ print(minhyd, minpol, middiff)
 print(minstdhyd, minstdpol, minstddif)
 
     ############## Z-distance plot #######################
-hydropath1 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd/NPdistance")
-hydropath2 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd_2/GNP_US_hyd/NPdistance")
-hydropath3 = Mainpath.joinpath("Hydrophobic/GNP_US_hyd_3/GNP_US_hyd/NPdistance")
+hydropath1 = Mainpath.joinpath("Hydrophobic/Replica_1/NPdistance")
+hydropath2 = Mainpath.joinpath("Hydrophobic/Replica_2/NPdistance")
+hydropath3 = Mainpath.joinpath("Hydrophobic/Replica_3/NPdistance")
 
-polarpath1 = Mainpath.joinpath("Polar/GNP_US/NPdistance")
-polarpath2 = Mainpath.joinpath("Polar/GNP_US_2/GNP_US/NPdistance")
-polarpath3 = Mainpath.joinpath("Polar/GNP_US_3/GNP_US/NPdistance")
+polarpath1 = Mainpath.joinpath("Polar/Replica_1/NPdistance")
+polarpath2 = Mainpath.joinpath("Polar/Replica_2/NPdistance")
+polarpath3 = Mainpath.joinpath("Polar/Replica_3/NPdistance")
 
 hydrop1 = make_data(hydropath1)
 hydrop2 = make_data(hydropath2)
