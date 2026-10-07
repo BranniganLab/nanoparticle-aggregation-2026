@@ -12,6 +12,11 @@ from pathlib import Path
 import argparse
 from MDAnalysis.auxiliary.XVG import XVGReader
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
 
 ############### Draw Grid ##############
 
@@ -111,11 +116,11 @@ ax[1,2].set_title("Hydrophobic Replica 3", fontsize=fs, loc='left')
 fig.supylabel('Counts', fontsize=30)
 fig.supxlabel('Distance (nm)', fontsize=30)
 
-fig.savefig(Path("../Graphs/SupplementaryFigure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+if args.fromscratch:
+    fig.savefig(Path("Graphs/SupplementaryFigure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+else:
+    fig.savefig(Path("../Graphs/SupplementaryFigure1.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
-    args = parser.parse_args()
     if args.showplot:
         plt.show()  

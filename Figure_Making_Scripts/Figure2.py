@@ -16,6 +16,12 @@ sys.path.insert(0, "../Analysis/Figure_2_scripts/")
 from generalxvgplotter import generalFE 
 from npdistance import generalFileParse, make_data, find_nearest
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
+
 Pagelength = 6
 Pagewidth = 6.5
 
@@ -160,8 +166,10 @@ ax['memimg'].set_aspect('auto')
 ax['memimg'].axis('off')
     
     ############## PMF plot #######################
-
-Mainpath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
+if args.fromscratch:
+    Mainpath = Path("Multi_Nanoparticle/Dimer_Free_Energy_System")
+else:
+    Mainpath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
 xvg1 = generalFE("profile.xvg", Mainpath.joinpath("Polar/Replica_1") , "xvg1")
 xvg1.update_FE_data()
 xvg1.apply_correction("3D")
@@ -275,20 +283,35 @@ polarp1 = make_data(polarpath1)
 polarp2 = make_data(polarpath2)
 polarp3 = make_data(polarpath3)
 
+if args.fromscratch:
+    hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2]], axis=0)
+    hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2]], axis=0)
 
-hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
-hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
+    hydravg_xy = np.mean([hydrop1[0],hydrop2[0],hydrop3[0]], axis=0)
+    hydravg_xyz = np.mean([hydrop1[1],hydrop2[1],hydrop3[1]], axis=0)
+    nearhyd = find_nearest(hydravg_xy, value=5)
+    indexhyd = np.where(hydravg_xy == nearhyd)
 
-hydravg_xy = np.mean([hydrop1[0],hydrop2[0],hydrop3[0][:-1]], axis=0)
-hydravg_xyz = np.mean([hydrop1[1],hydrop2[1],hydrop3[1][:-1]], axis=0)
-nearhyd = find_nearest(hydravg_xy, value=5)
-indexhyd = np.where(hydravg_xy == nearhyd)
+    polravg_z = np.mean([polarp1[2],polarp2[2],polarp3[2]], axis=0)
+    polrstd_z = np.std([polarp1[2],polarp2[2],polarp3[2]], axis=0)
 
-polravg_z = np.mean([polarp1[2][:-1],polarp2[2][:-1],polarp3[2]], axis=0)
-polrstd_z = np.std([polarp1[2][:-1],polarp2[2][:-1],polarp3[2]], axis=0)
+    polravg_xy = np.mean([polarp1[0],polarp2[0],polarp3[0]], axis=0)
+    polravg_xyz = np.mean([polarp1[1],polarp2[1],polarp3[1]], axis=0)
+else:
+    hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
+    hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
 
-polravg_xy = np.mean([polarp1[0][:-1],polarp2[0][:-1],polarp3[0]], axis=0)
-polravg_xyz = np.mean([polarp1[1][:-1],polarp2[1][:-1],polarp3[1]], axis=0)
+    hydravg_xy = np.mean([hydrop1[0],hydrop2[0],hydrop3[0][:-1]], axis=0)
+    hydravg_xyz = np.mean([hydrop1[1],hydrop2[1],hydrop3[1][:-1]], axis=0)
+    nearhyd = find_nearest(hydravg_xy, value=5)
+    indexhyd = np.where(hydravg_xy == nearhyd)
+
+    polravg_z = np.mean([polarp1[2][:-1],polarp2[2][:-1],polarp3[2]], axis=0)
+    polrstd_z = np.std([polarp1[2][:-1],polarp2[2][:-1],polarp3[2]], axis=0)
+
+    polravg_xy = np.mean([polarp1[0][:-1],polarp2[0][:-1],polarp3[0]], axis=0)
+    polravg_xyz = np.mean([polarp1[1][:-1],polarp2[1][:-1],polarp3[1]], axis=0)
+
 nearpol = find_nearest(polravg_xy, value=5)
 indexpol = np.where(polravg_xy == nearpol)
 
@@ -316,11 +339,12 @@ ax['Z-height'].set_xticks(np.arange(2.5, 5.1, step=0.5))
 ax['Z-height'].set_yticklabels(np.arange(0, 1.6, step=0.5),fontdict=tick_font)
 ax['Z-height'].set_xticklabels(np.arange(2.5, 5.1, step=0.5),fontdict=tick_font)
 ax['Z-height'].legend(loc="upper left",fontsize='xx-small')
-fig.savefig(Path("../Graphs/Figure2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+
+if args.fromscratch:
+    fig.savefig(Path("Graphs/Figure2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+else:
+    fig.savefig(Path("../Graphs/Figure2.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
-    args = parser.parse_args()
     if args.showplot:
         plt.show()  

@@ -49,7 +49,7 @@ def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname, cutof
         rep = path.parts[-2]
         data = generalSASA(dataname, path, name)
         data.update_SASA_data(cutoff)
-        data.update_SASA_average()
+        data.update_SASA_average().remove("_","")
         LigandData[name+"_"+rep] = data
     return LigandData
 

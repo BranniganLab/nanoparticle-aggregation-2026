@@ -14,6 +14,12 @@ import argparse
 sys.path.insert(0, "../Analysis/Figure_3_scripts/")
 from ClusterPlotter import generalCluster, multiClusterData 
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
+
 Pagelength = 9
 Pagewidth = 6.5
 
@@ -75,7 +81,10 @@ Hydrophobic10npimage = np.asarray(Image.open(Figure2))
 SoftSphere10npimage = np.asarray(Image.open(Figure3))
 
 ############# Making plottable Cluster Data #############
-basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
+if args.fromscratch:
+    basepath = Path("Multi_Nanoparticle/10_NP_Systems")
+else:
+    basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 sub_dir_base = ["Hydrophobic","Polar","Soft_Sphere" ]
 thiol_name = ["Octanethiol", "Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
 file_name = "analysis/ClusterAU10.dat"
@@ -274,11 +283,11 @@ ax5.set_ylabel(r'$\langle F_{m} \rangle$',fontdict=label_font)
 ax5.set_xlabel('Ligand Length',fontdict=label_font)
 ax5.legend(loc="upper right",fontsize='x-small')
 
-fig.savefig(Path("../Graphs/Figure3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+if args.fromscratch:
+    fig.savefig(Path("Graphs/Figure3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+else:
+    fig.savefig(Path("../Graphs/Figure3.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
-    args = parser.parse_args()
     if args.showplot:
         plt.show()  

@@ -17,6 +17,11 @@ sys.path.insert(0, "../Analysis/Figure_1_scripts/")
 from SASAplotter import generalSASA, make_thiol_dataset, create_sasa_core_replica_data, create_sasa_full_replica_data
 from order_density_contact_potter import generalFileParse, create_contact_core_replica_data, create_contact_full_replica_data,make_thiol_dataset_O_C
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
 
 ############### Draw Grid ##############
 
@@ -192,7 +197,10 @@ plot_reps_2(combine_replicas(P5data_wat), Wat_SAS_plot[4],Wat_SAS_axes[4],"P5", 
 plot_reps_2(combine_replicas(SSdata_wat), Wat_SAS_plot[5],Wat_SAS_axes[5],"SS", r'Water Accesible Surface Area($nm^{2}$)' )
 
 for coretype,plot in zip(CORETYPES2,Wat_SAS_plot):
-    plot.savefig(Path(f"../Graphs/SupplementaryFigureWASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    if args.fromscratch:
+        plot.savefig(Path(f"Graphs/SupplementaryFigureWASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    else:
+        plot.savefig(Path(f"../Graphs/SupplementaryFigureWASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
     plt.close(plot)
     
 #### LASA #####
@@ -203,7 +211,10 @@ plot_reps_2(combine_replicas(P1data_lip), Lip_SAS_plot[3],Lip_SAS_axes[3],"P1", 
 plot_reps_2(combine_replicas(P5data_lip), Lip_SAS_plot[4],Lip_SAS_axes[4],"P5", r'Lipid Accesible Surface Area($nm^{2}$)' )
 plot_reps_2(combine_replicas(SSdata_lip), Lip_SAS_plot[5],Lip_SAS_axes[5],"SS", r'Lipid Accesible Surface Area($nm^{2}$)' )
 for coretype,plot in zip(CORETYPES2,Lip_SAS_plot):
-    plot.savefig(Path(f"../Graphs/SupplementaryFigureLASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    if args.fromscratch:
+        plot.savefig(Path(f"Graphs/SupplementaryFigureLASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    else:
+        plot.savefig(Path(f"../Graphs/SupplementaryFigureLASA_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
     plt.close(plot)
 
 DT = "contact"
@@ -216,7 +227,10 @@ plot_reps_2(combine_replicas(P1data_head, DT), Head_plot[3],Head_axes[3],"P1", r
 plot_reps_2(combine_replicas(P5data_head, DT), Head_plot[4],Head_axes[4],"P5", r'Number of Lipid Head Contacts' )
 plot_reps_2(combine_replicas(SSdata_head, DT), Head_plot[5],Head_axes[5],"SS", r'Number of Lipid Head Contacts' )
 for coretype,plot in zip(CORETYPES2,Head_plot):
-    plot.savefig(Path(f"../Graphs/SupplementaryFigureHeadCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    if args.fromscratch:
+        plot.savefig(Path(f"Graphs/SupplementaryFigureHeadCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    else:
+        plot.savefig(Path(f"../Graphs/SupplementaryFigureHeadCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
     plt.close(plot)
     
 #### Tail Contact #####
@@ -227,12 +241,12 @@ plot_reps_2(combine_replicas(P1data_tail, DT), Tail_plot[3],Tail_axes[3],"P1", r
 plot_reps_2(combine_replicas(P5data_tail, DT), Tail_plot[4],Tail_axes[4],"P5", r'Number of Lipid Tail Contacts' )
 plot_reps_2(combine_replicas(SSdata_tail, DT), Tail_plot[5],Tail_axes[5],"SS", r'Number of Lipid Tail Contacts' )
 for coretype,plot in zip(CORETYPES2,Tail_plot):
-    plot.savefig(Path(f"../Graphs/SupplementaryFigureTailCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    if args.fromscratch:
+        plot.savefig(Path(f"Graphs/SupplementaryFigureTailCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+    else:
+        plot.savefig(Path(f"../Graphs/SupplementaryFigureTailCont_{coretype}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
     plt.close(plot)
     
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
-    args = parser.parse_args()
     if args.showplot:
         plt.show()  

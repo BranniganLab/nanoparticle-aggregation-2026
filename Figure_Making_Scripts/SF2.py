@@ -16,6 +16,11 @@ from matplotlib.lines import Line2D
 sys.path.insert(0, "../Analysis/Figure_3_scripts/")
 from ClusterPlotter import generalCluster, multiClusterData 
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
 
 ############### Draw Grid ##############
 
@@ -103,7 +108,10 @@ for i in range(len(sub_dir_base)):
             legend_list.append(Line2D([0], [0], color=color, lw=4))
         la_plots[j].legend(legend_list, replica_name, ncol=len(replica_name), loc="upper center",bbox_to_anchor=(0.5, 1.12), fontsize=15)
         
-        la_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_la_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+        if args.fromscratch:
+            la_plots[j].savefig(Path(f"Graphs/SupplementaryFigure2_la_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+        else:
+            la_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_la_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 ## MF ##
 for i in range(len(sub_dir_base)):
@@ -126,11 +134,11 @@ for i in range(len(sub_dir_base)):
         for color in color_list:
             legend_list.append(Line2D([0], [0], color=color, lw=4))
         mf_plots[j].legend(legend_list, replica_name, ncol=len(replica_name), loc="upper center",bbox_to_anchor=(0.5, 1.12), fontsize=15)
-        mf_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_mf_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+        if args.fromscratch:
+            mf_plots[j].savefig(Path(f"Graphs/SupplementaryFigure2_mf_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
+        else:
+            mf_plots[j].savefig(Path(f"../Graphs/SupplementaryFigure2_mf_{thiol}.pdf"),format='pdf',dpi=500, bbox_inches='tight')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp","--showplot", help="Show the plot", action='store_true')
-    args = parser.parse_args()
     if args.showplot:
         plt.show()

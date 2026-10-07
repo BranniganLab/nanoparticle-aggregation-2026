@@ -26,6 +26,12 @@ from SASAplotter import (
     make_thiol_dataset,
 )
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
+parser.add_argument("-fs", "--fromscratch", help="Plots data from scratch", action="store_true")
+
+args = parser.parse_args()
+
 Pagelength = 4
 Pagewidth = 9
 
@@ -136,7 +142,10 @@ ax["ImgB"].axis("off")
 
 ######## Water SASA #################
 
-DIRECTORY_PATH = Path("../Simulation/Single_Nanoparticle")
+if args.fromscratch:
+    DIRECTORY_PATH = Path("Single_Nanoparticle")
+else:
+    DIRECTORY_PATH = Path("../Simulation/Single_Nanoparticle")
 CORETYPES = ["C1", "C5", "N0", "P1", "P5"]
 CORETYPES2 = ["C1", "C5", "N0", "P1", "P5", "SS"]
 THIOL = [
@@ -604,11 +613,11 @@ ax["AVGconttail"].set_xticks([0, 1, 2, 3, 4, 5])
 ax["AVGconttail"].set_xticklabels(CORETYPES2, fontdict=tick_font)
 ax["AVGconttail"].set_yticks(np.arange(0, 35, step=5))
 ax["AVGconttail"].set_yticklabels(np.arange(0, 35, step=5), fontdict=tick_font)
-fig.savefig(Path("../Graphs/Figure1.pdf"), format="pdf", dpi=500, bbox_inches="tight")
+if args.fromscratch:
+    fig.savefig(Path("Graphs/Figure1.pdf"), format="pdf", dpi=500, bbox_inches="tight")
+else:
+    fig.savefig(Path("../Graphs/Figure1.pdf"), format="pdf", dpi=500, bbox_inches="tight")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-sp", "--showplot", help="Show the plot", action="store_true")
-    args = parser.parse_args()
     if args.showplot:
         plt.show()
