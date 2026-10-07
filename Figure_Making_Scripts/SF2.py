@@ -45,7 +45,10 @@ mf_plots = [fig_mf_oct, fig_mf_dod, fig_mf_hex, fig_mf_ico, fig_mf_tet]
 mf_axes = [ax_mf_oct, ax_mf_dod, ax_mf_hex, ax_mf_ico, ax_mf_tet]
 
 ############# Making plottable Cluster Data #############
-basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
+if args.fromscratch:
+    basepath = Path("Multi_Nanoparticle/10_NP_Systems")
+else:
+    basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 sub_dir_base = ["Hydrophobic","Polar","Soft_Sphere" ]
 thiol_name = ["Octanethiol", "Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
 replica_name = ["Replica 1", "Replica 2", "Replica 3", "Replica 4", "Replica 5"]

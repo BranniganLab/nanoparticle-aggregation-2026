@@ -46,10 +46,10 @@ def make_thiol_dataset(directory_path, coretype, thiol, replica, dataname, cutof
     LigandData = {}
     for path in allfilepaths:
         name = path.parts[-3]
-        rep = path.parts[-2]
+        rep = path.parts[-2].replace("_","")
         data = generalSASA(dataname, path, name)
         data.update_SASA_data(cutoff)
-        data.update_SASA_average().remove("_","")
+        data.update_SASA_average()
         LigandData[name+"_"+rep] = data
     return LigandData
 

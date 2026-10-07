@@ -68,7 +68,10 @@ Tail_plot = [fig3_C1, fig3_C5, fig3_N0, fig3_P1, fig3_P5, fig3_SS]
 Tail_axes = [ax3_C1, ax3_C5, ax3_N0, ax3_P1, ax3_P5, ax3_SS]
 
 ############# Making plottable Cluster Data #############
-DIRECTORY_PATH = Path("../Simulation/Single_Nanoparticle")
+if args.fromscratch:
+    DIRECTORY_PATH = Path("Single_Nanoparticle")
+else: 
+    DIRECTORY_PATH = Path("../Simulation/Single_Nanoparticle")
 CORETYPES = ["C1","C5","N0","P1","P5"]
 CORETYPES2 = ["C1","C5","N0","P1","P5","SS"]
 THIOL = ["Octanethiol","Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]

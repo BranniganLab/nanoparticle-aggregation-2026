@@ -50,10 +50,10 @@ def make_thiol_dataset_O_C(directory_path, coretype, thiol, replica, dataname, d
     LigandData = {}
     for path in allfilepaths:
         name = path.parts[-3]
-        rep = path.parts[-2]
+        rep = path.parts[-2].replace("_","")
         data = generalFileParse(dataname, path, name, datatype)
         data.update_data()
-        data.update_average().remove("_","")
+        data.update_average()
         LigandData[name+"_"+rep] = data
     return LigandData
 

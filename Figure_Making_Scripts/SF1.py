@@ -25,14 +25,17 @@ mpl.rcParams['xtick.labelsize'] = 25
 mpl.rcParams['ytick.labelsize'] = 25
 
 ############# Making plottable Cluster Data #############
-basepath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
-histo1 = basepath.joinpath("Polar/GNP_US/histo.xvg")
-histo2 = basepath.joinpath("Polar/GNP_US_2/GNP_US/histo.xvg")
-histo3 = basepath.joinpath("Polar/GNP_US_3/GNP_US/histo.xvg")
+if args.fromscratch:
+    basepath = Path("Multi_Nanoparticle/Dimer_Free_Energy_System")
+else:
+    basepath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
+histo1 = basepath.joinpath("Polar/Replica_1/histo.xvg")
+histo2 = basepath.joinpath("Polar/Replica_2/histo.xvg")
+histo3 = basepath.joinpath("Polar/Replica_3/histo.xvg")
 
-histo4 = basepath.joinpath("Hydrophobic/GNP_US_hyd/histo.xvg")
-histo5 = basepath.joinpath("Hydrophobic/GNP_US_hyd_2/GNP_US_hyd/histo.xvg")
-histo6 = basepath.joinpath("Hydrophobic/GNP_US_hyd_3/GNP_US_hyd/histo.xvg")
+histo4 = basepath.joinpath("Hydrophobic/Replica_1/histo.xvg")
+histo5 = basepath.joinpath("Hydrophobic/Replica_2/histo.xvg")
+histo6 = basepath.joinpath("Hydrophobic/Replica_3/histo.xvg")
 
             
 ############# Plot on Grid #############
