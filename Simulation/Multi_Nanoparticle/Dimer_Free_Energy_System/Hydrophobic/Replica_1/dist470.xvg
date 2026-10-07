@@ -1,0 +1,18 @@
+# This file was created Sun Aug 25 10:40:30 2024
+# Created by:
+#                     :-) GROMACS - gmx distance, 2024.1 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/jahmalennis/Documents/mount/GNP_US_hyd
+# Command line:
+#   gmx distance -s md.tpr -f conf470.gro -n index.ndx -select 'com of group "AUCORE1" plus com of group "AUCORE2"' -oall dist470.xvg
+# gmx distance is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+   5875.000    8.364

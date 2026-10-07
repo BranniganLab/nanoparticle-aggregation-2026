@@ -1,0 +1,18 @@
+# This file was created Sun Aug 25 10:37:25 2024
+# Created by:
+#                     :-) GROMACS - gmx distance, 2024.1 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/jahmalennis/Documents/mount/GNP_US_hyd
+# Command line:
+#   gmx distance -s md.tpr -f conf383.gro -n index.ndx -select 'com of group "AUCORE1" plus com of group "AUCORE2"' -oall dist383.xvg
+# gmx distance is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "Distance"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Distance (nm)"
+@TYPE xy
+   4787.500    7.269
