@@ -10,6 +10,13 @@ else
     exit 1
 fi
 
+if command -v vmd &> /dev/null; then
+    echo "VMD is installed: $(command -v vmd)"
+else
+    echo "Error: VMD is not installed or not found in PATH." >&2
+    exit 1
+fi
+
 SECONDS=0
 echo "Downloading data from zenodo..."
 zenodo_get 18989520
