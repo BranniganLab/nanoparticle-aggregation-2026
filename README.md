@@ -6,7 +6,7 @@ Simulations are stored on Amarel(/projects/ccib/brannigan/jje63/Gold_Nanoparticl
 To make the figures from [*The Core Matters: Aggregation of Neutral Ligand-Coated Nanoparticles in Membranes*](https://pubs.acs.org/jpcbfk/article/130/37/9496/5394074/The-Core-Matters-Aggregation-of-Neutral-Ligand) do the following:
 
 1. Clone this repository. You do not need the accompanying zenodo to remake the figures. All calculated values from trajectories have been written to files.
-2. cd into repository and Create a virtual environment:
+2. cd into repository and create a virtual environment:
     - Conda:
       1. `conda env create -f environment.yml`
       2. `conda activate gnppaper`
@@ -21,7 +21,7 @@ If using a Python virtual environment, `pip install -r requirements.txt` after s
 5. Figures will show up in the **Graphs** folder
 
 ## Making figures from Simulation Data (.xtc and .gro files)
-Recreating figures from simulation data will take roughly 7-18 hours depending on zenodo download speeds. However, the process can be done and has been fully automated using the bash scripts in the zenodo folder. One note is that Gromacs is required in order to recreate the figures from simulation data as a gromacs rerun is performed on the .xtc files in order to generate the force and position data used in recreating the free energy profiles with GMX WHAM. 
+Recreating figures from simulation data will take roughly 7-18 hours depending on zenodo download speeds. However, the process can be done and has been fully automated using the bash scripts in the zenodo folder. One note is that Gromacs and VMD are required in order to recreate the figures from simulation data as a Gromacs rerun is performed on the .xtc files in order to generate the force and position data used in recreating the free energy profiles with GMX WHAM. 
 
 1. Follow steps 1 and 2 from above.
 2. cd into the **Zenodo** folder
