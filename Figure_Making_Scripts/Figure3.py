@@ -87,7 +87,10 @@ else:
     basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 sub_dir_base = ["Hydrophobic","Polar","Soft_Sphere" ]
 thiol_name = ["Octanethiol", "Dodecanethiol","Hexadecanethiol","Icosanethiol","Tetracosanethiol"]
-file_name = "analysis/ClusterAU10.dat"
+if args.fromscratch:
+    file_name = "analysis/fullclusterAU10.dat"
+else:
+    file_name = "analysis/ClusterAU10.dat"
 #data_bins = {}
 data_bins = [{},{},{}]
 

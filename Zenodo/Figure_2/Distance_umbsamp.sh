@@ -19,7 +19,7 @@ for dir in *; do
         relpath="../../../../../../Simulation$dimerpath/$dir_name/$rep_dir"
         echo $relpath 
     	echo "Processing directory: $rep_dir"
-    	bash $CWD/npdistance.sh AUCORE1 AUCORE2 $relpath
+    	#bash $CWD/npdistance.sh AUCORE1 AUCORE2 $relpath
         rm NPdistance/*.log*
         gmx wham -it $P1 -if ../../../../Helper/pullf-files.dat -o -hist 
     	cd ../

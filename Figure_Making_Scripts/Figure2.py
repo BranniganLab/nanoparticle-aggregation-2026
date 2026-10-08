@@ -284,11 +284,12 @@ polarp2 = make_data(polarpath2)
 polarp3 = make_data(polarpath3)
 
 if args.fromscratch:
-    hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2]], axis=0)
-    hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2]], axis=0)
+    hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
+    hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
 
-    hydravg_xy = np.mean([hydrop1[0],hydrop2[0],hydrop3[0]], axis=0)
-    hydravg_xyz = np.mean([hydrop1[1],hydrop2[1],hydrop3[1]], axis=0)
+    hydravg_xy = np.mean([hydrop1[0],hydrop2[0],hydrop3[0][:-1]], axis=0)
+    hydravg_xyz = np.mean([hydrop1[1],hydrop2[1],hydrop3[1][:-1]], axis=0)
+    
     nearhyd = find_nearest(hydravg_xy, value=5)
     indexhyd = np.where(hydravg_xy == nearhyd)
 
@@ -297,6 +298,7 @@ if args.fromscratch:
 
     polravg_xy = np.mean([polarp1[0],polarp2[0],polarp3[0]], axis=0)
     polravg_xyz = np.mean([polarp1[1],polarp2[1],polarp3[1]], axis=0)
+
 else:
     hydravg_z = np.mean([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)
     hydrstd_z = np.std([hydrop1[2],hydrop2[2],hydrop3[2][:-1]], axis=0)

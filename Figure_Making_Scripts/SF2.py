@@ -46,7 +46,7 @@ mf_axes = [ax_mf_oct, ax_mf_dod, ax_mf_hex, ax_mf_ico, ax_mf_tet]
 
 ############# Making plottable Cluster Data #############
 if args.fromscratch:
-    basepath = Path("Multi_Nanoparticle/10_NP_Systems")
+    basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 else:
     basepath = Path("../Simulation/Multi_Nanoparticle/10_NP_Systems")
 sub_dir_base = ["Hydrophobic","Polar","Soft_Sphere" ]

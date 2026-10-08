@@ -26,7 +26,7 @@ mpl.rcParams['ytick.labelsize'] = 25
 
 ############# Making plottable Cluster Data #############
 if args.fromscratch:
-    basepath = Path("Multi_Nanoparticle/Dimer_Free_Energy_System")
+    basepath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
 else:
     basepath = Path("../Simulation/Multi_Nanoparticle/Dimer_Free_Energy_System")
 histo1 = basepath.joinpath("Polar/Replica_1/histo.xvg")
