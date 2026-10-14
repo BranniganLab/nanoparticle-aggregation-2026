@@ -51,7 +51,7 @@ mv nas/Gold_Nanoparticle_Project/Martini_GNP_Paper/Simulation/Multi_Nanoparticle
 mv Polar Multi_Nanoparticle/Dimer_Free_Energy_System
 mv Hydrophobic Multi_Nanoparticle/Dimer_Free_Energy_System
 rm -rf nas
-cp Multi_Nanoparticle/Dimer_Free_Energy_System/Hydrophobic/Replica_1/umbrella607* HMulti_Nanoparticle/Dimer_Free_Energy_System/Hydrophobic/Replica_2/
+cp Multi_Nanoparticle/Dimer_Free_Energy_System/Hydrophobic/Replica_1/umbrella607* Multi_Nanoparticle/Dimer_Free_Energy_System/Hydrophobic/Replica_2/
 cp Multi_Nanoparticle/Dimer_Free_Energy_System/Polar/Replica_1/umbrella595* Multi_Nanoparticle/Dimer_Free_Energy_System/Polar/Replica_3/
 
 rm Hydro_R2.tar.gz
