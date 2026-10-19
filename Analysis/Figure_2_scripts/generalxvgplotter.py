@@ -33,7 +33,7 @@ class generalFE:
             self.fe_data_frame["Values"] = fe_data[:,1]
             self.fe_data_frame['CV'] = fe_data[:,0]
         else:
-            raise ValueError("File doesn't exist")
+            raise ValueError(f"File name {self.file_path.name} doesn't exist in path: {self.directory_path}")
 
     def apply_correction(self, dimension):
         if dimension == '2D':
