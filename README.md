@@ -8,9 +8,9 @@ To make the figures from [*The Core Matters: Aggregation of Neutral Ligand-Coate
 1. Clone this repository. You do not need the accompanying zenodo to remake the figures. All calculated values from trajectories have been written to files.
 2. cd into repository and create a virtual environment:
     - Conda:
-      1. `conda env create -f environment.yaml;conda activate gnppaper`
+      1. `conda env create -f environment.yaml; conda activate gnppaper`
     - Python:
-      1. `python -m venv gnppaper;source gnppaper/bin/activate`\
+      1. `python -m venv gnppaper; source gnppaper/bin/activate`\
       2. `pip install -r requirements.txt` 
 3. cd into the **Figure_Making_Scripts** folder
 4. Make the figures:
