@@ -19,7 +19,7 @@ for dir in *thiol/; do
             mkdir analysis
         fi
     	echo "Processing directory: $rep_dir"
-    	vmd2 -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
+    	vmd -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
     	cd ../
     done
     cd ../
@@ -43,7 +43,7 @@ for dir in *thiol/; do
             mkdir analysis
         fi
         echo "Processing directory: $rep_dir"
-        vmd2 -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
+        vmd -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
         cd ../
     done
     cd ../
@@ -67,7 +67,7 @@ for dir in *thiol/; do
             mkdir analysis
         fi
         echo "Processing directory: $rep_dir"
-        vmd2 -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
+        vmd -dispdev text -eofexit < $CWD/cluster_all.tcl $relpath > fullclus.log
         cd ../
     done
     cd ../
