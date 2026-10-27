@@ -25,7 +25,7 @@ for dir in *; do
 	            mkdir analysis
 	        fi
 	    	echo "Processing directory: $rep_dir"
-	    	vmd2 -dispdev text -eofexit < $CWD/sasa_contact.tcl $relpath > sasa_cont.log
+	    	vmd -dispdev text -eofexit < $CWD/sasa_contact.tcl $relpath > sasa_cont.log
 	    	cd ../
 	    done
 	    cd ../
