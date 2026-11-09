@@ -23,4 +23,4 @@ Recreating figures from simulation data will take roughly 7-18 hours depending o
 
 1. Follow steps 1 and 2 from above.
 2. cd into the **Zenodo** folder
-3. run the command `bash create_data_from_scratch.sh`
+3. run the command `bash create_data_from_scratch.sh > zenodo.log`
