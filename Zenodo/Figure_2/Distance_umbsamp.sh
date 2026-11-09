@@ -8,13 +8,17 @@ for dir in *; do
     dir_name="${dir%/}"
     echo "Processing directory: $dir"
     cd $dir
-    if [$dir == "Hydrophobic"]; then
-        P1="../../../../Helper/tpr-files_hyd.dat"
-    else
+    if [ $dir == "Hydrophobic" ]; then
+        continue
+    elif [ $dir == "Polar" ]; then
         P1="../../../../Helper/tpr-files_pol.dat"
+    elif [ $dir != "Hydrophobic" ] | [ $dir != "Polar" ]; then
+        cd ../
+        continue
     fi
 
     for rep_dir in Replica*[1-3]; do
+        echo "CD dir: `pwd`"
     	cd $rep_dir
         relpath="../../../../../../Simulation$dimerpath/$dir_name/$rep_dir"
         echo $relpath 
