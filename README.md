@@ -10,11 +10,11 @@ To make the figures from [*The Core Matters: Aggregation of Neutral Ligand-Coate
     - Conda:
       1. `conda env create -f environment.yaml; conda activate gnppaper`
     - Python:
-      1. `python -m venv gnppaper; source gnppaper/bin/activate`\
+      1. `python -m venv gnppaper; source gnppaper/bin/activate`
       2. `pip install -r requirements.txt` 
 3. cd into the **Figure_Making_Scripts** folder
 4. Make the figures:
-    - To remake all figures run the command: `bash make_all_figures.sh`
+    - To remake all figures run the command: `bash make_all_figures.sh > zenodo.log`
     - To remake a specific figure run the command: `python [name of figure] [optional showplot -sp]` Example: `python Figure1.py -sp`
 5. Figures will show up in the **Graphs** folder
 
@@ -23,4 +23,4 @@ Recreating figures from simulation data will take roughly 7-18 hours depending o
 
 1. Follow steps 1 and 2 from above.
 2. cd into the **Zenodo** folder
-3. run the command `bash create_data_from_scratch.sh`
+3. run the command `bash create_data_from_scratch.sh > zenodo.log`
