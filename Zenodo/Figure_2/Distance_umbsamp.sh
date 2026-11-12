@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CWD=`pwd`
+echo $1
 
 dimerpath="/Multi_Nanoparticle/Dimer_Free_Energy_System"
 cd "../$dimerpath"
@@ -9,9 +10,17 @@ for dir in *; do
     echo "Processing directory: $dir"
     cd $dir
     if [ $dir == "Hydrophobic" ]; then
-        continue
+        P1="../../../../Helper/tpr-files_hyd.dat"
+        if [ $1 == "no-hyd" ]; then
+           cd ../
+           continue 
+        fi
     elif [ $dir == "Polar" ]; then
         P1="../../../../Helper/tpr-files_pol.dat"
+        if [ $1 == "no-pol" ]; then
+           cd ../
+           continue
+        fi
     elif [ $dir != "Hydrophobic" ] | [ $dir != "Polar" ]; then
         cd ../
         continue

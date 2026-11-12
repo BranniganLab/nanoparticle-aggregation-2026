@@ -7,6 +7,8 @@ i=0
 
 if [[ -d "NPdistance" ]]; then
     echo "NPdistance folder exist"
+    rm -rf NPdistance
+    mkdir NPdistance
 else
     echo "Making NPdistance folder"
     mkdir NPdistance
