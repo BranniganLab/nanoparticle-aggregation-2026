@@ -11,12 +11,14 @@ To make the figures from [*The Core Matters: Aggregation of Neutral Ligand-Coate
       1. `conda env create -f environment.yaml; conda activate gnppaper`
     - Python:
       1. `python -m venv gnppaper; source gnppaper/bin/activate`
-      2. `pip install -r requirements.txt` 
+      2. `pip install -r requirements.txt`
 3. cd into the **Figure_Making_Scripts** folder
 4. Make the figures:
     - To remake all figures run the command: `bash make_all_figures.sh > zenodo.log`
     - To remake a specific figure run the command: `python [name of figure] [optional showplot -sp]` Example: `python Figure1.py -sp`
 5. Figures will show up in the **Graphs** folder
+
+**note**: If you have errors in your environment, a full list of packages and dependencies with versions are listed in the all_environments_package.txt
 
 ## Making figures from Simulation Data (.xtc and .gro files)
 Recreating figures from simulation data will take roughly 7-18 hours depending on zenodo download speeds. However, the process can be done and has been fully automated using the bash scripts in the zenodo folder. One note is that Gromacs and VMD are required in order to recreate the figures from simulation data as a Gromacs rerun is performed on the .xtc files in order to generate the force and position data used in recreating the free energy profiles with GMX WHAM. 
@@ -24,3 +26,8 @@ Recreating figures from simulation data will take roughly 7-18 hours depending o
 1. Follow steps 1 and 2 from above.
 2. cd into the **Zenodo** folder
 3. run the command `bash create_data_from_scratch.sh > zenodo.log`
+
+Because the downloads and analysis takes a long time, the script allows you to rerun only the download or analysis part of the script by adding the following arguments:
+
+1. `bash create_data_from_scratch.sh no-download > zenodo.log`
+2. `bash create_data_from_scratch.sh no-analysis > zenodo.log`
